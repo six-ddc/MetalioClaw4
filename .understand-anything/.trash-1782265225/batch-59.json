@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "config:.clang-format",
+      "type": "config",
+      "name": ".clang-format",
+      "filePath": ".clang-format",
+      "summary": "C/C++ 代码格式化配置，基于 Google 风格并定制了 ESP-IDF 头文件排序规则、缩进宽度为 4、列宽限制 100。",
+      "tags": ["configuration", "code-style", "c++", "esp-idf"],
+      "complexity": "moderate",
+      "languageNotes": "基于 clang-format YAML 格式，包含 ESP-IDF 定制头文件优先级分组（esp_*.h > driver/*.h > 其他系统头文件 > 项目头文件）。"
+    },
+    {
+      "id": "config:.understand-anything/.understandignore",
+      "type": "config",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "代码分析工具的忽略规则文件，定义了应从知识图谱中排除的文件和目录模式，包括临时文件、构建产物、二进制文件等。",
+      "tags": ["configuration", "ignore-file", "analysis-config"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "知识图谱分析工具的配置文件，指定输出语言为中文（zh）。",
+      "tags": ["configuration", "analysis-config", "localization"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/common/exclamation.ogg",
+      "type": "file",
+      "name": "exclamation.ogg",
+      "filePath": "main/assets/common/exclamation.ogg",
+      "summary": "感叹号/警告提示音效（OGG 音频），用于系统通知和警告场景。",
+      "tags": ["audio", "notification-sound", "ogg", "asset"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/common/low_battery.ogg",
+      "type": "file",
+      "name": "low_battery.ogg",
+      "filePath": "main/assets/common/low_battery.ogg",
+      "summary": "低电量提示音效（OGG 音频），在设备电量不足时播放。",
+      "tags": ["audio", "notification-sound", "ogg", "battery-alert", "asset"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/common/popup.ogg",
+      "type": "file",
+      "name": "popup.ogg",
+      "filePath": "main/assets/common/popup.ogg",
+      "summary": "弹窗提示音效（OGG 音频），用于弹窗通知和交互反馈。",
+      "tags": ["audio", "notification-sound", "ogg", "ui-feedback", "asset"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/common/success.ogg",
+      "type": "file",
+      "name": "success.ogg",
+      "filePath": "main/assets/common/success.ogg",
+      "summary": "操作成功提示音效（OGG 音频），用于操作完成或成功的反馈场景。",
+      "tags": ["audio", "notification-sound", "ogg", "success-feedback", "asset"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/common/vibration.ogg",
+      "type": "file",
+      "name": "vibration.ogg",
+      "filePath": "main/assets/common/vibration.ogg",
+      "summary": "震动提示音效（OGG 音频），模拟震动反馈的音频资源。",
+      "tags": ["audio", "notification-sound", "ogg", "haptic-feedback", "asset"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

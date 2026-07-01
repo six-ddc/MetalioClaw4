@@ -1,0 +1,1122 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/xingzhi-cube-0.96oled-wifi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/config.json",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "board-config",
+        "configuration",
+        "xingzhi-cube-0.96ole"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xingzhi-cube-1.54tft-ml307/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xingzhi-cube-1.54tft"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xingzhi-cube-1.54tft-wifi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xingzhi-cube-1.54tft"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xmini-c3-4g/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/xmini-c3-4g/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xmini-c3-4g/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xmini-c3-4g/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xmini-c3-4g"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/xmini-c3-4g/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/xmini-c3-4g/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "type": "file",
+      "name": "xmini_c3_4g_board.cc",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeBatteryMonitor",
+      "type": "function",
+      "name": "InitializeBatteryMonitor",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        34,
+        43
+      ],
+      "summary": "实现 InitializeBatteryMonitor 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        45,
+        64
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        66,
+        88
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        90,
+        135
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        137,
+        154
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:XminiC3Board",
+      "type": "function",
+      "name": "XminiC3Board",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        162,
+        171
+      ],
+      "summary": "实现 XminiC3Board 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:XminiC3Board",
+      "type": "class",
+      "name": "XminiC3Board",
+      "filePath": "main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "lineRange": [
+        23,
+        202
+      ],
+      "summary": "定义 XminiC3Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/xmini-c3-v3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/xmini-c3-v3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xmini-c3-v3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xmini-c3-v3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xmini-c3-v3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/xmini-c3-v3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/xmini-c3-v3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "type": "file",
+      "name": "xmini_c3_board.cc",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializePowerManager",
+      "type": "function",
+      "name": "InitializePowerManager",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "lineRange": [
+        34,
+        43
+      ],
+      "summary": "实现 InitializePowerManager 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "lineRange": [
+        45,
+        54
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "lineRange": [
+        56,
+        79
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "lineRange": [
+        81,
+        126
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "lineRange": [
+        128,
+        151
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xmini-c3-v3/xmini_c3_board.cc:XminiC3Board",
+      "type": "class",
+      "name": "XminiC3Board",
+      "filePath": "main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "lineRange": [
+        23,
+        197
+      ],
+      "summary": "定义 XminiC3Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/xmini-c3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/xmini-c3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xmini-c3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xmini-c3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xmini-c3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "type": "file",
+      "name": "xmini_c3_board.cc",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "lineRange": [
+        32,
+        41
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "lineRange": [
+        43,
+        66
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "lineRange": [
+        68,
+        113
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "lineRange": [
+        115,
+        138
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xmini-c3/xmini_c3_board.cc:XminiC3Board",
+      "type": "function",
+      "name": "XminiC3Board",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "lineRange": [
+        146,
+        156
+      ],
+      "summary": "实现 XminiC3Board 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xmini-c3/xmini_c3_board.cc:XminiC3Board",
+      "type": "class",
+      "name": "XminiC3Board",
+      "filePath": "main/boards/xmini-c3/xmini_c3_board.cc",
+      "lineRange": [
+        22,
+        180
+      ],
+      "summary": "定义 XminiC3Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/yunliao-s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/yunliao-s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "yunliao-s3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/yunliao-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/yunliao-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/zhengchen-1.54tft-ml307/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/zhengchen-1.54tft-ml307/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "zhengchen-1.54tft-ml"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/zhengchen-1.54tft-ml307/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/zhengchen-1.54tft-ml307/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/zhengchen-1.54tft-wifi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/zhengchen-1.54tft-wifi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "zhengchen-1.54tft-wi"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/zhengchen-1.54tft-wifi/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/zhengchen-1.54tft-wifi/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/CMakeLists.txt",
+      "type": "document",
+      "name": "CMakeLists.txt",
+      "filePath": "main/CMakeLists.txt",
+      "summary": "main/CMakeLists.txt 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/device_state_event.cc",
+      "type": "file",
+      "name": "device_state_event.cc",
+      "filePath": "main/device_state_event.cc",
+      "summary": "实现设备状态事件系统，提供状态变更的事件通知机制。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/device_state_event.cc:DeviceStateEventManager",
+      "type": "function",
+      "name": "DeviceStateEventManager",
+      "filePath": "main/device_state_event.cc",
+      "lineRange": [
+        28,
+        42
+      ],
+      "summary": "实现 DeviceStateEventManager 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/device_state_event.h",
+      "type": "file",
+      "name": "device_state_event.h",
+      "filePath": "main/device_state_event.h",
+      "summary": "main/device_state_event.h 的头文件。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/device_state.h",
+      "type": "file",
+      "name": "device_state.h",
+      "filePath": "main/device_state.h",
+      "summary": "main/device_state.h 的头文件。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lcd_display.cc",
+      "type": "file",
+      "name": "lcd_display.cc",
+      "filePath": "main/display/lcd_display.cc",
+      "summary": "实现 LCD 显示器的核心功能，包括多种显示模式（表情、状态、聊天等）的渲染逻辑。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "function",
+      "name": "InitializeLcdThemes",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        24,
+        62
+      ],
+      "summary": "实现 InitializeLcdThemes 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:LcdDisplay",
+      "type": "function",
+      "name": "LcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        64,
+        89
+      ],
+      "summary": "实现 LcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SpiLcdDisplay",
+      "type": "function",
+      "name": "SpiLcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        91,
+        173
+      ],
+      "summary": "实现 SpiLcdDisplay 函数功能。",
+      "tags": [
+        "hardware-io",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:RgbLcdDisplay",
+      "type": "function",
+      "name": "RgbLcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        177,
+        236
+      ],
+      "summary": "实现 RgbLcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:MipiLcdDisplay",
+      "type": "function",
+      "name": "MipiLcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        238,
+        293
+      ],
+      "summary": "实现 MipiLcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:~LcdDisplay",
+      "type": "function",
+      "name": "~LcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        295,
+        352
+      ],
+      "summary": "实现 ~LcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SetEmotion",
+      "type": "function",
+      "name": "SetEmotion",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        977,
+        1044
+      ],
+      "summary": "实现 SetEmotion 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SetTheme",
+      "type": "function",
+      "name": "SetTheme",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        1046,
+        1186
+      ],
+      "summary": "实现 SetTheme 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SetHideSubtitle",
+      "type": "function",
+      "name": "SetHideSubtitle",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        1188,
+        1200
+      ],
+      "summary": "实现 SetHideSubtitle 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "file:main/boards/xmini-c3-4g/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeBatteryMonitor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:XminiC3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "function:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:XminiC3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "class:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:XminiC3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc",
+      "target": "class:main/boards/xmini-c3-4g/xmini_c3_4g_board.cc:XminiC3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "file:main/boards/xmini-c3-v3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3-v3/xmini_c3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "class:main/boards/xmini-c3-v3/xmini_c3_board.cc:XminiC3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3-v3/xmini_c3_board.cc",
+      "target": "class:main/boards/xmini-c3-v3/xmini_c3_board.cc:XminiC3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "file:main/boards/xmini-c3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3/xmini_c3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3/xmini_c3_board.cc:XminiC3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "function:main/boards/xmini-c3/xmini_c3_board.cc:XminiC3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "class:main/boards/xmini-c3/xmini_c3_board.cc:XminiC3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xmini-c3/xmini_c3_board.cc",
+      "target": "class:main/boards/xmini-c3/xmini_c3_board.cc:XminiC3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/device_state_event.cc",
+      "target": "file:main/device_state_event.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/device_state_event.cc",
+      "target": "function:main/device_state_event.cc:DeviceStateEventManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/device_state_event.cc",
+      "target": "function:main/device_state_event.cc:DeviceStateEventManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "file:main/display/lcd_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:LcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:LcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SpiLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SpiLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:RgbLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:RgbLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:MipiLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:MipiLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:~LcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:~LcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetEmotion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetEmotion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetHideSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetHideSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

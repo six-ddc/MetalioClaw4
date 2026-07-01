@@ -1,0 +1,522 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/theme_manager.cc",
+      "type": "file",
+      "name": "theme_manager.cc",
+      "filePath": "main/display/theme_manager.cc",
+      "summary": "实现 theme_manager 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/theme_manager.h",
+      "type": "file",
+      "name": "theme_manager.h",
+      "filePath": "main/display/theme_manager.h",
+      "summary": "定义 theme_manager 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/idf_component.yml",
+      "type": "config",
+      "name": "idf_component.yml",
+      "filePath": "main/idf_component.yml",
+      "summary": "main/idf_component.yml 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/led/circular_strip.cc",
+      "type": "file",
+      "name": "circular_strip.cc",
+      "filePath": "main/led/circular_strip.cc",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:CircularStrip",
+      "type": "function",
+      "name": "CircularStrip",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        9,
+        41
+      ],
+      "summary": "实现 CircularStrip 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:Blink",
+      "type": "function",
+      "name": "Blink",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        69,
+        85
+      ],
+      "summary": "实现 Blink 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:FadeOut",
+      "type": "function",
+      "name": "FadeOut",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        87,
+        106
+      ],
+      "summary": "实现 FadeOut 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:Breathe",
+      "type": "function",
+      "name": "Breathe",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        108,
+        144
+      ],
+      "summary": "实现 Breathe 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:Scroll",
+      "type": "function",
+      "name": "Scroll",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        146,
+        165
+      ],
+      "summary": "实现 Scroll 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:StartStripTask",
+      "type": "function",
+      "name": "StartStripTask",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        167,
+        177
+      ],
+      "summary": "实现 StartStripTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/circular_strip.cc:OnStateChanged",
+      "type": "function",
+      "name": "OnStateChanged",
+      "filePath": "main/led/circular_strip.cc",
+      "lineRange": [
+        185,
+        233
+      ],
+      "summary": "实现 OnStateChanged 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/led/circular_strip.h",
+      "type": "file",
+      "name": "circular_strip.h",
+      "filePath": "main/led/circular_strip.h",
+      "summary": "定义 LED 指示灯组件的抽象接口声明。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/led/gpio_led.cc",
+      "type": "file",
+      "name": "gpio_led.cc",
+      "filePath": "main/led/gpio_led.cc",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:GpioLed",
+      "type": "function",
+      "name": "GpioLed",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        36,
+        86
+      ],
+      "summary": "实现 GpioLed 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:TurnOn",
+      "type": "function",
+      "name": "TurnOn",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        105,
+        115
+      ],
+      "summary": "实现 TurnOn 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:TurnOff",
+      "type": "function",
+      "name": "TurnOff",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        117,
+        127
+      ],
+      "summary": "实现 TurnOff 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:StartBlinkTask",
+      "type": "function",
+      "name": "StartBlinkTask",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        141,
+        153
+      ],
+      "summary": "实现 StartBlinkTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:OnBlinkTimer",
+      "type": "function",
+      "name": "OnBlinkTimer",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        155,
+        168
+      ],
+      "summary": "实现 OnBlinkTimer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:StartFadeTask",
+      "type": "function",
+      "name": "StartFadeTask",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        170,
+        183
+      ],
+      "summary": "实现 StartFadeTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/gpio_led.cc:OnStateChanged",
+      "type": "function",
+      "name": "OnStateChanged",
+      "filePath": "main/led/gpio_led.cc",
+      "lineRange": [
+        202,
+        249
+      ],
+      "summary": "实现 OnStateChanged 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/led/gpio_led.h",
+      "type": "file",
+      "name": "gpio_led.h",
+      "filePath": "main/led/gpio_led.h",
+      "summary": "定义 LED 指示灯组件的抽象接口声明。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/theme_manager.cc",
+      "target": "file:main/display/theme_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "file:main/led/circular_strip.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:CircularStrip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:CircularStrip",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:Blink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:Blink",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:FadeOut",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:FadeOut",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:Breathe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:Breathe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:Scroll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:Scroll",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:StartStripTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:StartStripTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:OnStateChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/circular_strip.cc",
+      "target": "function:main/led/circular_strip.cc:OnStateChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "file:main/led/gpio_led.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:GpioLed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:GpioLed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:TurnOn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:TurnOn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:TurnOff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:TurnOff",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:StartBlinkTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:StartBlinkTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:OnBlinkTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:OnBlinkTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:StartFadeTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:StartFadeTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:OnStateChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/gpio_led.cc",
+      "target": "function:main/led/gpio_led.cc:OnStateChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

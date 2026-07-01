@@ -1,0 +1,16 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 9,
+  "edgesRestored": 10,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Fixed section: 39个重复节点ID被移除，占输入节点总数(3585)约1.1%，比例合理，属于跨批次合并时的正常去重行为，无异常。",
+    "Could not fix: 全部10条被丢弃的 imports 边的目标文件均在磁盘上存在，但它们未被纳入批处理分析（均为头文件，推测LLM分析批处理未包含纯头文件扫描）。已为9个唯一目标文件创建了符合规范的 file 类型节点（含合理的 summary、tags 和 complexity），并恢复了全部10条 imports 边。",
+    "节点质量: 新增的9个节点均根据实际源文件内容编写了中文摘要，tags 和 complexity 与同类节点保持一致。",
+    "Import map: 合并脚本报告的 importMap 中 10 条 skipped target paths 即为上述10条被丢弃的边，现已全部恢复。其余 14 条 skipped source files 的边因源节点不存在无法恢复，属于图中不存在的文件引用，属于正常现象。",
+    "无未知节点类型、无未知复杂度值、无缺失 ID 的节点需要修复。",
+    "数据质量总体良好。唯一值得关注的是 otto-robot 和 electron-bot 共用相同的 power_manager.h 源码（内容完全一致），但分属不同目录，在当前按路径区分的节点模型中这是合理的。"
+  ]
+}

@@ -1,0 +1,857 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "type": "file",
+      "name": "lichuang_dev_board.cc",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:CustomAudioCodec",
+      "type": "function",
+      "name": "CustomAudioCodec",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        41,
+        55
+      ],
+      "summary": "实现 CustomAudioCodec 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        76,
+        94
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        96,
+        105
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        107,
+        124
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        126,
+        164
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        166,
+        203
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        205,
+        246
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:LichuangDevBoard",
+      "type": "function",
+      "name": "LichuangDevBoard",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        249,
+        258
+      ],
+      "summary": "实现 LichuangDevBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:Pca9557",
+      "type": "class",
+      "name": "Pca9557",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        22,
+        34
+      ],
+      "summary": "定义 Pca9557 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:CustomAudioCodec",
+      "type": "class",
+      "name": "CustomAudioCodec",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        36,
+        65
+      ],
+      "summary": "定义 CustomAudioCodec 类及其方法。",
+      "tags": [
+        "audio-codec",
+        "audio"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:LichuangDevBoard",
+      "type": "class",
+      "name": "LichuangDevBoard",
+      "filePath": "main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "lineRange": [
+        67,
+        279
+      ],
+      "summary": "定义 LichuangDevBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/lilygo-t-cameraplus-s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "lilygo-t-cameraplus-"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/lilygo-t-cameraplus-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/lilygo-t-circle-s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/lilygo-t-circle-s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "lilygo-t-circle-s3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-circle-s3/pin_config.h",
+      "type": "file",
+      "name": "pin_config.h",
+      "filePath": "main/boards/lilygo-t-circle-s3/pin_config.h",
+      "summary": "定义 pin_config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/lilygo-t-circle-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/lilygo-t-circle-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/hi8561_driver.cc",
+      "type": "file",
+      "name": "hi8561_driver.cc",
+      "filePath": "main/boards/lilygo-t-display-p4/hi8561_driver.cc",
+      "summary": "实现 hi8561_driver 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:main/boards/lilygo-t-display-p4/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/lilygo-t-display-p4/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/rm69a10_driver.cc",
+      "type": "file",
+      "name": "rm69a10_driver.cc",
+      "filePath": "main/boards/lilygo-t-display-p4/rm69a10_driver.cc",
+      "summary": "实现 rm69a10_driver 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/t_display_p4_config.h",
+      "type": "file",
+      "name": "t_display_p4_config.h",
+      "filePath": "main/boards/lilygo-t-display-p4/t_display_p4_config.h",
+      "summary": "定义 t_display_p4_config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/lilygo-t-display-s3-pro-mvsrlora/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "board-config",
+        "configuration",
+        "lilygo-t-display-s3-"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/pin_config.h",
+      "type": "file",
+      "name": "pin_config.h",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/pin_config.h",
+      "summary": "定义 pin_config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/lilygo-t-display-s3-pro-mvsrlora/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/m5stack-core-s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/m5stack-core-s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "m5stack-core-s3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/m5stack-core-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/m5stack-core-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/m5stack-tab5/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/m5stack-tab5/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "m5stack-tab5"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/m5stack-tab5/esp_lcd_st7123.c",
+      "type": "file",
+      "name": "esp_lcd_st7123.c",
+      "filePath": "main/boards/m5stack-tab5/esp_lcd_st7123.c",
+      "summary": "实现 esp_lcd_st7123.c 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:main/boards/m5stack-tab5/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/m5stack-tab5/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/m5stack-tab5/sdkconfig.tab5",
+      "type": "file",
+      "name": "sdkconfig.tab5",
+      "filePath": "main/boards/m5stack-tab5/sdkconfig.tab5",
+      "summary": "实现 sdkconfig.tab5 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/magiclick-2p4/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/magiclick-2p4/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "magiclick-2p4"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/magiclick-2p5/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/magiclick-2p5/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "magiclick-2p5"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/magiclick-c3-v2/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/magiclick-c3-v2/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/magiclick-c3-v2/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/magiclick-c3-v2/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "magiclick-c3-v2"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "type": "file",
+      "name": "magiclick_c3_v2_board.cc",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:GC9107Display",
+      "type": "function",
+      "name": "GC9107Display",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        24,
+        49
+      ],
+      "summary": "实现 GC9107Display 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        93,
+        104
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        106,
+        129
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        131,
+        145
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        147,
+        156
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeGc9107Display",
+      "type": "function",
+      "name": "InitializeGc9107Display",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        158,
+        195
+      ],
+      "summary": "实现 InitializeGc9107Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:magiclick_c3_v2",
+      "type": "function",
+      "name": "magiclick_c3_v2",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        198,
+        208
+      ],
+      "summary": "实现 magiclick_c3_v2 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:GC9107Display",
+      "type": "class",
+      "name": "GC9107Display",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        22,
+        50
+      ],
+      "summary": "定义 GC9107Display 类及其方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:magiclick_c3_v2",
+      "type": "class",
+      "name": "magiclick_c3_v2",
+      "filePath": "main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "lineRange": [
+        86,
+        230
+      ],
+      "summary": "定义 magiclick_c3_v2 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/magiclick-c3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/magiclick-c3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "file:main/boards/lichuang-dev/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:CustomAudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:CustomAudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:LichuangDevBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "function:main/boards/lichuang-dev/lichuang_dev_board.cc:LichuangDevBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:Pca9557",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:Pca9557",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:CustomAudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:CustomAudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:LichuangDevBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-dev/lichuang_dev_board.cc",
+      "target": "class:main/boards/lichuang-dev/lichuang_dev_board.cc:LichuangDevBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "file:main/boards/magiclick-c3-v2/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:GC9107Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:GC9107Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:InitializeGc9107Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:magiclick_c3_v2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "function:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:magiclick_c3_v2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "class:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:GC9107Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "class:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:GC9107Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "class:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:magiclick_c3_v2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc",
+      "target": "class:main/boards/magiclick-c3-v2/magiclick_c3_v2_board.cc:magiclick_c3_v2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

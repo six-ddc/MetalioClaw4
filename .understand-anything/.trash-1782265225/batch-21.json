@@ -1,0 +1,797 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/common/afsk_demod.cc",
+      "type": "file",
+      "name": "afsk_demod.cc",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "summary": "AFSK（音频频移键控）解调器实现，通过音频通道接收WiFi配网信息，实现音频到二进制数据的转换与解析。",
+      "tags": [
+        "AFSK",
+        "音频解调",
+        "WiFi配网",
+        "信号处理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:ReceiveWifiCredentialsFromAudio",
+      "type": "function",
+      "name": "ReceiveWifiCredentialsFromAudio",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        15,
+        104
+      ],
+      "summary": "通过音频通道接收WiFi配网凭证信息，解析SSID和密码。",
+      "tags": [
+        "WiFi配网",
+        "音频",
+        "凭证接收"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:FrequencyDetector",
+      "type": "function",
+      "name": "FrequencyDetector",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        116,
+        127
+      ],
+      "summary": "Goertzel频率检测器，识别音频信号中的特定频率成分。",
+      "tags": [
+        "频率检测",
+        "信号处理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:Reset",
+      "type": "function",
+      "name": "Reset",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        129,
+        133
+      ],
+      "summary": "重置模块状态和缓冲区数据。",
+      "tags": [
+        "重置",
+        "状态",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:ProcessSample",
+      "type": "function",
+      "name": "ProcessSample",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        135,
+        149
+      ],
+      "summary": "处理音频采样数据，执行信号分析和解调运算。",
+      "tags": [
+        "音频处理",
+        "信号分析"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:GetAmplitude",
+      "type": "function",
+      "name": "GetAmplitude",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        151,
+        163
+      ],
+      "summary": "获取检测到的信号幅度值。",
+      "tags": [
+        "信号幅度",
+        "检测",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:AudioSignalProcessor",
+      "type": "function",
+      "name": "AudioSignalProcessor",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        166,
+        181
+      ],
+      "summary": "音频信号处理器构造函数，初始化频率检测参数。",
+      "tags": [
+        "信号处理",
+        "初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:ProcessAudioSamples",
+      "type": "function",
+      "name": "ProcessAudioSamples",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        183,
+        219
+      ],
+      "summary": "处理音频采样数据，执行信号分析和解调运算。",
+      "tags": [
+        "音频处理",
+        "信号分析"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:AudioDataBuffer@222",
+      "type": "function",
+      "name": "AudioDataBuffer",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        222,
+        231
+      ],
+      "summary": "音频数据缓冲区，管理接收数据的存储与提取。",
+      "tags": [
+        "数据缓冲",
+        "存储",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:AudioDataBuffer@233",
+      "type": "function",
+      "name": "AudioDataBuffer",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        233,
+        243
+      ],
+      "summary": "音频数据缓冲区，管理接收数据的存储与提取。",
+      "tags": [
+        "数据缓冲",
+        "存储",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:CalculateChecksum",
+      "type": "function",
+      "name": "CalculateChecksum",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        245,
+        251
+      ],
+      "summary": "计算数据校验和，用于数据完整性验证。",
+      "tags": [
+        "校验",
+        "数据完整性",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:ClearBuffers",
+      "type": "function",
+      "name": "ClearBuffers",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        253,
+        256
+      ],
+      "summary": "清空数据缓冲区，释放已处理数据。",
+      "tags": [
+        "缓冲区",
+        "数据管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:ProcessProbabilityData",
+      "type": "function",
+      "name": "ProcessProbabilityData",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        258,
+        352
+      ],
+      "summary": "ProcessProbabilityData 函数的完整实现，包含95行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/afsk_demod.cc:ConvertBitsToBytes",
+      "type": "function",
+      "name": "ConvertBitsToBytes",
+      "filePath": "main/boards/common/afsk_demod.cc",
+      "lineRange": [
+        354,
+        370
+      ],
+      "summary": "ConvertBitsToBytes 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/afsk_demod.h",
+      "type": "file",
+      "name": "afsk_demod.h",
+      "filePath": "main/boards/common/afsk_demod.h",
+      "summary": "AFSK解调器头文件，定义音频信号处理、频率检测和数据缓冲区相关类。",
+      "tags": [
+        "AFSK",
+        "音频解调",
+        "信号处理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/afsk_demod.h:FrequencyDetector",
+      "type": "class",
+      "name": "FrequencyDetector",
+      "filePath": "main/boards/common/afsk_demod.h",
+      "lineRange": [
+        29,
+        65
+      ],
+      "summary": "FrequencyDetector 音频信号处理类，实现Goertzel频率检测算法。",
+      "tags": [
+        "信号处理",
+        "频率检测"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/afsk_demod.h:AudioSignalProcessor",
+      "type": "class",
+      "name": "AudioSignalProcessor",
+      "filePath": "main/boards/common/afsk_demod.h",
+      "lineRange": [
+        71,
+        99
+      ],
+      "summary": "AudioSignalProcessor 音频编解码器类，封装I2S音频接口配置、采样率控制和音频数据读写操作。",
+      "tags": [
+        "音频编解码",
+        "I2S"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/afsk_demod.h:AudioDataBuffer",
+      "type": "class",
+      "name": "AudioDataBuffer",
+      "filePath": "main/boards/common/afsk_demod.h",
+      "lineRange": [
+        115,
+        172
+      ],
+      "summary": "AudioDataBuffer 音频编解码器类，封装I2S音频接口配置、采样率控制和音频数据读写操作。",
+      "tags": [
+        "音频编解码",
+        "I2S"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/wifi_board.cc",
+      "type": "file",
+      "name": "wifi_board.cc",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "summary": "WiFi开发板公共基类实现，提供WiFi连接管理、ML307 4G模块支持、配网流程、MQTT和HTTP客户端初始化等通用功能。",
+      "tags": [
+        "WiFi",
+        "网络连接",
+        "基类",
+        "配网",
+        "MQTT"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:WifiBoard",
+      "type": "function",
+      "name": "WifiBoard",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        22,
+        29
+      ],
+      "summary": "WifiBoard 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:GetBoardType",
+      "type": "function",
+      "name": "GetBoardType",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        31,
+        31
+      ],
+      "summary": "GetBoardType 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:EnterWifiConfigMode",
+      "type": "function",
+      "name": "EnterWifiConfigMode",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        33,
+        70
+      ],
+      "summary": "EnterWifiConfigMode 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:StartNetwork",
+      "type": "function",
+      "name": "StartNetwork",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        72,
+        119
+      ],
+      "summary": "StartNetwork 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:GetBoardJson",
+      "type": "function",
+      "name": "GetBoardJson",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        144,
+        159
+      ],
+      "summary": "GetBoardJson 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        161,
+        164
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:ResetWifiConfiguration",
+      "type": "function",
+      "name": "ResetWifiConfiguration",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        166,
+        176
+      ],
+      "summary": "ResetWifiConfiguration 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/wifi_board.cc:GetDeviceStatusJson",
+      "type": "function",
+      "name": "GetDeviceStatusJson",
+      "filePath": "main/boards/common/wifi_board.cc",
+      "lineRange": [
+        178,
+        270
+      ],
+      "summary": "GetDeviceStatusJson 函数的完整实现，包含93行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/wifi_board.h",
+      "type": "file",
+      "name": "wifi_board.h",
+      "filePath": "main/boards/common/wifi_board.h",
+      "summary": "WiFi开发板基类头文件，定义WiFi/4G连接状态管理、网络事件处理和通信协议接口。",
+      "tags": [
+        "WiFi",
+        "网络连接",
+        "基类"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ReceiveWifiCredentialsFromAudio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:FrequencyDetector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:Reset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ProcessSample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:GetAmplitude",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:AudioSignalProcessor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ProcessAudioSamples",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:AudioDataBuffer@222",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:AudioDataBuffer@233",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:CalculateChecksum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ClearBuffers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ProcessProbabilityData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ConvertBitsToBytes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:GetAmplitude",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:AudioDataBuffer@222",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:Reset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ReceiveWifiCredentialsFromAudio",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ProcessSample",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ProcessAudioSamples",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:CalculateChecksum",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ClearBuffers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ProcessProbabilityData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:ConvertBitsToBytes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:FrequencyDetector",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "function:main/boards/common/afsk_demod.cc:AudioSignalProcessor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.cc",
+      "target": "file:main/boards/common/afsk_demod.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.h",
+      "target": "class:main/boards/common/afsk_demod.h:FrequencyDetector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.h",
+      "target": "class:main/boards/common/afsk_demod.h:AudioSignalProcessor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.h",
+      "target": "class:main/boards/common/afsk_demod.h:AudioDataBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.h",
+      "target": "class:main/boards/common/afsk_demod.h:AudioDataBuffer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.h",
+      "target": "class:main/boards/common/afsk_demod.h:FrequencyDetector",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/afsk_demod.h",
+      "target": "class:main/boards/common/afsk_demod.h:AudioSignalProcessor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:WifiBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:GetBoardType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:EnterWifiConfigMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:StartNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:GetBoardJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:ResetWifiConfiguration",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:GetDeviceStatusJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:StartNetwork",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:WifiBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:GetBoardJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:ResetWifiConfiguration",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:GetBoardType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:EnterWifiConfigMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "function:main/boards/common/wifi_board.cc:GetDeviceStatusJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "file:main/boards/common/afsk_demod.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/wifi_board.cc",
+      "target": "file:main/boards/common/wifi_board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/screen/screen_util.cc",
+      "type": "file",
+      "name": "screen_util.cc",
+      "filePath": "main/display/screen/screen_util.cc",
+      "summary": "屏幕工具函数实现，提供屏幕截图、图像缩放等跨屏幕类型的通用工具函数，共11个函数。",
+      "tags": [
+        "display",
+        "screen",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "function",
+      "name": "event_originates_in_drag_owner",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        32,
+        45
+      ],
+      "summary": "函数event_originates_in_drag_owner，处理from、top逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "type": "function",
+      "name": "swipe_back_event_cb",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        47,
+        116
+      ],
+      "summary": "函数swipe_back_event_cb，处理e逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "function",
+      "name": "enable_gesture_bubble",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        126,
+        136
+      ],
+      "summary": "函数enable_gesture_bubble，处理obj逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:swipe_back_screen_loaded_cb",
+      "type": "function",
+      "name": "swipe_back_screen_loaded_cb",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        138,
+        145
+      ],
+      "summary": "函数swipe_back_screen_loaded_cb，处理e逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "function",
+      "name": "screen_make_input_passive",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        149,
+        160
+      ],
+      "summary": "函数screen_make_input_passive，处理obj逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_strip_obj_chrome",
+      "type": "function",
+      "name": "screen_strip_obj_chrome",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        162,
+        169
+      ],
+      "summary": "函数screen_strip_obj_chrome，处理obj逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "function",
+      "name": "screen_swipe_back_ignore",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        171,
+        183
+      ],
+      "summary": "函数screen_swipe_back_ignore，处理obj、recursive逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_attach_swipe_back",
+      "type": "function",
+      "name": "screen_attach_swipe_back",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        185,
+        202
+      ],
+      "summary": "函数screen_attach_swipe_back，处理scr、on_back逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:lifecycle_loaded_cb",
+      "type": "function",
+      "name": "lifecycle_loaded_cb",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        216,
+        221
+      ],
+      "summary": "函数lifecycle_loaded_cb，处理e逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:lifecycle_unloaded_cb",
+      "type": "function",
+      "name": "lifecycle_unloaded_cb",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        223,
+        228
+      ],
+      "summary": "函数lifecycle_unloaded_cb，处理e逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_attach_lifecycle",
+      "type": "function",
+      "name": "screen_attach_lifecycle",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        232,
+        241
+      ],
+      "summary": "函数screen_attach_lifecycle，处理scr、cb逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/screen_util.cc:SwipeState",
+      "type": "class",
+      "name": "SwipeState",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        10,
+        14
+      ],
+      "summary": "SwipeState类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/screen_util.h",
+      "type": "file",
+      "name": "screen_util.h",
+      "filePath": "main/display/screen/screen_util.h",
+      "summary": "屏幕工具函数头文件，声明屏幕辅助功能接口。",
+      "tags": [
+        "display",
+        "screen",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/theme_manager.cc",
+      "type": "file",
+      "name": "theme_manager.cc",
+      "filePath": "main/display/theme_manager.cc",
+      "summary": "主题管理器实现，管理GUI主题的加载、切换和持久化存储，共2个函数。",
+      "tags": [
+        "display",
+        "theme-management",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/theme_manager.cc:GetCurrentThemeId",
+      "type": "function",
+      "name": "GetCurrentThemeId",
+      "filePath": "main/display/theme_manager.cc",
+      "lineRange": [
+        16,
+        23
+      ],
+      "summary": "获取CurrentThemeId的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/theme_manager.cc:SetCurrentThemeId",
+      "type": "function",
+      "name": "SetCurrentThemeId",
+      "filePath": "main/display/theme_manager.cc",
+      "lineRange": [
+        25,
+        31
+      ],
+      "summary": "设置CurrentThemeId的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/theme_manager.h",
+      "type": "file",
+      "name": "theme_manager.h",
+      "filePath": "main/display/theme_manager.h",
+      "summary": "主题管理器头文件，定义主题数据结构与管理接口。",
+      "tags": [
+        "display",
+        "theme-management",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/boot_screen/boot_screen.h",
+      "type": "file",
+      "name": "boot_screen.h",
+      "filePath": "main/display/screen/boot_screen/boot_screen.h",
+      "summary": "启动画面头文件，声明启动画面渲染接口。",
+      "tags": [
+        "display",
+        "screen",
+        "boot-screen",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/boot_screen/boot_screen.h:BootScreen",
+      "type": "class",
+      "name": "BootScreen",
+      "filePath": "main/display/screen/boot_screen/boot_screen.h",
+      "lineRange": [
+        5,
+        10
+      ],
+      "summary": "BootScreen类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "file:main/display/screen/screen_util.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:swipe_back_screen_loaded_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:swipe_back_screen_loaded_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_strip_obj_chrome",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_strip_obj_chrome",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_swipe_back",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_swipe_back",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:lifecycle_loaded_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:lifecycle_loaded_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:lifecycle_unloaded_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:lifecycle_unloaded_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_lifecycle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_lifecycle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "class:main/display/screen/screen_util.cc:SwipeState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "class:main/display/screen/screen_util.cc:SwipeState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "target": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "target": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/screen/screen_util.cc:swipe_back_screen_loaded_cb",
+      "target": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "target": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "target": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/theme_manager.cc",
+      "target": "file:main/display/theme_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/theme_manager.cc",
+      "target": "function:main/display/theme_manager.cc:GetCurrentThemeId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/theme_manager.cc",
+      "target": "function:main/display/theme_manager.cc:GetCurrentThemeId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/theme_manager.cc",
+      "target": "function:main/display/theme_manager.cc:SetCurrentThemeId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/theme_manager.cc",
+      "target": "function:main/display/theme_manager.cc:SetCurrentThemeId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/boot_screen/boot_screen.h",
+      "target": "class:main/display/screen/boot_screen/boot_screen.h:BootScreen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/boot_screen/boot_screen.h",
+      "target": "class:main/display/screen/boot_screen/boot_screen.h:BootScreen",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

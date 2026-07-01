@@ -1,0 +1,926 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-1.85c/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp32-s3-touch-lcd-1.85c/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32-s3-touch-lcd-1"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-lcd-1.85c.cc",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "summary": "实现 esp32-s3-touch-lcd-1.85c 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "lineRange": [
+        221,
+        230
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "lineRange": [
+        232,
+        256
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "lineRange": [
+        258,
+        268
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:Initializest77916Display",
+      "type": "function",
+      "name": "Initializest77916Display",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "lineRange": [
+        270,
+        356
+      ],
+      "summary": "实现 Initializest77916Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "lineRange": [
+        214,
+        394
+      ],
+      "summary": "定义 CustomBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-3.5/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp32-s3-touch-lcd-3.5/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32-s3-touch-lcd-3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-lcd-3.5.cc",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "summary": "实现 esp32-s3-touch-lcd-3.5 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        34,
+        61
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        112,
+        126
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        128,
+        143
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        145,
+        158
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        165,
+        175
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        176,
+        215
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        217,
+        247
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        249,
+        288
+      ],
+      "summary": "实现 InitializeLcdDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        301,
+        310
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:CustomBoard",
+      "type": "function",
+      "name": "CustomBoard",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        313,
+        331
+      ],
+      "summary": "实现 CustomBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        348,
+        359
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        32,
+        62
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "lineRange": [
+        102,
+        371
+      ],
+      "summary": "定义 CustomBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/esp32-s3-touch-lcd-3.5/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp32-s3-touch-lcd-3.5/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32s3-korvo2-v3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32s3-korvo2-v3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp32s3-korvo2-v3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32s3-korvo2-v3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32s3-korvo2-v3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "type": "file",
+      "name": "esp32s3_korvo2_v3_board.cc",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        64,
+        79
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        81,
+        100
+      ],
+      "summary": "实现 I2cDetect 函数功能。",
+      "tags": [
+        "hardware-io",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        102,
+        126
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        134,
+        143
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:ChangeVol",
+      "type": "function",
+      "name": "ChangeVol",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        145,
+        156
+      ],
+      "summary": "实现 ChangeVol 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:MuteVol",
+      "type": "function",
+      "name": "MuteVol",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        158,
+        168
+      ],
+      "summary": "实现 MuteVol 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        170,
+        258
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeIli9341Display",
+      "type": "function",
+      "name": "InitializeIli9341Display",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        260,
+        300
+      ],
+      "summary": "实现 InitializeIli9341Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        302,
+        333
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        335,
+        373
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:Esp32S3Korvo2V3Board",
+      "type": "function",
+      "name": "Esp32S3Korvo2V3Board",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        376,
+        389
+      ],
+      "summary": "实现 Esp32S3Korvo2V3Board 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:Esp32S3Korvo2V3Board",
+      "type": "class",
+      "name": "Esp32S3Korvo2V3Board",
+      "filePath": "main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "lineRange": [
+        52,
+        414
+      ],
+      "summary": "定义 Esp32S3Korvo2V3Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/genjutech-s3-1.54tft/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/genjutech-s3-1.54tft/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "genjutech-s3-1.54tft"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/jiuchuan-s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/jiuchuan-s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "jiuchuan-s3"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "file:main/boards/esp32-s3-touch-lcd-1.85c/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:Initializest77916Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.85c/esp32-s3-touch-lcd-1.85c.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "file:main/boards/esp32-s3-touch-lcd-3.5/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-3.5/esp32-s3-touch-lcd-3.5.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "file:main/boards/esp32s3-korvo2-v3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:ChangeVol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:MuteVol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeIli9341Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:Esp32S3Korvo2V3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "function:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:Esp32S3Korvo2V3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "class:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:Esp32S3Korvo2V3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc",
+      "target": "class:main/boards/esp32s3-korvo2-v3/esp32s3_korvo2_v3_board.cc:Esp32S3Korvo2V3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

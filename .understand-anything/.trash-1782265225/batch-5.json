@@ -1,0 +1,1377 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/otto-robot/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/otto-robot/config.h",
+      "summary": "定义 otto-robot 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "otto-robot",
+        "servo-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/otto-robot/oscillator.cc",
+      "type": "file",
+      "name": "oscillator.cc",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "summary": "振荡器实现，为Otto Robot伺服电机生成平滑运动曲线（正弦/三角波形），实现自然流畅的机器人动作。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "otto-robot",
+        "servo-control"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:Oscillator",
+      "type": "function",
+      "name": "Oscillator",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        23,
+        42
+      ],
+      "summary": "函数Oscillator，处理trim逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:~Oscillator",
+      "type": "function",
+      "name": "~Oscillator",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        44,
+        46
+      ],
+      "summary": "函数~Oscillator，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:AngleToCompare",
+      "type": "function",
+      "name": "AngleToCompare",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        48,
+        52
+      ],
+      "summary": "函数AngleToCompare，处理angle逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:NextSample",
+      "type": "function",
+      "name": "NextSample",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        54,
+        63
+      ],
+      "summary": "函数NextSample，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:Attach",
+      "type": "function",
+      "name": "Attach",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        65,
+        100
+      ],
+      "summary": "函数Attach，处理pin、rev逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:Detach",
+      "type": "function",
+      "name": "Detach",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        102,
+        109
+      ],
+      "summary": "函数Detach，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:SetT",
+      "type": "function",
+      "name": "SetT",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        111,
+        116
+      ],
+      "summary": "设置T的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:SetPosition",
+      "type": "function",
+      "name": "SetPosition",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        118,
+        120
+      ],
+      "summary": "设置Position的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:Refresh",
+      "type": "function",
+      "name": "Refresh",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        122,
+        133
+      ],
+      "summary": "函数Refresh，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/oscillator.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/otto-robot/oscillator.cc",
+      "lineRange": [
+        135,
+        161
+      ],
+      "summary": "写入函数，将数据输出到目标。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/otto-robot/oscillator.h",
+      "type": "file",
+      "name": "oscillator.h",
+      "filePath": "main/boards/otto-robot/oscillator.h",
+      "summary": "振荡器头文件，声明伺服电机运动曲线生成接口。",
+      "tags": [
+        "board-support",
+        "otto-robot",
+        "servo-control",
+        "oscillator",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/otto-robot/otto_controller.cc",
+      "type": "file",
+      "name": "otto_controller.cc",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "summary": "Otto Robot控制器实现，协调伺服电机动作序列，实现走路、跳舞等预定义行为模式。",
+      "tags": [
+        "board-support",
+        "otto-robot",
+        "servo-control",
+        "motion-control",
+        "implementation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:ActionTask",
+      "type": "function",
+      "name": "ActionTask",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        70,
+        433
+      ],
+      "summary": "函数ActionTask，处理arg逻辑。",
+      "tags": [
+        "task"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "function",
+      "name": "QueueAction",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        442,
+        461
+      ],
+      "summary": "函数QueueAction，处理action_type、steps、speed逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:QueueServoSequence",
+      "type": "function",
+      "name": "QueueServoSequence",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        463,
+        492
+      ],
+      "summary": "函数QueueServoSequence，处理servo_sequence_json逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:LoadTrimsFromNVS",
+      "type": "function",
+      "name": "LoadTrimsFromNVS",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        494,
+        508
+      ],
+      "summary": "加载函数，从存储中读取TrimsFromNVS数据。",
+      "tags": [
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "type": "function",
+      "name": "OttoController",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        511,
+        525
+      ],
+      "summary": "函数OttoController，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "type": "function",
+      "name": "RegisterMcpTools",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        527,
+        835
+      ],
+      "summary": "注册函数，登记McpTools回调或服务。",
+      "tags": [
+        "registration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:~OttoController",
+      "type": "function",
+      "name": "~OttoController",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        837,
+        843
+      ],
+      "summary": "函数~OttoController，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_controller.cc:InitializeOttoController",
+      "type": "function",
+      "name": "InitializeOttoController",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        848,
+        853
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "type": "class",
+      "name": "OttoController",
+      "filePath": "main/boards/otto-robot/otto_controller.cc",
+      "lineRange": [
+        22,
+        844
+      ],
+      "summary": "OttoController控制器类，协调硬件操作与状态管理，包含8个方法。",
+      "tags": [
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "type": "file",
+      "name": "otto_emoji_display.cc",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "summary": "Otto Robot表情显示实现，在LED矩阵上渲染emoji表情和状态指示动画。",
+      "tags": [
+        "board-support",
+        "otto-robot",
+        "servo-control",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.cc:OttoEmojiDisplay",
+      "type": "function",
+      "name": "OttoEmojiDisplay",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "lineRange": [
+        14,
+        19
+      ],
+      "summary": "显示函数，在屏幕上渲染OttoEmoji内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupPreviewImage",
+      "type": "function",
+      "name": "SetupPreviewImage",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "lineRange": [
+        21,
+        24
+      ],
+      "summary": "设置upPreviewImage的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.cc:InitializeOttoEmojis",
+      "type": "function",
+      "name": "InitializeOttoEmojis",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "lineRange": [
+        26,
+        85
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupChatLabel",
+      "type": "function",
+      "name": "SetupChatLabel",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "lineRange": [
+        87,
+        101
+      ],
+      "summary": "设置upChatLabel的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.cc:SetStatus",
+      "type": "function",
+      "name": "SetStatus",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "lineRange": [
+        104,
+        144
+      ],
+      "summary": "设置Status的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.cc:SetPreviewImage",
+      "type": "function",
+      "name": "SetPreviewImage",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.cc",
+      "lineRange": [
+        146,
+        182
+      ],
+      "summary": "设置PreviewImage的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "type": "file",
+      "name": "otto_emoji_display.h",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.h",
+      "summary": "Otto Robot表情显示头文件，声明LED矩阵表情渲染接口。",
+      "tags": [
+        "board-support",
+        "otto-robot",
+        "servo-control",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_emoji_display.h:~OttoEmojiDisplay",
+      "type": "function",
+      "name": "~OttoEmojiDisplay",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.h",
+      "lineRange": [
+        16,
+        16
+      ],
+      "summary": "显示函数，在屏幕上渲染~OttoEmoji内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/otto-robot/otto_emoji_display.h:OttoEmojiDisplay",
+      "type": "class",
+      "name": "OttoEmojiDisplay",
+      "filePath": "main/boards/otto-robot/otto_emoji_display.h",
+      "lineRange": [
+        9,
+        24
+      ],
+      "summary": "OttoEmojiDisplay显示类，管理屏幕渲染和UI交互逻辑，包含6个方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/otto-robot/otto_robot.cc",
+      "type": "file",
+      "name": "otto_robot.cc",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "summary": "Otto Robot板卡主实现，初始化伺服驱动、表情显示和控制器等机器人组件。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "otto-robot",
+        "servo-control"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_robot.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        38,
+        47
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_robot.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        49,
+        81
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_robot.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        83,
+        92
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_robot.cc:InitializeWebSocketControlServer",
+      "type": "function",
+      "name": "InitializeWebSocketControlServer",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        99,
+        109
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "type": "function",
+      "name": "OttoRobot",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        119,
+        127
+      ],
+      "summary": "函数OttoRobot，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/otto-robot/otto_robot.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        143,
+        148
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "type": "class",
+      "name": "OttoRobot",
+      "filePath": "main/boards/otto-robot/otto_robot.cc",
+      "lineRange": [
+        27,
+        149
+      ],
+      "summary": "OttoRobot类，包含9个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "file:main/boards/otto-robot/oscillator.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Oscillator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Oscillator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:~Oscillator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:~Oscillator",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:AngleToCompare",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:AngleToCompare",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:NextSample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:NextSample",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Attach",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Attach",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Detach",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Detach",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:SetT",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:SetT",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:SetPosition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:SetPosition",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Refresh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Refresh",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/oscillator.cc",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/oscillator.cc:~Oscillator",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Detach",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/oscillator.cc:Attach",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Detach",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/oscillator.cc:SetPosition",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Write",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/oscillator.cc:Refresh",
+      "target": "function:main/boards/otto-robot/oscillator.cc:NextSample",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/oscillator.cc:Refresh",
+      "target": "function:main/boards/otto-robot/oscillator.cc:Write",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "file:main/boards/otto-robot/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "file:main/boards/otto-robot/otto_movements.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:ActionTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueServoSequence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:LoadTrimsFromNVS",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:~OttoController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:~OttoController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:InitializeOttoController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:InitializeOttoController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "class:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_controller.cc",
+      "target": "class:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:LoadTrimsFromNVS",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:OttoController",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueServoSequence",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_controller.cc:RegisterMcpTools",
+      "target": "function:main/boards/otto-robot/otto_controller.cc:QueueAction",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:OttoEmojiDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:OttoEmojiDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupPreviewImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupPreviewImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:InitializeOttoEmojis",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:InitializeOttoEmojis",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupChatLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupChatLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetPreviewImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.cc",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetPreviewImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_emoji_display.cc:OttoEmojiDisplay",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:InitializeOttoEmojis",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_emoji_display.cc:OttoEmojiDisplay",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupChatLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_emoji_display.cc:OttoEmojiDisplay",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.cc:SetupPreviewImage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.h:~OttoEmojiDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "target": "function:main/boards/otto-robot/otto_emoji_display.h:~OttoEmojiDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "target": "class:main/boards/otto-robot/otto_emoji_display.h:OttoEmojiDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "target": "class:main/boards/otto-robot/otto_emoji_display.h:OttoEmojiDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "file:main/boards/otto-robot/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "file:main/boards/otto-robot/otto_emoji_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "file:main/boards/otto-robot/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "file:main/boards/otto-robot/websocket_control_server.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeWebSocketControlServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "class:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/otto-robot/otto_robot.cc",
+      "target": "class:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeSpi",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeLcdDisplay",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_robot.cc:OttoRobot",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/otto-robot/otto_robot.cc:GetBatteryLevel",
+      "target": "function:main/boards/otto-robot/otto_robot.cc:GetBatteryLevel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

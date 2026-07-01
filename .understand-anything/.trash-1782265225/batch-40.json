@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/genjutech-s3-1.54tft/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/genjutech-s3-1.54tft/config.h",
+      "summary": "genjutech-s3-1.54tft 开发板的硬件引脚定义与编译配置头文件。",
+      "tags": [
+        "configuration",
+        "pin-definition",
+        "hardware-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "type": "file",
+      "name": "genjutech-s3-1.54tft.cc",
+      "filePath": "main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "summary": "genjutech-s3-1.54tft 开发板的主驱动文件，负责硬件初始化、按键处理、显示屏配置和音频控制。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc:SparkBotEs8311AudioCodec",
+      "type": "class",
+      "name": "SparkBotEs8311AudioCodec",
+      "filePath": "main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "lineRange": [
+        24,
+        44
+      ],
+      "summary": "类 SparkBotEs8311AudioCodec，位于 genjutech-s3-1.54tft 开发板驱动中。",
+      "tags": [
+        "class",
+        "embedded"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc:GenJuTech_s3_1_54TFT",
+      "type": "class",
+      "name": "GenJuTech_s3_1_54TFT",
+      "filePath": "main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "lineRange": [
+        46,
+        257
+      ],
+      "summary": "开发板主类（GenJuTech_s3_1_54TFT），封装硬件初始化、外设控制和系统事件处理。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/genjutech-s3-1.54tft/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/genjutech-s3-1.54tft/power_manager.h",
+      "summary": "genjutech-s3-1.54tft 开发板的电源管理模块，处理电池电量检测、充放电状态监控。",
+      "tags": [
+        "power-management",
+        "battery",
+        "hardware-driver"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/genjutech-s3-1.54tft/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/genjutech-s3-1.54tft/power_manager.h",
+      "lineRange": [
+        10,
+        186
+      ],
+      "summary": "电源管理类，负责电池状态监控、ADC采样和充放电事件回调。",
+      "tags": [
+        "power-management",
+        "battery",
+        "driver"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "target": "class:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc:SparkBotEs8311AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "target": "class:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc:SparkBotEs8311AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "target": "class:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc:GenJuTech_s3_1_54TFT",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "target": "class:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc:GenJuTech_s3_1_54TFT",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "target": "file:main/boards/genjutech-s3-1.54tft/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/genjutech-s3-1.54tft.cc",
+      "target": "file:main/boards/genjutech-s3-1.54tft/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/power_manager.h",
+      "target": "class:main/boards/genjutech-s3-1.54tft/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/genjutech-s3-1.54tft/power_manager.h",
+      "target": "class:main/boards/genjutech-s3-1.54tft/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

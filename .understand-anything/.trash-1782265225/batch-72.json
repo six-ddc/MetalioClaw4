@@ -1,0 +1,690 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/assets/locales/it-IT/err_pin.ogg",
+      "type": "file",
+      "name": "err_pin.ogg (it-IT)",
+      "filePath": "main/assets/locales/it-IT/err_pin.ogg",
+      "summary": "SIM 卡 PIN 错误语音提示（OGG 音频），提示用户插入或检查 SIM 卡。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "sim-card",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/it-IT/err_reg.ogg",
+      "type": "file",
+      "name": "err_reg.ogg (it-IT)",
+      "filePath": "main/assets/locales/it-IT/err_reg.ogg",
+      "summary": "网络注册失败语音提示（OGG 音频），提示用户检查网络和 SIM 卡状态。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "network",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/assets/locales/it-IT/language.json",
+      "type": "config",
+      "name": "language.json (it-IT)",
+      "filePath": "main/assets/locales/it-IT/language.json",
+      "summary": "意大利语（it-IT）本地化字符串配置文件，包含设备 UI 界面的所有文本翻译，涵盖警告、信息、错误、网络状态、OTA 升级等 40+ 个字符串键。",
+      "tags": [
+        "localization",
+        "language-pack",
+        "json",
+        "configuration",
+        "i18n"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/it-IT/upgrade.ogg",
+      "type": "file",
+      "name": "upgrade.ogg (it-IT)",
+      "filePath": "main/assets/locales/it-IT/upgrade.ogg",
+      "summary": "系统升级语音提示（OGG 音频），用于 OTA 升级过程的语音引导。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "ota-upgrade",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/it-IT/welcome.ogg",
+      "type": "file",
+      "name": "welcome.ogg (it-IT)",
+      "filePath": "main/assets/locales/it-IT/welcome.ogg",
+      "summary": "欢迎语音提示（OGG 音频），设备启动时的欢迎语音播报。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "welcome",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/it-IT/wificonfig.ogg",
+      "type": "file",
+      "name": "wificonfig.ogg (it-IT)",
+      "filePath": "main/assets/locales/it-IT/wificonfig.ogg",
+      "summary": "Wi-Fi 配网语音提示（OGG 音频），指导用户完成 Wi-Fi 网络配置。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "wifi-config",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/0.ogg",
+      "type": "file",
+      "name": "0.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/0.ogg",
+      "summary": "编号 0 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/1.ogg",
+      "type": "file",
+      "name": "1.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/1.ogg",
+      "summary": "编号 1 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/2.ogg",
+      "type": "file",
+      "name": "2.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/2.ogg",
+      "summary": "编号 2 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/3.ogg",
+      "type": "file",
+      "name": "3.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/3.ogg",
+      "summary": "编号 3 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/4.ogg",
+      "type": "file",
+      "name": "4.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/4.ogg",
+      "summary": "编号 4 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/5.ogg",
+      "type": "file",
+      "name": "5.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/5.ogg",
+      "summary": "编号 5 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/6.ogg",
+      "type": "file",
+      "name": "6.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/6.ogg",
+      "summary": "编号 6 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/7.ogg",
+      "type": "file",
+      "name": "7.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/7.ogg",
+      "summary": "编号 7 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/8.ogg",
+      "type": "file",
+      "name": "8.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/8.ogg",
+      "summary": "编号 8 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/9.ogg",
+      "type": "file",
+      "name": "9.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/9.ogg",
+      "summary": "编号 9 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/activation.ogg",
+      "type": "file",
+      "name": "activation.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/activation.ogg",
+      "summary": "设备激活语音提示（OGG 音频），指导用户完成设备激活流程。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "activation",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/err_pin.ogg",
+      "type": "file",
+      "name": "err_pin.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/err_pin.ogg",
+      "summary": "SIM 卡 PIN 错误语音提示（OGG 音频），提示用户插入或检查 SIM 卡。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "sim-card",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/err_reg.ogg",
+      "type": "file",
+      "name": "err_reg.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/err_reg.ogg",
+      "summary": "网络注册失败语音提示（OGG 音频），提示用户检查网络和 SIM 卡状态。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "network",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/assets/locales/ja-JP/language.json",
+      "type": "config",
+      "name": "language.json (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/language.json",
+      "summary": "日语（ja-JP）本地化字符串配置文件，包含设备 UI 界面的所有文本翻译，涵盖警告、信息、错误、网络状态、OTA 升级等 40+ 个字符串键。",
+      "tags": [
+        "localization",
+        "language-pack",
+        "json",
+        "configuration",
+        "i18n"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/upgrade.ogg",
+      "type": "file",
+      "name": "upgrade.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/upgrade.ogg",
+      "summary": "系统升级语音提示（OGG 音频），用于 OTA 升级过程的语音引导。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "ota-upgrade",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/welcome.ogg",
+      "type": "file",
+      "name": "welcome.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/welcome.ogg",
+      "summary": "欢迎语音提示（OGG 音频），设备启动时的欢迎语音播报。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "welcome",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ja-JP/wificonfig.ogg",
+      "type": "file",
+      "name": "wificonfig.ogg (ja-JP)",
+      "filePath": "main/assets/locales/ja-JP/wificonfig.ogg",
+      "summary": "Wi-Fi 配网语音提示（OGG 音频），指导用户完成 Wi-Fi 网络配置。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "wifi-config",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ko-KR/0.ogg",
+      "type": "file",
+      "name": "0.ogg (ko-KR)",
+      "filePath": "main/assets/locales/ko-KR/0.ogg",
+      "summary": "编号 0 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/ko-KR/1.ogg",
+      "type": "file",
+      "name": "1.ogg (ko-KR)",
+      "filePath": "main/assets/locales/ko-KR/1.ogg",
+      "summary": "编号 1 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:main/assets/locales/it-IT/language.json",
+      "target": "file:main/assets/locales/it-IT/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/it-IT/language.json",
+      "target": "file:main/assets/locales/it-IT/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/it-IT/language.json",
+      "target": "file:main/assets/locales/it-IT/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/it-IT/language.json",
+      "target": "file:main/assets/locales/it-IT/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/it-IT/language.json",
+      "target": "file:main/assets/locales/it-IT/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/it-IT/err_pin.ogg",
+      "target": "file:main/assets/locales/it-IT/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/it-IT/err_reg.ogg",
+      "target": "file:main/assets/locales/it-IT/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/it-IT/upgrade.ogg",
+      "target": "file:main/assets/locales/it-IT/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/it-IT/welcome.ogg",
+      "target": "file:main/assets/locales/it-IT/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/0.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/2.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/3.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/4.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/ja-JP/language.json",
+      "target": "file:main/assets/locales/ja-JP/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/0.ogg",
+      "target": "file:main/assets/locales/ja-JP/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/1.ogg",
+      "target": "file:main/assets/locales/ja-JP/2.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/2.ogg",
+      "target": "file:main/assets/locales/ja-JP/3.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/3.ogg",
+      "target": "file:main/assets/locales/ja-JP/4.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/4.ogg",
+      "target": "file:main/assets/locales/ja-JP/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/5.ogg",
+      "target": "file:main/assets/locales/ja-JP/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/6.ogg",
+      "target": "file:main/assets/locales/ja-JP/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/7.ogg",
+      "target": "file:main/assets/locales/ja-JP/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/8.ogg",
+      "target": "file:main/assets/locales/ja-JP/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/9.ogg",
+      "target": "file:main/assets/locales/ja-JP/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/activation.ogg",
+      "target": "file:main/assets/locales/ja-JP/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/err_pin.ogg",
+      "target": "file:main/assets/locales/ja-JP/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/err_reg.ogg",
+      "target": "file:main/assets/locales/ja-JP/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/upgrade.ogg",
+      "target": "file:main/assets/locales/ja-JP/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ja-JP/welcome.ogg",
+      "target": "file:main/assets/locales/ja-JP/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/ko-KR/0.ogg",
+      "target": "file:main/assets/locales/ko-KR/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/it-IT/language.json",
+      "target": "config:main/assets/locales/ja-JP/language.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

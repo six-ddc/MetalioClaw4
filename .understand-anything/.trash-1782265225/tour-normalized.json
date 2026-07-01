@@ -1,0 +1,138 @@
+[
+  {
+    "order": 1,
+    "title": "项目概览",
+    "description": "从项目中文 README 开始，了解小智 AI 语音交互项目的整体定位、核心功能（语音对话、表情显示、MQTT/WebSocket 实时通信）以及支持的 70+ 种硬件平台。这份文档建立了项目的全局视图，为后续深入代码提供上下文地图。",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "固件入口点",
+    "description": "main.cc 是 ESP-IDF 固件的启动入口。它按顺序初始化 NVS 非易失存储、WiFi 网络栈、IO 扩展器等底层系统组件，然后创建 Application 实例并启动主循环。这个文件展示了嵌入式固件的标准启动流程——先初始化硬件抽象层，再移交控制权给应用层状态机。",
+    "nodeIds": [
+      "file:main/main.cc"
+    ],
+    "languageLesson": "ESP-IDF 固件的标准入口模式：app_main() 函数作为 FreeRTOS 主任务入口，依次初始化 NVS（flash 存储）、网络协议栈（WiFi/LwIP）和外设驱动，最后将控制权交给应用层事件循环。"
+  },
+  {
+    "order": 3,
+    "title": "应用核心状态机",
+    "description": "application.cc/h 是整个固件的心脏。它实现了一个完整的状态机，管理设备在空闲、监听、说话、配置模式等多种状态之间的切换。同时负责 MQTT 连接管理、音频会话调度和设备生命周期控制，共包含 25 个核心函数。device_state.h 定义了设备状态枚举和状态转换规则，与 Application 类紧密配合。",
+    "nodeIds": [
+      "file:main/application.h",
+      "file:main/application.cc",
+      "file:main/device_state.h"
+    ],
+    "languageLesson": "C++ 嵌入式状态机模式：使用枚举类（enum class）定义设备状态，通过 Application 类的成员函数在状态间切换。每个状态对应一组有效操作，例如 'Listening' 状态响应语音输入，'Speaking' 状态播放 TTS 音频输出。这种模式在资源受限的 MCU 上比传统的面向对象状态模式更节省内存。"
+  },
+  {
+    "order": 4,
+    "title": "系统配置、固件升级与资源管理",
+    "description": "settings.cc/h 基于 ESP-IDF 的 NVS (Non-Volatile Storage) 实现 WiFi 凭证、MQTT 服务器地址、音量等系统配置的持久化存储。ota.cc/h 支持 HTTP OTA 远程固件升级，包含版本检查和升级状态管理。system_info.cc/h 提供设备 ID、MAC 地址、固件版本等设备身份信息查询。assets.cc/h 管理多语言语音包和设备出厂配置等静态资源。这四个模块构成了设备的运维基础设施。",
+    "nodeIds": [
+      "file:main/settings.h",
+      "file:main/settings.cc",
+      "file:main/ota.h",
+      "file:main/ota.cc",
+      "file:main/system_info.h",
+      "file:main/assets.cc"
+    ],
+    "languageLesson": "ESP-IDF NVS (Non-Volatile Storage) 是基于 SPI Flash 的键值存储系统，适合嵌入式设备保存少量配置数据。与 FAT 文件系统不同，NVS 提供磨损均衡和断电保护，是 ESP32 平台上持久化配置的首选方案。"
+  },
+  {
+    "order": 5,
+    "title": "MCP 设备控制协议",
+    "description": "mcp_server.cc/h 实现了 MCP (Multi-Channel Protocol) 协议的服务端。它通过 UDP 或串口接收 RPC 请求，支持属性读写（如音量调节、LED 控制）和设备命令执行。这是外部应用（如手机 App、PC 调试工具）与设备进行指令交互的核心通道。配套的 mcp-protocol.md 文档定义了完整的协议规范和消息格式。",
+    "nodeIds": [
+      "file:main/mcp_server.h",
+      "file:main/mcp_server.cc",
+      "document:docs/mcp-protocol.md"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "板卡适配层：硬件抽象与驱动",
+    "description": "board.cc/h 是所有硬件板卡的抽象基类，定义了 AudioCodec、Display、Led、Backlight 等通用接口和标准板卡生命周期。项目支持 60+ 种硬件平台，每种平台通过继承 Board 基类实现各自的外设初始化。以星智 3.95 寸板卡为例，xingzhi-395.cc 负责初始化 LCD（含 fl7707n/nv3051f 驱动）、触摸、音频编解码、按键和电源管理。config.h 集中定义了该板卡的 GPIO 引脚映射和硬件参数。",
+    "nodeIds": [
+      "file:main/boards/common/board.h",
+      "file:main/boards/common/board.cc",
+      "file:main/boards/xingzhi-395/xingzhi-395.cc",
+      "file:main/boards/xingzhi-395/config.h"
+    ],
+    "languageLesson": "嵌入式板卡适配的模板方法模式：Board 基类定义了 Init()、GetDisplay()、GetAudioCodec() 等纯虚接口，子类在构造函数中初始化具体的 SPI/I2C 外设并实现这些接口。构建系统通过 Kconfig 选择目标板卡变体，编译时只链接对应的板卡实现文件，避免将所有 60+ 驱动都编译进固件。"
+  },
+  {
+    "order": 7,
+    "title": "显示系统：抽象层与 LCD 渲染",
+    "description": "display.cc/h 定义了所有显示设备的抽象基类 Display，提供主题管理、状态栏渲染和通知弹出等核心功能。lcd_display.cc/h 在此基础上实现了 LCD 显示器的具体逻辑，支持表情模式、聊天界面、状态展示等多种显示模式的渲染。这个分层设计使得同一套 UI 逻辑可以适配不同分辨率和接口的屏幕。",
+    "nodeIds": [
+      "file:main/display/display.h",
+      "file:main/display/display.cc",
+      "file:main/display/lcd_display.h",
+      "file:main/display/lcd_display.cc"
+    ],
+    "languageLesson": "C++ 显示系统的继承分层：Display 抽象基类定义 Update()、SetStatus() 等通用接口，LcdDisplay 子类使用 LVGL 图形库实现具体的像素级渲染。这种设计遵循依赖倒置原则——上层应用代码只依赖 Display 接口，不关心底层是 LCD、OLED 还是墨水屏。"
+  },
+  {
+    "order": 8,
+    "title": "LVGL 图形框架与表情系统",
+    "description": "lvgl_theme.cc/h 定义了 GUI 的色彩方案、控件样式和字体配置，为整个 UI 建立统一的视觉语言。lvgl_display.cc/h 将 LVGL 框架与硬件 SPI 显示驱动桥接。emote_display.cc/h 实现了设备最具标志性的功能——LED 表情渲染与动画效果，基于 LVGL 框架驱动像素级表情变化。配套的 GIF 解码器 (gifdec) 和 JPEG 转换工具支持静态和动态图像资源的加载。",
+    "nodeIds": [
+      "file:main/display/lvgl_display/lvgl_theme.h",
+      "file:main/display/lvgl_display/lvgl_theme.cc",
+      "file:main/display/lvgl_display/lvgl_display.h",
+      "file:main/display/lvgl_display/lvgl_display.cc",
+      "file:main/display/emote_display.cc"
+    ],
+    "languageLesson": "LVGL (Light and Versatile Graphics Library) 是嵌入式设备最流行的开源 GUI 框架。它采用面向对象的设计，所有 UI 元素（按钮、标签、图表）都是 lv_obj_t 对象。在 ESP32 上，LVGL 通过 DMA 将帧缓冲直接推送到 SPI 显示屏，实现 30+ FPS 的流畅渲染。主题系统通过 lv_style_t 集中管理颜色、字体和边距，避免在每个控件中重复设置样式属性。"
+  },
+  {
+    "order": 9,
+    "title": "音频系统：编解码、降噪与唤醒词",
+    "description": "音频系统分为三层：codecs 层提供 ES8374/ES8388/ES8389 等音频编解码器的 I2C 驱动（继承自 AudioCodec 基类）；processors 层封装了 ESP-SR 声学前端 (AFE) 算法，进行音频降噪和增强处理；wake_words 层实现唤醒词检测，支持 AFE 唤醒词、ESP-SR Multinet 模型和自定义唤醒词三种方式。wake_word.h 定义了唤醒词处理器的统一接口。整个音频管线从 I2S 麦克风输入开始，经降噪和回声消除后送入唤醒词检测和云端语音识别。",
+    "nodeIds": [
+      "file:main/audio/codecs/es8388_audio_codec.h",
+      "file:main/audio/processors/afe_audio_processor.h",
+      "file:main/audio/wake_words/afe_wake_word.h",
+      "file:main/audio/wake_word.h",
+      "document:main/audio/README.md"
+    ],
+    "languageLesson": "ESP-SR (ESP Speech Recognition) 是乐鑫官方的语音处理框架，包含 AFE (Audio Front-End) 声学前端和 Multinet 唤醒词引擎。AFE 通过 AEC (回声消除)、NS (噪声抑制) 和 VAD (语音活动检测) 三个算法模块提升语音质量。唤醒词引擎使用轻量级神经网络模型，在 ESP32-S3 上可在 50ms 内完成关键词检测，功耗仅需数十毫瓦。"
+  },
+  {
+    "order": 10,
+    "title": "云通信协议：MQTT 与 WebSocket",
+    "description": "protocol.h 定义了通信协议的抽象基类，声明连接建立、消息收发和状态管理的通用接口。mqtt_protocol.cc/h 实现 MQTT 协议，负责与云端 Broker 的连接维持、主题订阅和 JSON 消息收发——这是设备与 AI 对话服务交互的主通道。websocket_protocol.cc/h 实现 WebSocket 实时双向通信，用于低延迟的语音流传输。配套文档 websocket.md 和 mqtt-udp.md 分别定义了两种协议的消息格式和连接管理策略。",
+    "nodeIds": [
+      "file:main/protocols/protocol.h",
+      "file:main/protocols/mqtt_protocol.h",
+      "file:main/protocols/mqtt_protocol.cc",
+      "file:main/protocols/websocket_protocol.h",
+      "file:main/protocols/websocket_protocol.cc"
+    ],
+    "languageLesson": "嵌入式 IoT 设备通常使用 MQTT 协议与云端通信，因为它是为低带宽、不可靠网络设计的轻量级发布/订阅协议，协议头仅 2 字节。WebSocket 则用于需要实时双向通信的场景（如语音流），它在 TCP 连接之上提供全双工消息通道。两种协议在项目中互补使用——MQTT 负责控制和状态同步，WebSocket 负责流媒体传输。"
+  },
+  {
+    "order": 11,
+    "title": "构建系统、分区表与 CI/CD",
+    "description": "CMakeLists.txt 是 ESP-IDF 项目的顶层构建配置，定义了源文件目录和组件依赖。partitions/v2/16m.csv 定义了 16MB Flash 的分区布局——包括 bootloader、固件分区、NVS 配置区、SPIFFS 资源区和 OTA 升级区。sdkconfig.defaults.* 为不同 ESP32 芯片型号（S3/C3/C5/C6/P4）提供差异化的 SDK 默认配置。build.yml GitHub Actions 流水线实现了智能 CI/CD：根据代码变更自动检测需要重新编译的板卡变体，使用 Docker 并行编译并上传固件产物。",
+    "nodeIds": [
+      "config:CMakeLists.txt",
+      "config:partitions/v2/16m.csv",
+      "file:sdkconfig.defaults.esp32s3",
+      "pipeline:.github/workflows/build.yml"
+    ],
+    "languageLesson": "ESP-IDF 的分区表 (partition table) 是 CSV 格式的 Flash 布局定义文件，每个分区指定名称、类型、子类型、偏移量和大小。典型的双 OTA 分区布局 (ota_0/ota_1) 支持 A/B 固件升级——新固件写入备用分区，验证通过后切换启动分区，升级失败可自动回滚。CMake 构建系统通过 EXTRA_COMPONENT_DIRS 变量引入自定义组件，支持 60+ 板卡变体的条件编译。"
+  },
+  {
+    "order": 12,
+    "title": "开发者指南：自定义板卡适配",
+    "description": "custom-board.md 是面向硬件开发者的完整教程，从零开始讲解如何为新开发板适配小智固件。内容涵盖硬件配置定义、GPIO 引脚映射、LCD/音频驱动编写、config.json 设备配置文件编写，以及最终的编译烧录流程。README_zh.md 是项目的中文自述文件，补充了快速入门步骤和常见硬件平台的默认配置说明。这两份文档是理解整个项目可扩展性设计的关键入口。",
+    "nodeIds": [
+      "document:docs/custom-board.md",
+      "document:README_zh.md"
+    ]
+  }
+]

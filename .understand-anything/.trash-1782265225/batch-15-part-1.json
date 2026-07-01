@@ -1,0 +1,315 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "type": "file",
+      "name": "board_power_bsp.cc",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "summary": "墨水屏板卡电源BSP实现，管理墨水屏的电源上电下电时序。",
+      "tags": [
+        "board-support",
+        "implementation",
+        "power-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerLedTask",
+      "type": "function",
+      "name": "PowerLedTask",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        6,
+        20
+      ],
+      "summary": "函数PowerLedTask，处理arg逻辑。",
+      "tags": [
+        "task"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:BoardPowerBsp",
+      "type": "function",
+      "name": "BoardPowerBsp",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        22,
+        31
+      ],
+      "summary": "函数BoardPowerBsp，处理epdPowerPin、audioPowerPin、vbatPowerPin逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:~BoardPowerBsp",
+      "type": "function",
+      "name": "~BoardPowerBsp",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        33,
+        34
+      ],
+      "summary": "函数~BoardPowerBsp，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerEpdOn",
+      "type": "function",
+      "name": "PowerEpdOn",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        36,
+        38
+      ],
+      "summary": "事件处理函数，响应PowerEpd事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerEpdOff",
+      "type": "function",
+      "name": "PowerEpdOff",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        40,
+        42
+      ],
+      "summary": "函数PowerEpdOff，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerAudioOn",
+      "type": "function",
+      "name": "PowerAudioOn",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        44,
+        46
+      ],
+      "summary": "事件处理函数，响应PowerAudio事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerAudioOff",
+      "type": "function",
+      "name": "PowerAudioOff",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        48,
+        50
+      ],
+      "summary": "函数PowerAudioOff，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:VbatPowerOn",
+      "type": "function",
+      "name": "VbatPowerOn",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        52,
+        54
+      ],
+      "summary": "事件处理函数，响应VbatPower事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:VbatPowerOff",
+      "type": "function",
+      "name": "VbatPowerOff",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "lineRange": [
+        56,
+        58
+      ],
+      "summary": "函数VbatPowerOff，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.h",
+      "type": "file",
+      "name": "board_power_bsp.h",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/board_power_bsp.h",
+      "summary": "墨水屏板卡电源BSP实现，管理墨水屏的电源上电下电时序。",
+      "tags": [
+        "board-support",
+        "header",
+        "power-management"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-epaper-1.54/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/config.h",
+      "summary": "定义 waveshare-s3-epaper-1.54 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "header",
+        "pin-definition"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerLedTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerLedTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:BoardPowerBsp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:BoardPowerBsp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:~BoardPowerBsp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:~BoardPowerBsp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerEpdOn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerEpdOn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerEpdOff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerEpdOff",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerAudioOn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerAudioOn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerAudioOff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:PowerAudioOff",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:VbatPowerOn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:VbatPowerOn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:VbatPowerOff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.cc:VbatPowerOff",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

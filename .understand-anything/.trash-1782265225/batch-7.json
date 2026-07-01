@@ -1,0 +1,701 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/electron-bot/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/electron-bot/config.h",
+      "summary": "定义 electron-bot 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "electron-bot",
+        "robot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/electron-bot/electron_bot.cc",
+      "type": "file",
+      "name": "electron_bot.cc",
+      "filePath": "main/boards/electron-bot/electron_bot.cc",
+      "summary": "Electron Bot板卡主实现，初始化电机控制、表情显示和LED等机器人组件。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "electron-bot",
+        "robot"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot.cc:InitializeGc9a01Display",
+      "type": "function",
+      "name": "InitializeGc9a01Display",
+      "filePath": "main/boards/electron-bot/electron_bot.cc",
+      "lineRange": [
+        47,
+        74
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/electron-bot/electron_bot.cc",
+      "lineRange": [
+        76,
+        85
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "type": "function",
+      "name": "ElectronBot",
+      "filePath": "main/boards/electron-bot/electron_bot.cc",
+      "lineRange": [
+        90,
+        100
+      ],
+      "summary": "函数ElectronBot，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/electron-bot/electron_bot.cc",
+      "lineRange": [
+        116,
+        121
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "type": "class",
+      "name": "ElectronBot",
+      "filePath": "main/boards/electron-bot/electron_bot.cc",
+      "lineRange": [
+        27,
+        122
+      ],
+      "summary": "ElectronBot类，包含7个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "type": "file",
+      "name": "electron_bot_controller.cc",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "summary": "Electron Bot控制器实现，管理电机运动、传感器反馈和行为状态机的协调控制。",
+      "tags": [
+        "board-support",
+        "electron-bot",
+        "robot",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot_controller.cc:ActionTask",
+      "type": "function",
+      "name": "ActionTask",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        66,
+        102
+      ],
+      "summary": "函数ActionTask，处理arg逻辑。",
+      "tags": [
+        "task"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot_controller.cc:LoadTrimsFromNVS",
+      "type": "function",
+      "name": "LoadTrimsFromNVS",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        120,
+        130
+      ],
+      "summary": "加载函数，从存储中读取TrimsFromNVS数据。",
+      "tags": [
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "type": "function",
+      "name": "ElectronBotController",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        133,
+        144
+      ],
+      "summary": "函数ElectronBotController，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot_controller.cc:RegisterMcpTools",
+      "type": "function",
+      "name": "RegisterMcpTools",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        146,
+        358
+      ],
+      "summary": "注册函数，登记McpTools回调或服务。",
+      "tags": [
+        "registration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot_controller.cc:~ElectronBotController",
+      "type": "function",
+      "name": "~ElectronBotController",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        360,
+        366
+      ],
+      "summary": "函数~ElectronBotController，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_bot_controller.cc:InitializeElectronBotController",
+      "type": "function",
+      "name": "InitializeElectronBotController",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        371,
+        376
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotActionParams",
+      "type": "class",
+      "name": "ElectronBotActionParams",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        20,
+        26
+      ],
+      "summary": "ElectronBotActionParams类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "type": "class",
+      "name": "ElectronBotController",
+      "filePath": "main/boards/electron-bot/electron_bot_controller.cc",
+      "lineRange": [
+        28,
+        367
+      ],
+      "summary": "ElectronBotController控制器类，协调硬件操作与状态管理，包含7个方法。",
+      "tags": [
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "type": "file",
+      "name": "electron_emoji_display.cc",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.cc",
+      "summary": "Electron Bot表情显示实现，在LED矩阵上渲染预定义的emoji表情图案。",
+      "tags": [
+        "board-support",
+        "electron-bot",
+        "robot",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_emoji_display.cc:ElectronEmojiDisplay",
+      "type": "function",
+      "name": "ElectronEmojiDisplay",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.cc",
+      "lineRange": [
+        14,
+        19
+      ],
+      "summary": "显示函数，在屏幕上渲染ElectronEmoji内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_emoji_display.cc:InitializeElectronEmojis",
+      "type": "function",
+      "name": "InitializeElectronEmojis",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.cc",
+      "lineRange": [
+        21,
+        80
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_emoji_display.cc:SetupChatLabel",
+      "type": "function",
+      "name": "SetupChatLabel",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.cc",
+      "lineRange": [
+        82,
+        96
+      ],
+      "summary": "设置upChatLabel的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_emoji_display.cc:SetStatus",
+      "type": "function",
+      "name": "SetStatus",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.cc",
+      "lineRange": [
+        99,
+        139
+      ],
+      "summary": "设置Status的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "type": "file",
+      "name": "electron_emoji_display.h",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.h",
+      "summary": "Electron Bot表情显示头文件。",
+      "tags": [
+        "board-support",
+        "electron-bot",
+        "robot",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/electron-bot/electron_emoji_display.h:~ElectronEmojiDisplay",
+      "type": "function",
+      "name": "~ElectronEmojiDisplay",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.h",
+      "lineRange": [
+        16,
+        16
+      ],
+      "summary": "显示函数，在屏幕上渲染~ElectronEmoji内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/electron-bot/electron_emoji_display.h:ElectronEmojiDisplay",
+      "type": "class",
+      "name": "ElectronEmojiDisplay",
+      "filePath": "main/boards/electron-bot/electron_emoji_display.h",
+      "lineRange": [
+        9,
+        22
+      ],
+      "summary": "ElectronEmojiDisplay显示类，管理屏幕渲染和UI交互逻辑，包含4个方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "file:main/boards/electron-bot/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "file:main/boards/electron-bot/movements.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "file:main/boards/electron-bot/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:InitializeGc9a01Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "class:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot.cc",
+      "target": "class:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:InitializeGc9a01Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_bot.cc:ElectronBot",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_bot.cc:GetBatteryLevel",
+      "target": "function:main/boards/electron-bot/electron_bot.cc:GetBatteryLevel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "file:main/boards/electron-bot/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "file:main/boards/electron-bot/movements.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:ActionTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:LoadTrimsFromNVS",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:RegisterMcpTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:RegisterMcpTools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:~ElectronBotController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:~ElectronBotController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:InitializeElectronBotController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:InitializeElectronBotController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "class:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotActionParams",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "class:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotActionParams",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "class:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_bot_controller.cc",
+      "target": "class:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:LoadTrimsFromNVS",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_bot_controller.cc:ElectronBotController",
+      "target": "function:main/boards/electron-bot/electron_bot_controller.cc:RegisterMcpTools",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:ElectronEmojiDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:ElectronEmojiDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:InitializeElectronEmojis",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:InitializeElectronEmojis",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:SetupChatLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:SetupChatLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:SetStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.cc",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:SetStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_emoji_display.cc:ElectronEmojiDisplay",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:InitializeElectronEmojis",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/electron-bot/electron_emoji_display.cc:ElectronEmojiDisplay",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.cc:SetupChatLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.h:~ElectronEmojiDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "target": "function:main/boards/electron-bot/electron_emoji_display.h:~ElectronEmojiDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "target": "class:main/boards/electron-bot/electron_emoji_display.h:ElectronEmojiDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/electron-bot/electron_emoji_display.h",
+      "target": "class:main/boards/electron-bot/electron_emoji_display.h:ElectronEmojiDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/settings.h",
+      "type": "file",
+      "name": "settings.h",
+      "filePath": "main/settings.h",
+      "summary": "设备设置管理头文件，定义系统设置数据结构与读写接口。",
+      "tags": [
+        "configuration",
+        "nvs-storage",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/system_info.cc",
+      "type": "file",
+      "name": "system_info.cc",
+      "filePath": "main/system_info.cc",
+      "summary": "系统信息收集实现，提供固件版本、硬件ID、MAC地址等设备信息查询功能，共9个函数。",
+      "tags": [
+        "diagnostics",
+        "system-info",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/system_info.cc:GetFlashSize",
+      "type": "function",
+      "name": "GetFlashSize",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        17,
+        24
+      ],
+      "summary": "获取FlashSize的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:GetMinimumFreeHeapSize",
+      "type": "function",
+      "name": "GetMinimumFreeHeapSize",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        26,
+        28
+      ],
+      "summary": "获取MinimumFreeHeapSize的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:GetFreeHeapSize",
+      "type": "function",
+      "name": "GetFreeHeapSize",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        30,
+        32
+      ],
+      "summary": "获取FreeHeapSize的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:GetMacAddress",
+      "type": "function",
+      "name": "GetMacAddress",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        34,
+        44
+      ],
+      "summary": "获取MacAddress的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:GetChipModelName",
+      "type": "function",
+      "name": "GetChipModelName",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        46,
+        48
+      ],
+      "summary": "获取ChipModelName的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:GetUserAgent",
+      "type": "function",
+      "name": "GetUserAgent",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        50,
+        54
+      ],
+      "summary": "获取UserAgent的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:PrintTaskCpuUsage",
+      "type": "function",
+      "name": "PrintTaskCpuUsage",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        56,
+        139
+      ],
+      "summary": "函数PrintTaskCpuUsage，处理xTicksToWait逻辑。",
+      "tags": [
+        "task"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/system_info.cc:PrintTaskList",
+      "type": "function",
+      "name": "PrintTaskList",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        141,
+        145
+      ],
+      "summary": "函数PrintTaskList，处理相关逻辑。",
+      "tags": [
+        "task"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/system_info.cc:PrintHeapStats",
+      "type": "function",
+      "name": "PrintHeapStats",
+      "filePath": "main/system_info.cc",
+      "lineRange": [
+        147,
+        151
+      ],
+      "summary": "函数PrintHeapStats，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/system_info.h",
+      "type": "file",
+      "name": "system_info.h",
+      "filePath": "main/system_info.h",
+      "summary": "系统信息头文件，声明设备信息获取接口。",
+      "tags": [
+        "diagnostics",
+        "system-info",
+        "header"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/system_info.cc",
+      "target": "file:main/system_info.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetFlashSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetFlashSize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetMinimumFreeHeapSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetMinimumFreeHeapSize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetFreeHeapSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetFreeHeapSize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetMacAddress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetMacAddress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetChipModelName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetChipModelName",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetUserAgent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:GetUserAgent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:PrintTaskCpuUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:PrintTaskCpuUsage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:PrintTaskList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:PrintTaskList",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:PrintHeapStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/system_info.cc",
+      "target": "function:main/system_info.cc:PrintHeapStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

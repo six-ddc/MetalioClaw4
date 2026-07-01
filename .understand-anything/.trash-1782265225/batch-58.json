@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "config:partitions/v2/16m.csv",
+      "type": "config",
+      "name": "16m.csv",
+      "filePath": "partitions/v2/16m.csv",
+      "summary": "ESP-IDF分区表定义文件（16m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v2/16m_c3.csv",
+      "type": "config",
+      "name": "16m_c3.csv",
+      "filePath": "partitions/v2/16m_c3.csv",
+      "summary": "ESP-IDF分区表定义文件（16m_c3.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v2/32m.csv",
+      "type": "config",
+      "name": "32m.csv",
+      "filePath": "partitions/v2/32m.csv",
+      "summary": "ESP-IDF分区表定义文件（32m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v2/4m.csv",
+      "type": "config",
+      "name": "4m.csv",
+      "filePath": "partitions/v2/4m.csv",
+      "summary": "ESP-IDF分区表定义文件（4m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v2/8m.csv",
+      "type": "config",
+      "name": "8m.csv",
+      "filePath": "partitions/v2/8m.csv",
+      "summary": "ESP-IDF分区表定义文件（8m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:partitions/v2/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "partitions/v2/README.md",
+      "summary": "分区表版本说明文档，描述v2版本分区表的变更和不同Flash大小的配置方案。",
+      "tags": [
+        "documentation",
+        "partition-table",
+        "reference"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,508 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-3.5b/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/config.h",
+      "summary": "waveshare-s3-touch-lcd-3.5b 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板",
+        "触摸"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "type": "file",
+      "name": "custom_lcd_display.cc",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "summary": "waveshare-s3-touch-lcd-3.5b 的LVGL自定义LCD显示屏实现，提供显示初始化、背光控制、触摸交互等功能。",
+      "tags": [
+        "LCD显示",
+        "LVGL",
+        "显示驱动",
+        "触摸"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:lvgl_port_flush_io_ready_callback",
+      "type": "function",
+      "name": "lvgl_port_flush_io_ready_callback",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "lineRange": [
+        28,
+        37
+      ],
+      "summary": "lvgl_port_flush_io_ready_callback 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:lvgl_port_flush_callback",
+      "type": "function",
+      "name": "lvgl_port_flush_callback",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "lineRange": [
+        39,
+        192
+      ],
+      "summary": "lvgl_port_flush_callback 函数的完整实现，包含154行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:CustomLcdDisplay",
+      "type": "function",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "lineRange": [
+        194,
+        286
+      ],
+      "summary": "CustomLcdDisplay 函数的完整实现，包含93行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.h",
+      "type": "file",
+      "name": "custom_lcd_display.h",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.h",
+      "summary": "waveshare-s3-touch-lcd-3.5b 的自定义LCD显示头文件，定义LVGL显示驱动类和接口。",
+      "tags": [
+        "LCD显示",
+        "LVGL",
+        "显示驱动"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "type": "file",
+      "name": "waveshare-s3-touch-lcd-3.5b.cc",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "summary": "waveshare-s3-touch-lcd-3.5b 开发板的主板实现，包含Pmic类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        74,
+        101
+      ],
+      "summary": "Pmic 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        114,
+        128
+      ],
+      "summary": "初始化省电定时器，配置休眠/唤醒周期、GPIO保持和休眠事件回调。",
+      "tags": [
+        "省电定时器",
+        "休眠",
+        "初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        130,
+        145
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        147,
+        160
+      ],
+      "summary": "InitializeTca9554 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        167,
+        177
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        179,
+        218
+      ],
+      "summary": "InitializeCamera 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        220,
+        258
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        270,
+        300
+      ],
+      "summary": "初始化触摸面板控制器，配置I2C接口和触摸检测参数。",
+      "tags": [
+        "触摸",
+        "I2C"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "type": "function",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        303,
+        321
+      ],
+      "summary": "CustomBoard 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        72,
+        102
+      ],
+      "summary": "Pmic 类，包含1个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "lineRange": [
+        104,
+        363
+      ],
+      "summary": "CustomBoard 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:lvgl_port_flush_io_ready_callback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:lvgl_port_flush_callback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:lvgl_port_flush_io_ready_callback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:lvgl_port_flush_callback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "file:main/boards/waveshare-s3-touch-lcd-3.5b/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.cc",
+      "target": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "file:main/boards/waveshare-s3-touch-lcd-3.5b/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-3.5b/waveshare-s3-touch-lcd-3.5b.cc",
+      "target": "file:main/boards/waveshare-s3-touch-lcd-3.5b/custom_lcd_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,1453 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/p3_tools/p3_gui_player.py",
+      "type": "file",
+      "name": "p3_gui_player.py",
+      "filePath": "scripts/p3_tools/p3_gui_player.py",
+      "summary": "P3 音频播放器的图形界面客户端。",
+      "tags": [
+        "script",
+        "media-player",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/p3_tools/p3_gui_player.py:play_p3_file",
+      "type": "function",
+      "name": "play_p3_file",
+      "filePath": "scripts/p3_tools/p3_gui_player.py",
+      "lineRange": [
+        12,
+        72
+      ],
+      "summary": "实现 play_p3_file 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/p3_tools/p3_gui_player.py:P3PlayerApp",
+      "type": "class",
+      "name": "P3PlayerApp",
+      "filePath": "scripts/p3_tools/p3_gui_player.py",
+      "lineRange": [
+        75,
+        235
+      ],
+      "summary": "定义 P3PlayerApp 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/p3_tools/play_p3.py",
+      "type": "file",
+      "name": "play_p3.py",
+      "filePath": "scripts/p3_tools/play_p3.py",
+      "summary": "P3 音频文件播放脚本，支持播放、暂停和音量控制。",
+      "tags": [
+        "script",
+        "media-player",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/p3_tools/play_p3.py:play_p3_file",
+      "type": "function",
+      "name": "play_p3_file",
+      "filePath": "scripts/p3_tools/play_p3.py",
+      "lineRange": [
+        8,
+        61
+      ],
+      "summary": "实现 play_p3_file 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:scripts/p3_tools/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "scripts/p3_tools/README.md",
+      "summary": "脚本目录的说明文档。",
+      "tags": [
+        "documentation",
+        "script",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:scripts/p3_tools/requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "scripts/p3_tools/requirements.txt",
+      "summary": "辅助脚本：requirements.txt。",
+      "tags": [
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/release.py",
+      "type": "file",
+      "name": "release.py",
+      "filePath": "scripts/release.py",
+      "summary": "执行固件发布流程的脚本，自动化版本号管理、编译构建和发布包生成。",
+      "tags": [
+        "script",
+        "release-engineering",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/release.py:get_board_type_from_compile_commands",
+      "type": "function",
+      "name": "get_board_type_from_compile_commands",
+      "filePath": "scripts/release.py",
+      "lineRange": [
+        16,
+        29
+      ],
+      "summary": "实现 get_board_type_from_compile_commands 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/release.py:zip_bin",
+      "type": "function",
+      "name": "zip_bin",
+      "filePath": "scripts/release.py",
+      "lineRange": [
+        47,
+        58
+      ],
+      "summary": "实现 zip_bin 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/release.py:_collect_variants",
+      "type": "function",
+      "name": "_collect_variants",
+      "filePath": "scripts/release.py",
+      "lineRange": [
+        67,
+        90
+      ],
+      "summary": "实现 _collect_variants 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/release.py:_parse_board_config_map",
+      "type": "function",
+      "name": "_parse_board_config_map",
+      "filePath": "scripts/release.py",
+      "lineRange": [
+        93,
+        106
+      ],
+      "summary": "实现 _parse_board_config_map 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/release.py:release",
+      "type": "function",
+      "name": "release",
+      "filePath": "scripts/release.py",
+      "lineRange": [
+        129,
+        199
+      ],
+      "summary": "实现 release 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/sonic_wifi_config.html",
+      "type": "file",
+      "name": "sonic_wifi_config.html",
+      "filePath": "scripts/sonic_wifi_config.html",
+      "summary": "辅助脚本：sonic_wifi_config.html。",
+      "tags": [
+        "script",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/spiffs_assets/build_all.py",
+      "type": "file",
+      "name": "build_all.py",
+      "filePath": "scripts/spiffs_assets/build_all.py",
+      "summary": "辅助脚本：build_all.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build_all.py:build_assets",
+      "type": "function",
+      "name": "build_assets",
+      "filePath": "scripts/spiffs_assets/build_all.py",
+      "lineRange": [
+        34,
+        89
+      ],
+      "summary": "实现 build_assets 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build_all.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/spiffs_assets/build_all.py",
+      "lineRange": [
+        92,
+        181
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/spiffs_assets/build.py",
+      "type": "file",
+      "name": "build.py",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "summary": "辅助脚本：build.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_wakenet_model",
+      "type": "function",
+      "name": "process_wakenet_model",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        48,
+        73
+      ],
+      "summary": "实现 process_wakenet_model 函数功能。",
+      "tags": [
+        "processing",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_text_font",
+      "type": "function",
+      "name": "process_text_font",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        76,
+        86
+      ],
+      "summary": "实现 process_text_font 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_emoji_collection",
+      "type": "function",
+      "name": "process_emoji_collection",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        89,
+        114
+      ],
+      "summary": "实现 process_emoji_collection 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:load_emoji_config",
+      "type": "function",
+      "name": "load_emoji_config",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        116,
+        136
+      ],
+      "summary": "实现 load_emoji_config 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_board_emoji_collection",
+      "type": "function",
+      "name": "process_board_emoji_collection",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        138,
+        190
+      ],
+      "summary": "实现 process_board_emoji_collection 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_board_icon_collection",
+      "type": "function",
+      "name": "process_board_icon_collection",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        192,
+        213
+      ],
+      "summary": "实现 process_board_icon_collection 函数功能。",
+      "tags": [
+        "event-handler",
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_board_layout",
+      "type": "function",
+      "name": "process_board_layout",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        214,
+        261
+      ],
+      "summary": "实现 process_board_layout 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:process_board_collection",
+      "type": "function",
+      "name": "process_board_collection",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        263,
+        277
+      ],
+      "summary": "实现 process_board_collection 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:generate_index_json",
+      "type": "function",
+      "name": "generate_index_json",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        279,
+        305
+      ],
+      "summary": "实现 generate_index_json 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:generate_config_json",
+      "type": "function",
+      "name": "generate_config_json",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        308,
+        337
+      ],
+      "summary": "实现 generate_config_json 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/build.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/spiffs_assets/build.py",
+      "lineRange": [
+        340,
+        396
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/spiffs_assets/pack_model.py",
+      "type": "file",
+      "name": "pack_model.py",
+      "filePath": "scripts/spiffs_assets/pack_model.py",
+      "summary": "辅助脚本：pack_model.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/pack_model.py:struct_pack_string",
+      "type": "function",
+      "name": "struct_pack_string",
+      "filePath": "scripts/spiffs_assets/pack_model.py",
+      "lineRange": [
+        6,
+        30
+      ],
+      "summary": "实现 struct_pack_string 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/pack_model.py:pack_models",
+      "type": "function",
+      "name": "pack_models",
+      "filePath": "scripts/spiffs_assets/pack_model.py",
+      "lineRange": [
+        41,
+        112
+      ],
+      "summary": "实现 pack_models 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:scripts/spiffs_assets/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "scripts/spiffs_assets/README.md",
+      "summary": "脚本目录的说明文档。",
+      "tags": [
+        "documentation",
+        "script",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "type": "file",
+      "name": "spiffs_assets_gen.py",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "summary": "辅助脚本：spiffs_assets_gen.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:download_v8_script",
+      "type": "function",
+      "name": "download_v8_script",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        63,
+        102
+      ],
+      "summary": "实现 download_v8_script 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:download_v9_script",
+      "type": "function",
+      "name": "download_v9_script",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        104,
+        139
+      ],
+      "summary": "实现 download_v9_script 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:split_image",
+      "type": "function",
+      "name": "split_image",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        141,
+        174
+      ],
+      "summary": "实现 split_image 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:create_header",
+      "type": "function",
+      "name": "create_header",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        176,
+        206
+      ],
+      "summary": "实现 create_header 函数功能。",
+      "tags": [
+        "factory"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:handle_lvgl_version_v9",
+      "type": "function",
+      "name": "handle_lvgl_version_v9",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        216,
+        256
+      ],
+      "summary": "实现 handle_lvgl_version_v9 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:handle_lvgl_version_v8",
+      "type": "function",
+      "name": "handle_lvgl_version_v8",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        258,
+        296
+      ],
+      "summary": "实现 handle_lvgl_version_v8 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_image",
+      "type": "function",
+      "name": "process_image",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        298,
+        342
+      ],
+      "summary": "实现 process_image 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:convert_image_to_raw",
+      "type": "function",
+      "name": "convert_image_to_raw",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        353,
+        389
+      ],
+      "summary": "实现 convert_image_to_raw 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:pack_assets",
+      "type": "function",
+      "name": "pack_assets",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        391,
+        490
+      ],
+      "summary": "实现 pack_assets 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:copy_assets",
+      "type": "function",
+      "name": "copy_assets",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        492,
+        532
+      ],
+      "summary": "实现 copy_assets 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_assets_build",
+      "type": "function",
+      "name": "process_assets_build",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        534,
+        600
+      ],
+      "summary": "实现 process_assets_build 函数功能。",
+      "tags": [
+        "setter",
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_assets_merge",
+      "type": "function",
+      "name": "process_assets_merge",
+      "filePath": "scripts/spiffs_assets/spiffs_assets_gen.py",
+      "lineRange": [
+        602,
+        633
+      ],
+      "summary": "实现 process_assets_merge 函数功能。",
+      "tags": [
+        "setter",
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/versions.py",
+      "type": "file",
+      "name": "versions.py",
+      "filePath": "scripts/versions.py",
+      "summary": "辅助脚本：versions.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/versions.py:get_chip_id_string",
+      "type": "function",
+      "name": "get_chip_id_string",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        16,
+        28
+      ],
+      "summary": "实现 get_chip_id_string 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/versions.py:get_flash_size",
+      "type": "function",
+      "name": "get_flash_size",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        30,
+        41
+      ],
+      "summary": "实现 get_flash_size 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/versions.py:get_app_desc",
+      "type": "function",
+      "name": "get_app_desc",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        43,
+        59
+      ],
+      "summary": "实现 get_app_desc 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/versions.py:get_board_name",
+      "type": "function",
+      "name": "get_board_name",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        61,
+        74
+      ],
+      "summary": "实现 get_board_name 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/versions.py:find_app_partition",
+      "type": "function",
+      "name": "find_app_partition",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        76,
+        96
+      ],
+      "summary": "实现 find_app_partition 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/versions.py:read_binary",
+      "type": "function",
+      "name": "read_binary",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        98,
+        159
+      ],
+      "summary": "实现 read_binary 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/versions.py:upload_dir_to_oss",
+      "type": "function",
+      "name": "upload_dir_to_oss",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        168,
+        177
+      ],
+      "summary": "实现 upload_dir_to_oss 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/versions.py:post_info_to_server",
+      "type": "function",
+      "name": "post_info_to_server",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        179,
+        221
+      ],
+      "summary": "实现 post_info_to_server 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/versions.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/versions.py",
+      "lineRange": [
+        223,
+        245
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:sd_images/eaf/crying.eaf",
+      "type": "file",
+      "name": "crying.eaf",
+      "filePath": "sd_images/eaf/crying.eaf",
+      "summary": "「哭泣」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/p3_tools/p3_gui_player.py",
+      "target": "function:scripts/p3_tools/p3_gui_player.py:play_p3_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/p3_tools/p3_gui_player.py",
+      "target": "function:scripts/p3_tools/p3_gui_player.py:play_p3_file",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/p3_tools/p3_gui_player.py",
+      "target": "class:scripts/p3_tools/p3_gui_player.py:P3PlayerApp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/p3_tools/p3_gui_player.py",
+      "target": "class:scripts/p3_tools/p3_gui_player.py:P3PlayerApp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/p3_tools/play_p3.py",
+      "target": "function:scripts/p3_tools/play_p3.py:play_p3_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/p3_tools/play_p3.py",
+      "target": "function:scripts/p3_tools/play_p3.py:play_p3_file",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:get_board_type_from_compile_commands",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:get_board_type_from_compile_commands",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:zip_bin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:zip_bin",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:_collect_variants",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:_collect_variants",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:_parse_board_config_map",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:_parse_board_config_map",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:release",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/release.py",
+      "target": "function:scripts/release.py:release",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build_all.py",
+      "target": "function:scripts/spiffs_assets/build_all.py:build_assets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build_all.py",
+      "target": "function:scripts/spiffs_assets/build_all.py:build_assets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build_all.py",
+      "target": "function:scripts/spiffs_assets/build_all.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build_all.py",
+      "target": "function:scripts/spiffs_assets/build_all.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_wakenet_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_wakenet_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_text_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_text_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_emoji_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_emoji_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:load_emoji_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:load_emoji_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_emoji_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_emoji_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_icon_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_icon_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_layout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_layout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:process_board_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:generate_index_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:generate_index_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:generate_config_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:generate_config_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/build.py",
+      "target": "function:scripts/spiffs_assets/build.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/pack_model.py",
+      "target": "function:scripts/spiffs_assets/pack_model.py:struct_pack_string",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/pack_model.py",
+      "target": "function:scripts/spiffs_assets/pack_model.py:struct_pack_string",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/pack_model.py",
+      "target": "function:scripts/spiffs_assets/pack_model.py:pack_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/pack_model.py",
+      "target": "function:scripts/spiffs_assets/pack_model.py:pack_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:download_v8_script",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:download_v8_script",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:download_v9_script",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:download_v9_script",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:split_image",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:split_image",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:create_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:create_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:handle_lvgl_version_v9",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:handle_lvgl_version_v9",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:handle_lvgl_version_v8",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:handle_lvgl_version_v8",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_image",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_image",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:convert_image_to_raw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:convert_image_to_raw",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:pack_assets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:pack_assets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:copy_assets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:copy_assets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_assets_build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_assets_build",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_assets_merge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/spiffs_assets/spiffs_assets_gen.py",
+      "target": "function:scripts/spiffs_assets/spiffs_assets_gen.py:process_assets_merge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_chip_id_string",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_chip_id_string",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_flash_size",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_flash_size",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_app_desc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_app_desc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_board_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:get_board_name",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:find_app_partition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:find_app_partition",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:read_binary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:read_binary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:upload_dir_to_oss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:upload_dir_to_oss",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:post_info_to_server",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:post_info_to_server",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/versions.py",
+      "target": "function:scripts/versions.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,1293 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "type": "file",
+      "name": "xingzhi-cube-0.96oled-wifi.cc",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "summary": "星智Cube系列板卡（xingzhi-cube-0.96oled-wifi）的具体实现，初始化显示屏、音频和通信模块等硬件外设。",
+      "tags": [
+        "board-support",
+        "led-control",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerManager",
+      "type": "function",
+      "name": "InitializePowerManager",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        36,
+        45
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        47,
+        68
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeDisplayI2c",
+      "type": "function",
+      "name": "InitializeDisplayI2c",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        70,
+        84
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        86,
+        131
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        133,
+        176
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "type": "function",
+      "name": "XINGZHI_CUBE_0_96OLED_WIFI",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        179,
+        188
+      ],
+      "summary": "函数XINGZHI_CUBE_0_96OLED_WIFI，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        205,
+        215
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        217,
+        222
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "type": "class",
+      "name": "XINGZHI_CUBE_0_96OLED_WIFI",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "lineRange": [
+        24,
+        223
+      ],
+      "summary": "XINGZHI_CUBE_0_96OLED_WIFI类，包含8个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/xingzhi-cube-1.54tft-ml307/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/config.h",
+      "summary": "定义 xingzhi-cube-1.54tft-ml307 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "header",
+        "pin-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "type": "file",
+      "name": "xingzhi-cube-1.54tft-ml307.cc",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "summary": "星智Cube系列板卡（xingzhi-cube-1.54tft-ml307）的具体实现，初始化显示屏、音频和通信模块等硬件外设。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerManager",
+      "type": "function",
+      "name": "InitializePowerManager",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        33,
+        42
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        44,
+        67
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        69,
+        78
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        80,
+        133
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        135,
+        161
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "type": "function",
+      "name": "XINGZHI_CUBE_1_54TFT_ML307",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        164,
+        175
+      ],
+      "summary": "函数XINGZHI_CUBE_1_54TFT_ML307，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        192,
+        202
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        204,
+        209
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "type": "class",
+      "name": "XINGZHI_CUBE_1_54TFT_ML307",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "lineRange": [
+        22,
+        210
+      ],
+      "summary": "XINGZHI_CUBE_1_54TFT_ML307类，包含8个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/xingzhi-cube-1.54tft-wifi/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/config.h",
+      "summary": "定义 xingzhi-cube-1.54tft-wifi 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "header",
+        "pin-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "type": "file",
+      "name": "xingzhi-cube-1.54tft-wifi.cc",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "summary": "星智Cube系列板卡（xingzhi-cube-1.54tft-wifi）的具体实现，初始化显示屏、音频和通信模块等硬件外设。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerManager",
+      "type": "function",
+      "name": "InitializePowerManager",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        33,
+        42
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        44,
+        67
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "persistence"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        69,
+        78
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        80,
+        123
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        125,
+        151
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "type": "function",
+      "name": "XINGZHI_CUBE_1_54TFT_WIFI",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        154,
+        164
+      ],
+      "summary": "函数XINGZHI_CUBE_1_54TFT_WIFI，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        181,
+        191
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        193,
+        198
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "type": "class",
+      "name": "XINGZHI_CUBE_1_54TFT_WIFI",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "lineRange": [
+        22,
+        199
+      ],
+      "summary": "XINGZHI_CUBE_1_54TFT_WIFI类，包含8个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "summary": "星智Cube系列板卡（xingzhi-cube-1.54tft-wifi）的具体实现，初始化显示屏、音频和通信模块等硬件外设。",
+      "tags": [
+        "board-support",
+        "header",
+        "public-interface",
+        "power-management"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:CheckBatteryStatus",
+      "type": "function",
+      "name": "CheckBatteryStatus",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        28,
+        51
+      ],
+      "summary": "检查函数，验证或判断BatteryStatus的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:ReadBatteryAdcData",
+      "type": "function",
+      "name": "ReadBatteryAdcData",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        53,
+        111
+      ],
+      "summary": "读取函数，从BatteryAdcData源读取数据。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "type": "function",
+      "name": "PowerManager",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        114,
+        150
+      ],
+      "summary": "函数PowerManager，处理pin逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:~PowerManager",
+      "type": "function",
+      "name": "~PowerManager",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        152,
+        160
+      ],
+      "summary": "函数~PowerManager，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        162,
+        168
+      ],
+      "summary": "检查函数，验证或判断Charging的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:IsDischarging",
+      "type": "function",
+      "name": "IsDischarging",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        170,
+        173
+      ],
+      "summary": "检查函数，验证或判断Discharging的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        175,
+        177
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "function",
+      "name": "OnLowBatteryStatusChanged",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        179,
+        181
+      ],
+      "summary": "事件处理函数，响应LowBatteryStatusChanged事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:OnChargingStatusChanged",
+      "type": "function",
+      "name": "OnChargingStatusChanged",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        183,
+        185
+      ],
+      "summary": "事件处理函数，响应ChargingStatusChanged事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "lineRange": [
+        10,
+        186
+      ],
+      "summary": "PowerManager管理器类，管理相关资源的生命周期，包含9个方法。",
+      "tags": [
+        "resource-manager"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "file:main/boards/xingzhi-cube-0.96oled-wifi/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeDisplayI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "class:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc",
+      "target": "class:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerManager",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializePowerSaveTimer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeDisplayI2c",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeSsd1306Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:XINGZHI_CUBE_0_96OLED_WIFI",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:GetBatteryLevel",
+      "target": "function:main/boards/xingzhi-cube-0.96oled-wifi/xingzhi-cube-0.96oled-wifi.cc:GetBatteryLevel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "file:main/boards/xingzhi-cube-1.54tft-ml307/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "class:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc",
+      "target": "class:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerManager",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializePowerSaveTimer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeSpi",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:XINGZHI_CUBE_1_54TFT_ML307",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:InitializeSt7789Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:GetBatteryLevel",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-ml307/xingzhi-cube-1.54tft-ml307.cc:GetBatteryLevel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "file:main/boards/xingzhi-cube-1.54tft-wifi/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "class:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc",
+      "target": "class:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerManager",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializePowerSaveTimer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeSpi",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:XINGZHI_CUBE_1_54TFT_WIFI",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:InitializeSt7789Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:GetBatteryLevel",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/xingzhi-cube-1.54tft-wifi.cc:GetBatteryLevel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:~PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:~PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:IsDischarging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:OnChargingStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:OnChargingStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "class:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h",
+      "target": "class:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:CheckBatteryStatus",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:ReadBatteryAdcData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:CheckBatteryStatus",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:ReadBatteryAdcData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:CheckBatteryStatus",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:ReadBatteryAdcData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:PowerManager",
+      "target": "function:main/boards/xingzhi-cube-1.54tft-wifi/power_manager.h:CheckBatteryStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

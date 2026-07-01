@@ -1,0 +1,1566 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "type": "file",
+      "name": "custom_lcd_display.cc",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "summary": "LCD显示屏驱动实现，基于LVGL实现LCD屏的渲染、主题切换和UI交互，包含23个函数的大量UI逻辑。",
+      "tags": [
+        "board-support",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:lvgl_flush_cb",
+      "type": "function",
+      "name": "lvgl_flush_cb",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        63,
+        77
+      ],
+      "summary": "函数lvgl_flush_cb，处理disp、area、color_p逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "type": "function",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        79,
+        126
+      ],
+      "summary": "显示函数，在屏幕上渲染CustomLcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:~CustomLcdDisplay",
+      "type": "function",
+      "name": "~CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        128,
+        130
+      ],
+      "summary": "显示函数，在屏幕上渲染~CustomLcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_gpio_init",
+      "type": "function",
+      "name": "spi_gpio_init",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        132,
+        151
+      ],
+      "summary": "函数spi_gpio_init，处理相关逻辑。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_port_init",
+      "type": "function",
+      "name": "spi_port_init",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        153,
+        176
+      ],
+      "summary": "函数spi_port_init，处理相关逻辑。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "function",
+      "name": "read_busy",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        178,
+        183
+      ],
+      "summary": "函数read_busy，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:SPI_SendByte",
+      "type": "function",
+      "name": "SPI_SendByte",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        185,
+        193
+      ],
+      "summary": "发送函数，将SPI_Byte数据传输出去。",
+      "tags": [
+        "communication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "function",
+      "name": "EPD_SendData",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        195,
+        200
+      ],
+      "summary": "发送函数，将EPD_Data数据传输出去。",
+      "tags": [
+        "communication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "function",
+      "name": "EPD_SendCommand",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        202,
+        207
+      ],
+      "summary": "发送函数，将EPD_Command数据传输出去。",
+      "tags": [
+        "communication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "function",
+      "name": "writeBytes",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        209,
+        220
+      ],
+      "summary": "函数writeBytes，处理buffer、len逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "function",
+      "name": "writeBytes",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        222,
+        233
+      ],
+      "summary": "函数writeBytes，处理buffer、len逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "type": "function",
+      "name": "EPD_SetWindows",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        235,
+        245
+      ],
+      "summary": "设置EPD_Windows的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "type": "function",
+      "name": "EPD_SetCursor",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        247,
+        254
+      ],
+      "summary": "设置EPD_Cursor的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "type": "function",
+      "name": "EPD_SetLut",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        256,
+        274
+      ],
+      "summary": "设置EPD_Lut的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "type": "function",
+      "name": "EPD_TurnOnDisplay",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        276,
+        281
+      ],
+      "summary": "事件处理函数，响应EPD_TurnDisplay事件。",
+      "tags": [
+        "event-handler",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "type": "function",
+      "name": "EPD_TurnOnDisplayPart",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        283,
+        288
+      ],
+      "summary": "事件处理函数，响应EPD_TurnDisplayPart事件。",
+      "tags": [
+        "event-handler",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "type": "function",
+      "name": "EPD_Init",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        290,
+        326
+      ],
+      "summary": "函数EPD_Init，处理相关逻辑。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Clear",
+      "type": "function",
+      "name": "EPD_Clear",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        328,
+        331
+      ],
+      "summary": "函数EPD_Clear，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "type": "function",
+      "name": "EPD_Display",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        333,
+        339
+      ],
+      "summary": "显示函数，在屏幕上渲染EPD_内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "type": "function",
+      "name": "EPD_DisplayPartBaseImage",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        341,
+        349
+      ],
+      "summary": "显示函数，在屏幕上渲染EPD_PartBaseImage内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "type": "function",
+      "name": "EPD_Init_Partial",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        351,
+        382
+      ],
+      "summary": "函数EPD_Init_Partial，处理相关逻辑。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "type": "function",
+      "name": "EPD_DisplayPart",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        384,
+        389
+      ],
+      "summary": "显示函数，在屏幕上渲染EPD_Part内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DrawColorPixel",
+      "type": "function",
+      "name": "EPD_DrawColorPixel",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "lineRange": [
+        391,
+        404
+      ],
+      "summary": "绘制函数，渲染EPD_ColorPixel图形元素。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.h",
+      "type": "file",
+      "name": "custom_lcd_display.h",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.h",
+      "summary": "墨水屏自定义显示实现，适配LVGL渲染输出到墨水屏显示面板。",
+      "tags": [
+        "board-support",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "type": "file",
+      "name": "waveshare-s3-epaper-1.54.cc",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "summary": "微雪1.54寸墨水屏板卡实现，初始化墨水屏显示和电源管理。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "lineRange": [
+        29,
+        40
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "lineRange": [
+        42,
+        58
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "lineRange": [
+        68,
+        79
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "type": "function",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "lineRange": [
+        92,
+        98
+      ],
+      "summary": "函数CustomBoard，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "lineRange": [
+        19,
+        108
+      ],
+      "summary": "CustomBoard板卡类，抽象或实现板卡硬件初始化和外设控制，包含6个方法。",
+      "tags": [
+        "board-driver"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "file:main/boards/waveshare-s3-epaper-1.54/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:lvgl_flush_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:lvgl_flush_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:~CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:~CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_gpio_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_gpio_init",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_port_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_port_init",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:SPI_SendByte",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:SPI_SendByte",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Clear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Clear",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DrawColorPixel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DrawColorPixel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:lvgl_flush_cb",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Clear",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:lvgl_flush_cb",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DrawColorPixel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:lvgl_flush_cb",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_port_init",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:spi_gpio_init",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Clear",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:CustomLcdDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:SPI_SendByte",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:SPI_SendByte",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetWindows",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetCursor",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Display",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPartBaseImage",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplay",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SetLut",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_Init_Partial",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:read_busy",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_SendCommand",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:writeBytes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_DisplayPart",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.cc:EPD_TurnOnDisplayPart",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "file:main/boards/waveshare-s3-epaper-1.54/board_power_bsp.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "file:main/boards/waveshare-s3-epaper-1.54/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "file:main/boards/waveshare-s3-epaper-1.54/custom_lcd_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "class:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc",
+      "target": "class:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeI2c",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-epaper-1.54/waveshare-s3-epaper-1.54.cc:InitializeLcdDisplay",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

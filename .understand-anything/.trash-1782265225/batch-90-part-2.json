@@ -1,0 +1,831 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/esp-spot-s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp-spot-s3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "type": "file",
+      "name": "esp_spot_s3_board.cc",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        38,
+        53
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeADC",
+      "type": "function",
+      "name": "InitializeADC",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        55,
+        83
+      ],
+      "summary": "实现 InitializeADC 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        85,
+        122
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeGPIO",
+      "type": "function",
+      "name": "InitializeGPIO",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        134,
+        162
+      ],
+      "summary": "实现 InitializeGPIO 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:BlinkGreenFor5s",
+      "type": "function",
+      "name": "BlinkGreenFor5s",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        164,
+        188
+      ],
+      "summary": "实现 BlinkGreenFor5s 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        211,
+        239
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp-spot-s3/esp_spot_s3_board.cc:EspSpotS3Bot",
+      "type": "class",
+      "name": "EspSpotS3Bot",
+      "filePath": "main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "lineRange": [
+        26,
+        240
+      ],
+      "summary": "定义 EspSpotS3Bot 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/esp-spot-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp-spot-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-cgc-144/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-cgc-144/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp32-cgc-144/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-cgc-144/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32-cgc-144"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "type": "file",
+      "name": "esp32_cgc_144_board.cc",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        65,
+        77
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        79,
+        88
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializeSt7735Display",
+      "type": "function",
+      "name": "InitializeSt7735Display",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        90,
+        121
+      ],
+      "summary": "实现 InitializeSt7735Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        123,
+        138
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:ESP32_CGC_144",
+      "type": "function",
+      "name": "ESP32_CGC_144",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        146,
+        155
+      ],
+      "summary": "实现 ESP32_CGC_144 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        172,
+        182
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:ESP32_CGC_144",
+      "type": "class",
+      "name": "ESP32_CGC_144",
+      "filePath": "main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "lineRange": [
+        31,
+        190
+      ],
+      "summary": "定义 ESP32_CGC_144 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "type": "file",
+      "name": "power_manager_lite.h",
+      "filePath": "main/boards/esp32-cgc-144/power_manager_lite.h",
+      "summary": "定义 power_manager_lite 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/power_manager_lite.h:CheckBatteryStatus",
+      "type": "function",
+      "name": "CheckBatteryStatus",
+      "filePath": "main/boards/esp32-cgc-144/power_manager_lite.h",
+      "lineRange": [
+        28,
+        51
+      ],
+      "summary": "实现 CheckBatteryStatus 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/power_manager_lite.h:ReadBatteryAdcData",
+      "type": "function",
+      "name": "ReadBatteryAdcData",
+      "filePath": "main/boards/esp32-cgc-144/power_manager_lite.h",
+      "lineRange": [
+        53,
+        110
+      ],
+      "summary": "实现 ReadBatteryAdcData 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/power_manager_lite.h:PowerManager",
+      "type": "function",
+      "name": "PowerManager",
+      "filePath": "main/boards/esp32-cgc-144/power_manager_lite.h",
+      "lineRange": [
+        113,
+        149
+      ],
+      "summary": "实现 PowerManager 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/esp32-cgc-144/power_manager_lite.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/esp32-cgc-144/power_manager_lite.h",
+      "lineRange": [
+        10,
+        185
+      ],
+      "summary": "定义 PowerManager 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/esp32-cgc-144/power_manager.h",
+      "summary": "定义 power_manager 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/power_manager.h:CheckBatteryStatus",
+      "type": "function",
+      "name": "CheckBatteryStatus",
+      "filePath": "main/boards/esp32-cgc-144/power_manager.h",
+      "lineRange": [
+        28,
+        51
+      ],
+      "summary": "实现 CheckBatteryStatus 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/power_manager.h:ReadBatteryAdcData",
+      "type": "function",
+      "name": "ReadBatteryAdcData",
+      "filePath": "main/boards/esp32-cgc-144/power_manager.h",
+      "lineRange": [
+        53,
+        111
+      ],
+      "summary": "实现 ReadBatteryAdcData 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc-144/power_manager.h:PowerManager",
+      "type": "function",
+      "name": "PowerManager",
+      "filePath": "main/boards/esp32-cgc-144/power_manager.h",
+      "lineRange": [
+        114,
+        150
+      ],
+      "summary": "实现 PowerManager 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/esp32-cgc-144/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/esp32-cgc-144/power_manager.h",
+      "lineRange": [
+        10,
+        186
+      ],
+      "summary": "定义 PowerManager 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/esp32-cgc-144/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp32-cgc-144/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-cgc/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-cgc/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:main/boards/esp32-cgc/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-cgc/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32-cgc"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "type": "file",
+      "name": "esp32_cgc_board.cc",
+      "filePath": "main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc/esp32_cgc_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "lineRange": [
+        69,
+        78
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc/esp32_cgc_board.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "lineRange": [
+        80,
+        124
+      ],
+      "summary": "实现 InitializeLcdDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-cgc/esp32_cgc_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "lineRange": [
+        126,
+        141
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-cgc/esp32_cgc_board.cc:ESP32_CGC",
+      "type": "class",
+      "name": "ESP32_CGC",
+      "filePath": "main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "lineRange": [
+        63,
+        178
+      ],
+      "summary": "定义 ESP32_CGC 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "file:main/boards/esp-spot-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeADC",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:InitializeGPIO",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:BlinkGreenFor5s",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "function:main/boards/esp-spot-s3/esp_spot_s3_board.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "class:main/boards/esp-spot-s3/esp_spot_s3_board.cc:EspSpotS3Bot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-spot-s3/esp_spot_s3_board.cc",
+      "target": "class:main/boards/esp-spot-s3/esp_spot_s3_board.cc:EspSpotS3Bot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "file:main/boards/esp32-cgc-144/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializeSt7735Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:ESP32_CGC_144",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:ESP32_CGC_144",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "function:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "class:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:ESP32_CGC_144",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc",
+      "target": "class:main/boards/esp32-cgc-144/esp32_cgc_144_board.cc:ESP32_CGC_144",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager_lite.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager_lite.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager_lite.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager_lite.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "target": "class:main/boards/esp32-cgc-144/power_manager_lite.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager_lite.h",
+      "target": "class:main/boards/esp32-cgc-144/power_manager_lite.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "target": "function:main/boards/esp32-cgc-144/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "target": "class:main/boards/esp32-cgc-144/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc-144/power_manager.h",
+      "target": "class:main/boards/esp32-cgc-144/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "target": "file:main/boards/esp32-cgc/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "target": "function:main/boards/esp32-cgc/esp32_cgc_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "target": "function:main/boards/esp32-cgc/esp32_cgc_board.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "target": "function:main/boards/esp32-cgc/esp32_cgc_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "target": "class:main/boards/esp32-cgc/esp32_cgc_board.cc:ESP32_CGC",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-cgc/esp32_cgc_board.cc",
+      "target": "class:main/boards/esp32-cgc/esp32_cgc_board.cc:ESP32_CGC",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

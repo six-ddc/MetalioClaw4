@@ -1,0 +1,838 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/yunliao-s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/yunliao-s3/config.h",
+      "summary": "yunliao-s3 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、网络、触摸、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板",
+        "4G-通信",
+        "触摸"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/yunliao-s3/power_manager.cc",
+      "type": "file",
+      "name": "power_manager.cc",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "summary": "yunliao-s3 开发板的电源管理实现，提供电池电量检测、休眠/唤醒等低功耗管理功能。",
+      "tags": [
+        "电源管理",
+        "电池检测",
+        "低功耗"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:calBattLife",
+      "type": "function",
+      "name": "calBattLife",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        32,
+        42
+      ],
+      "summary": "calBattLife 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:PowerManager",
+      "type": "function",
+      "name": "PowerManager",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        44,
+        45
+      ],
+      "summary": "PowerManager 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:Initialize",
+      "type": "function",
+      "name": "Initialize",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        47,
+        107
+      ],
+      "summary": "Initialize 函数的完整实现，包含61行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:CheckBatteryStatus",
+      "type": "function",
+      "name": "CheckBatteryStatus",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        109,
+        131
+      ],
+      "summary": "CheckBatteryStatus 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        133,
+        135
+      ],
+      "summary": "IsCharging 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:IsDischarging",
+      "type": "function",
+      "name": "IsDischarging",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        137,
+        139
+      ],
+      "summary": "IsDischarging 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:IsChargingDone",
+      "type": "function",
+      "name": "IsChargingDone",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        141,
+        143
+      ],
+      "summary": "IsChargingDone 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        145,
+        147
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:OnChargingStatusChanged",
+      "type": "function",
+      "name": "OnChargingStatusChanged",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        149,
+        151
+      ],
+      "summary": "OnChargingStatusChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:OnChargingStatusDisChanged",
+      "type": "function",
+      "name": "OnChargingStatusDisChanged",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        153,
+        155
+      ],
+      "summary": "OnChargingStatusDisChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:CheckStartup",
+      "type": "function",
+      "name": "CheckStartup",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        157,
+        167
+      ],
+      "summary": "CheckStartup 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:Start5V",
+      "type": "function",
+      "name": "Start5V",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        169,
+        171
+      ],
+      "summary": "Start5V 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:Shutdown5V",
+      "type": "function",
+      "name": "Shutdown5V",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        173,
+        175
+      ],
+      "summary": "Shutdown5V 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:Start4G",
+      "type": "function",
+      "name": "Start4G",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        177,
+        179
+      ],
+      "summary": "Start4G 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:Shutdown4G",
+      "type": "function",
+      "name": "Shutdown4G",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        181,
+        185
+      ],
+      "summary": "Shutdown4G 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/power_manager.cc:Sleep",
+      "type": "function",
+      "name": "Sleep",
+      "filePath": "main/boards/yunliao-s3/power_manager.cc",
+      "lineRange": [
+        187,
+        203
+      ],
+      "summary": "Sleep 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/yunliao-s3/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/yunliao-s3/power_manager.h",
+      "summary": "yunliao-s3 开发板的电源管理配置头文件，定义电源管理类及电池检测、休眠等接口。",
+      "tags": [
+        "电源管理",
+        "电池检测",
+        "低功耗"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "type": "file",
+      "name": "yunliao_s3.cc",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "summary": "yunliao-s3 开发板的主板实现，包含YunliaoS3类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        26,
+        41
+      ],
+      "summary": "初始化省电定时器，配置休眠/唤醒周期、GPIO保持和休眠事件回调。",
+      "tags": [
+        "省电定时器",
+        "休眠",
+        "初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        43,
+        58
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        60,
+        69
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        71,
+        97
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        98,
+        135
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "type": "function",
+      "name": "YunliaoS3",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        138,
+        168
+      ],
+      "summary": "YunliaoS3 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        197,
+        202
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/yunliao-s3/yunliao_s3.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        204,
+        209
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "type": "class",
+      "name": "YunliaoS3",
+      "filePath": "main/boards/yunliao-s3/yunliao_s3.cc",
+      "lineRange": [
+        18,
+        210
+      ],
+      "summary": "YunliaoS3 类，包含8个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:calBattLife",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:IsChargingDone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:OnChargingStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:OnChargingStatusDisChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:CheckStartup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Start5V",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Shutdown5V",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Start4G",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Shutdown4G",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Sleep",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:CheckStartup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:CheckBatteryStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:IsChargingDone",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:OnChargingStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Shutdown5V",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Start5V",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Sleep",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:IsDischarging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Shutdown4G",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:Start4G",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "function:main/boards/yunliao-s3/power_manager.cc:OnChargingStatusDisChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "file:main/boards/yunliao-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/power_manager.cc",
+      "target": "file:main/boards/yunliao-s3/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "function:main/boards/yunliao-s3/yunliao_s3.cc:YunliaoS3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "file:main/boards/yunliao-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/yunliao-s3/yunliao_s3.cc",
+      "target": "file:main/boards/yunliao-s3/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,920 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/lilygo-t-cameraplus-s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/config.h",
+      "summary": "定义 lilygo-t-cameraplus-s3 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "camera",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-cameraplus-s3/ir_filter_controller.h",
+      "type": "file",
+      "name": "ir_filter_controller.h",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/ir_filter_controller.h",
+      "summary": "红外滤镜控制器头文件，通过GPIO控制摄像头红外滤光片的切换。",
+      "tags": [
+        "board-support",
+        "camera",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "type": "file",
+      "name": "lilygo-t-cameraplus-s3.cc",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "summary": "LilyGo T-CameraPlus-S3板卡实现，初始化摄像头、LCD显示和音频等外设。",
+      "tags": [
+        "board-support",
+        "camera",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Cst816x",
+      "type": "function",
+      "name": "Cst816x",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        29,
+        33
+      ],
+      "summary": "函数Cst816x，处理i2c_bus、addr逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:~Cst816x",
+      "type": "function",
+      "name": "~Cst816x",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        35,
+        37
+      ],
+      "summary": "函数~Cst816x，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:UpdateTouchPoint",
+      "type": "function",
+      "name": "UpdateTouchPoint",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        39,
+        44
+      ],
+      "summary": "更新函数，刷新TouchPoint的状态或数据。",
+      "tags": [
+        "update"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        58,
+        65
+      ],
+      "summary": "函数Pmic，处理i2c_bus、addr逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        79,
+        93
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitI2c",
+      "type": "function",
+      "name": "InitI2c",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        95,
+        110
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        112,
+        131
+      ],
+      "summary": "函数I2cDetect，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:TouchpadDaemon",
+      "type": "function",
+      "name": "TouchpadDaemon",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        133,
+        154
+      ],
+      "summary": "函数TouchpadDaemon，处理param逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitSpi",
+      "type": "function",
+      "name": "InitSpi",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        162,
+        171
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        178,
+        208
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        210,
+        224
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        226,
+        275
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "type": "function",
+      "name": "LilygoTCameraPlusS3Board",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        282,
+        294
+      ],
+      "summary": "函数LilygoTCameraPlusS3Board，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        314,
+        326
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        328,
+        333
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Cst816x",
+      "type": "class",
+      "name": "Cst816x",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        21,
+        53
+      ],
+      "summary": "Cst816x类，包含3个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        55,
+        66
+      ],
+      "summary": "Pmic类，包含1个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "type": "class",
+      "name": "LilygoTCameraPlusS3Board",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "lineRange": [
+        68,
+        347
+      ],
+      "summary": "LilygoTCameraPlusS3Board板卡类，抽象或实现板卡硬件初始化和外设控制，包含14个方法。",
+      "tags": [
+        "board-driver",
+        "camera"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-cameraplus-s3/pin_config.h",
+      "type": "file",
+      "name": "pin_config.h",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/pin_config.h",
+      "summary": "LilyGo T-CameraPlus-S3板卡配置文件，定义摄像头、LCD和音频的硬件引脚映射。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "camera",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "type": "file",
+      "name": "tcamerapluss3_audio_codec.cc",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "summary": "T-CameraPlus-S3音频编解码器驱动，通过I2S配置ES8311音频芯片。",
+      "tags": [
+        "board-support",
+        "audio",
+        "codec",
+        "camera",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Tcamerapluss3AudioCodec",
+      "type": "function",
+      "name": "Tcamerapluss3AudioCodec",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        12,
+        39
+      ],
+      "summary": "函数Tcamerapluss3AudioCodec，处理input_sample_rate、output_sample_rate、mic_bclk逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:~Tcamerapluss3AudioCodec",
+      "type": "function",
+      "name": "~Tcamerapluss3AudioCodec",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        41,
+        48
+      ],
+      "summary": "函数~Tcamerapluss3AudioCodec，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:CreateVoiceHardware",
+      "type": "function",
+      "name": "CreateVoiceHardware",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        50,
+        128
+      ],
+      "summary": "创建函数，构造并返回VoiceHardware对象。",
+      "tags": [
+        "factory"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:SetOutputVolume",
+      "type": "function",
+      "name": "SetOutputVolume",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        130,
+        133
+      ],
+      "summary": "设置OutputVolume的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        135,
+        137
+      ],
+      "summary": "函数EnableInput，处理enable逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        139,
+        141
+      ],
+      "summary": "函数EnableOutput，处理enable逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        143,
+        156
+      ],
+      "summary": "读取函数，从源读取数据。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "lineRange": [
+        158,
+        169
+      ],
+      "summary": "写入函数，将数据输出到目标。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.h",
+      "type": "file",
+      "name": "tcamerapluss3_audio_codec.h",
+      "filePath": "main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.h",
+      "summary": "T-CameraPlus-S3音频编解码器驱动，通过I2S配置ES8311音频芯片。",
+      "tags": [
+        "board-support",
+        "audio",
+        "codec",
+        "camera",
+        "header"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "file:main/boards/lilygo-t-cameraplus-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "file:main/boards/lilygo-t-cameraplus-s3/ir_filter_controller.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "file:main/boards/lilygo-t-cameraplus-s3/pin_config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Cst816x",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Cst816x",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:~Cst816x",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:~Cst816x",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:UpdateTouchPoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:UpdateTouchPoint",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:TouchpadDaemon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Cst816x",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Cst816x",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc",
+      "target": "class:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializePowerSaveTimer",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:SetPowerSaveMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:TouchpadDaemon",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:UpdateTouchPoint",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializePowerSaveTimer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitI2c",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:I2cDetect",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitSpi",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeSt7789Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:LilygoTCameraPlusS3Board",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:InitializeCamera",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:GetBatteryLevel",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/lilygo-t-cameraplus-s3.cc:GetBatteryLevel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "file:main/boards/lilygo-t-cameraplus-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Tcamerapluss3AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Tcamerapluss3AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:~Tcamerapluss3AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:~Tcamerapluss3AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:CreateVoiceHardware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:CreateVoiceHardware",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:SetOutputVolume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:SetOutputVolume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:Tcamerapluss3AudioCodec",
+      "target": "function:main/boards/lilygo-t-cameraplus-s3/tcamerapluss3_audio_codec.cc:CreateVoiceHardware",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

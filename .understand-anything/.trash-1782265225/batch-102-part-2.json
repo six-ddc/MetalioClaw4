@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "file:sd_images/eaf/happy.eaf",
+      "type": "file",
+      "name": "happy.eaf",
+      "filePath": "sd_images/eaf/happy.eaf",
+      "summary": "「开心」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/eaf/loving.eaf",
+      "type": "file",
+      "name": "loving.eaf",
+      "filePath": "sd_images/eaf/loving.eaf",
+      "summary": "「爱心」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/eaf/neutral.eaf",
+      "type": "file",
+      "name": "neutral.eaf",
+      "filePath": "sd_images/eaf/neutral.eaf",
+      "summary": "「中性」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/eaf/surprised.eaf",
+      "type": "file",
+      "name": "surprised.eaf",
+      "filePath": "sd_images/eaf/surprised.eaf",
+      "summary": "「惊讶」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/eaf/thinking.eaf",
+      "type": "file",
+      "name": "thinking.eaf",
+      "filePath": "sd_images/eaf/thinking.eaf",
+      "summary": "「思考」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/jpg_to_sjpg.py",
+      "type": "file",
+      "name": "jpg_to_sjpg.py",
+      "filePath": "sd_images/jpg_to_sjpg.py",
+      "summary": "sd_images/jpg_to_sjpg.py 的文件。",
+      "tags": [
+        "conversion-tool",
+        "python",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:sd_images/system/emotion/crying.eaf",
+      "type": "file",
+      "name": "crying.eaf",
+      "filePath": "sd_images/system/emotion/crying.eaf",
+      "summary": "「哭泣」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/crying.sjpg",
+      "type": "file",
+      "name": "crying.sjpg",
+      "filePath": "sd_images/system/emotion/crying.sjpg",
+      "summary": "「哭泣」表情的 SJPEG 图像文件，包含表情动画所需的压缩图像帧数据。",
+      "tags": [
+        "image",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/happy.eaf",
+      "type": "file",
+      "name": "happy.eaf",
+      "filePath": "sd_images/system/emotion/happy.eaf",
+      "summary": "「开心」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/happy.sjpg",
+      "type": "file",
+      "name": "happy.sjpg",
+      "filePath": "sd_images/system/emotion/happy.sjpg",
+      "summary": "「开心」表情的 SJPEG 图像文件，包含表情动画所需的压缩图像帧数据。",
+      "tags": [
+        "image",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/loving.eaf",
+      "type": "file",
+      "name": "loving.eaf",
+      "filePath": "sd_images/system/emotion/loving.eaf",
+      "summary": "「爱心」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/loving.sjpg",
+      "type": "file",
+      "name": "loving.sjpg",
+      "filePath": "sd_images/system/emotion/loving.sjpg",
+      "summary": "「爱心」表情的 SJPEG 图像文件，包含表情动画所需的压缩图像帧数据。",
+      "tags": [
+        "image",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,1218 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/led/led.h",
+      "type": "file",
+      "name": "led.h",
+      "filePath": "main/led/led.h",
+      "summary": "定义 LED 指示灯组件的抽象接口声明。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/led/single_led.cc",
+      "type": "file",
+      "name": "single_led.cc",
+      "filePath": "main/led/single_led.cc",
+      "summary": "实现单色 LED 指示灯的具体控制逻辑，支持亮灭和闪烁模式。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/led/single_led.cc:SingleLed",
+      "type": "function",
+      "name": "SingleLed",
+      "filePath": "main/led/single_led.cc",
+      "lineRange": [
+        14,
+        41
+      ],
+      "summary": "实现 SingleLed 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/single_led.cc:TurnOn",
+      "type": "function",
+      "name": "TurnOn",
+      "filePath": "main/led/single_led.cc",
+      "lineRange": [
+        57,
+        66
+      ],
+      "summary": "实现 TurnOn 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/single_led.cc:StartBlinkTask",
+      "type": "function",
+      "name": "StartBlinkTask",
+      "filePath": "main/led/single_led.cc",
+      "lineRange": [
+        90,
+        101
+      ],
+      "summary": "实现 StartBlinkTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/single_led.cc:OnBlinkTimer",
+      "type": "function",
+      "name": "OnBlinkTimer",
+      "filePath": "main/led/single_led.cc",
+      "lineRange": [
+        103,
+        116
+      ],
+      "summary": "实现 OnBlinkTimer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/led/single_led.cc:OnStateChanged",
+      "type": "function",
+      "name": "OnStateChanged",
+      "filePath": "main/led/single_led.cc",
+      "lineRange": [
+        119,
+        163
+      ],
+      "summary": "实现 OnStateChanged 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/led/single_led.h",
+      "type": "file",
+      "name": "single_led.h",
+      "filePath": "main/led/single_led.h",
+      "summary": "定义单色 LED 指示灯的控制接口。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/protocols/mqtt_protocol.cc",
+      "type": "file",
+      "name": "mqtt_protocol.cc",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "summary": "实现 MQTT 通信协议，封装与 MQTT Broker 的连接、订阅、发布和消息处理逻辑。",
+      "tags": [
+        "communication",
+        "mqtt",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:MqttProtocol",
+      "type": "function",
+      "name": "MqttProtocol",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        13,
+        31
+      ],
+      "summary": "实现 MqttProtocol 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:~MqttProtocol",
+      "type": "function",
+      "name": "~MqttProtocol",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        33,
+        46
+      ],
+      "summary": "实现 ~MqttProtocol 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:StartMqttClient",
+      "type": "function",
+      "name": "StartMqttClient",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        52,
+        141
+      ],
+      "summary": "实现 StartMqttClient 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:SendText",
+      "type": "function",
+      "name": "SendText",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        143,
+        153
+      ],
+      "summary": "实现 SendText 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:SendAudio",
+      "type": "function",
+      "name": "SendAudio",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        155,
+        179
+      ],
+      "summary": "实现 SendAudio 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:CloseAudioChannel",
+      "type": "function",
+      "name": "CloseAudioChannel",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        181,
+        196
+      ],
+      "summary": "实现 CloseAudioChannel 函数功能。",
+      "tags": [
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:OpenAudioChannel",
+      "type": "function",
+      "name": "OpenAudioChannel",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        198,
+        278
+      ],
+      "summary": "实现 OpenAudioChannel 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:GetHelloMessage",
+      "type": "function",
+      "name": "GetHelloMessage",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        280,
+        303
+      ],
+      "summary": "实现 GetHelloMessage 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/mqtt_protocol.cc:ParseServerHello",
+      "type": "function",
+      "name": "ParseServerHello",
+      "filePath": "main/protocols/mqtt_protocol.cc",
+      "lineRange": [
+        305,
+        349
+      ],
+      "summary": "实现 ParseServerHello 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/protocols/mqtt_protocol.h",
+      "type": "file",
+      "name": "mqtt_protocol.h",
+      "filePath": "main/protocols/mqtt_protocol.h",
+      "summary": "实现 MQTT 通信协议，封装与 MQTT Broker 的连接、订阅、发布和消息处理逻辑。",
+      "tags": [
+        "communication",
+        "mqtt",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/protocols/protocol.cc",
+      "type": "file",
+      "name": "protocol.cc",
+      "filePath": "main/protocols/protocol.cc",
+      "summary": "实现通信协议栈的基础功能。",
+      "tags": [
+        "communication",
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/protocols/protocol.cc:SendStartListening",
+      "type": "function",
+      "name": "SendStartListening",
+      "filePath": "main/protocols/protocol.cc",
+      "lineRange": [
+        57,
+        69
+      ],
+      "summary": "实现 SendStartListening 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/protocol.cc:IsTimeout",
+      "type": "function",
+      "name": "IsTimeout",
+      "filePath": "main/protocols/protocol.cc",
+      "lineRange": [
+        81,
+        90
+      ],
+      "summary": "实现 IsTimeout 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/protocols/protocol.h",
+      "type": "file",
+      "name": "protocol.h",
+      "filePath": "main/protocols/protocol.h",
+      "summary": "定义通信协议的抽象基类，声明协议连接、消息收发和状态管理的通用接口。",
+      "tags": [
+        "communication",
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/protocols/websocket_protocol.cc",
+      "type": "file",
+      "name": "websocket_protocol.cc",
+      "filePath": "main/protocols/websocket_protocol.cc",
+      "summary": "实现 WebSocket 通信协议，封装 WebSocket 连接的建立、消息收发和重连机制。",
+      "tags": [
+        "communication",
+        "websocket",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/protocols/websocket_protocol.cc:SendAudio",
+      "type": "function",
+      "name": "SendAudio",
+      "filePath": "main/protocols/websocket_protocol.cc",
+      "lineRange": [
+        28,
+        58
+      ],
+      "summary": "实现 SendAudio 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/protocols/websocket_protocol.cc:SendText",
+      "type": "function",
+      "name": "SendText",
+      "filePath": "main/protocols/websocket_protocol.cc",
+      "lineRange": [
+        60,
+        72
+      ],
+      "summary": "实现 SendText 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/websocket_protocol.cc:OpenAudioChannel",
+      "type": "function",
+      "name": "OpenAudioChannel",
+      "filePath": "main/protocols/websocket_protocol.cc",
+      "lineRange": [
+        82,
+        200
+      ],
+      "summary": "实现 OpenAudioChannel 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/protocols/websocket_protocol.cc:GetHelloMessage",
+      "type": "function",
+      "name": "GetHelloMessage",
+      "filePath": "main/protocols/websocket_protocol.cc",
+      "lineRange": [
+        202,
+        225
+      ],
+      "summary": "实现 GetHelloMessage 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/protocols/websocket_protocol.cc:ParseServerHello",
+      "type": "function",
+      "name": "ParseServerHello",
+      "filePath": "main/protocols/websocket_protocol.cc",
+      "lineRange": [
+        227,
+        253
+      ],
+      "summary": "实现 ParseServerHello 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/protocols/websocket_protocol.h",
+      "type": "file",
+      "name": "websocket_protocol.h",
+      "filePath": "main/protocols/websocket_protocol.h",
+      "summary": "实现 WebSocket 通信协议，封装 WebSocket 连接的建立、消息收发和重连机制。",
+      "tags": [
+        "communication",
+        "websocket",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/xingzhi-assets/ic_boot_animation.eaf",
+      "type": "file",
+      "name": "ic_boot_animation.eaf",
+      "filePath": "main/xingzhi-assets/ic_boot_animation.eaf",
+      "summary": "「ic_boot_animation」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/xingzhi-assets/ic_s_music_album.eaf",
+      "type": "file",
+      "name": "ic_s_music_album.eaf",
+      "filePath": "main/xingzhi-assets/ic_s_music_album.eaf",
+      "summary": "「ic_s_music_album」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:scripts/Image_Converter/LVGLImage.py",
+      "type": "file",
+      "name": "LVGLImage.py",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "summary": "辅助脚本：LVGLImage.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/Image_Converter/LVGLImage.py:bit_extend",
+      "type": "function",
+      "name": "bit_extend",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        195,
+        209
+      ],
+      "summary": "实现 bit_extend 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/Image_Converter/LVGLImage.py:unpack_colors",
+      "type": "function",
+      "name": "unpack_colors",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        212,
+        303
+      ],
+      "summary": "实现 unpack_colors 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/Image_Converter/LVGLImage.py:write_c_array_file",
+      "type": "function",
+      "name": "write_c_array_file",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        306,
+        385
+      ],
+      "summary": "实现 write_c_array_file 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/Image_Converter/LVGLImage.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        1313,
+        1398
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/Image_Converter/LVGLImage.py:test",
+      "type": "function",
+      "name": "test",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        1401,
+        1412
+      ],
+      "summary": "实现 test 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:PngQuant",
+      "type": "class",
+      "name": "PngQuant",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        69,
+        96
+      ],
+      "summary": "定义 PngQuant 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:ColorFormat",
+      "type": "class",
+      "name": "ColorFormat",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        105,
+        192
+      ],
+      "summary": "定义 ColorFormat 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:LVGLImageHeader",
+      "type": "class",
+      "name": "LVGLImageHeader",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        388,
+        451
+      ],
+      "summary": "定义 LVGLImageHeader 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:LVGLCompressData",
+      "type": "class",
+      "name": "LVGLCompressData",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        454,
+        488
+      ],
+      "summary": "定义 LVGLCompressData 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:LVGLImage",
+      "type": "class",
+      "name": "LVGLImage",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        491,
+        1048
+      ],
+      "summary": "定义 LVGLImage 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:RLEHeader",
+      "type": "class",
+      "name": "RLEHeader",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        1085,
+        1101
+      ],
+      "summary": "定义 RLEHeader 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:RLEImage",
+      "type": "class",
+      "name": "RLEImage",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        1104,
+        1207
+      ],
+      "summary": "定义 RLEImage 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:RAWImage",
+      "type": "class",
+      "name": "RAWImage",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        1210,
+        1244
+      ],
+      "summary": "定义 RAWImage 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/Image_Converter/LVGLImage.py:PNGConverter",
+      "type": "class",
+      "name": "PNGConverter",
+      "filePath": "scripts/Image_Converter/LVGLImage.py",
+      "lineRange": [
+        1253,
+        1310
+      ],
+      "summary": "定义 PNGConverter 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:scripts/Image_Converter/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "scripts/Image_Converter/README.md",
+      "summary": "脚本目录的说明文档。",
+      "tags": [
+        "documentation",
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "file:main/led/single_led.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:SingleLed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:SingleLed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:TurnOn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:TurnOn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:StartBlinkTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:StartBlinkTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:OnBlinkTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:OnBlinkTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:OnStateChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/led/single_led.cc",
+      "target": "function:main/led/single_led.cc:OnStateChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "file:main/protocols/mqtt_protocol.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:MqttProtocol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:MqttProtocol",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:~MqttProtocol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:~MqttProtocol",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:StartMqttClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:StartMqttClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:SendText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:SendText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:SendAudio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:SendAudio",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:CloseAudioChannel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:CloseAudioChannel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:OpenAudioChannel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:OpenAudioChannel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:GetHelloMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:GetHelloMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:ParseServerHello",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/mqtt_protocol.cc",
+      "target": "function:main/protocols/mqtt_protocol.cc:ParseServerHello",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/protocol.cc",
+      "target": "file:main/protocols/protocol.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/protocols/protocol.cc",
+      "target": "function:main/protocols/protocol.cc:SendStartListening",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/protocol.cc",
+      "target": "function:main/protocols/protocol.cc:SendStartListening",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/protocol.cc",
+      "target": "function:main/protocols/protocol.cc:IsTimeout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/protocol.cc",
+      "target": "function:main/protocols/protocol.cc:IsTimeout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "file:main/protocols/websocket_protocol.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:SendAudio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:SendAudio",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:SendText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:SendText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:OpenAudioChannel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:OpenAudioChannel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:GetHelloMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:GetHelloMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:ParseServerHello",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/protocols/websocket_protocol.cc",
+      "target": "function:main/protocols/websocket_protocol.cc:ParseServerHello",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:bit_extend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:bit_extend",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:unpack_colors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:unpack_colors",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:write_c_array_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:write_c_array_file",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:test",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "function:scripts/Image_Converter/LVGLImage.py:test",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:PngQuant",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:PngQuant",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:ColorFormat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:ColorFormat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:LVGLImageHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:LVGLImageHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:LVGLCompressData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:LVGLCompressData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:LVGLImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:LVGLImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:RLEHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:RLEHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:RLEImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:RLEImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:RAWImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:RAWImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:PNGConverter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/LVGLImage.py",
+      "target": "class:scripts/Image_Converter/LVGLImage.py:PNGConverter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/audio/processors/no_audio_processor.h",
+      "type": "file",
+      "name": "no_audio_processor.h",
+      "filePath": "main/audio/processors/no_audio_processor.h",
+      "summary": "定义空音频处理器的接口声明，用于无音频处理需求的场景。",
+      "tags": [
+        "audio-processor",
+        "null-object",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/wake_word.h",
+      "type": "file",
+      "name": "wake_word.h",
+      "filePath": "main/audio/wake_word.h",
+      "summary": "定义唤醒词处理器接口，封装唤醒词检测逻辑。",
+      "tags": [
+        "wake-word",
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/wake_words/afe_wake_word.cc",
+      "type": "file",
+      "name": "afe_wake_word.cc",
+      "filePath": "main/audio/wake_words/afe_wake_word.cc",
+      "summary": "实现 AFE 唤醒词检测，基于 ESP-SR AFE 框架进行关键词识别与触发。",
+      "tags": [
+        "wake-word",
+        "esp-afe",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/audio/wake_words/afe_wake_word.cc:~AfeWakeWord",
+      "type": "function",
+      "name": "~AfeWakeWord",
+      "filePath": "main/audio/wake_words/afe_wake_word.cc",
+      "lineRange": [
+        19,
+        37
+      ],
+      "summary": "实现 ~AfeWakeWord 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/wake_words/afe_wake_word.cc:Initialize",
+      "type": "function",
+      "name": "Initialize",
+      "filePath": "main/audio/wake_words/afe_wake_word.cc",
+      "lineRange": [
+        39,
+        91
+      ],
+      "summary": "实现 Initialize 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/wake_words/afe_wake_word.cc:AudioDetectionTask",
+      "type": "function",
+      "name": "AudioDetectionTask",
+      "filePath": "main/audio/wake_words/afe_wake_word.cc",
+      "lineRange": [
+        122,
+        148
+      ],
+      "summary": "实现 AudioDetectionTask 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/wake_words/afe_wake_word.cc:EncodeWakeWordData",
+      "type": "function",
+      "name": "EncodeWakeWordData",
+      "filePath": "main/audio/wake_words/afe_wake_word.cc",
+      "lineRange": [
+        159,
+        198
+      ],
+      "summary": "实现 EncodeWakeWordData 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/audio/wake_words/afe_wake_word.h",
+      "type": "file",
+      "name": "afe_wake_word.h",
+      "filePath": "main/audio/wake_words/afe_wake_word.h",
+      "summary": "定义 AFE 唤醒词处理器的接口，集成 ESP-SR AFE 进行唤醒词检测。",
+      "tags": [
+        "wake-word",
+        "esp-afe",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/audio/wake_words/custom_wake_word.cc",
+      "type": "file",
+      "name": "custom_wake_word.cc",
+      "filePath": "main/audio/wake_words/custom_wake_word.cc",
+      "summary": "实现自定义唤醒词检测逻辑，支持用户自定义唤醒词。",
+      "tags": [
+        "wake-word",
+        "custom",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/audio/wake_words/custom_wake_word.cc:~CustomWakeWord",
+      "type": "function",
+      "name": "~CustomWakeWord",
+      "filePath": "main/audio/wake_words/custom_wake_word.cc",
+      "lineRange": [
+        20,
+        37
+      ],
+      "summary": "实现 ~CustomWakeWord 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/wake_words/custom_wake_word.cc:ParseWakenetModelConfig",
+      "type": "function",
+      "name": "ParseWakenetModelConfig",
+      "filePath": "main/audio/wake_words/custom_wake_word.cc",
+      "lineRange": [
+        39,
+        84
+      ],
+      "summary": "实现 ParseWakenetModelConfig 函数功能。",
+      "tags": [
+        "detection",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/wake_words/custom_wake_word.cc:Initialize",
+      "type": "function",
+      "name": "Initialize",
+      "filePath": "main/audio/wake_words/custom_wake_word.cc",
+      "lineRange": [
+        87,
+        131
+      ],
+      "summary": "实现 Initialize 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/wake_words/custom_wake_word.cc:Feed",
+      "type": "function",
+      "name": "Feed",
+      "filePath": "main/audio/wake_words/custom_wake_word.cc",
+      "lineRange": [
+        145,
+        187
+      ],
+      "summary": "实现 Feed 函数功能。",
+      "tags": [
+        "data-feed"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/wake_words/custom_wake_word.cc:EncodeWakeWordData",
+      "type": "function",
+      "name": "EncodeWakeWordData",
+      "filePath": "main/audio/wake_words/custom_wake_word.cc",
+      "lineRange": [
+        205,
+        244
+      ],
+      "summary": "实现 EncodeWakeWordData 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/audio/wake_words/custom_wake_word.h",
+      "type": "file",
+      "name": "custom_wake_word.h",
+      "filePath": "main/audio/wake_words/custom_wake_word.h",
+      "summary": "定义自定义唤醒词处理器的接口声明。",
+      "tags": [
+        "wake-word",
+        "custom",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/audio/wake_words/esp_wake_word.cc",
+      "type": "file",
+      "name": "esp_wake_word.cc",
+      "filePath": "main/audio/wake_words/esp_wake_word.cc",
+      "summary": "实现 ESP 唤醒词检测，封装 ESP-SR Multinet 模型进行唤醒词识别。",
+      "tags": [
+        "wake-word",
+        "esp-sr",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/wake_words/esp_wake_word.cc:Initialize",
+      "type": "function",
+      "name": "Initialize",
+      "filePath": "main/audio/wake_words/esp_wake_word.cc",
+      "lineRange": [
+        17,
+        45
+      ],
+      "summary": "实现 Initialize 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/wake_words/esp_wake_word.cc:Feed",
+      "type": "function",
+      "name": "Feed",
+      "filePath": "main/audio/wake_words/esp_wake_word.cc",
+      "lineRange": [
+        59,
+        73
+      ],
+      "summary": "实现 Feed 函数功能。",
+      "tags": [
+        "data-feed"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/wake_words/esp_wake_word.h",
+      "type": "file",
+      "name": "esp_wake_word.h",
+      "filePath": "main/audio/wake_words/esp_wake_word.h",
+      "summary": "定义 ESP 唤醒词处理器的接口声明，封装 ESP-SR 唤醒词引擎。",
+      "tags": [
+        "wake-word",
+        "esp-sr",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "type": "file",
+      "name": "atk_dnesp32s3_box.cc",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "summary": "实现 atk_dnesp32s3_box 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:ATK_NoAudioCodecDuplex",
+      "type": "function",
+      "name": "ATK_NoAudioCodecDuplex",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        25,
+        80
+      ],
+      "summary": "实现 ATK_NoAudioCodecDuplex 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:SetOutputState",
+      "type": "function",
+      "name": "SetOutputState",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        95,
+        113
+      ],
+      "summary": "实现 SetOutputState 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:GetPingState",
+      "type": "function",
+      "name": "GetPingState",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        115,
+        126
+      ],
+      "summary": "实现 GetPingState 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        138,
+        164
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:InitializeATK_ST7789_80_Display",
+      "type": "function",
+      "name": "InitializeATK_ST7789_80_Display",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        166,
+        242
+      ],
+      "summary": "实现 InitializeATK_ST7789_80_Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:ATK_NoAudioCodecDuplex",
+      "type": "class",
+      "name": "ATK_NoAudioCodecDuplex",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        23,
+        81
+      ],
+      "summary": "定义 ATK_NoAudioCodecDuplex 类及其方法。",
+      "tags": [
+        "audio-codec",
+        "audio"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:XL9555_IN",
+      "type": "class",
+      "name": "XL9555_IN",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        83,
+        127
+      ],
+      "summary": "定义 XL9555_IN 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:atk_dnesp32s3_box",
+      "type": "class",
+      "name": "atk_dnesp32s3_box",
+      "filePath": "main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "lineRange": [
+        129,
+        297
+      ],
+      "summary": "定义 atk_dnesp32s3_box 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3-box/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atk-dnesp32s3-box/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atk-dnesp32s3-box/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atk-dnesp32s3-box/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atk-dnesp32s3-box"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atk-dnesp32s3-box0/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atk-dnesp32s3-box0/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atk-dnesp32s3-box0"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "file:main/audio/wake_words/afe_wake_word.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:~AfeWakeWord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:~AfeWakeWord",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:Initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:Initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:AudioDetectionTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:AudioDetectionTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:EncodeWakeWordData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/afe_wake_word.cc",
+      "target": "function:main/audio/wake_words/afe_wake_word.cc:EncodeWakeWordData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "file:main/audio/wake_words/custom_wake_word.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:~CustomWakeWord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:~CustomWakeWord",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:ParseWakenetModelConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:ParseWakenetModelConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:Initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:Initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:Feed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:Feed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:EncodeWakeWordData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/custom_wake_word.cc",
+      "target": "function:main/audio/wake_words/custom_wake_word.cc:EncodeWakeWordData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/esp_wake_word.cc",
+      "target": "file:main/audio/wake_words/esp_wake_word.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/wake_words/esp_wake_word.cc",
+      "target": "function:main/audio/wake_words/esp_wake_word.cc:Initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/esp_wake_word.cc",
+      "target": "function:main/audio/wake_words/esp_wake_word.cc:Initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/wake_words/esp_wake_word.cc",
+      "target": "function:main/audio/wake_words/esp_wake_word.cc:Feed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/wake_words/esp_wake_word.cc",
+      "target": "function:main/audio/wake_words/esp_wake_word.cc:Feed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "file:main/boards/atk-dnesp32s3-box/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:ATK_NoAudioCodecDuplex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:ATK_NoAudioCodecDuplex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:SetOutputState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:SetOutputState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:GetPingState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:GetPingState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:InitializeATK_ST7789_80_Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:ATK_NoAudioCodecDuplex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:ATK_NoAudioCodecDuplex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:XL9555_IN",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:XL9555_IN",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:atk_dnesp32s3_box",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box/atk_dnesp32s3_box.cc:atk_dnesp32s3_box",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

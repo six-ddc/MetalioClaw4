@@ -1,0 +1,564 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/config.h",
+      "summary": "定义 esp-s3-lcd-ev-board 板卡的硬件引脚配置、外设初始化参数及功能开关的板级配置文件。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "header",
+        "pin-definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "type": "file",
+      "name": "esp-s3-lcd-ev-board.cc",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "summary": "ESP-S3-LCD-EV开发板实现，初始化LCD显示、触摸输入和音频等板载外设，共4个函数。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeRGB_GC9503V_Display",
+      "type": "function",
+      "name": "InitializeRGB_GC9503V_Display",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "lineRange": [
+        32,
+        126
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization",
+        "rendering"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "lineRange": [
+        128,
+        151
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "lineRange": [
+        153,
+        166
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "type": "function",
+      "name": "ESP_S3_LCD_EV_Board",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "lineRange": [
+        169,
+        173
+      ],
+      "summary": "函数ESP_S3_LCD_EV_Board，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "type": "class",
+      "name": "ESP_S3_LCD_EV_Board",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "lineRange": [
+        23,
+        202
+      ],
+      "summary": "ESP_S3_LCD_EV_Board板卡类，抽象或实现板卡硬件初始化和外设控制，包含4个方法。",
+      "tags": [
+        "board-driver"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "type": "file",
+      "name": "esp_io_expander_tca9554.c",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "summary": "TCA9554 IO扩展器驱动，通过I2C总线扩展GPIO引脚，用于控制LCD背光和复位信号。",
+      "tags": [
+        "board-support",
+        "implementation",
+        "gpio",
+        "io-expander"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:esp_io_expander_new_i2c_tca9554",
+      "type": "function",
+      "name": "esp_io_expander_new_i2c_tca9554",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "lineRange": [
+        54,
+        88
+      ],
+      "summary": "函数esp_io_expander_new_i2c_tca9554，处理i2c_bus、dev_addr、handle_ret逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:read_input_reg",
+      "type": "function",
+      "name": "read_input_reg",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "lineRange": [
+        90,
+        100
+      ],
+      "summary": "函数read_input_reg，处理handle、value逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:write_output_reg",
+      "type": "function",
+      "name": "write_output_reg",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "lineRange": [
+        102,
+        111
+      ],
+      "summary": "函数write_output_reg，处理handle、value逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:write_direction_reg",
+      "type": "function",
+      "name": "write_direction_reg",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "lineRange": [
+        121,
+        130
+      ],
+      "summary": "函数write_direction_reg，处理handle、value逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.h",
+      "type": "file",
+      "name": "esp_io_expander_tca9554.h",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.h",
+      "summary": "TCA9554 IO扩展器驱动，通过I2C总线扩展GPIO引脚，用于控制LCD背光和复位信号。",
+      "tags": [
+        "board-support",
+        "header",
+        "gpio",
+        "io-expander"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "type": "file",
+      "name": "esp_lcd_gc9503.c",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "summary": "GC9503 LCD控制器驱动，通过SPI接口驱动LCD面板，提供初始化序列和显示参数配置。",
+      "tags": [
+        "board-support",
+        "implementation",
+        "lcd-driver",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "type": "function",
+      "name": "esp_lcd_new_panel_gc9503",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        58,
+        179
+      ],
+      "summary": "函数esp_lcd_new_panel_gc9503，处理io、panel_dev_config、ret_panel逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_send_init_cmds",
+      "type": "function",
+      "name": "panel_gc9503_send_init_cmds",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        319,
+        383
+      ],
+      "summary": "函数panel_gc9503_send_init_cmds，处理gc9503逻辑。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_init",
+      "type": "function",
+      "name": "panel_gc9503_init",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        385,
+        397
+      ],
+      "summary": "函数panel_gc9503_init，处理panel逻辑。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_del",
+      "type": "function",
+      "name": "panel_gc9503_del",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        399,
+        412
+      ],
+      "summary": "函数panel_gc9503_del，处理panel逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_reset",
+      "type": "function",
+      "name": "panel_gc9503_reset",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        414,
+        436
+      ],
+      "summary": "函数panel_gc9503_reset，处理panel逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_mirror",
+      "type": "function",
+      "name": "panel_gc9503_mirror",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        438,
+        476
+      ],
+      "summary": "函数panel_gc9503_mirror，处理panel、mirror_x、mirror_y逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_disp_on_off",
+      "type": "function",
+      "name": "panel_gc9503_disp_on_off",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "lineRange": [
+        478,
+        504
+      ],
+      "summary": "函数panel_gc9503_disp_on_off，处理panel、on_off逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.h",
+      "type": "file",
+      "name": "esp_lcd_gc9503.h",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.h",
+      "summary": "GC9503 LCD控制器驱动，通过SPI接口驱动LCD面板，提供初始化序列和显示参数配置。",
+      "tags": [
+        "board-support",
+        "header",
+        "lcd-driver",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/esp-s3-lcd-ev-board/pin_config.h",
+      "type": "file",
+      "name": "pin_config.h",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/pin_config.h",
+      "summary": "ESP-S3-LCD-EV开发板配置文件，定义LCD、触摸屏、音频等外设的硬件引脚映射。",
+      "tags": [
+        "board-support",
+        "configuration",
+        "hardware-config",
+        "header",
+        "pin-definition"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "file:main/boards/esp-s3-lcd-ev-board/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "file:main/boards/esp-s3-lcd-ev-board/pin_config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeRGB_GC9503V_Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "class:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc",
+      "target": "class:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeCodecI2c",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeButtons",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:ESP_S3_LCD_EV_Board",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp-s3-lcd-ev-board.cc:InitializeRGB_GC9503V_Display",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "target": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:esp_io_expander_new_i2c_tca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:esp_io_expander_new_i2c_tca9554",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:read_input_reg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:write_output_reg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_io_expander_tca9554.c:write_direction_reg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_send_init_cmds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_del",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_reset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_mirror",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_disp_on_off",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_send_init_cmds",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_init",
+      "target": "function:main/boards/esp-s3-lcd-ev-board/esp_lcd_gc9503.c:panel_gc9503_send_init_cmds",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

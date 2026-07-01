@@ -1,0 +1,2127 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/display.cc",
+      "type": "file",
+      "name": "display.cc",
+      "filePath": "main/display/display.cc",
+      "summary": "通用显示基类实现，提供主题管理、状态栏渲染、通知弹出等显示抽象层核心功能。",
+      "tags": [
+        "display",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:Display",
+      "type": "function",
+      "name": "Display",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        17,
+        18
+      ],
+      "summary": "显示函数，在屏幕上渲染内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:~Display",
+      "type": "function",
+      "name": "~Display",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        20,
+        21
+      ],
+      "summary": "显示函数，在屏幕上渲染~内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:SetStatus",
+      "type": "function",
+      "name": "SetStatus",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        23,
+        25
+      ],
+      "summary": "设置Status的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:ShowNotification",
+      "type": "function",
+      "name": "ShowNotification",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        27,
+        29
+      ],
+      "summary": "显示函数，在屏幕上渲染Notification内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:ShowNotification",
+      "type": "function",
+      "name": "ShowNotification",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        31,
+        33
+      ],
+      "summary": "显示函数，在屏幕上渲染Notification内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:UpdateStatusBar",
+      "type": "function",
+      "name": "UpdateStatusBar",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        35,
+        36
+      ],
+      "summary": "更新函数，刷新StatusBar的状态或数据。",
+      "tags": [
+        "update"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:SetEmotion",
+      "type": "function",
+      "name": "SetEmotion",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        39,
+        41
+      ],
+      "summary": "设置Emotion的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:SetChatMessage",
+      "type": "function",
+      "name": "SetChatMessage",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        43,
+        46
+      ],
+      "summary": "设置ChatMessage的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:SetTheme",
+      "type": "function",
+      "name": "SetTheme",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        48,
+        52
+      ],
+      "summary": "设置Theme的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/display.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/display/display.cc",
+      "lineRange": [
+        54,
+        56
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/display.h",
+      "type": "file",
+      "name": "display.h",
+      "filePath": "main/display/display.h",
+      "summary": "通用显示基类头文件，定义Display抽象接口与显示相关的数据结构。",
+      "tags": [
+        "display",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/emote_display.cc",
+      "type": "file",
+      "name": "emote_display.cc",
+      "filePath": "main/display/emote_display.cc",
+      "summary": "表情显示实现，基于LVGL实现emoji表情渲染与动画效果，共30个函数。",
+      "tags": [
+        "display",
+        "emoji-rendering",
+        "implementation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:StringToGfxAlign",
+      "type": "function",
+      "name": "StringToGfxAlign",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        90,
+        124
+      ],
+      "summary": "函数StringToGfxAlign，处理align_str逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "function",
+      "name": "SetUIDisplayMode",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        156,
+        186
+      ],
+      "summary": "设置UIDisplayMode的配置函数。",
+      "tags": [
+        "setter",
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:InitializeGraphics",
+      "type": "function",
+      "name": "InitializeGraphics",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        192,
+        225
+      ],
+      "summary": "初始化函数，配置panel, engine_handle参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetupUI",
+      "type": "function",
+      "name": "SetupUI",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        227,
+        269
+      ],
+      "summary": "设置upUI的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:RegisterCallbacks",
+      "type": "function",
+      "name": "RegisterCallbacks",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        271,
+        282
+      ],
+      "summary": "注册函数，登记Callbacks回调或服务。",
+      "tags": [
+        "registration",
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:EmoteEngine",
+      "type": "function",
+      "name": "EmoteEngine",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        288,
+        300
+      ],
+      "summary": "函数EmoteEngine，处理panel、panel_io、width逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:~EmoteEngine",
+      "type": "function",
+      "name": "~EmoteEngine",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        302,
+        308
+      ],
+      "summary": "函数~EmoteEngine，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetEyes",
+      "type": "function",
+      "name": "SetEyes",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        310,
+        332
+      ],
+      "summary": "设置Eyes的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetIcon",
+      "type": "function",
+      "name": "SetIcon",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        334,
+        359
+      ],
+      "summary": "设置Icon的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:OnFlushIoReady",
+      "type": "function",
+      "name": "OnFlushIoReady",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        361,
+        366
+      ],
+      "summary": "事件处理函数，响应FlushIoReady事件。",
+      "tags": [
+        "event-handler",
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:OnFlush",
+      "type": "function",
+      "name": "OnFlush",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        368,
+        376
+      ],
+      "summary": "事件处理函数，响应Flush事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:EmoteDisplay",
+      "type": "function",
+      "name": "EmoteDisplay",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        382,
+        386
+      ],
+      "summary": "显示函数，在屏幕上渲染Emote内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:~EmoteDisplay",
+      "type": "function",
+      "name": "~EmoteDisplay",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        388,
+        388
+      ],
+      "summary": "显示函数，在屏幕上渲染~Emote内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetEmotion",
+      "type": "function",
+      "name": "SetEmotion",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        390,
+        412
+      ],
+      "summary": "设置Emotion的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetChatMessage",
+      "type": "function",
+      "name": "SetChatMessage",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        414,
+        425
+      ],
+      "summary": "设置ChatMessage的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetStatus",
+      "type": "function",
+      "name": "SetStatus",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        427,
+        458
+      ],
+      "summary": "设置Status的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:ShowNotification",
+      "type": "function",
+      "name": "ShowNotification",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        460,
+        470
+      ],
+      "summary": "显示函数，在屏幕上渲染Notification内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:UpdateStatusBar",
+      "type": "function",
+      "name": "UpdateStatusBar",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        472,
+        496
+      ],
+      "summary": "更新函数，刷新StatusBar的状态或数据。",
+      "tags": [
+        "update"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        498,
+        511
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetPreviewImage",
+      "type": "function",
+      "name": "SetPreviewImage",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        513,
+        520
+      ],
+      "summary": "设置PreviewImage的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:SetTheme",
+      "type": "function",
+      "name": "SetTheme",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        522,
+        526
+      ],
+      "summary": "设置Theme的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:AddEmojiData",
+      "type": "function",
+      "name": "AddEmojiData",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        527,
+        538
+      ],
+      "summary": "函数AddEmojiData，处理name、data、size逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:AddIconData",
+      "type": "function",
+      "name": "AddIconData",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        540,
+        550
+      ],
+      "summary": "函数AddIconData，处理name、data、size逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:AddLayoutData",
+      "type": "function",
+      "name": "AddLayoutData",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        552,
+        584
+      ],
+      "summary": "函数AddLayoutData，处理name、align_str、x逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:AddTextFont",
+      "type": "function",
+      "name": "AddTextFont",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        586,
+        603
+      ],
+      "summary": "函数AddTextFont，处理text_font逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:GetEmojiData",
+      "type": "function",
+      "name": "GetEmojiData",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        605,
+        612
+      ],
+      "summary": "获取EmojiData的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:GetIconData",
+      "type": "function",
+      "name": "GetIconData",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        614,
+        621
+      ],
+      "summary": "获取IconData的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:InitializeEngine",
+      "type": "function",
+      "name": "InitializeEngine",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        633,
+        637
+      ],
+      "summary": "初始化函数，配置panel, panel_io参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:Lock",
+      "type": "function",
+      "name": "Lock",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        639,
+        646
+      ],
+      "summary": "函数Lock，处理timeout_ms逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.cc:Unlock",
+      "type": "function",
+      "name": "Unlock",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        648,
+        653
+      ],
+      "summary": "函数Unlock，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/emote_display.cc:EmoteDisplay",
+      "type": "class",
+      "name": "EmoteDisplay",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        76,
+        76
+      ],
+      "summary": "EmoteDisplay显示类，管理屏幕渲染和UI交互逻辑，包含19个方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/display/emote_display.cc:EmoteEngine",
+      "type": "class",
+      "name": "EmoteEngine",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        77,
+        77
+      ],
+      "summary": "EmoteEngine类，包含6个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/display/emote_display.cc:EmoteEngine",
+      "type": "class",
+      "name": "EmoteEngine",
+      "filePath": "main/display/emote_display.cc",
+      "lineRange": [
+        130,
+        150
+      ],
+      "summary": "EmoteEngine类，包含6个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/emote_display.h",
+      "type": "file",
+      "name": "emote_display.h",
+      "filePath": "main/display/emote_display.h",
+      "summary": "表情显示头文件，声明表情渲染接口与表情数据结构。",
+      "tags": [
+        "display",
+        "emoji-rendering",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/emote_display.h:AssetData",
+      "type": "function",
+      "name": "AssetData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        27,
+        27
+      ],
+      "summary": "函数AssetData，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.h:AssetData",
+      "type": "function",
+      "name": "AssetData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        28,
+        28
+      ],
+      "summary": "函数AssetData，处理d、s逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.h:AssetData",
+      "type": "function",
+      "name": "AssetData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        29,
+        35
+      ],
+      "summary": "函数AssetData，处理d、s、f逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.h:LayoutData",
+      "type": "function",
+      "name": "LayoutData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        47,
+        47
+      ],
+      "summary": "函数LayoutData，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.h:LayoutData",
+      "type": "function",
+      "name": "LayoutData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        48,
+        49
+      ],
+      "summary": "函数LayoutData，处理a、x_pos、y_pos逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/emote_display.h:text_font",
+      "type": "function",
+      "name": "text_font",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        81,
+        84
+      ],
+      "summary": "函数text_font，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/emote_display.h:AssetData",
+      "type": "class",
+      "name": "AssetData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        15,
+        36
+      ],
+      "summary": "AssetData类，包含3个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/emote_display.h:LayoutData",
+      "type": "class",
+      "name": "LayoutData",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        39,
+        50
+      ],
+      "summary": "LayoutData类，包含2个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/emote_display.h:EmoteEngine",
+      "type": "class",
+      "name": "EmoteEngine",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        55,
+        55
+      ],
+      "summary": "EmoteEngine类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/emote_display.h:EmoteDisplay",
+      "type": "class",
+      "name": "EmoteDisplay",
+      "filePath": "main/display/emote_display.h",
+      "lineRange": [
+        57,
+        100
+      ],
+      "summary": "EmoteDisplay显示类，管理屏幕渲染和UI交互逻辑，包含18个方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/display/lcd_display.cc",
+      "type": "file",
+      "name": "lcd_display.cc",
+      "filePath": "main/display/lcd_display.cc",
+      "summary": "LCD显示屏驱动实现，基于LVGL实现LCD屏的渲染、主题切换和UI交互，包含11个函数的大量UI逻辑。",
+      "tags": [
+        "display",
+        "lcd-display",
+        "implementation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "function",
+      "name": "InitializeLcdThemes",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        24,
+        62
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:LcdDisplay",
+      "type": "function",
+      "name": "LcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        64,
+        89
+      ],
+      "summary": "显示函数，在屏幕上渲染Lcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SpiLcdDisplay",
+      "type": "function",
+      "name": "SpiLcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        91,
+        173
+      ],
+      "summary": "显示函数，在屏幕上渲染SpiLcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:RgbLcdDisplay",
+      "type": "function",
+      "name": "RgbLcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        177,
+        236
+      ],
+      "summary": "显示函数，在屏幕上渲染RgbLcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:MipiLcdDisplay",
+      "type": "function",
+      "name": "MipiLcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        238,
+        293
+      ],
+      "summary": "显示函数，在屏幕上渲染MipiLcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:~LcdDisplay",
+      "type": "function",
+      "name": "~LcdDisplay",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        295,
+        352
+      ],
+      "summary": "显示函数，在屏幕上渲染~Lcd内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:Lock",
+      "type": "function",
+      "name": "Lock",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        354,
+        356
+      ],
+      "summary": "函数Lock，处理timeout_ms逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:Unlock",
+      "type": "function",
+      "name": "Unlock",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        358,
+        360
+      ],
+      "summary": "函数Unlock，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SetEmotion",
+      "type": "function",
+      "name": "SetEmotion",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        977,
+        1044
+      ],
+      "summary": "设置Emotion的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SetTheme",
+      "type": "function",
+      "name": "SetTheme",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        1046,
+        1186
+      ],
+      "summary": "设置Theme的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lcd_display.cc:SetHideSubtitle",
+      "type": "function",
+      "name": "SetHideSubtitle",
+      "filePath": "main/display/lcd_display.cc",
+      "lineRange": [
+        1188,
+        1200
+      ],
+      "summary": "设置HideSubtitle的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/display.cc",
+      "target": "file:main/display/display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:~Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:~Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:ShowNotification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:ShowNotification",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:ShowNotification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:ShowNotification",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:UpdateStatusBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:UpdateStatusBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetEmotion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetEmotion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetChatMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetChatMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/display.cc",
+      "target": "function:main/display/display.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/display.cc:ShowNotification",
+      "target": "function:main/display/display.cc:ShowNotification",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "file:main/display/emote_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:StringToGfxAlign",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:StringToGfxAlign",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:InitializeGraphics",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetupUI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:RegisterCallbacks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:EmoteEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:EmoteEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:~EmoteEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:~EmoteEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetEyes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetEyes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:OnFlushIoReady",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:OnFlushIoReady",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:OnFlush",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:OnFlush",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:EmoteDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:EmoteDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:~EmoteDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:~EmoteDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetEmotion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetEmotion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetChatMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetChatMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:ShowNotification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:ShowNotification",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:UpdateStatusBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:UpdateStatusBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetPreviewImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetPreviewImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:SetTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddEmojiData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddEmojiData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddIconData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddIconData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddLayoutData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddLayoutData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddTextFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:AddTextFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:GetEmojiData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:GetEmojiData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:GetIconData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:GetIconData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:InitializeEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:InitializeEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:Lock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:Lock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:Unlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "function:main/display/emote_display.cc:Unlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "class:main/display/emote_display.cc:EmoteDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "class:main/display/emote_display.cc:EmoteDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "class:main/display/emote_display.cc:EmoteEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "class:main/display/emote_display.cc:EmoteEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "class:main/display/emote_display.cc:EmoteEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.cc",
+      "target": "class:main/display/emote_display.cc:EmoteEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "target": "function:main/display/emote_display.cc:GetIconData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetupUI",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:EmoteEngine",
+      "target": "function:main/display/emote_display.cc:InitializeGraphics",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:EmoteEngine",
+      "target": "function:main/display/emote_display.cc:SetupUI",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:EmoteEngine",
+      "target": "function:main/display/emote_display.cc:RegisterCallbacks",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetEyes",
+      "target": "function:main/display/emote_display.cc:GetEmojiData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetIcon",
+      "target": "function:main/display/emote_display.cc:GetIconData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:EmoteDisplay",
+      "target": "function:main/display/emote_display.cc:InitializeEngine",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetEmotion",
+      "target": "function:main/display/emote_display.cc:GetEmojiData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetEmotion",
+      "target": "function:main/display/emote_display.cc:SetEyes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetChatMessage",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetEyes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:SetStatus",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:ShowNotification",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:UpdateStatusBar",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:AddEmojiData",
+      "target": "function:main/display/emote_display.cc:SetEyes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:AddIconData",
+      "target": "function:main/display/emote_display.cc:SetUIDisplayMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:AddIconData",
+      "target": "function:main/display/emote_display.cc:SetIcon",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/emote_display.cc:AddLayoutData",
+      "target": "function:main/display/emote_display.cc:StringToGfxAlign",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "file:main/display/display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:AssetData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:AssetData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:AssetData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:AssetData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:AssetData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:AssetData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:LayoutData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:LayoutData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:LayoutData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:LayoutData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:text_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "function:main/display/emote_display.h:text_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:AssetData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:AssetData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:LayoutData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:LayoutData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:EmoteEngine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:EmoteEngine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:EmoteDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/emote_display.h",
+      "target": "class:main/display/emote_display.h:EmoteDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "file:main/display/lcd_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:LcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:LcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SpiLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SpiLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:RgbLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:RgbLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:MipiLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:MipiLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:~LcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:~LcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:Lock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:Lock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:Unlock",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:Unlock",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetEmotion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetEmotion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetHideSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lcd_display.cc",
+      "target": "function:main/display/lcd_display.cc:SetHideSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/lcd_display.cc:LcdDisplay",
+      "target": "function:main/display/lcd_display.cc:InitializeLcdThemes",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

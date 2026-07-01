@@ -1,0 +1,746 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "type": "file",
+      "name": "atk_dnesp32s3_box0.cc",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "summary": "atk-dnesp32s3-box0 开发板的主板实现，包含atk_dnesp32s3_box0类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeBoardPowerManager",
+      "type": "function",
+      "name": "InitializeBoardPowerManager",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        44,
+        121
+      ],
+      "summary": "初始化电源管理模块，配置电池检测ADC和充放电状态监测。",
+      "tags": [
+        "电源管理",
+        "电池检测"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializePowerManager",
+      "type": "function",
+      "name": "InitializePowerManager",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        123,
+        132
+      ],
+      "summary": "初始化电源管理模块，配置电池检测ADC和充放电状态监测。",
+      "tags": [
+        "电源管理",
+        "电池检测",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        134,
+        164
+      ],
+      "summary": "初始化省电定时器，配置休眠/唤醒周期、GPIO保持和休眠事件回调。",
+      "tags": [
+        "省电定时器",
+        "休眠",
+        "初始化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        167,
+        181
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        184,
+        193
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        195,
+        294
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        296,
+        325
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "type": "function",
+      "name": "atk_dnesp32s3_box0",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        328,
+        340
+      ],
+      "summary": "atk_dnesp32s3_box0 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        368,
+        378
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        380,
+        385
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "type": "class",
+      "name": "atk_dnesp32s3_box0",
+      "filePath": "main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "lineRange": [
+        23,
+        386
+      ],
+      "summary": "atk_dnesp32s3_box0 类，包含10个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3-box0/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atk-dnesp32s3-box0/config.h",
+      "summary": "atk-dnesp32s3-box0 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "summary": "atk-dnesp32s3-box0 开发板的电源管理配置头文件，定义电源管理类及电池检测、休眠等接口。",
+      "tags": [
+        "电源管理",
+        "电池检测",
+        "低功耗"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:CheckBatteryStatus",
+      "type": "function",
+      "name": "CheckBatteryStatus",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        27,
+        50
+      ],
+      "summary": "CheckBatteryStatus 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:ReadBatteryAdcData",
+      "type": "function",
+      "name": "ReadBatteryAdcData",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        52,
+        125
+      ],
+      "summary": "ReadBatteryAdcData 函数的完整实现，包含74行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "type": "function",
+      "name": "PowerManager",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        130,
+        157
+      ],
+      "summary": "PowerManager 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:~PowerManager",
+      "type": "function",
+      "name": "~PowerManager",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        159,
+        167
+      ],
+      "summary": "~PowerManager 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        169,
+        175
+      ],
+      "summary": "IsCharging 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsDischarging",
+      "type": "function",
+      "name": "IsDischarging",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        177,
+        180
+      ],
+      "summary": "IsDischarging 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        182,
+        184
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "function",
+      "name": "OnLowBatteryStatusChanged",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        186,
+        188
+      ],
+      "summary": "OnLowBatteryStatusChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnChargingStatusChanged",
+      "type": "function",
+      "name": "OnChargingStatusChanged",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        190,
+        192
+      ],
+      "summary": "OnChargingStatusChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "lineRange": [
+        10,
+        193
+      ],
+      "summary": "PowerManager 电源管理类，封装电池电压检测、充放电状态监测和低功耗管理。",
+      "tags": [
+        "电源管理",
+        "电池管理"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeBoardPowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeBoardPowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "function:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc:atk_dnesp32s3_box0",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "file:main/boards/atk-dnesp32s3-box0/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/atk_dnesp32s3_box0.cc",
+      "target": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:~PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnChargingStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:~PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnChargingStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:~PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnChargingStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:IsDischarging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3-box0/power_manager.h",
+      "target": "function:main/boards/atk-dnesp32s3-box0/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

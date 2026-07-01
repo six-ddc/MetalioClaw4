@@ -1,0 +1,1148 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/m5stack-core-s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/m5stack-core-s3/config.h",
+      "summary": "m5stack-core-s3 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "type": "file",
+      "name": "cores3_audio_codec.cc",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "summary": "m5stack-core-s3 开发板的音频编解码器实现，包含I2S配置、采样率设置、音量控制及音频输入输出通道管理。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:CoreS3AudioCodec",
+      "type": "function",
+      "name": "CoreS3AudioCodec",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        9,
+        77
+      ],
+      "summary": "CoreS3AudioCodec 函数的完整实现，包含69行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:~CoreS3AudioCodec",
+      "type": "function",
+      "name": "~CoreS3AudioCodec",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        79,
+        91
+      ],
+      "summary": "~CoreS3AudioCodec 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:CreateDuplexChannels",
+      "type": "function",
+      "name": "CreateDuplexChannels",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        93,
+        181
+      ],
+      "summary": "CreateDuplexChannels 函数的完整实现，包含89行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:SetOutputVolume",
+      "type": "function",
+      "name": "SetOutputVolume",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        183,
+        186
+      ],
+      "summary": "设置音频播放音量，调整编解码器增益参数。",
+      "tags": [
+        "音量",
+        "音频控制",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        188,
+        209
+      ],
+      "summary": "EnableInput 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        211,
+        230
+      ],
+      "summary": "EnableOutput 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        232,
+        237
+      ],
+      "summary": "Read 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "lineRange": [
+        239,
+        244
+      ],
+      "summary": "Write 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/m5stack-core-s3/cores3_audio_codec.h",
+      "type": "file",
+      "name": "cores3_audio_codec.h",
+      "filePath": "main/boards/m5stack-core-s3/cores3_audio_codec.h",
+      "summary": "m5stack-core-s3 开发板的音频编解码器配置头文件，定义音频参数结构体和编解码器类接口。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频配置"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "type": "file",
+      "name": "m5stack_core_s3.cc",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "summary": "m5stack-core-s3 开发板的主板实现，包含Pmic类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        24,
+        35
+      ],
+      "summary": "Pmic 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightness",
+      "type": "function",
+      "name": "SetBrightness",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "设置LCD显示屏背光亮度。",
+      "tags": [
+        "LCD",
+        "背光",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "type": "function",
+      "name": "CustomBacklight",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        45,
+        45
+      ],
+      "summary": "CustomBacklight 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightnessImpl",
+      "type": "function",
+      "name": "SetBrightnessImpl",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        47,
+        50
+      ],
+      "summary": "设置LCD显示屏背光亮度。",
+      "tags": [
+        "LCD",
+        "背光",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "type": "function",
+      "name": "Aw9523",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        59,
+        67
+      ],
+      "summary": "Aw9523 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetAw88298",
+      "type": "function",
+      "name": "ResetAw88298",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        69,
+        75
+      ],
+      "summary": "ResetAw88298 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetIli9342",
+      "type": "function",
+      "name": "ResetIli9342",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        77,
+        83
+      ],
+      "summary": "ResetIli9342 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "type": "function",
+      "name": "Ft6336",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        94,
+        98
+      ],
+      "summary": "Ft6336 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:~Ft6336",
+      "type": "function",
+      "name": "~Ft6336",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        100,
+        102
+      ],
+      "summary": "~Ft6336 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:UpdateTouchPoint",
+      "type": "function",
+      "name": "UpdateTouchPoint",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        104,
+        109
+      ],
+      "summary": "UpdateTouchPoint 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        131,
+        145
+      ],
+      "summary": "初始化省电定时器，配置休眠/唤醒周期、GPIO保持和休眠事件回调。",
+      "tags": [
+        "省电定时器",
+        "休眠",
+        "初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        147,
+        162
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        164,
+        183
+      ],
+      "summary": "I2cDetect 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:PollTouchpad",
+      "type": "function",
+      "name": "PollTouchpad",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        196,
+        224
+      ],
+      "summary": "PollTouchpad 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeFt6336TouchPad",
+      "type": "function",
+      "name": "InitializeFt6336TouchPad",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        226,
+        244
+      ],
+      "summary": "初始化触摸面板控制器，配置I2C接口和触摸检测参数。",
+      "tags": [
+        "触摸",
+        "I2C"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        246,
+        255
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeIli9342Display",
+      "type": "function",
+      "name": "InitializeIli9342Display",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        257,
+        291
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        293,
+        332
+      ],
+      "summary": "InitializeCamera 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "type": "function",
+      "name": "M5StackCoreS3Board",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        335,
+        346
+      ],
+      "summary": "M5StackCoreS3Board 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        371,
+        382
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        384,
+        389
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        21,
+        41
+      ],
+      "summary": "Pmic 类，包含2个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "type": "class",
+      "name": "CustomBacklight",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        43,
+        54
+      ],
+      "summary": "CustomBacklight 类，包含2个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "type": "class",
+      "name": "Aw9523",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        56,
+        84
+      ],
+      "summary": "Aw9523 类，包含3个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "type": "class",
+      "name": "Ft6336",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        86,
+        118
+      ],
+      "summary": "Ft6336 类，包含3个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "type": "class",
+      "name": "M5StackCoreS3Board",
+      "filePath": "main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "lineRange": [
+        120,
+        395
+      ],
+      "summary": "M5StackCoreS3Board 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:CoreS3AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:~CoreS3AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:CreateDuplexChannels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:SetOutputVolume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:CreateDuplexChannels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:SetOutputVolume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:CoreS3AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "function:main/boards/m5stack-core-s3/cores3_audio_codec.cc:~CoreS3AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/cores3_audio_codec.cc",
+      "target": "file:main/boards/m5stack-core-s3/cores3_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightness",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightnessImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetAw88298",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetIli9342",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:~Ft6336",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:UpdateTouchPoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:PollTouchpad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeFt6336TouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeIli9342Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightness",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightnessImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetAw88298",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetIli9342",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:~Ft6336",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:UpdateTouchPoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:PollTouchpad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeFt6336TouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeIli9342Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:UpdateTouchPoint",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightnessImpl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Aw9523",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Ft6336",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetAw88298",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetBrightness",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:M5StackCoreS3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:ResetIli9342",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:CustomBacklight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "function:main/boards/m5stack-core-s3/m5stack_core_s3.cc:~Ft6336",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "file:main/boards/m5stack-core-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/m5stack-core-s3/m5stack_core_s3.cc",
+      "target": "file:main/boards/m5stack-core-s3/cores3_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

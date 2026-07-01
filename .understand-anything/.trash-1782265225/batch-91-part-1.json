@@ -1,0 +1,984 @@
+{
+  "nodes": [
+    {
+      "id": "document:main/boards/esp32-cgc/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp32-cgc/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-amoled-1.8/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/config.h",
+      "summary": "定义 LED 指示灯组件的抽象接口声明。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/esp32-s3-touch-amoled-1.8/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/config.json",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "board-config",
+        "configuration",
+        "esp32-s3-touch-amole"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-amoled-1.8.cc",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        31,
+        55
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:CustomLcdDisplay",
+      "type": "function",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        76,
+        90
+      ],
+      "summary": "实现 CustomLcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:SetBrightnessImpl",
+      "type": "function",
+      "name": "SetBrightnessImpl",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        100,
+        109
+      ],
+      "summary": "实现 SetBrightnessImpl 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        122,
+        136
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        138,
+        153
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        155,
+        170
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        177,
+        187
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeSH8601Display",
+      "type": "function",
+      "name": "InitializeSH8601Display",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        199,
+        239
+      ],
+      "summary": "实现 InitializeSH8601Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        241,
+        271
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        274,
+        283
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:WaveshareEsp32s3TouchAMOLED1inch8",
+      "type": "function",
+      "name": "WaveshareEsp32s3TouchAMOLED1inch8",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        286,
+        297
+      ],
+      "summary": "实现 WaveshareEsp32s3TouchAMOLED1inch8 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        314,
+        325
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        29,
+        56
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:CustomBacklight",
+      "type": "class",
+      "name": "CustomBacklight",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        93,
+        110
+      ],
+      "summary": "定义 CustomBacklight 类及其方法。",
+      "tags": [
+        "backlight"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:WaveshareEsp32s3TouchAMOLED1inch8",
+      "type": "class",
+      "name": "WaveshareEsp32s3TouchAMOLED1inch8",
+      "filePath": "main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "lineRange": [
+        112,
+        333
+      ],
+      "summary": "定义 WaveshareEsp32s3TouchAMOLED1inch8 类及其方法。",
+      "tags": [
+        "display",
+        "led",
+        "touch-input"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-1.46/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp32-s3-touch-lcd-1.46/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32-s3-touch-lcd-1"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-lcd-1.46.cc",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "summary": "实现 esp32-s3-touch-lcd-1.46 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomLcdDisplay",
+      "type": "function",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        36,
+        49
+      ],
+      "summary": "实现 CustomLcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        62,
+        71
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        73,
+        96
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        98,
+        108
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeSpd2010Display",
+      "type": "function",
+      "name": "InitializeSpd2010Display",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        110,
+        141
+      ],
+      "summary": "实现 InitializeSpd2010Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeButtonsCustom",
+      "type": "function",
+      "name": "InitializeButtonsCustom",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        143,
+        152
+      ],
+      "summary": "实现 InitializeButtonsCustom 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        154,
+        206
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomLcdDisplay",
+      "type": "class",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        25,
+        50
+      ],
+      "summary": "定义 CustomLcdDisplay 类及其方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "lineRange": [
+        52,
+        233
+      ],
+      "summary": "定义 CustomBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/esp32-s3-touch-lcd-1.46/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.46/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-1.85/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp32-s3-touch-lcd-1.85/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp32-s3-touch-lcd-1"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-lcd-1.85.cc",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "summary": "实现 esp32-s3-touch-lcd-1.85 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        223,
+        232
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        234,
+        257
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        259,
+        269
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:Initializest77916Display",
+      "type": "function",
+      "name": "Initializest77916Display",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        271,
+        358
+      ],
+      "summary": "实现 Initializest77916Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeButtonsCustom",
+      "type": "function",
+      "name": "InitializeButtonsCustom",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        360,
+        369
+      ],
+      "summary": "实现 InitializeButtonsCustom 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        370,
+        416
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "lineRange": [
+        213,
+        443
+      ],
+      "summary": "定义 CustomBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/esp32-s3-touch-lcd-1.85/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/esp32-s3-touch-lcd-1.85c/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp32-s3-touch-lcd-1.85c/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "file:main/boards/esp32-s3-touch-amoled-1.8/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:SetBrightnessImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeSH8601Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:WaveshareEsp32s3TouchAMOLED1inch8",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:WaveshareEsp32s3TouchAMOLED1inch8",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "function:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:CustomBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:CustomBacklight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:WaveshareEsp32s3TouchAMOLED1inch8",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc",
+      "target": "class:main/boards/esp32-s3-touch-amoled-1.8/esp32-s3-touch-amoled-1.8.cc:WaveshareEsp32s3TouchAMOLED1inch8",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "file:main/boards/esp32-s3-touch-lcd-1.46/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeSpd2010Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeButtonsCustom",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.46/esp32-s3-touch-lcd-1.46.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "file:main/boards/esp32-s3-touch-lcd-1.85/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:Initializest77916Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeButtonsCustom",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "function:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc",
+      "target": "class:main/boards/esp32-s3-touch-lcd-1.85/esp32-s3-touch-lcd-1.85.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

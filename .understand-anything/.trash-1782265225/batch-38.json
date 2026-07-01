@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/du-chatx/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/du-chatx/config.h",
+      "summary": "du-chatx 开发板的硬件引脚定义与编译配置头文件。",
+      "tags": [
+        "configuration",
+        "pin-definition",
+        "hardware-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/du-chatx/du-chatx-wifi.cc",
+      "type": "file",
+      "name": "du-chatx-wifi.cc",
+      "filePath": "main/boards/du-chatx/du-chatx-wifi.cc",
+      "summary": "du-chatx 开发板的主驱动文件，负责硬件初始化、按键处理、显示屏配置和音频控制。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/du-chatx/du-chatx-wifi.cc:DuChatX",
+      "type": "class",
+      "name": "DuChatX",
+      "filePath": "main/boards/du-chatx/du-chatx-wifi.cc",
+      "lineRange": [
+        22,
+        162
+      ],
+      "summary": "开发板主类（DuChatX），封装硬件初始化、外设控制和系统事件处理。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/du-chatx/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/du-chatx/power_manager.h",
+      "summary": "du-chatx 开发板的电源管理模块，处理电池电量检测、充放电状态监控。",
+      "tags": [
+        "power-management",
+        "battery",
+        "hardware-driver"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/du-chatx/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/du-chatx/power_manager.h",
+      "lineRange": [
+        10,
+        186
+      ],
+      "summary": "电源管理类，负责电池状态监控、ADC采样和充放电事件回调。",
+      "tags": [
+        "power-management",
+        "battery",
+        "driver"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/du-chatx/du-chatx-wifi.cc",
+      "target": "class:main/boards/du-chatx/du-chatx-wifi.cc:DuChatX",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/du-chatx/du-chatx-wifi.cc",
+      "target": "class:main/boards/du-chatx/du-chatx-wifi.cc:DuChatX",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/du-chatx/du-chatx-wifi.cc",
+      "target": "file:main/boards/du-chatx/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/du-chatx/du-chatx-wifi.cc",
+      "target": "file:main/boards/du-chatx/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/du-chatx/power_manager.h",
+      "target": "class:main/boards/du-chatx/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/du-chatx/power_manager.h",
+      "target": "class:main/boards/du-chatx/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

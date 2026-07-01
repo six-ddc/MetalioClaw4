@@ -1,0 +1,1735 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/application.cc",
+      "type": "file",
+      "name": "application.cc",
+      "filePath": "main/application.cc",
+      "summary": "应用层核心实现，管理设备状态机（空闲、监听、说话、配置模式等）、MQTT通信、音频会话和设备生命周期，共25个函数。",
+      "tags": [
+        "application-core",
+        "state-machine",
+        "implementation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/application.cc:Application",
+      "type": "function",
+      "name": "Application",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        38,
+        62
+      ],
+      "summary": "函数Application，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:~Application",
+      "type": "function",
+      "name": "~Application",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        64,
+        70
+      ],
+      "summary": "函数~Application，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:CheckAssetsVersion",
+      "type": "function",
+      "name": "CheckAssetsVersion",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        72,
+        123
+      ],
+      "summary": "检查函数，验证或判断AssetsVersion的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:CheckNewVersion",
+      "type": "function",
+      "name": "CheckNewVersion",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        125,
+        201
+      ],
+      "summary": "创建函数，构造并返回CheckVersion对象。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:ShowActivationCode",
+      "type": "function",
+      "name": "ShowActivationCode",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        203,
+        231
+      ],
+      "summary": "显示函数，在屏幕上渲染ActivationCode内容。",
+      "tags": [
+        "rendering"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:Alert",
+      "type": "function",
+      "name": "Alert",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        233,
+        242
+      ],
+      "summary": "函数Alert，处理status、message、emotion逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:DismissAlert",
+      "type": "function",
+      "name": "DismissAlert",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        244,
+        251
+      ],
+      "summary": "函数DismissAlert，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:ToggleChatState",
+      "type": "function",
+      "name": "ToggleChatState",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        253,
+        292
+      ],
+      "summary": "函数ToggleChatState，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:StartListening",
+      "type": "function",
+      "name": "StartListening",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        294,
+        326
+      ],
+      "summary": "函数StartListening，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:StopListening",
+      "type": "function",
+      "name": "StopListening",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        328,
+        351
+      ],
+      "summary": "停止函数，终止Listening操作。",
+      "tags": [
+        "media-control"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        353,
+        549
+      ],
+      "summary": "启动函数，开始运行服务或任务。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/application.cc:Schedule",
+      "type": "function",
+      "name": "Schedule",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        552,
+        558
+      ],
+      "summary": "函数Schedule，处理callback逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:MainEventLoop",
+      "type": "function",
+      "name": "MainEventLoop",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        563,
+        618
+      ],
+      "summary": "函数MainEventLoop，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:OnWakeWordDetected",
+      "type": "function",
+      "name": "OnWakeWordDetected",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        620,
+        656
+      ],
+      "summary": "事件处理函数，响应WakeWordDetected事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:AbortSpeaking",
+      "type": "function",
+      "name": "AbortSpeaking",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        658,
+        664
+      ],
+      "summary": "函数AbortSpeaking，处理reason逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:SetListeningMode",
+      "type": "function",
+      "name": "SetListeningMode",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        666,
+        669
+      ],
+      "summary": "设置ListeningMode的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:SetDeviceState",
+      "type": "function",
+      "name": "SetDeviceState",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        671,
+        727
+      ],
+      "summary": "设置DeviceState的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:Reboot",
+      "type": "function",
+      "name": "Reboot",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        729,
+        740
+      ],
+      "summary": "函数Reboot，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:UpgradeFirmware",
+      "type": "function",
+      "name": "UpgradeFirmware",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        742,
+        793
+      ],
+      "summary": "函数UpgradeFirmware，处理ota、url逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:WakeWordInvoke",
+      "type": "function",
+      "name": "WakeWordInvoke",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        795,
+        836
+      ],
+      "summary": "函数WakeWordInvoke，处理wake_word逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:CanEnterSleepMode",
+      "type": "function",
+      "name": "CanEnterSleepMode",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        838,
+        853
+      ],
+      "summary": "函数CanEnterSleepMode，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:SendMcpMessage",
+      "type": "function",
+      "name": "SendMcpMessage",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        855,
+        868
+      ],
+      "summary": "发送函数，将McpMessage数据传输出去。",
+      "tags": [
+        "communication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:SetAecMode",
+      "type": "function",
+      "name": "SetAecMode",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        870,
+        895
+      ],
+      "summary": "设置AecMode的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/application.cc:PlaySound",
+      "type": "function",
+      "name": "PlaySound",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        897,
+        899
+      ],
+      "summary": "播放函数，开始播放Sound音频或动画。",
+      "tags": [
+        "media-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/application.cc:ForceReturnToIdle",
+      "type": "function",
+      "name": "ForceReturnToIdle",
+      "filePath": "main/application.cc",
+      "lineRange": [
+        901,
+        914
+      ],
+      "summary": "函数ForceReturnToIdle，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/application.h",
+      "type": "file",
+      "name": "application.h",
+      "filePath": "main/application.h",
+      "summary": "应用层核心头文件，声明应用状态机、设备模式与核心API接口。",
+      "tags": [
+        "application-core",
+        "state-machine",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets.cc",
+      "type": "file",
+      "name": "assets.cc",
+      "filePath": "main/assets.cc",
+      "summary": "资源管理实现，管理音频资源、多语言语音包和设备出厂配置等静态资源，共7个函数。",
+      "tags": [
+        "asset-management",
+        "resource",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/assets.cc:Assets",
+      "type": "function",
+      "name": "Assets",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": "函数Assets，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/assets.cc:~Assets",
+      "type": "function",
+      "name": "~Assets",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        33,
+        37
+      ],
+      "summary": "函数~Assets，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/assets.cc:CalculateChecksum",
+      "type": "function",
+      "name": "CalculateChecksum",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        39,
+        45
+      ],
+      "summary": "检查函数，验证或判断Calculatesum的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/assets.cc:InitializePartition",
+      "type": "function",
+      "name": "InitializePartition",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        47,
+        105
+      ],
+      "summary": "初始化函数，配置相关参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/assets.cc:Apply",
+      "type": "function",
+      "name": "Apply",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        107,
+        383
+      ],
+      "summary": "函数Apply，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/assets.cc:Download",
+      "type": "function",
+      "name": "Download",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        385,
+        516
+      ],
+      "summary": "函数Download，处理url、progress_callback逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/assets.cc:GetAssetData",
+      "type": "function",
+      "name": "GetAssetData",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        518,
+        532
+      ],
+      "summary": "获取AssetData的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/assets.cc:mmap_assets_table",
+      "type": "class",
+      "name": "mmap_assets_table",
+      "filePath": "main/assets.cc",
+      "lineRange": [
+        19,
+        25
+      ],
+      "summary": "mmap_assets_table类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets.h",
+      "type": "file",
+      "name": "assets.h",
+      "filePath": "main/assets.h",
+      "summary": "资源管理头文件，声明资源加载接口与数据结构。",
+      "tags": [
+        "asset-management",
+        "resource",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/main.cc",
+      "type": "file",
+      "name": "main.cc",
+      "filePath": "main/main.cc",
+      "summary": "ESP-IDF固件入口点，初始化NVS、网络、IO扩展器等系统组件，启动Application主循环。",
+      "tags": [
+        "entry-point",
+        "application-core",
+        "implementation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/application.cc",
+      "target": "file:main/application.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "file:main/assets.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "file:main/mcp_server.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "file:main/settings.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "file:main/system_info.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Application",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Application",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:~Application",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:~Application",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:CheckAssetsVersion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:CheckAssetsVersion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:CheckNewVersion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:CheckNewVersion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:ShowActivationCode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:ShowActivationCode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Alert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Alert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:DismissAlert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:DismissAlert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:ToggleChatState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:ToggleChatState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:StartListening",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:StartListening",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:StopListening",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:StopListening",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Start",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Start",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Schedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Schedule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:MainEventLoop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:MainEventLoop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:OnWakeWordDetected",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:OnWakeWordDetected",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Reboot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:Reboot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:UpgradeFirmware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:UpgradeFirmware",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:WakeWordInvoke",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:WakeWordInvoke",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:CanEnterSleepMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:CanEnterSleepMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SendMcpMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SendMcpMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SetAecMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:SetAecMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:ForceReturnToIdle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/application.cc",
+      "target": "function:main/application.cc:ForceReturnToIdle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:CheckAssetsVersion",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:CheckAssetsVersion",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:CheckAssetsVersion",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:CheckNewVersion",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:CheckNewVersion",
+      "target": "function:main/application.cc:UpgradeFirmware",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:CheckNewVersion",
+      "target": "function:main/application.cc:ShowActivationCode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ShowActivationCode",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ShowActivationCode",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Alert",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ToggleChatState",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StartListening",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StopListening",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StopListening",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:StopListening",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Start",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:MainEventLoop",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:CheckAssetsVersion",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:CheckNewVersion",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:DismissAlert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Reboot",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:Start",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:Start",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:MainEventLoop",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:MainEventLoop",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:MainEventLoop",
+      "target": "function:main/application.cc:OnWakeWordDetected",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:OnWakeWordDetected",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:OnWakeWordDetected",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:OnWakeWordDetected",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:OnWakeWordDetected",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:OnWakeWordDetected",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:OnWakeWordDetected",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:SetListeningMode",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:UpgradeFirmware",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:UpgradeFirmware",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:UpgradeFirmware",
+      "target": "function:main/application.cc:Start",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:UpgradeFirmware",
+      "target": "function:main/application.cc:Alert",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:UpgradeFirmware",
+      "target": "function:main/application.cc:Reboot",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:SetListeningMode",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:WakeWordInvoke",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:SendMcpMessage",
+      "target": "function:main/application.cc:SendMcpMessage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:SendMcpMessage",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:SendMcpMessage",
+      "target": "function:main/application.cc:SendMcpMessage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:SetAecMode",
+      "target": "function:main/application.cc:Schedule",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:PlaySound",
+      "target": "function:main/application.cc:PlaySound",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ForceReturnToIdle",
+      "target": "function:main/application.cc:AbortSpeaking",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/application.cc:ForceReturnToIdle",
+      "target": "function:main/application.cc:SetDeviceState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "file:main/application.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "file:main/assets.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:Assets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:Assets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:~Assets",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:~Assets",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:CalculateChecksum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:CalculateChecksum",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:InitializePartition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:InitializePartition",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:Apply",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:Apply",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:Download",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:Download",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "class:main/assets.cc:mmap_assets_table",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/assets.cc",
+      "target": "class:main/assets.cc:mmap_assets_table",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Assets",
+      "target": "function:main/assets.cc:InitializePartition",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:InitializePartition",
+      "target": "function:main/assets.cc:CalculateChecksum",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Apply",
+      "target": "function:main/assets.cc:GetAssetData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/assets.cc:Download",
+      "target": "function:main/assets.cc:InitializePartition",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/main.cc",
+      "target": "file:main/application.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/main.cc",
+      "target": "file:main/system_info.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

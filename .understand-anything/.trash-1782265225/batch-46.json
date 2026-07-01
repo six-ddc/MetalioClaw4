@@ -1,0 +1,275 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/acoustic_check/demod.py",
+      "type": "file",
+      "name": "demod.py",
+      "filePath": "scripts/acoustic_check/demod.py",
+      "summary": "AFSK音频信号解调解码器，使用Goertzel算法进行实时音频频移键控解码。",
+      "tags": [
+        "signal-processing",
+        "afsk-decoder",
+        "goertzel"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:scripts/acoustic_check/demod.py:TraceGoertzel",
+      "type": "class",
+      "name": "TraceGoertzel",
+      "filePath": "scripts/acoustic_check/demod.py",
+      "lineRange": [
+        9,
+        61
+      ],
+      "summary": "TraceGoertzel算法实现类，对音频样本序列进行单频点Goertzel变换和幅度计算。",
+      "tags": [
+        "signal-processing",
+        "goertzel",
+        "dsp"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/acoustic_check/demod.py:PairGoertzel",
+      "type": "class",
+      "name": "PairGoertzel",
+      "filePath": "scripts/acoustic_check/demod.py",
+      "lineRange": [
+        64,
+        123
+      ],
+      "summary": "双频点Goertzel检测器类，同时检测mark和space两个AFSK音调频率。",
+      "tags": [
+        "signal-processing",
+        "goertzel",
+        "afsk"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/acoustic_check/demod.py:RealTimeAFSKDecoder",
+      "type": "class",
+      "name": "RealTimeAFSKDecoder",
+      "filePath": "scripts/acoustic_check/demod.py",
+      "lineRange": [
+        126,
+        280
+      ],
+      "summary": "实时AFSK音频解码器类，将音频比特流解码为文本消息。",
+      "tags": [
+        "signal-processing",
+        "afsk-decoder",
+        "dsp"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/acoustic_check/graphic.py",
+      "type": "file",
+      "name": "graphic.py",
+      "filePath": "scripts/acoustic_check/graphic.py",
+      "summary": "声学检测图形界面工具，提供实时波形显示、频谱分析和UDP音频数据接收功能。",
+      "tags": [
+        "gui",
+        "visualization",
+        "udp-server",
+        "matplotlib"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:scripts/acoustic_check/graphic.py:UDPServerProtocol",
+      "type": "class",
+      "name": "UDPServerProtocol",
+      "filePath": "scripts/acoustic_check/graphic.py",
+      "lineRange": [
+        23,
+        43
+      ],
+      "summary": "UDP服务器协议处理器，接收并缓存UDP音频数据包。",
+      "tags": [
+        "networking",
+        "udp",
+        "server"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:scripts/acoustic_check/graphic.py:MatplotlibWidget",
+      "type": "class",
+      "name": "MatplotlibWidget",
+      "filePath": "scripts/acoustic_check/graphic.py",
+      "lineRange": [
+        46,
+        182
+      ],
+      "summary": "Matplotlib图形显示组件，提供实时波形和频谱的可视化。",
+      "tags": [
+        "gui",
+        "visualization",
+        "matplotlib"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/acoustic_check/graphic.py:MainWindow",
+      "type": "class",
+      "name": "MainWindow",
+      "filePath": "scripts/acoustic_check/graphic.py",
+      "lineRange": [
+        185,
+        422
+      ],
+      "summary": "声学检测工具的主窗口类，集成UDP监听、波形显示和解码输出功能。",
+      "tags": [
+        "gui",
+        "main-window",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/acoustic_check/graphic.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/acoustic_check/graphic.py",
+      "lineRange": [
+        425,
+        444
+      ],
+      "summary": "程序主入口函数，初始化应用并启动事件循环。",
+      "tags": [
+        "entry-point",
+        "main"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/acoustic_check/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "scripts/acoustic_check/main.py",
+      "summary": "声学检测工具的命令行入口点。",
+      "tags": [
+        "entry-point",
+        "cli"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/acoustic_check/demod.py",
+      "target": "class:scripts/acoustic_check/demod.py:TraceGoertzel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/demod.py",
+      "target": "class:scripts/acoustic_check/demod.py:TraceGoertzel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/demod.py",
+      "target": "class:scripts/acoustic_check/demod.py:PairGoertzel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/demod.py",
+      "target": "class:scripts/acoustic_check/demod.py:PairGoertzel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/demod.py",
+      "target": "class:scripts/acoustic_check/demod.py:RealTimeAFSKDecoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/demod.py",
+      "target": "class:scripts/acoustic_check/demod.py:RealTimeAFSKDecoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "class:scripts/acoustic_check/graphic.py:UDPServerProtocol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "class:scripts/acoustic_check/graphic.py:UDPServerProtocol",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "class:scripts/acoustic_check/graphic.py:MatplotlibWidget",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "class:scripts/acoustic_check/graphic.py:MatplotlibWidget",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "class:scripts/acoustic_check/graphic.py:MainWindow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "class:scripts/acoustic_check/graphic.py:MainWindow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "function:scripts/acoustic_check/graphic.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "function:scripts/acoustic_check/graphic.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/acoustic_check/graphic.py",
+      "target": "file:scripts/acoustic_check/demod.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/acoustic_check/main.py",
+      "target": "file:scripts/acoustic_check/graphic.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

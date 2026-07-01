@@ -1,0 +1,3028 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/screen/call_screen/call_screen.cc",
+      "type": "file",
+      "name": "call_screen.cc",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "summary": "实现 call_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:FormatNumberForDisplay",
+      "type": "function",
+      "name": "FormatNumberForDisplay",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        143,
+        163
+      ],
+      "summary": "实现 FormatNumberForDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:RefreshNumberDisplay",
+      "type": "function",
+      "name": "RefreshNumberDisplay",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        165,
+        182
+      ],
+      "summary": "实现 RefreshNumberDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:RefreshActionButton",
+      "type": "function",
+      "name": "RefreshActionButton",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        184,
+        196
+      ],
+      "summary": "实现 RefreshActionButton 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:RefreshStatus",
+      "type": "function",
+      "name": "RefreshStatus",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        198,
+        208
+      ],
+      "summary": "实现 RefreshStatus 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:OnAtResult",
+      "type": "function",
+      "name": "OnAtResult",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        283,
+        332
+      ],
+      "summary": "实现 OnAtResult 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:AtJobTask",
+      "type": "function",
+      "name": "AtJobTask",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        334,
+        385
+      ],
+      "summary": "实现 AtJobTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:DispatchDial",
+      "type": "function",
+      "name": "DispatchDial",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        387,
+        396
+      ],
+      "summary": "实现 DispatchDial 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:StartCall",
+      "type": "function",
+      "name": "StartCall",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        429,
+        447
+      ],
+      "summary": "实现 StartCall 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:HangupCall",
+      "type": "function",
+      "name": "HangupCall",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        449,
+        462
+      ],
+      "summary": "实现 HangupCall 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        496,
+        512
+      ],
+      "summary": "实现 OnSwipeBack 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:OnScreenUnloaded",
+      "type": "function",
+      "name": "OnScreenUnloaded",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        514,
+        524
+      ],
+      "summary": "实现 OnScreenUnloaded 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:BuildHeader",
+      "type": "function",
+      "name": "BuildHeader",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        530,
+        565
+      ],
+      "summary": "实现 BuildHeader 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:BuildNumberArea",
+      "type": "function",
+      "name": "BuildNumberArea",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        567,
+        626
+      ],
+      "summary": "实现 BuildNumberArea 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:StyleKeyButton",
+      "type": "function",
+      "name": "StyleKeyButton",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        628,
+        637
+      ],
+      "summary": "实现 StyleKeyButton 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:BuildKeypad",
+      "type": "function",
+      "name": "BuildKeypad",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        639,
+        684
+      ],
+      "summary": "实现 BuildKeypad 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:BuildActionBar",
+      "type": "function",
+      "name": "BuildActionBar",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        686,
+        701
+      ],
+      "summary": "实现 BuildActionBar 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/call_screen/call_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/call_screen/call_screen.cc",
+      "lineRange": [
+        737,
+        757
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/call_screen/call_screen.h",
+      "type": "file",
+      "name": "call_screen.h",
+      "filePath": "main/display/screen/call_screen/call_screen.h",
+      "summary": "定义 call_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "type": "file",
+      "name": "camera_screen.cc",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "summary": "实现 camera_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:rgb565_to_rgb888",
+      "type": "function",
+      "name": "rgb565_to_rgb888",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        154,
+        174
+      ],
+      "summary": "实现 rgb565_to_rgb888 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:yuv422_to_rgb888",
+      "type": "function",
+      "name": "yuv422_to_rgb888",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        177,
+        221
+      ],
+      "summary": "实现 yuv422_to_rgb888 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:rgb888_to_rgb888",
+      "type": "function",
+      "name": "rgb888_to_rgb888",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        223,
+        240
+      ],
+      "summary": "实现 rgb888_to_rgb888 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:init_video_pipeline",
+      "type": "function",
+      "name": "init_video_pipeline",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        245,
+        313
+      ],
+      "summary": "实现 init_video_pipeline 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:deinit_video_pipeline",
+      "type": "function",
+      "name": "deinit_video_pipeline",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        315,
+        325
+      ],
+      "summary": "实现 deinit_video_pipeline 函数功能。",
+      "tags": [
+        "initialization",
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:configure_camera_format",
+      "type": "function",
+      "name": "configure_camera_format",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        330,
+        387
+      ],
+      "summary": "实现 configure_camera_format 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:open_camera_device",
+      "type": "function",
+      "name": "open_camera_device",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        389,
+        444
+      ],
+      "summary": "实现 open_camera_device 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:close_camera_device",
+      "type": "function",
+      "name": "close_camera_device",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        446,
+        461
+      ],
+      "summary": "实现 close_camera_device 函数功能。",
+      "tags": [
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:update_status_label",
+      "type": "function",
+      "name": "update_status_label",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        466,
+        475
+      ],
+      "summary": "实现 update_status_label 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:camera_worker_task",
+      "type": "function",
+      "name": "camera_worker_task",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        506,
+        642
+      ],
+      "summary": "实现 camera_worker_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:start_camera_worker",
+      "type": "function",
+      "name": "start_camera_worker",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        644,
+        672
+      ],
+      "summary": "实现 start_camera_worker 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:on_quality_dd_changed",
+      "type": "function",
+      "name": "on_quality_dd_changed",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        692,
+        702
+      ],
+      "summary": "实现 on_quality_dd_changed 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:on_quality_dd_list_opened",
+      "type": "function",
+      "name": "on_quality_dd_list_opened",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        705,
+        715
+      ],
+      "summary": "实现 on_quality_dd_list_opened 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:on_capture_btn_clicked",
+      "type": "function",
+      "name": "on_capture_btn_clicked",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        717,
+        729
+      ],
+      "summary": "实现 on_capture_btn_clicked 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        731,
+        745
+      ],
+      "summary": "实现 OnSwipeBack 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:on_screen_unloaded",
+      "type": "function",
+      "name": "on_screen_unloaded",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        747,
+        759
+      ],
+      "summary": "实现 on_screen_unloaded 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/camera_screen/camera_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/camera_screen/camera_screen.cc",
+      "lineRange": [
+        891,
+        906
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/camera_screen/camera_screen.h",
+      "type": "file",
+      "name": "camera_screen.h",
+      "filePath": "main/display/screen/camera_screen/camera_screen.h",
+      "summary": "定义 camera_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "type": "file",
+      "name": "game_2048_screen.cc",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "summary": "实现 game_2048_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:tile_bg_color",
+      "type": "function",
+      "name": "tile_bg_color",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        52,
+        68
+      ],
+      "summary": "实现 tile_bg_color 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:grid_has_empty",
+      "type": "function",
+      "name": "grid_has_empty",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        82,
+        91
+      ],
+      "summary": "实现 grid_has_empty 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:grid_can_merge",
+      "type": "function",
+      "name": "grid_can_merge",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        93,
+        109
+      ],
+      "summary": "实现 grid_can_merge 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:spawn_tile",
+      "type": "function",
+      "name": "spawn_tile",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        111,
+        128
+      ],
+      "summary": "实现 spawn_tile 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_line",
+      "type": "function",
+      "name": "move_line",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        130,
+        167
+      ],
+      "summary": "实现 move_line 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_left",
+      "type": "function",
+      "name": "move_left",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        169,
+        183
+      ],
+      "summary": "实现 move_left 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_right",
+      "type": "function",
+      "name": "move_right",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        185,
+        199
+      ],
+      "summary": "实现 move_right 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_up",
+      "type": "function",
+      "name": "move_up",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        201,
+        215
+      ],
+      "summary": "实现 move_up 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_down",
+      "type": "function",
+      "name": "move_down",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        217,
+        231
+      ],
+      "summary": "实现 move_down 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:check_end_state",
+      "type": "function",
+      "name": "check_end_state",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        233,
+        250
+      ],
+      "summary": "实现 check_end_state 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:update_tiles_ui",
+      "type": "function",
+      "name": "update_tiles_ui",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        257,
+        277
+      ],
+      "summary": "实现 update_tiles_ui 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:do_move",
+      "type": "function",
+      "name": "do_move",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        297,
+        309
+      ],
+      "summary": "实现 do_move 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:game_reset",
+      "type": "function",
+      "name": "game_reset",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        311,
+        321
+      ],
+      "summary": "实现 game_reset 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:board_event_cb",
+      "type": "function",
+      "name": "board_event_cb",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        347,
+        384
+      ],
+      "summary": "实现 board_event_cb 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_header",
+      "type": "function",
+      "name": "build_header",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        411,
+        450
+      ],
+      "summary": "实现 build_header 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_board",
+      "type": "function",
+      "name": "build_board",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        452,
+        486
+      ],
+      "summary": "实现 build_board 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_overlay",
+      "type": "function",
+      "name": "build_overlay",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "lineRange": [
+        496,
+        515
+      ],
+      "summary": "实现 build_overlay 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/game_2048_screen/game_2048_screen.h",
+      "type": "file",
+      "name": "game_2048_screen.h",
+      "filePath": "main/display/screen/game_2048_screen/game_2048_screen.h",
+      "summary": "定义 game_2048_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "type": "file",
+      "name": "gps_screen.cc",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "summary": "实现 gps_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:GetDeviceImei",
+      "type": "function",
+      "name": "GetDeviceImei",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        275,
+        290
+      ],
+      "summary": "实现 GetDeviceImei 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ReadParenCsvToken",
+      "type": "function",
+      "name": "ReadParenCsvToken",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        336,
+        364
+      ],
+      "summary": "实现 ReadParenCsvToken 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ParseDoubleSafe",
+      "type": "function",
+      "name": "ParseDoubleSafe",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        443,
+        453
+      ],
+      "summary": "实现 ParseDoubleSafe 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:LoadMockSettings",
+      "type": "function",
+      "name": "LoadMockSettings",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        455,
+        471
+      ],
+      "summary": "实现 LoadMockSettings 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:SaveMockSettings",
+      "type": "function",
+      "name": "SaveMockSettings",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        473,
+        486
+      ],
+      "summary": "实现 SaveMockSettings 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:GetEffectiveSnapshot",
+      "type": "function",
+      "name": "GetEffectiveSnapshot",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        500,
+        526
+      ],
+      "summary": "实现 GetEffectiveSnapshot 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:RefreshGpsTabFromService",
+      "type": "function",
+      "name": "RefreshGpsTabFromService",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        555,
+        647
+      ],
+      "summary": "实现 RefreshGpsTabFromService 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:SetMapStatus",
+      "type": "function",
+      "name": "SetMapStatus",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        701,
+        772
+      ],
+      "summary": "实现 SetMapStatus 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:DownloadBinary",
+      "type": "function",
+      "name": "DownloadBinary",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        783,
+        895
+      ],
+      "summary": "实现 DownloadBinary 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:SetFetchEnabled",
+      "type": "function",
+      "name": "SetFetchEnabled",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        897,
+        911
+      ],
+      "summary": "实现 SetFetchEnabled 函数功能。",
+      "tags": [
+        "setter",
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateMapEntryState",
+      "type": "function",
+      "name": "UpdateMapEntryState",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        913,
+        929
+      ],
+      "summary": "实现 UpdateMapEntryState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateNetTabLabels",
+      "type": "function",
+      "name": "UpdateNetTabLabels",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        931,
+        946
+      ],
+      "summary": "实现 UpdateNetTabLabels 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ApplyMapImage",
+      "type": "function",
+      "name": "ApplyMapImage",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        956,
+        980
+      ],
+      "summary": "实现 ApplyMapImage 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:JsonApiCodeOk",
+      "type": "function",
+      "name": "JsonApiCodeOk",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        982,
+        993
+      ],
+      "summary": "实现 JsonApiCodeOk 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:TrimAscii",
+      "type": "function",
+      "name": "TrimAscii",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        995,
+        1007
+      ],
+      "summary": "实现 TrimAscii 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:JsonItemNumber",
+      "type": "function",
+      "name": "JsonItemNumber",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1019,
+        1034
+      ],
+      "summary": "实现 JsonItemNumber 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ExtractDataAddressField",
+      "type": "function",
+      "name": "ExtractDataAddressField",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1036,
+        1084
+      ],
+      "summary": "实现 ExtractDataAddressField 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ReadHttpTextBody",
+      "type": "function",
+      "name": "ReadHttpTextBody",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1086,
+        1108
+      ],
+      "summary": "实现 ReadHttpTextBody 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:SetAddressLabelText",
+      "type": "function",
+      "name": "SetAddressLabelText",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1110,
+        1126
+      ],
+      "summary": "实现 SetAddressLabelText 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ParseLocationResponse",
+      "type": "function",
+      "name": "ParseLocationResponse",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1128,
+        1197
+      ],
+      "summary": "实现 ParseLocationResponse 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:DownloadMapForResult",
+      "type": "function",
+      "name": "DownloadMapForResult",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1222,
+        1244
+      ],
+      "summary": "实现 DownloadMapForResult 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:OnLocationReportDone",
+      "type": "function",
+      "name": "OnLocationReportDone",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1246,
+        1344
+      ],
+      "summary": "实现 OnLocationReportDone 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ParseWifiScanLine",
+      "type": "function",
+      "name": "ParseWifiScanLine",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1353,
+        1383
+      ],
+      "summary": "实现 ParseWifiScanLine 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildWifiLocateBody",
+      "type": "function",
+      "name": "BuildWifiLocateBody",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1394,
+        1456
+      ],
+      "summary": "实现 BuildWifiLocateBody 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildCellLocateBody",
+      "type": "function",
+      "name": "BuildCellLocateBody",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1458,
+        1515
+      ],
+      "summary": "实现 BuildCellLocateBody 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildGpsLocateBody",
+      "type": "function",
+      "name": "BuildGpsLocateBody",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1542,
+        1565
+      ],
+      "summary": "实现 BuildGpsLocateBody 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:SubmitLocationReport",
+      "type": "function",
+      "name": "SubmitLocationReport",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1567,
+        1632
+      ],
+      "summary": "实现 SubmitLocationReport 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:MapZoomRefreshTask",
+      "type": "function",
+      "name": "MapZoomRefreshTask",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1634,
+        1662
+      ],
+      "summary": "实现 MapZoomRefreshTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:GpsLocationReportTask",
+      "type": "function",
+      "name": "GpsLocationReportTask",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1664,
+        1690
+      ],
+      "summary": "实现 GpsLocationReportTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:NetLocationReportTask",
+      "type": "function",
+      "name": "NetLocationReportTask",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1692,
+        1751
+      ],
+      "summary": "实现 NetLocationReportTask 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:StartLocationReport",
+      "type": "function",
+      "name": "StartLocationReport",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1753,
+        1812
+      ],
+      "summary": "实现 StartLocationReport 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateZoomStepButtons",
+      "type": "function",
+      "name": "UpdateZoomStepButtons",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1828,
+        1844
+      ],
+      "summary": "实现 UpdateZoomStepButtons 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:StartMapZoomRefresh",
+      "type": "function",
+      "name": "StartMapZoomRefresh",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1846,
+        1859
+      ],
+      "summary": "实现 StartMapZoomRefresh 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ApplyMapZoom",
+      "type": "function",
+      "name": "ApplyMapZoom",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1861,
+        1876
+      ],
+      "summary": "实现 ApplyMapZoom 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:OnMapZoomDdListOpened",
+      "type": "function",
+      "name": "OnMapZoomDdListOpened",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1894,
+        1911
+      ],
+      "summary": "实现 OnMapZoomDdListOpened 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ShowMapWindow",
+      "type": "function",
+      "name": "ShowMapWindow",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1913,
+        1929
+      ],
+      "summary": "实现 ShowMapWindow 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:ParseMockInputs",
+      "type": "function",
+      "name": "ParseMockInputs",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        1987,
+        2012
+      ],
+      "summary": "实现 ParseMockInputs 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:OnMockSaveClicked",
+      "type": "function",
+      "name": "OnMockSaveClicked",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2016,
+        2033
+      ],
+      "summary": "实现 OnMockSaveClicked 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:OnMockDisableClicked",
+      "type": "function",
+      "name": "OnMockDisableClicked",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2035,
+        2056
+      ],
+      "summary": "实现 OnMockDisableClicked 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:OpenMockDialog",
+      "type": "function",
+      "name": "OpenMockDialog",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2075,
+        2236
+      ],
+      "summary": "实现 OpenMockDialog 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:GoBackToHome",
+      "type": "function",
+      "name": "GoBackToHome",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2246,
+        2263
+      ],
+      "summary": "实现 GoBackToHome 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:OnScreenUnloaded",
+      "type": "function",
+      "name": "OnScreenUnloaded",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2269,
+        2289
+      ],
+      "summary": "实现 OnScreenUnloaded 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildCardHeader",
+      "type": "function",
+      "name": "BuildCardHeader",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2291,
+        2328
+      ],
+      "summary": "实现 BuildCardHeader 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildMapEntryRow",
+      "type": "function",
+      "name": "BuildMapEntryRow",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2351,
+        2376
+      ],
+      "summary": "实现 BuildMapEntryRow 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildGpsTabContent",
+      "type": "function",
+      "name": "BuildGpsTabContent",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2378,
+        2435
+      ],
+      "summary": "实现 BuildGpsTabContent 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildNetTabContent",
+      "type": "function",
+      "name": "BuildNetTabContent",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2437,
+        2479
+      ],
+      "summary": "实现 BuildNetTabContent 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildMapWindow",
+      "type": "function",
+      "name": "BuildMapWindow",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2481,
+        2593
+      ],
+      "summary": "实现 BuildMapWindow 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/gps_screen/gps_screen.cc:BuildTabView",
+      "type": "function",
+      "name": "BuildTabView",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        2595,
+        2629
+      ],
+      "summary": "实现 BuildTabView 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/display/screen/gps_screen/gps_screen.cc:TabLocState",
+      "type": "class",
+      "name": "TabLocState",
+      "filePath": "main/display/screen/gps_screen/gps_screen.cc",
+      "lineRange": [
+        149,
+        168
+      ],
+      "summary": "定义 TabLocState 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "file:main/display/screen/call_screen/call_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:FormatNumberForDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:FormatNumberForDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:RefreshNumberDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:RefreshNumberDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:RefreshActionButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:RefreshActionButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:RefreshStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:RefreshStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:OnAtResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:OnAtResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:AtJobTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:AtJobTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:DispatchDial",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:DispatchDial",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:StartCall",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:StartCall",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:HangupCall",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:HangupCall",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:OnScreenUnloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:OnScreenUnloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildNumberArea",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildNumberArea",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:StyleKeyButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:StyleKeyButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildKeypad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildKeypad",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildActionBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:BuildActionBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/call_screen/call_screen.cc",
+      "target": "function:main/display/screen/call_screen/call_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "file:main/display/screen/camera_screen/camera_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:rgb565_to_rgb888",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:rgb565_to_rgb888",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:yuv422_to_rgb888",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:yuv422_to_rgb888",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:rgb888_to_rgb888",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:rgb888_to_rgb888",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:init_video_pipeline",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:init_video_pipeline",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:deinit_video_pipeline",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:deinit_video_pipeline",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:configure_camera_format",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:configure_camera_format",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:open_camera_device",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:open_camera_device",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:close_camera_device",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:close_camera_device",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:update_status_label",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:update_status_label",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:camera_worker_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:camera_worker_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:start_camera_worker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:start_camera_worker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_quality_dd_changed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_quality_dd_changed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_quality_dd_list_opened",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_quality_dd_list_opened",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_capture_btn_clicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_capture_btn_clicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_screen_unloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:on_screen_unloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/camera_screen/camera_screen.cc",
+      "target": "function:main/display/screen/camera_screen/camera_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "file:main/display/screen/game_2048_screen/game_2048_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:tile_bg_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:tile_bg_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:grid_has_empty",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:grid_has_empty",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:grid_can_merge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:grid_can_merge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:spawn_tile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:spawn_tile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_line",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_line",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_left",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_left",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_right",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_right",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_up",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_up",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_down",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:move_down",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:check_end_state",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:check_end_state",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:update_tiles_ui",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:update_tiles_ui",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:do_move",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:do_move",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:game_reset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:game_reset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:board_event_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:board_event_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_overlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/game_2048_screen/game_2048_screen.cc",
+      "target": "function:main/display/screen/game_2048_screen/game_2048_screen.cc:build_overlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "file:main/display/screen/gps_screen/gps_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GetDeviceImei",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GetDeviceImei",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ReadParenCsvToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ReadParenCsvToken",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseDoubleSafe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseDoubleSafe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:LoadMockSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:LoadMockSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SaveMockSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SaveMockSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GetEffectiveSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GetEffectiveSnapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:RefreshGpsTabFromService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:RefreshGpsTabFromService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SetMapStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SetMapStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:DownloadBinary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:DownloadBinary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SetFetchEnabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SetFetchEnabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateMapEntryState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateMapEntryState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateNetTabLabels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateNetTabLabels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ApplyMapImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ApplyMapImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:JsonApiCodeOk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:JsonApiCodeOk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:TrimAscii",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:TrimAscii",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:JsonItemNumber",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:JsonItemNumber",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ExtractDataAddressField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ExtractDataAddressField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ReadHttpTextBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ReadHttpTextBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SetAddressLabelText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SetAddressLabelText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseLocationResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseLocationResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:DownloadMapForResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:DownloadMapForResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnLocationReportDone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnLocationReportDone",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseWifiScanLine",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseWifiScanLine",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildWifiLocateBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildWifiLocateBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildCellLocateBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildCellLocateBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildGpsLocateBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildGpsLocateBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SubmitLocationReport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:SubmitLocationReport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:MapZoomRefreshTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:MapZoomRefreshTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GpsLocationReportTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GpsLocationReportTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:NetLocationReportTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:NetLocationReportTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:StartLocationReport",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:StartLocationReport",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateZoomStepButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:UpdateZoomStepButtons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:StartMapZoomRefresh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:StartMapZoomRefresh",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ApplyMapZoom",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ApplyMapZoom",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnMapZoomDdListOpened",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnMapZoomDdListOpened",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ShowMapWindow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ShowMapWindow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseMockInputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:ParseMockInputs",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnMockSaveClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnMockSaveClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnMockDisableClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnMockDisableClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OpenMockDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OpenMockDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GoBackToHome",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:GoBackToHome",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnScreenUnloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:OnScreenUnloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildCardHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildCardHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildMapEntryRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildMapEntryRow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildGpsTabContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildGpsTabContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildNetTabContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildNetTabContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildMapWindow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildMapWindow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildTabView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "function:main/display/screen/gps_screen/gps_screen.cc:BuildTabView",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "class:main/display/screen/gps_screen/gps_screen.cc:TabLocState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/gps_screen/gps_screen.cc",
+      "target": "class:main/display/screen/gps_screen/gps_screen.cc:TabLocState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

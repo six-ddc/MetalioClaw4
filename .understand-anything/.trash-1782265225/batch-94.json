@@ -1,0 +1,915 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/magiclick-c3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/magiclick-c3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "magiclick-c3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "type": "file",
+      "name": "magiclick_c3_board.cc",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:NV3023Display",
+      "type": "function",
+      "name": "NV3023Display",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        22,
+        47
+      ],
+      "summary": "实现 NV3023Display 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        57,
+        68
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        70,
+        93
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        95,
+        109
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        111,
+        120
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeNv3023Display",
+      "type": "function",
+      "name": "InitializeNv3023Display",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        122,
+        153
+      ],
+      "summary": "实现 InitializeNv3023Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:magiclick_c3",
+      "type": "function",
+      "name": "magiclick_c3",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        156,
+        166
+      ],
+      "summary": "实现 magiclick_c3 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/magiclick-c3/magiclick_c3_board.cc:NV3023Display",
+      "type": "class",
+      "name": "NV3023Display",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        20,
+        48
+      ],
+      "summary": "定义 NV3023Display 类及其方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/magiclick-c3/magiclick_c3_board.cc:magiclick_c3",
+      "type": "class",
+      "name": "magiclick_c3",
+      "filePath": "main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "lineRange": [
+        50,
+        188
+      ],
+      "summary": "定义 magiclick_c3 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/minsi-k08-dual/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/minsi-k08-dual/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "minsi-k08-dual"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/minsi-k08-dual/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/minsi-k08-dual/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/mixgo-nova/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/mixgo-nova/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/mixgo-nova/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/mixgo-nova/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "mixgo-nova"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "type": "file",
+      "name": "mixgo-nova.cc",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "summary": "实现 mixgo-nova 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "lineRange": [
+        27,
+        42
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "lineRange": [
+        44,
+        53
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "lineRange": [
+        55,
+        93
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "lineRange": [
+        95,
+        126
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/mixgo-nova/mixgo-nova.cc:MIXGO_NOVA",
+      "type": "function",
+      "name": "MIXGO_NOVA",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "lineRange": [
+        129,
+        140
+      ],
+      "summary": "实现 MIXGO_NOVA 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/mixgo-nova/mixgo-nova.cc:MIXGO_NOVA",
+      "type": "class",
+      "name": "MIXGO_NOVA",
+      "filePath": "main/boards/mixgo-nova/mixgo-nova.cc",
+      "lineRange": [
+        19,
+        166
+      ],
+      "summary": "定义 MIXGO_NOVA 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/mixgo-nova/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/mixgo-nova/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/movecall-cuican-esp32s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/movecall-cuican-esp32s3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/movecall-cuican-esp32s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/movecall-cuican-esp32s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "movecall-cuican-esp3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "type": "file",
+      "name": "movecall_cuican_esp32s3.cc",
+      "filePath": "main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "summary": "实现 movecall_cuican_esp32s3 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "lineRange": [
+        29,
+        44
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:InitializeGc9a01Display",
+      "type": "function",
+      "name": "InitializeGc9a01Display",
+      "filePath": "main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "lineRange": [
+        55,
+        80
+      ],
+      "summary": "实现 InitializeGc9a01Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:MovecallCuicanESP32S3",
+      "type": "class",
+      "name": "MovecallCuicanESP32S3",
+      "filePath": "main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "lineRange": [
+        23,
+        121
+      ],
+      "summary": "定义 MovecallCuicanESP32S3 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/movecall-cuican-esp32s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/movecall-cuican-esp32s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/movecall-moji-esp32s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/movecall-moji-esp32s3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/movecall-moji-esp32s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/movecall-moji-esp32s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "movecall-moji-esp32s"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "type": "file",
+      "name": "movecall_moji_esp32s3.cc",
+      "filePath": "main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "summary": "实现 movecall_moji_esp32s3 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:CustomLcdDisplay",
+      "type": "function",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "lineRange": [
+        25,
+        40
+      ],
+      "summary": "实现 CustomLcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "lineRange": [
+        49,
+        64
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:InitializeGc9a01Display",
+      "type": "function",
+      "name": "InitializeGc9a01Display",
+      "filePath": "main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "lineRange": [
+        75,
+        100
+      ],
+      "summary": "实现 InitializeGc9a01Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:MovecallMojiESP32S3",
+      "type": "class",
+      "name": "MovecallMojiESP32S3",
+      "filePath": "main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "lineRange": [
+        43,
+        141
+      ],
+      "summary": "定义 MovecallMojiESP32S3 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/movecall-moji-esp32s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/movecall-moji-esp32s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/otto-robot/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/otto-robot/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "otto-robot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/otto-robot/otto_icon_font.c",
+      "type": "file",
+      "name": "otto_icon_font.c",
+      "filePath": "main/boards/otto-robot/otto_icon_font.c",
+      "summary": "实现 otto_icon_font.c 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/otto-robot/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/otto-robot/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/sp-esp32-s3-1.28-box/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "sp-esp32-s3-1.28-box"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/sp-esp32-s3-1.28-box/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/sp-esp32-s3-1.54-muma/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/sp-esp32-s3-1.54-muma/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "sp-esp32-s3-1.54-mum"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/sp-esp32-s3-1.54-muma/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/sp-esp32-s3-1.54-muma/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/surfer-c3-1.14tft/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/surfer-c3-1.14tft/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "surfer-c3-1.14tft"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/surfer-c3-1.14tft/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/surfer-c3-1.14tft/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "file:main/boards/magiclick-c3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:NV3023Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:NV3023Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:InitializeNv3023Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:magiclick_c3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "function:main/boards/magiclick-c3/magiclick_c3_board.cc:magiclick_c3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "class:main/boards/magiclick-c3/magiclick_c3_board.cc:NV3023Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "class:main/boards/magiclick-c3/magiclick_c3_board.cc:NV3023Display",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "class:main/boards/magiclick-c3/magiclick_c3_board.cc:magiclick_c3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/magiclick-c3/magiclick_c3_board.cc",
+      "target": "class:main/boards/magiclick-c3/magiclick_c3_board.cc:magiclick_c3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "file:main/boards/mixgo-nova/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "function:main/boards/mixgo-nova/mixgo-nova.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "function:main/boards/mixgo-nova/mixgo-nova.cc:MIXGO_NOVA",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "function:main/boards/mixgo-nova/mixgo-nova.cc:MIXGO_NOVA",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "class:main/boards/mixgo-nova/mixgo-nova.cc:MIXGO_NOVA",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/mixgo-nova/mixgo-nova.cc",
+      "target": "class:main/boards/mixgo-nova/mixgo-nova.cc:MIXGO_NOVA",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "target": "file:main/boards/movecall-cuican-esp32s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "target": "function:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "target": "function:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:InitializeGc9a01Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "target": "class:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:MovecallCuicanESP32S3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc",
+      "target": "class:main/boards/movecall-cuican-esp32s3/movecall_cuican_esp32s3.cc:MovecallCuicanESP32S3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "file:main/boards/movecall-moji-esp32s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "function:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:InitializeGc9a01Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "class:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:MovecallMojiESP32S3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc",
+      "target": "class:main/boards/movecall-moji-esp32s3/movecall_moji_esp32s3.cc:MovecallMojiESP32S3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "type": "file",
+      "name": "atommatrix_echo_base.cc",
+      "filePath": "main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "summary": "实现 atommatrix_echo_base 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "lineRange": [
+        44,
+        60
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "lineRange": [
+        62,
+        81
+      ],
+      "summary": "实现 I2cDetect 函数功能。",
+      "tags": [
+        "hardware-io",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "lineRange": [
+        89,
+        99
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:Pi4ioe",
+      "type": "class",
+      "name": "Pi4ioe",
+      "filePath": "main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "lineRange": [
+        22,
+        34
+      ],
+      "summary": "定义 Pi4ioe 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:AtomMatrixEchoBaseBoard",
+      "type": "class",
+      "name": "AtomMatrixEchoBaseBoard",
+      "filePath": "main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "lineRange": [
+        36,
+        131
+      ],
+      "summary": "定义 AtomMatrixEchoBaseBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atommatrix-echo-base/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atommatrix-echo-base/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atommatrix-echo-base/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atommatrix-echo-base/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atommatrix-echo-base"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/atommatrix-echo-base/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/atommatrix-echo-base/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "type": "file",
+      "name": "atoms3_echo_base.cc",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "summary": "实现 atoms3_echo_base 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "lineRange": [
+        54,
+        69
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "lineRange": [
+        71,
+        98
+      ],
+      "summary": "实现 I2cDetect 函数功能。",
+      "tags": [
+        "hardware-io",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:CheckEchoBaseConnection",
+      "type": "function",
+      "name": "CheckEchoBaseConnection",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "lineRange": [
+        100,
+        130
+      ],
+      "summary": "实现 CheckEchoBaseConnection 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "lineRange": [
+        132,
+        142
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:InitializeGc9107Display",
+      "type": "function",
+      "name": "InitializeGc9107Display",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "lineRange": [
+        144,
+        178
+      ],
+      "summary": "实现 InitializeGc9107Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/atoms3-echo-base/atoms3_echo_base.cc:AtomS3EchoBaseBoard",
+      "type": "class",
+      "name": "AtomS3EchoBaseBoard",
+      "filePath": "main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "lineRange": [
+        48,
+        226
+      ],
+      "summary": "定义 AtomS3EchoBaseBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/atoms3-echo-base/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atoms3-echo-base/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atoms3-echo-base/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atoms3-echo-base/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atoms3-echo-base"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/atoms3-echo-base/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/atoms3-echo-base/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "type": "file",
+      "name": "atoms3r_cam_m12_echo_base.cc",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "summary": "实现 atoms3r_cam_m12_echo_base 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "lineRange": [
+        44,
+        59
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "lineRange": [
+        61,
+        88
+      ],
+      "summary": "实现 I2cDetect 函数功能。",
+      "tags": [
+        "hardware-io",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:CheckEchoBaseConnection",
+      "type": "function",
+      "name": "CheckEchoBaseConnection",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "lineRange": [
+        90,
+        111
+      ],
+      "summary": "实现 CheckEchoBaseConnection 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "lineRange": [
+        129,
+        172
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:Pi4ioe",
+      "type": "class",
+      "name": "Pi4ioe",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "lineRange": [
+        23,
+        35
+      ],
+      "summary": "定义 Pi4ioe 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:AtomS3rCamM12EchoBaseBoard",
+      "type": "class",
+      "name": "AtomS3rCamM12EchoBaseBoard",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "lineRange": [
+        37,
+        203
+      ],
+      "summary": "定义 AtomS3rCamM12EchoBaseBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/atoms3r-cam-m12-echo-base/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atoms3r-cam-m12-echo-base/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atoms3r-cam-m12-echo"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/atoms3r-cam-m12-echo-base/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/atoms3r-cam-m12-echo-base/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "file:main/boards/atommatrix-echo-base/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "function:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "function:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "function:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "class:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:Pi4ioe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "class:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:Pi4ioe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "class:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:AtomMatrixEchoBaseBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc",
+      "target": "class:main/boards/atommatrix-echo-base/atommatrix_echo_base.cc:AtomMatrixEchoBaseBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "file:main/boards/atoms3-echo-base/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:CheckEchoBaseConnection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "function:main/boards/atoms3-echo-base/atoms3_echo_base.cc:InitializeGc9107Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "class:main/boards/atoms3-echo-base/atoms3_echo_base.cc:AtomS3EchoBaseBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3-echo-base/atoms3_echo_base.cc",
+      "target": "class:main/boards/atoms3-echo-base/atoms3_echo_base.cc:AtomS3EchoBaseBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "file:main/boards/atoms3r-cam-m12-echo-base/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:CheckEchoBaseConnection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "function:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "class:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:Pi4ioe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "class:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:Pi4ioe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "class:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:AtomS3rCamM12EchoBaseBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc",
+      "target": "class:main/boards/atoms3r-cam-m12-echo-base/atoms3r_cam_m12_echo_base.cc:AtomS3rCamM12EchoBaseBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

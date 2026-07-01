@@ -1,0 +1,289 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/kevin-c3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/kevin-c3/config.h",
+      "summary": "kevin-c3 开发板的硬件配置头文件，定义GPIO引脚映射、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "type": "file",
+      "name": "kevin_c3_board.cc",
+      "filePath": "main/boards/kevin-c3/kevin_c3_board.cc",
+      "summary": "kevin-c3 开发板的主板实现，包含KevinBoxBoard类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-c3/kevin_c3_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/kevin-c3/kevin_c3_board.cc",
+      "lineRange": [
+        22,
+        45
+      ],
+      "summary": "初始化音频编解码器芯片，通过I2C配置寄存器参数。",
+      "tags": [
+        "音频编解码",
+        "I2C"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-c3/kevin_c3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/kevin-c3/kevin_c3_board.cc",
+      "lineRange": [
+        47,
+        60
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "type": "function",
+      "name": "KevinBoxBoard",
+      "filePath": "main/boards/kevin-c3/kevin_c3_board.cc",
+      "lineRange": [
+        69,
+        76
+      ],
+      "summary": "KevinBoxBoard 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "type": "class",
+      "name": "KevinBoxBoard",
+      "filePath": "main/boards/kevin-c3/kevin_c3_board.cc",
+      "lineRange": [
+        16,
+        88
+      ],
+      "summary": "KevinBoxBoard 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "type": "file",
+      "name": "led_strip_control.cc",
+      "filePath": "main/boards/kevin-c3/led_strip_control.cc",
+      "summary": "kevin-c3 开发板的LED灯带控制实现，提供RGB LED的颜色设置和状态指示功能。",
+      "tags": [
+        "LED",
+        "灯带控制",
+        "RGB"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-c3/led_strip_control.cc:LevelToBrightness",
+      "type": "function",
+      "name": "LevelToBrightness",
+      "filePath": "main/boards/kevin-c3/led_strip_control.cc",
+      "lineRange": [
+        8,
+        12
+      ],
+      "summary": "LevelToBrightness 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-c3/led_strip_control.cc:RGBToColor",
+      "type": "function",
+      "name": "RGBToColor",
+      "filePath": "main/boards/kevin-c3/led_strip_control.cc",
+      "lineRange": [
+        14,
+        22
+      ],
+      "summary": "RGBToColor 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-c3/led_strip_control.cc:LedStripControl",
+      "type": "function",
+      "name": "LedStripControl",
+      "filePath": "main/boards/kevin-c3/led_strip_control.cc",
+      "lineRange": [
+        24,
+        129
+      ],
+      "summary": "LedStripControl 函数的完整实现，包含106行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/kevin-c3/led_strip_control.h",
+      "type": "file",
+      "name": "led_strip_control.h",
+      "filePath": "main/boards/kevin-c3/led_strip_control.h",
+      "summary": "kevin-c3 开发板的LED灯带控制头文件，定义LED控制类接口。",
+      "tags": [
+        "LED",
+        "灯带控制"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "class:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "function:main/boards/kevin-c3/kevin_c3_board.cc:KevinBoxBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "file:main/boards/kevin-c3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-c3/kevin_c3_board.cc",
+      "target": "file:main/boards/kevin-c3/led_strip_control.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "function:main/boards/kevin-c3/led_strip_control.cc:LevelToBrightness",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "function:main/boards/kevin-c3/led_strip_control.cc:RGBToColor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "function:main/boards/kevin-c3/led_strip_control.cc:LedStripControl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "function:main/boards/kevin-c3/led_strip_control.cc:RGBToColor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "function:main/boards/kevin-c3/led_strip_control.cc:LedStripControl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "function:main/boards/kevin-c3/led_strip_control.cc:LevelToBrightness",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-c3/led_strip_control.cc",
+      "target": "file:main/boards/kevin-c3/led_strip_control.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

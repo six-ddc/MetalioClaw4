@@ -1,0 +1,392 @@
+{
+  "nodes": [
+    {
+      "id": "file:sd_images/system/emotion/neutral.eaf",
+      "type": "file",
+      "name": "neutral.eaf",
+      "filePath": "sd_images/system/emotion/neutral.eaf",
+      "summary": "「中性」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/neutral.sjpg",
+      "type": "file",
+      "name": "neutral.sjpg",
+      "filePath": "sd_images/system/emotion/neutral.sjpg",
+      "summary": "「中性」表情的 SJPEG 图像文件，包含表情动画所需的压缩图像帧数据。",
+      "tags": [
+        "image",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/surprised.eaf",
+      "type": "file",
+      "name": "surprised.eaf",
+      "filePath": "sd_images/system/emotion/surprised.eaf",
+      "summary": "「惊讶」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/surprised.sjpg",
+      "type": "file",
+      "name": "surprised.sjpg",
+      "filePath": "sd_images/system/emotion/surprised.sjpg",
+      "summary": "「惊讶」表情的 SJPEG 图像文件，包含表情动画所需的压缩图像帧数据。",
+      "tags": [
+        "image",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/thinking.eaf",
+      "type": "file",
+      "name": "thinking.eaf",
+      "filePath": "sd_images/system/emotion/thinking.eaf",
+      "summary": "「思考」表情的 EAF 动画描述文件，定义动画帧序列和时序参数。",
+      "tags": [
+        "animation",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/emotion/thinking.sjpg",
+      "type": "file",
+      "name": "thinking.sjpg",
+      "filePath": "sd_images/system/emotion/thinking.sjpg",
+      "summary": "「思考」表情的 SJPEG 图像文件，包含表情动画所需的压缩图像帧数据。",
+      "tags": [
+        "image",
+        "emotion",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sd_images/system/系统资源文件，请勿删除",
+      "type": "file",
+      "name": "系统资源文件，请勿删除",
+      "filePath": "sd_images/system/系统资源文件，请勿删除",
+      "summary": "sd_images/system/系统资源文件，请勿删除 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:sdkconfig",
+      "type": "file",
+      "name": "sdkconfig",
+      "filePath": "sdkconfig",
+      "summary": "sdkconfig 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:sdkconfig.defaults",
+      "type": "file",
+      "name": "sdkconfig.defaults",
+      "filePath": "sdkconfig.defaults",
+      "summary": "sdkconfig.defaults 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:sdkconfig.defaults.esp32",
+      "type": "file",
+      "name": "sdkconfig.defaults.esp32",
+      "filePath": "sdkconfig.defaults.esp32",
+      "summary": "sdkconfig.defaults.esp32 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:sdkconfig.defaults.esp32c3",
+      "type": "file",
+      "name": "sdkconfig.defaults.esp32c3",
+      "filePath": "sdkconfig.defaults.esp32c3",
+      "summary": "sdkconfig.defaults.esp32c3 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:sdkconfig.defaults.esp32c5",
+      "type": "file",
+      "name": "sdkconfig.defaults.esp32c5",
+      "filePath": "sdkconfig.defaults.esp32c5",
+      "summary": "sdkconfig.defaults.esp32c5 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:sdkconfig.defaults.esp32c6",
+      "type": "file",
+      "name": "sdkconfig.defaults.esp32c6",
+      "filePath": "sdkconfig.defaults.esp32c6",
+      "summary": "sdkconfig.defaults.esp32c6 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:sdkconfig.defaults.esp32p4",
+      "type": "file",
+      "name": "sdkconfig.defaults.esp32p4",
+      "filePath": "sdkconfig.defaults.esp32p4",
+      "summary": "sdkconfig.defaults.esp32p4 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:sdkconfig.defaults.esp32s3",
+      "type": "file",
+      "name": "sdkconfig.defaults.esp32s3",
+      "filePath": "sdkconfig.defaults.esp32s3",
+      "summary": "sdkconfig.defaults.esp32s3 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/openclaw-test/Node.gitignore:Zone.Identifier",
+      "type": "file",
+      "name": "Node.gitignore:Zone.Identifier",
+      "filePath": "server/openclaw-test/Node.gitignore:Zone.Identifier",
+      "summary": "server/openclaw-test/Node.gitignore:Zone.Identifier 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:server/openclaw-test/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "server/openclaw-test/package.json",
+      "summary": "server/openclaw-test/package.json 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/openclaw-test/server.js",
+      "type": "file",
+      "name": "server.js",
+      "filePath": "server/openclaw-test/server.js",
+      "summary": "server/openclaw-test/server.js 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:server/openclaw-test/server.js:buildFileName",
+      "type": "function",
+      "name": "buildFileName",
+      "filePath": "server/openclaw-test/server.js",
+      "lineRange": [
+        15,
+        24
+      ],
+      "summary": "实现 buildFileName 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/openclaw-test/server.js:readDeviceId",
+      "type": "function",
+      "name": "readDeviceId",
+      "filePath": "server/openclaw-test/server.js",
+      "lineRange": [
+        33,
+        42
+      ],
+      "summary": "实现 readDeviceId 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/openclaw-test/server.js:seedConversation",
+      "type": "function",
+      "name": "seedConversation",
+      "filePath": "server/openclaw-test/server.js",
+      "lineRange": [
+        73,
+        84
+      ],
+      "summary": "实现 seedConversation 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/openclaw-test/server.js:appendMessage",
+      "type": "function",
+      "name": "appendMessage",
+      "filePath": "server/openclaw-test/server.js",
+      "lineRange": [
+        93,
+        104
+      ],
+      "summary": "实现 appendMessage 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server/openclaw-test/test-client.js",
+      "type": "file",
+      "name": "test-client.js",
+      "filePath": "server/openclaw-test/test-client.js",
+      "summary": "server/openclaw-test/test-client.js 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:server/openclaw-test/test-client.js:makeWavBuffer",
+      "type": "function",
+      "name": "makeWavBuffer",
+      "filePath": "server/openclaw-test/test-client.js",
+      "lineRange": [
+        6,
+        28
+      ],
+      "summary": "实现 makeWavBuffer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/openclaw-test/test-client.js:postRaw",
+      "type": "function",
+      "name": "postRaw",
+      "filePath": "server/openclaw-test/test-client.js",
+      "lineRange": [
+        30,
+        56
+      ],
+      "summary": "实现 postRaw 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:server/openclaw-test/test-client.js:postMultipart",
+      "type": "function",
+      "name": "postMultipart",
+      "filePath": "server/openclaw-test/test-client.js",
+      "lineRange": [
+        58,
+        90
+      ],
+      "summary": "实现 postMultipart 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:server/openclaw-test/uploads/3cdc758b9c94_audio_20260610074219_chyf6m.wav",
+      "type": "file",
+      "name": "3cdc758b9c94_audio_20260610074219_chyf6m.wav",
+      "filePath": "server/openclaw-test/uploads/3cdc758b9c94_audio_20260610074219_chyf6m.wav",
+      "summary": "server/openclaw-test/uploads/3cdc758b9c94_audio_20260610074219_chyf6m.wav 的文件。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:server/openclaw-test/server.js",
+      "target": "function:server/openclaw-test/server.js:buildFileName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:server/openclaw-test/server.js",
+      "target": "function:server/openclaw-test/server.js:readDeviceId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:server/openclaw-test/server.js",
+      "target": "function:server/openclaw-test/server.js:seedConversation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:server/openclaw-test/server.js",
+      "target": "function:server/openclaw-test/server.js:appendMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:server/openclaw-test/test-client.js",
+      "target": "function:server/openclaw-test/test-client.js:makeWavBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:server/openclaw-test/test-client.js",
+      "target": "function:server/openclaw-test/test-client.js:postRaw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:server/openclaw-test/test-client.js",
+      "target": "function:server/openclaw-test/test-client.js:postMultipart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    }
+  ]
+}

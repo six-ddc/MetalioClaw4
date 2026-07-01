@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/build.yml",
+      "type": "pipeline",
+      "name": "build.yml",
+      "filePath": ".github/workflows/build.yml",
+      "summary": "ESP-IDF固件自动构建的GitHub Actions CI/CD流水线，根据代码变更智能选择需编译的开发板变体，并行构建并上传固件产物。包含prepare（变更检测与变体选择）和build（多板卡Docker并行编译）两个Job。",
+      "tags": ["ci-cd", "build", "deployment", "esp-idf"],
+      "complexity": "moderate",
+      "languageNotes": "使用matrix strategy实现多板卡并行构建，fail-fast设为false确保单板失败不影响其他板卡编译。"
+    },
+    {
+      "id": "step:.github/workflows/build.yml:prepare",
+      "type": "step",
+      "name": "prepare",
+      "filePath": ".github/workflows/build.yml",
+      "summary": "基于Git变更文件智能检测受影响的开发板，为push到main构建全部变体，为PR仅构建变更相关的板卡。",
+      "tags": ["ci-cd", "change-detection", "job-preparation"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "step:.github/workflows/build.yml:build",
+      "type": "step",
+      "name": "build",
+      "filePath": ".github/workflows/build.yml",
+      "summary": "在esp-idf:release-v5.5 Docker容器中并行编译选定的开发板固件，并将生成的合并二进制文件上传为构建产物。",
+      "tags": ["ci-cd", "firmware-build", "docker", "artifact-upload"],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pipeline:.github/workflows/build.yml",
+      "target": "step:.github/workflows/build.yml:prepare",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "pipeline:.github/workflows/build.yml",
+      "target": "step:.github/workflows/build.yml:build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "step:.github/workflows/build.yml:prepare",
+      "target": "step:.github/workflows/build.yml:build",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/waveshare-s3-touch-lcd-4b/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-s3-touch-l"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-lcd-4b.cc",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "summary": "实现 esp32-s3-touch-lcd-4b 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        36,
+        60
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        119,
+        130
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        132,
+        146
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeTca9554",
+      "type": "function",
+      "name": "InitializeTca9554",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        148,
+        159
+      ],
+      "summary": "实现 InitializeTca9554 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeRGB",
+      "type": "function",
+      "name": "InitializeRGB",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        165,
+        240
+      ],
+      "summary": "实现 InitializeRGB 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        242,
+        259
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        261,
+        290
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        292,
+        301
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:CheckKeyState",
+      "type": "function",
+      "name": "CheckKeyState",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        302,
+        345
+      ],
+      "summary": "实现 CheckKeyState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeKeyMonitor",
+      "type": "function",
+      "name": "InitializeKeyMonitor",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        347,
+        367
+      ],
+      "summary": "实现 InitializeKeyMonitor 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:WaveshareEsp32s3TouchLCD4b",
+      "type": "function",
+      "name": "WaveshareEsp32s3TouchLCD4b",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        370,
+        381
+      ],
+      "summary": "实现 WaveshareEsp32s3TouchLCD4b 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        409,
+        421
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        34,
+        61
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:WaveshareEsp32s3TouchLCD4b",
+      "type": "class",
+      "name": "WaveshareEsp32s3TouchLCD4b",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "lineRange": [
+        106,
+        430
+      ],
+      "summary": "定义 WaveshareEsp32s3TouchLCD4b 类及其方法。",
+      "tags": [
+        "display",
+        "touch-input"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/wireless-tag-wtp4c5mp07s/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/wireless-tag-wtp4c5mp07s/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "wireless-tag-wtp4c5m"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/wireless-tag-wtp4c5mp07s/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "type": "file",
+      "name": "wireless-tag-wtp4c5mp07s.cc",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "summary": "实现 wireless-tag-wtp4c5mp07s 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "lineRange": [
+        35,
+        50
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:bsp_enable_dsi_phy_power",
+      "type": "function",
+      "name": "bsp_enable_dsi_phy_power",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "lineRange": [
+        52,
+        65
+      ],
+      "summary": "实现 bsp_enable_dsi_phy_power 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeLCD",
+      "type": "function",
+      "name": "InitializeLCD",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "lineRange": [
+        67,
+        135
+      ],
+      "summary": "实现 InitializeLCD 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "lineRange": [
+        137,
+        167
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeSdCard",
+      "type": "function",
+      "name": "InitializeSdCard",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "lineRange": [
+        178,
+        255
+      ],
+      "summary": "实现 InitializeSdCard 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:WirelessTagEsp32p47b",
+      "type": "class",
+      "name": "WirelessTagEsp32p47b",
+      "filePath": "main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "lineRange": [
+        29,
+        293
+      ],
+      "summary": "定义 WirelessTagEsp32p47b 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/xingzhi-395/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-395/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xingzhi-395"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/xingzhi-395/esp_lcd_fl7707n.c",
+      "type": "file",
+      "name": "esp_lcd_fl7707n.c",
+      "filePath": "main/boards/xingzhi-395/esp_lcd_fl7707n.c",
+      "summary": "实现 esp_lcd_fl7707n.c 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/xingzhi-395/esp_lcd_nv3051f.c",
+      "type": "file",
+      "name": "esp_lcd_nv3051f.c",
+      "filePath": "main/boards/xingzhi-395/esp_lcd_nv3051f.c",
+      "summary": "实现 esp_lcd_nv3051f.c 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:main/boards/xingzhi-cube-0.85tft-ml307/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-cube-0.85tft-ml307/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xingzhi-cube-0.85tft"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xingzhi-cube-0.85tft-wifi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-cube-0.85tft-wifi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "xingzhi-cube-0.85tft"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/xingzhi-cube-0.96oled-ml307/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/xingzhi-cube-0.96oled-ml307/config.json",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "board-config",
+        "configuration",
+        "xingzhi-cube-0.96ole"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "file:main/boards/waveshare-s3-touch-lcd-4b/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeTca9554",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeRGB",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:CheckKeyState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:InitializeKeyMonitor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:WaveshareEsp32s3TouchLCD4b",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:WaveshareEsp32s3TouchLCD4b",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:WaveshareEsp32s3TouchLCD4b",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-4b/esp32-s3-touch-lcd-4b.cc:WaveshareEsp32s3TouchLCD4b",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "file:main/boards/wireless-tag-wtp4c5mp07s/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:bsp_enable_dsi_phy_power",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "function:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:InitializeSdCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "class:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:WirelessTagEsp32p47b",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc",
+      "target": "class:main/boards/wireless-tag-wtp4c5mp07s/wireless-tag-wtp4c5mp07s.cc:WirelessTagEsp32p47b",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

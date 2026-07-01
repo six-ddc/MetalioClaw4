@@ -1,0 +1,1425 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/screen/weather_screen/weather_city_list.cc",
+      "type": "file",
+      "name": "weather_city_list.cc",
+      "filePath": "main/display/screen/weather_screen/weather_city_list.cc",
+      "summary": "天气应用的城市列表管理模块，提供城市搜索、选择、中国城市数据加载及当前城市管理功能。",
+      "tags": [
+        "天气",
+        "城市列表",
+        "UI",
+        "数据管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_city_list.cc:FindCityById",
+      "type": "function",
+      "name": "FindCityById",
+      "filePath": "main/display/screen/weather_screen/weather_city_list.cc",
+      "lineRange": [
+        3236,
+        3253
+      ],
+      "summary": "FindCityById 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "type": "file",
+      "name": "weather_city_list.h",
+      "filePath": "main/display/screen/weather_screen/weather_city_list.h",
+      "summary": "天气城市列表头文件，定义城市信息数据结构和城市搜索选择接口。",
+      "tags": [
+        "天气",
+        "城市列表",
+        "数据结构",
+        "UI"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/weather_screen/weather_city_list.h:CityEntry",
+      "type": "class",
+      "name": "CityEntry",
+      "filePath": "main/display/screen/weather_screen/weather_city_list.h",
+      "lineRange": [
+        15,
+        18
+      ],
+      "summary": "CityEntry 类，包含0个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/display/screen/weather_screen/weather_city_list.h:ProvinceEntry",
+      "type": "class",
+      "name": "ProvinceEntry",
+      "filePath": "main/display/screen/weather_screen/weather_city_list.h",
+      "lineRange": [
+        20,
+        24
+      ],
+      "summary": "ProvinceEntry 类，包含0个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/display/screen/weather_screen/weather_city_list.h:LookupResult",
+      "type": "class",
+      "name": "LookupResult",
+      "filePath": "main/display/screen/weather_screen/weather_city_list.h",
+      "lineRange": [
+        34,
+        37
+      ],
+      "summary": "LookupResult 类，包含0个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "type": "file",
+      "name": "weather_screen.cc",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "summary": "天气屏幕UI实现，通过LVGL展示当前天气信息、多日预报、空气质量等气象数据。",
+      "tags": [
+        "天气",
+        "屏幕显示",
+        "LVGL",
+        "UI"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:card_bg_color",
+      "type": "function",
+      "name": "card_bg_color",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        135,
+        137
+      ],
+      "summary": "card_bg_color 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:card_text_color",
+      "type": "function",
+      "name": "card_text_color",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        139,
+        141
+      ],
+      "summary": "card_text_color 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:card_subtle_text_color",
+      "type": "function",
+      "name": "card_subtle_text_color",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        143,
+        147
+      ],
+      "summary": "card_subtle_text_color 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:LoadCfgString",
+      "type": "function",
+      "name": "LoadCfgString",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        152,
+        155
+      ],
+      "summary": "LoadCfgString 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:SaveCfgString",
+      "type": "function",
+      "name": "SaveCfgString",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        157,
+        160
+      ],
+      "summary": "SaveCfgString 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:TrimCfgString",
+      "type": "function",
+      "name": "TrimCfgString",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        162,
+        174
+      ],
+      "summary": "TrimCfgString 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:NormalizeWeatherApiHost",
+      "type": "function",
+      "name": "NormalizeWeatherApiHost",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        177,
+        189
+      ],
+      "summary": "NormalizeWeatherApiHost 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:BuildWeatherApiUrl",
+      "type": "function",
+      "name": "BuildWeatherApiUrl",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        191,
+        194
+      ],
+      "summary": "BuildWeatherApiUrl 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:HasWeatherConfig",
+      "type": "function",
+      "name": "HasWeatherConfig",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        196,
+        200
+      ],
+      "summary": "HasWeatherConfig 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:EraseWeatherCache",
+      "type": "function",
+      "name": "EraseWeatherCache",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        204,
+        207
+      ],
+      "summary": "EraseWeatherCache 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:EnsureWeatherServiceInit",
+      "type": "function",
+      "name": "EnsureWeatherServiceInit",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        211,
+        222
+      ],
+      "summary": "EnsureWeatherServiceInit 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:ReinitWeatherService",
+      "type": "function",
+      "name": "ReinitWeatherService",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        227,
+        232
+      ],
+      "summary": "ReinitWeatherService 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:RefreshConfigVisibility",
+      "type": "function",
+      "name": "RefreshConfigVisibility",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        235,
+        246
+      ],
+      "summary": "RefreshConfigVisibility 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:BuildHeaderText",
+      "type": "function",
+      "name": "BuildHeaderText",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        250,
+        256
+      ],
+      "summary": "BuildHeaderText 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:RefreshHeaderLabel",
+      "type": "function",
+      "name": "RefreshHeaderLabel",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        258,
+        263
+      ],
+      "summary": "RefreshHeaderLabel 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:BuildProvinceOptions",
+      "type": "function",
+      "name": "BuildProvinceOptions",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        267,
+        274
+      ],
+      "summary": "BuildProvinceOptions 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:BuildCityOptionsForProvince",
+      "type": "function",
+      "name": "BuildCityOptionsForProvince",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        276,
+        287
+      ],
+      "summary": "BuildCityOptionsForProvince 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:FormatWeekday",
+      "type": "function",
+      "name": "FormatWeekday",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        289,
+        310
+      ],
+      "summary": "FormatWeekday 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:FormatCardDate",
+      "type": "function",
+      "name": "FormatCardDate",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        312,
+        320
+      ],
+      "summary": "FormatCardDate 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:SetWeatherIcon",
+      "type": "function",
+      "name": "SetWeatherIcon",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        322,
+        335
+      ],
+      "summary": "SetWeatherIcon 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:CreateDayCard",
+      "type": "function",
+      "name": "CreateDayCard",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        360,
+        417
+      ],
+      "summary": "CreateDayCard 函数的完整实现，包含58行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:UpdateDayCard",
+      "type": "function",
+      "name": "UpdateDayCard",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        419,
+        451
+      ],
+      "summary": "UpdateDayCard 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:ApplyForecast",
+      "type": "function",
+      "name": "ApplyForecast",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        453,
+        461
+      ],
+      "summary": "ApplyForecast 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:ShowLoadingState",
+      "type": "function",
+      "name": "ShowLoadingState",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        463,
+        472
+      ],
+      "summary": "ShowLoadingState 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:FetchTask",
+      "type": "function",
+      "name": "FetchTask",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        474,
+        496
+      ],
+      "summary": "FetchTask 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:CloseConfigDialog",
+      "type": "function",
+      "name": "CloseConfigDialog",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        521,
+        526
+      ],
+      "summary": "CloseConfigDialog 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigSaveClicked",
+      "type": "function",
+      "name": "OnConfigSaveClicked",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        530,
+        571
+      ],
+      "summary": "OnConfigSaveClicked 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigCancelClicked",
+      "type": "function",
+      "name": "OnConfigCancelClicked",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        573,
+        573
+      ],
+      "summary": "OnConfigCancelClicked 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigKeyboardEvent",
+      "type": "function",
+      "name": "OnConfigKeyboardEvent",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        575,
+        582
+      ],
+      "summary": "OnConfigKeyboardEvent 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigTaFocused",
+      "type": "function",
+      "name": "OnConfigTaFocused",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        587,
+        596
+      ],
+      "summary": "OnConfigTaFocused 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigProvinceChanged",
+      "type": "function",
+      "name": "OnConfigProvinceChanged",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        600,
+        614
+      ],
+      "summary": "OnConfigProvinceChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigDropdownListOpened",
+      "type": "function",
+      "name": "OnConfigDropdownListOpened",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        618,
+        641
+      ],
+      "summary": "OnConfigDropdownListOpened 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:StyleConfigDropdown",
+      "type": "function",
+      "name": "StyleConfigDropdown",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        644,
+        655
+      ],
+      "summary": "StyleConfigDropdown 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:StyleConfigTextarea",
+      "type": "function",
+      "name": "StyleConfigTextarea",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        662,
+        681
+      ],
+      "summary": "StyleConfigTextarea 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OpenConfigDialog",
+      "type": "function",
+      "name": "OpenConfigDialog",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        683,
+        856
+      ],
+      "summary": "OpenConfigDialog 函数的完整实现，包含174行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigBtnClicked",
+      "type": "function",
+      "name": "OnConfigBtnClicked",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        858,
+        858
+      ],
+      "summary": "OnConfigBtnClicked 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:TriggerWeatherFetch",
+      "type": "function",
+      "name": "TriggerWeatherFetch",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        862,
+        871
+      ],
+      "summary": "TriggerWeatherFetch 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        873,
+        885
+      ],
+      "summary": "OnSwipeBack 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/weather_screen/weather_screen.cc:OnScreenUnloaded",
+      "type": "function",
+      "name": "OnScreenUnloaded",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        890,
+        901
+      ],
+      "summary": "OnScreenUnloaded 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/weather_screen/weather_screen.cc:DayCardUi",
+      "type": "class",
+      "name": "DayCardUi",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        99,
+        105
+      ],
+      "summary": "DayCardUi 类，包含0个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/display/screen/weather_screen/weather_screen.cc:ConfigDialogUi",
+      "type": "class",
+      "name": "ConfigDialogUi",
+      "filePath": "main/display/screen/weather_screen/weather_screen.cc",
+      "lineRange": [
+        113,
+        121
+      ],
+      "summary": "ConfigDialogUi 类，包含0个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/weather_screen/weather_screen.h",
+      "type": "file",
+      "name": "weather_screen.h",
+      "filePath": "main/display/screen/weather_screen/weather_screen.h",
+      "summary": "天气屏幕头文件，定义天气显示屏幕类接口和天气数据结构。",
+      "tags": [
+        "天气",
+        "屏幕显示",
+        "LVGL",
+        "UI"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/weather_screen/weather_screen.h:WeatherScreen",
+      "type": "class",
+      "name": "WeatherScreen",
+      "filePath": "main/display/screen/weather_screen/weather_screen.h",
+      "lineRange": [
+        5,
+        20
+      ],
+      "summary": "WeatherScreen 类，包含0个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.cc",
+      "target": "function:main/display/screen/weather_screen/weather_city_list.cc:FindCityById",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.cc",
+      "target": "function:main/display/screen/weather_screen/weather_city_list.cc:FindCityById",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.cc",
+      "target": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "target": "class:main/display/screen/weather_screen/weather_city_list.h:CityEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "target": "class:main/display/screen/weather_screen/weather_city_list.h:ProvinceEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "target": "class:main/display/screen/weather_screen/weather_city_list.h:LookupResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "target": "class:main/display/screen/weather_screen/weather_city_list.h:LookupResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "target": "class:main/display/screen/weather_screen/weather_city_list.h:CityEntry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "target": "class:main/display/screen/weather_screen/weather_city_list.h:ProvinceEntry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:card_bg_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:card_text_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:card_subtle_text_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:LoadCfgString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:SaveCfgString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:TrimCfgString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:NormalizeWeatherApiHost",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildWeatherApiUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:HasWeatherConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:EraseWeatherCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:EnsureWeatherServiceInit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:ReinitWeatherService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:RefreshConfigVisibility",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildHeaderText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:RefreshHeaderLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildProvinceOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildCityOptionsForProvince",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:FormatWeekday",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:FormatCardDate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:SetWeatherIcon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:CreateDayCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:UpdateDayCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:ApplyForecast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:ShowLoadingState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:FetchTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:CloseConfigDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigSaveClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigCancelClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigKeyboardEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigTaFocused",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigProvinceChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigDropdownListOpened",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:StyleConfigDropdown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:StyleConfigTextarea",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OpenConfigDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigBtnClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:TriggerWeatherFetch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnScreenUnloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "class:main/display/screen/weather_screen/weather_screen.cc:DayCardUi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "class:main/display/screen/weather_screen/weather_screen.cc:ConfigDialogUi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigCancelClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigKeyboardEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:EnsureWeatherServiceInit",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:RefreshHeaderLabel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigSaveClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:SetWeatherIcon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:StyleConfigTextarea",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:ApplyForecast",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnScreenUnloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:EraseWeatherCache",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildWeatherApiUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildCityOptionsForProvince",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:FetchTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OpenConfigDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigProvinceChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:ShowLoadingState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildProvinceOptions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:StyleConfigDropdown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:FormatWeekday",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:card_bg_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:RefreshConfigVisibility",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:LoadCfgString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:UpdateDayCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:card_text_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:BuildHeaderText",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:FormatCardDate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:SaveCfgString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigTaFocused",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:TriggerWeatherFetch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "class:main/display/screen/weather_screen/weather_screen.cc:DayCardUi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:CreateDayCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:CloseConfigDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:ReinitWeatherService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigDropdownListOpened",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:NormalizeWeatherApiHost",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "class:main/display/screen/weather_screen/weather_screen.cc:ConfigDialogUi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:HasWeatherConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:OnConfigBtnClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:TrimCfgString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "function:main/display/screen/weather_screen/weather_screen.cc:card_subtle_text_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "file:main/display/screen/weather_screen/weather_city_list.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.cc",
+      "target": "file:main/display/screen/weather_screen/weather_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.h",
+      "target": "class:main/display/screen/weather_screen/weather_screen.h:WeatherScreen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/weather_screen/weather_screen.h",
+      "target": "class:main/display/screen/weather_screen/weather_screen.h:WeatherScreen",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/lilygo-t-display-p4/config.h",
+      "summary": "lilygo-t-display-p4 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/hi8561_driver.h",
+      "type": "file",
+      "name": "hi8561_driver.h",
+      "filePath": "main/boards/lilygo-t-display-p4/hi8561_driver.h",
+      "summary": "hi8561 外设驱动头文件，定义硬件寄存器地址和操作接口。",
+      "tags": [
+        "硬件驱动",
+        "寄存器定义",
+        "外设"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "type": "file",
+      "name": "lilygo-t-display-p4.cc",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "summary": "lilygo-t-display-p4 开发板的主板实现，包含LilygoTDisplayP4Board类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:Init_Ldo_Channel_Power",
+      "type": "function",
+      "name": "Init_Ldo_Channel_Power",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        81,
+        93
+      ],
+      "summary": "初始化电源管理相关功能，配置电源监测和控制参数。",
+      "tags": [
+        "电源管理",
+        "初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        95,
+        110
+      ],
+      "summary": "初始化音频编解码器芯片，通过I2C配置寄存器参数。",
+      "tags": [
+        "音频编解码",
+        "I2C"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeXl9535",
+      "type": "function",
+      "name": "InitializeXl9535",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        112,
+        149
+      ],
+      "summary": "InitializeXl9535 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeLCD",
+      "type": "function",
+      "name": "InitializeLCD",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        151,
+        246
+      ],
+      "summary": "初始化LCD面板，发送初始化命令序列并配置显示参数。",
+      "tags": [
+        "LCD",
+        "显示初始化"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        248,
+        268
+      ],
+      "summary": "初始化触摸面板控制器，配置I2C接口和触摸检测参数。",
+      "tags": [
+        "触摸",
+        "I2C"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:AppToggleChatState",
+      "type": "function",
+      "name": "AppToggleChatState",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        270,
+        276
+      ],
+      "summary": "AppToggleChatState 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        278,
+        282
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "type": "function",
+      "name": "LilygoTDisplayP4Board",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        284,
+        292
+      ],
+      "summary": "LilygoTDisplayP4Board 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:TouchTask",
+      "type": "function",
+      "name": "TouchTask",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        321,
+        394
+      ],
+      "summary": "TouchTask 函数的完整实现，包含74行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "type": "class",
+      "name": "LilygoTDisplayP4Board",
+      "filePath": "main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "lineRange": [
+        54,
+        319
+      ],
+      "summary": "LilygoTDisplayP4Board 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-p4/rm69a10_driver.h",
+      "type": "file",
+      "name": "rm69a10_driver.h",
+      "filePath": "main/boards/lilygo-t-display-p4/rm69a10_driver.h",
+      "summary": "rm69a10 外设驱动头文件，定义硬件寄存器地址和操作接口。",
+      "tags": [
+        "硬件驱动",
+        "寄存器定义",
+        "外设"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:Init_Ldo_Channel_Power",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeXl9535",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:AppToggleChatState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:TouchTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:Init_Ldo_Channel_Power",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeXl9535",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:AppToggleChatState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeTouch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeCodecI2c",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:Init_Ldo_Channel_Power",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:LilygoTDisplayP4Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeButtons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeXl9535",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:TouchTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:InitializeLCD",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "function:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc:AppToggleChatState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "file:main/boards/lilygo-t-display-p4/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "file:main/boards/lilygo-t-display-p4/hi8561_driver.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-p4/lilygo-t-display-p4.cc",
+      "target": "file:main/boards/lilygo-t-display-p4/rm69a10_driver.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

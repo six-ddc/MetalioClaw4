@@ -1,0 +1,947 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/waveshare-s3-touch-amoled-2.06/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/config.json",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "board-config",
+        "configuration",
+        "waveshare-s3-touch-a"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-amoled-2.06.cc",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        30,
+        55
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:rounder_event_cb",
+      "type": "function",
+      "name": "rounder_event_cb",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        80,
+        94
+      ],
+      "summary": "实现 rounder_event_cb 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomLcdDisplay",
+      "type": "function",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        96,
+        111
+      ],
+      "summary": "实现 CustomLcdDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:SetBrightnessImpl",
+      "type": "function",
+      "name": "SetBrightnessImpl",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        121,
+        130
+      ],
+      "summary": "实现 SetBrightnessImpl 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        142,
+        153
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        155,
+        167
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        174,
+        184
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        186,
+        203
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeSH8601Display",
+      "type": "function",
+      "name": "InitializeSH8601Display",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        205,
+        242
+      ],
+      "summary": "实现 InitializeSH8601Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        244,
+        273
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        276,
+        285
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:WaveshareEsp32s3TouchAMOLED2inch06",
+      "type": "function",
+      "name": "WaveshareEsp32s3TouchAMOLED2inch06",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        288,
+        297
+      ],
+      "summary": "实现 WaveshareEsp32s3TouchAMOLED2inch06 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        324,
+        336
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        28,
+        56
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomLcdDisplay",
+      "type": "class",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        78,
+        112
+      ],
+      "summary": "定义 CustomLcdDisplay 类及其方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomBacklight",
+      "type": "class",
+      "name": "CustomBacklight",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        114,
+        131
+      ],
+      "summary": "定义 CustomBacklight 类及其方法。",
+      "tags": [
+        "backlight"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:WaveshareEsp32s3TouchAMOLED2inch06",
+      "type": "class",
+      "name": "WaveshareEsp32s3TouchAMOLED2inch06",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "lineRange": [
+        133,
+        345
+      ],
+      "summary": "定义 WaveshareEsp32s3TouchAMOLED2inch06 类及其方法。",
+      "tags": [
+        "display",
+        "led",
+        "touch-input"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-s3-touch-amoled-2.06/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-s3-touch-amoled-2.06/README.md",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-1.83/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/waveshare-s3-touch-lcd-1.83/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-s3-touch-l"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "type": "file",
+      "name": "esp32-s3-touch-lcd-1.83.cc",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "summary": "实现 esp32-s3-touch-lcd-1.83 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        28,
+        52
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        63,
+        74
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        76,
+        88
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        95,
+        104
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        106,
+        123
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeDisplay",
+      "type": "function",
+      "name": "InitializeDisplay",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        125,
+        155
+      ],
+      "summary": "实现 InitializeDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        157,
+        186
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        189,
+        198
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:WaveshareEsp32s3TouchLCD1inch83",
+      "type": "function",
+      "name": "WaveshareEsp32s3TouchLCD1inch83",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        201,
+        211
+      ],
+      "summary": "实现 WaveshareEsp32s3TouchLCD1inch83 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        239,
+        251
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        26,
+        53
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:WaveshareEsp32s3TouchLCD1inch83",
+      "type": "class",
+      "name": "WaveshareEsp32s3TouchLCD1inch83",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "lineRange": [
+        55,
+        260
+      ],
+      "summary": "定义 WaveshareEsp32s3TouchLCD1inch83 类及其方法。",
+      "tags": [
+        "display",
+        "touch-input"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-s3-touch-lcd-1.83/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-1.83/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/waveshare-s3-touch-lcd-3.49/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.49/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-s3-touch-l"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/waveshare-s3-touch-lcd-3.49/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.49/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/waveshare-s3-touch-lcd-3.5b/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-s3-touch-l"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/waveshare-s3-touch-lcd-3.5b/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-3.5b/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-touch-lcd-4b/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-s3-touch-lcd-4b/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-s3-touch-lcd-4b/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "file:main/boards/waveshare-s3-touch-amoled-2.06/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:rounder_event_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:rounder_event_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:SetBrightnessImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeSH8601Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:WaveshareEsp32s3TouchAMOLED2inch06",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:WaveshareEsp32s3TouchAMOLED2inch06",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "function:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:CustomBacklight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:WaveshareEsp32s3TouchAMOLED2inch06",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc",
+      "target": "class:main/boards/waveshare-s3-touch-amoled-2.06/esp32-s3-touch-amoled-2.06.cc:WaveshareEsp32s3TouchAMOLED2inch06",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "file:main/boards/waveshare-s3-touch-lcd-1.83/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:WaveshareEsp32s3TouchLCD1inch83",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:WaveshareEsp32s3TouchLCD1inch83",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "function:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:WaveshareEsp32s3TouchLCD1inch83",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc",
+      "target": "class:main/boards/waveshare-s3-touch-lcd-1.83/esp32-s3-touch-lcd-1.83.cc:WaveshareEsp32s3TouchLCD1inch83",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

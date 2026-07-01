@@ -1,0 +1,758 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/atk-dnesp32s3-box2-4g/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atk-dnesp32s3-box2-4g/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atk-dnesp32s3-box2-4"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atk-dnesp32s3-box2-wifi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atk-dnesp32s3-box2-wifi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atk-dnesp32s3-box2-w"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "type": "file",
+      "name": "atk_dnesp32s3.cc",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "summary": "实现 atk_dnesp32s3 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:SetOutputState",
+      "type": "function",
+      "name": "SetOutputState",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        26,
+        44
+      ],
+      "summary": "实现 SetOutputState 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        55,
+        73
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        76,
+        85
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        97,
+        131
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        135,
+        183
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:XL9555",
+      "type": "class",
+      "name": "XL9555",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        19,
+        45
+      ],
+      "summary": "定义 XL9555 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:atk_dnesp32s3",
+      "type": "class",
+      "name": "atk_dnesp32s3",
+      "filePath": "main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "lineRange": [
+        47,
+        223
+      ],
+      "summary": "定义 atk_dnesp32s3 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atk-dnesp32s3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atk-dnesp32s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atk-dnesp32s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atk-dnesp32s3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "type": "file",
+      "name": "atk_dnesp32s3m.cc",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "summary": "实现 atk_dnesp32s3m 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "lineRange": [
+        32,
+        47
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "lineRange": [
+        50,
+        59
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "lineRange": [
+        61,
+        105
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeSt7735Display",
+      "type": "function",
+      "name": "InitializeSt7735Display",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "lineRange": [
+        107,
+        168
+      ],
+      "summary": "实现 InitializeSt7735Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:atk_dnesp32s3m_4g",
+      "type": "function",
+      "name": "atk_dnesp32s3m_4g",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "lineRange": [
+        171,
+        183
+      ],
+      "summary": "实现 atk_dnesp32s3m_4g 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:atk_dnesp32s3m_4g",
+      "type": "class",
+      "name": "atk_dnesp32s3m_4g",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "lineRange": [
+        23,
+        218
+      ],
+      "summary": "定义 atk_dnesp32s3m_4g 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3m-4g/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atk-dnesp32s3m-4g/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "type": "file",
+      "name": "atk_dnesp32s3m.cc",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "summary": "实现 atk_dnesp32s3m 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "lineRange": [
+        31,
+        46
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "lineRange": [
+        49,
+        58
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "lineRange": [
+        60,
+        115
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeSt7735Display",
+      "type": "function",
+      "name": "InitializeSt7735Display",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "lineRange": [
+        117,
+        178
+      ],
+      "summary": "实现 InitializeSt7735Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:atk_dnesp32s3m_wifi",
+      "type": "function",
+      "name": "atk_dnesp32s3m_wifi",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "lineRange": [
+        181,
+        193
+      ],
+      "summary": "实现 atk_dnesp32s3m_wifi 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:atk_dnesp32s3m_wifi",
+      "type": "class",
+      "name": "atk_dnesp32s3m_wifi",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "lineRange": [
+        22,
+        228
+      ],
+      "summary": "定义 atk_dnesp32s3m_wifi 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atk-dnesp32s3m-wifi/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atk-dnesp32s3m-wifi/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atom-echos3r/atom_echos3r.cc",
+      "type": "file",
+      "name": "atom_echos3r.cc",
+      "filePath": "main/boards/atom-echos3r/atom_echos3r.cc",
+      "summary": "实现 atom_echos3r 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atom-echos3r/atom_echos3r.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atom-echos3r/atom_echos3r.cc",
+      "lineRange": [
+        19,
+        34
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atom-echos3r/atom_echos3r.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/atom-echos3r/atom_echos3r.cc",
+      "lineRange": [
+        36,
+        55
+      ],
+      "summary": "实现 I2cDetect 函数功能。",
+      "tags": [
+        "hardware-io",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atom-echos3r/atom_echos3r.cc:AtomEchoS3rBaseBoard",
+      "type": "class",
+      "name": "AtomEchoS3rBaseBoard",
+      "filePath": "main/boards/atom-echos3r/atom_echos3r.cc",
+      "lineRange": [
+        15,
+        89
+      ],
+      "summary": "定义 AtomEchoS3rBaseBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/atom-echos3r/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atom-echos3r/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atom-echos3r/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atom-echos3r/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atom-echos3r"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/atom-echos3r/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/atom-echos3r/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "file:main/boards/atk-dnesp32s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:SetOutputState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:SetOutputState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "function:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "class:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:XL9555",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "class:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:XL9555",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "class:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:atk_dnesp32s3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc",
+      "target": "class:main/boards/atk-dnesp32s3/atk_dnesp32s3.cc:atk_dnesp32s3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "file:main/boards/atk-dnesp32s3m-4g/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:InitializeSt7735Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:atk_dnesp32s3m_4g",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:atk_dnesp32s3m_4g",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "class:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:atk_dnesp32s3m_4g",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc",
+      "target": "class:main/boards/atk-dnesp32s3m-4g/atk_dnesp32s3m.cc:atk_dnesp32s3m_4g",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "file:main/boards/atk-dnesp32s3m-wifi/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:InitializeSt7735Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:atk_dnesp32s3m_wifi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "function:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:atk_dnesp32s3m_wifi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "class:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:atk_dnesp32s3m_wifi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc",
+      "target": "class:main/boards/atk-dnesp32s3m-wifi/atk_dnesp32s3m.cc:atk_dnesp32s3m_wifi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atom-echos3r/atom_echos3r.cc",
+      "target": "file:main/boards/atom-echos3r/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atom-echos3r/atom_echos3r.cc",
+      "target": "function:main/boards/atom-echos3r/atom_echos3r.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atom-echos3r/atom_echos3r.cc",
+      "target": "function:main/boards/atom-echos3r/atom_echos3r.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atom-echos3r/atom_echos3r.cc",
+      "target": "class:main/boards/atom-echos3r/atom_echos3r.cc:AtomEchoS3rBaseBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atom-echos3r/atom_echos3r.cc",
+      "target": "class:main/boards/atom-echos3r/atom_echos3r.cc:AtomEchoS3rBaseBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

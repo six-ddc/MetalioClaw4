@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/custom-board.md",
+      "type": "document",
+      "name": "custom-board.md",
+      "filePath": "docs/custom-board.md",
+      "summary": "自定义开发板适配的完整教程文档，涵盖硬件配置、引脚定义、驱动编写和编译烧录流程。",
+      "tags": [
+        "documentation",
+        "tutorial",
+        "hardware",
+        "board-development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/mcp-protocol.md",
+      "type": "document",
+      "name": "mcp-protocol.md",
+      "filePath": "docs/mcp-protocol.md",
+      "summary": "MCP（Multi-Channel Protocol）通信协议规范文档。",
+      "tags": [
+        "documentation",
+        "protocol",
+        "mcp",
+        "communication"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/mcp-usage.md",
+      "type": "document",
+      "name": "mcp-usage.md",
+      "filePath": "docs/mcp-usage.md",
+      "summary": "MCP协议的使用指南文档，介绍协议配置、消息格式和集成方式。",
+      "tags": [
+        "documentation",
+        "mcp",
+        "usage-guide",
+        "tutorial"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/mqtt-udp.md",
+      "type": "document",
+      "name": "mqtt-udp.md",
+      "filePath": "docs/mqtt-udp.md",
+      "summary": "MQTT-UDP混合通信协议文档，描述设备间基于UDP的MQTT消息广播机制。",
+      "tags": [
+        "documentation",
+        "mqtt",
+        "udp",
+        "networking",
+        "protocol"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/openclaw-api.md",
+      "type": "document",
+      "name": "openclaw-api.md",
+      "filePath": "docs/openclaw-api.md",
+      "summary": "OpenClaw平台API接口文档，提供外部服务集成的详细API规范和示例。",
+      "tags": [
+        "documentation",
+        "api-reference",
+        "openclaw",
+        "integration"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/websocket.md",
+      "type": "document",
+      "name": "websocket.md",
+      "filePath": "docs/websocket.md",
+      "summary": "WebSocket通信协议文档，描述实时双向通信的消息格式和连接管理。",
+      "tags": [
+        "documentation",
+        "websocket",
+        "networking",
+        "protocol"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,414 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "type": "file",
+      "name": "image_to_jpeg.cpp",
+      "filePath": "main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "summary": "图像转JPEG格式的编码实现，将RGB/其他格式图像数据压缩为JPEG格式，支持质量参数设置。",
+      "tags": [
+        "JPEG",
+        "图像编码",
+        "格式转换"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:encode_with_esp_new_jpeg",
+      "type": "function",
+      "name": "encode_with_esp_new_jpeg",
+      "filePath": "main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "lineRange": [
+        350,
+        425
+      ],
+      "summary": "encode_with_esp_new_jpeg 函数的完整实现，包含76行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:image_to_jpeg",
+      "type": "function",
+      "name": "image_to_jpeg",
+      "filePath": "main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "lineRange": [
+        427,
+        449
+      ],
+      "summary": "image_to_jpeg 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:image_to_jpeg_cb",
+      "type": "function",
+      "name": "image_to_jpeg_cb",
+      "filePath": "main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "lineRange": [
+        451,
+        467
+      ],
+      "summary": "image_to_jpeg_cb 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/jpg/image_to_jpeg.h",
+      "type": "file",
+      "name": "image_to_jpeg.h",
+      "filePath": "main/display/lvgl_display/jpg/image_to_jpeg.h",
+      "summary": "图像转JPEG编码器头文件，定义图像压缩接口和编码参数结构。",
+      "tags": [
+        "JPEG",
+        "图像编码",
+        "格式转换"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_display.cc",
+      "type": "file",
+      "name": "lvgl_display.cc",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "summary": "lvgl_display 开发板的lvgl_display功能模块实现。",
+      "tags": [
+        "实现"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:LvglDisplay",
+      "type": "function",
+      "name": "LvglDisplay",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        18,
+        41
+      ],
+      "summary": "LvglDisplay 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:~LvglDisplay",
+      "type": "function",
+      "name": "~LvglDisplay",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        43,
+        70
+      ],
+      "summary": "~LvglDisplay 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:SetStatus",
+      "type": "function",
+      "name": "SetStatus",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        72,
+        82
+      ],
+      "summary": "SetStatus 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:ShowNotification@84",
+      "type": "function",
+      "name": "ShowNotification",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        84,
+        86
+      ],
+      "summary": "ShowNotification 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:ShowNotification@88",
+      "type": "function",
+      "name": "ShowNotification",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        88,
+        99
+      ],
+      "summary": "ShowNotification 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:UpdateStatusBar",
+      "type": "function",
+      "name": "UpdateStatusBar",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        101,
+        203
+      ],
+      "summary": "UpdateStatusBar 函数的完整实现，包含103行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:SetPreviewImage",
+      "type": "function",
+      "name": "SetPreviewImage",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        205,
+        206
+      ],
+      "summary": "SetPreviewImage 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        208,
+        216
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_display.cc:SnapshotToJpeg",
+      "type": "function",
+      "name": "SnapshotToJpeg",
+      "filePath": "main/display/lvgl_display/lvgl_display.cc",
+      "lineRange": [
+        218,
+        258
+      ],
+      "summary": "SnapshotToJpeg 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_display.h",
+      "type": "file",
+      "name": "lvgl_display.h",
+      "filePath": "main/display/lvgl_display/lvgl_display.h",
+      "summary": "lvgl_display 开发板的lvgl_display功能模块头文件。",
+      "tags": [
+        "头文件",
+        "接口定义"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "target": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:encode_with_esp_new_jpeg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "target": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:image_to_jpeg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "target": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:image_to_jpeg_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "target": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:image_to_jpeg_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "target": "function:main/display/lvgl_display/jpg/image_to_jpeg.cpp:image_to_jpeg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/image_to_jpeg.cpp",
+      "target": "file:main/display/lvgl_display/jpg/image_to_jpeg.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:LvglDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:~LvglDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SetStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:ShowNotification@84",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:ShowNotification@88",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:UpdateStatusBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SetPreviewImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SnapshotToJpeg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:ShowNotification@84",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SetPreviewImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:~LvglDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:UpdateStatusBar",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SnapshotToJpeg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:SetStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "function:main/display/lvgl_display/lvgl_display.cc:LvglDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "file:main/display/lvgl_display/jpg/image_to_jpeg.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_display.cc",
+      "target": "file:main/display/lvgl_display/lvgl_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

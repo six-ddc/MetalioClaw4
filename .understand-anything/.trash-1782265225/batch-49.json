@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "config:.github/ISSUE_TEMPLATE/01_build_install_bug.yml",
+      "type": "config",
+      "name": "01_build_install_bug.yml",
+      "filePath": ".github/ISSUE_TEMPLATE/01_build_install_bug.yml",
+      "summary": "构建/安装问题的GitHub Issue模板，收集环境信息、错误日志和复现步骤。",
+      "tags": [
+        "issue-template",
+        "bug-report",
+        "build"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.github/ISSUE_TEMPLATE/02_runtime_bug.yml",
+      "type": "config",
+      "name": "02_runtime_bug.yml",
+      "filePath": ".github/ISSUE_TEMPLATE/02_runtime_bug.yml",
+      "summary": "运行时问题的GitHub Issue模板，收集硬件信息、固件版本和异常行为描述。",
+      "tags": [
+        "issue-template",
+        "bug-report",
+        "runtime"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.github/ISSUE_TEMPLATE/03_feature_request.yml",
+      "type": "config",
+      "name": "03_feature_request.yml",
+      "filePath": ".github/ISSUE_TEMPLATE/03_feature_request.yml",
+      "summary": "功能请求的GitHub Issue模板，引导用户描述需求场景和预期行为。",
+      "tags": [
+        "issue-template",
+        "feature-request"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.github/ISSUE_TEMPLATE/config.yml",
+      "type": "config",
+      "name": "config.yml",
+      "filePath": ".github/ISSUE_TEMPLATE/config.yml",
+      "summary": "GitHub Issue模板的配置文件，定义模板选择页面和外部联系链接。",
+      "tags": [
+        "issue-template",
+        "configuration",
+        "contact-links"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

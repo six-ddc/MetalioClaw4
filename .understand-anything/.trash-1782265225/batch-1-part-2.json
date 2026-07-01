@@ -1,0 +1,1243 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/common/gzip_util.h",
+      "type": "file",
+      "name": "gzip_util.h",
+      "filePath": "main/boards/common/gzip_util.h",
+      "summary": "Gzip压缩工具头文件，声明gzip解压缩接口。",
+      "tags": [
+        "board-support",
+        "compression",
+        "gzip",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/gzip_util.h:IsGzipData",
+      "type": "function",
+      "name": "IsGzipData",
+      "filePath": "main/boards/common/gzip_util.h",
+      "lineRange": [
+        9,
+        11
+      ],
+      "summary": "检查函数，验证或判断GzipData的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/nt26_board.cc",
+      "type": "file",
+      "name": "nt26_board.cc",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "summary": "板卡抽象基类实现，定义通用板卡接口（音频、显示、LED控制等），作为所有具体板卡的父类，共13个方法。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "board-abstraction",
+        "base-class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:Nt26Board",
+      "type": "function",
+      "name": "Nt26Board",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        12,
+        31
+      ],
+      "summary": "函数Nt26Board，处理tx_pin、rx_pin、dtr_pin逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:~Nt26Board",
+      "type": "function",
+      "name": "~Nt26Board",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        33,
+        50
+      ],
+      "summary": "函数~Nt26Board，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:GetBoardType",
+      "type": "function",
+      "name": "GetBoardType",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        52,
+        54
+      ],
+      "summary": "获取BoardType的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "function",
+      "name": "OnNetworkEvent",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        56,
+        60
+      ],
+      "summary": "事件处理函数，响应NetworkEvent事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:OnNetworkReadyTimeout",
+      "type": "function",
+      "name": "OnNetworkReadyTimeout",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        62,
+        66
+      ],
+      "summary": "事件处理函数，响应NetworkReadyTimeout事件。",
+      "tags": [
+        "event-handler",
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "type": "function",
+      "name": "StartNetwork",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        68,
+        127
+      ],
+      "summary": "函数StartNetwork，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:ScheduleAsyncStop",
+      "type": "function",
+      "name": "ScheduleAsyncStop",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        129,
+        135
+      ],
+      "summary": "停止函数，终止ScheduleAsync操作。",
+      "tags": [
+        "media-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:SetNetworkEventCallback",
+      "type": "function",
+      "name": "SetNetworkEventCallback",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        137,
+        139
+      ],
+      "summary": "设置NetworkEventCallback的配置函数。",
+      "tags": [
+        "setter",
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        164,
+        166
+      ],
+      "summary": "设置PowerSaveMode的配置函数。",
+      "tags": [
+        "setter",
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:GetBoardJson",
+      "type": "function",
+      "name": "GetBoardJson",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        187,
+        202
+      ],
+      "summary": "获取BoardJson的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:GetRegistrationState",
+      "type": "function",
+      "name": "GetRegistrationState",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        204,
+        214
+      ],
+      "summary": "获取RegistrationState的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:SendAtCommand",
+      "type": "function",
+      "name": "SendAtCommand",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        216,
+        228
+      ],
+      "summary": "发送函数，将AtCommand数据传输出去。",
+      "tags": [
+        "communication"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/nt26_board.cc:GetDeviceStatusJson",
+      "type": "function",
+      "name": "GetDeviceStatusJson",
+      "filePath": "main/boards/common/nt26_board.cc",
+      "lineRange": [
+        230,
+        290
+      ],
+      "summary": "获取DeviceStatusJson的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/nt26_board.h",
+      "type": "file",
+      "name": "nt26_board.h",
+      "filePath": "main/boards/common/nt26_board.h",
+      "summary": "板卡抽象基类头文件，声明所有板卡需实现的通用接口（AudioCodec、Display、Led、Backlight等），定义标准板卡生命周期。",
+      "tags": [
+        "board-support",
+        "board-abstraction",
+        "base-class",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/sleep_timer.cc",
+      "type": "file",
+      "name": "sleep_timer.cc",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "summary": "睡眠定时器实现，管理设备的低功耗休眠唤醒周期，共8个函数。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "power-management",
+        "sleep"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:SleepTimer",
+      "type": "function",
+      "name": "SleepTimer",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        14,
+        27
+      ],
+      "summary": "函数SleepTimer，处理seconds_to_light_sleep、seconds_to_deep_sleep逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:~SleepTimer",
+      "type": "function",
+      "name": "~SleepTimer",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        29,
+        32
+      ],
+      "summary": "函数~SleepTimer，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:SetEnabled",
+      "type": "function",
+      "name": "SetEnabled",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        34,
+        52
+      ],
+      "summary": "设置Enabled的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:OnEnterLightSleepMode",
+      "type": "function",
+      "name": "OnEnterLightSleepMode",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        54,
+        56
+      ],
+      "summary": "事件处理函数，响应EnterLightSleepMode事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:OnExitLightSleepMode",
+      "type": "function",
+      "name": "OnExitLightSleepMode",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        58,
+        60
+      ],
+      "summary": "事件处理函数，响应ExitLightSleepMode事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:OnEnterDeepSleepMode",
+      "type": "function",
+      "name": "OnEnterDeepSleepMode",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        62,
+        64
+      ],
+      "summary": "事件处理函数，响应EnterDeepSleepMode事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:CheckTimer",
+      "type": "function",
+      "name": "CheckTimer",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        66,
+        123
+      ],
+      "summary": "检查函数，验证或判断Timer的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/sleep_timer.cc:WakeUp",
+      "type": "function",
+      "name": "WakeUp",
+      "filePath": "main/boards/common/sleep_timer.cc",
+      "lineRange": [
+        125,
+        133
+      ],
+      "summary": "函数WakeUp，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/sleep_timer.h",
+      "type": "file",
+      "name": "sleep_timer.h",
+      "filePath": "main/boards/common/sleep_timer.h",
+      "summary": "睡眠定时器头文件，声明睡眠定时器接口与配置结构。",
+      "tags": [
+        "board-support",
+        "power-management",
+        "sleep",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/common/sleep_timer.h:SleepTimer",
+      "type": "class",
+      "name": "SleepTimer",
+      "filePath": "main/boards/common/sleep_timer.h",
+      "lineRange": [
+        8,
+        32
+      ],
+      "summary": "SleepTimer类，包含6个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/sy6970.cc",
+      "type": "file",
+      "name": "sy6970.cc",
+      "filePath": "main/boards/common/sy6970.cc",
+      "summary": "SY6970电源管理芯片驱动实现，提供电池充电管理和电源路径控制功能，共9个函数。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "power-management",
+        "pmic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:Sy6970",
+      "type": "function",
+      "name": "Sy6970",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        9,
+        10
+      ],
+      "summary": "函数Sy6970，处理i2c_bus、addr逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:GetChangingStatus",
+      "type": "function",
+      "name": "GetChangingStatus",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        12,
+        14
+      ],
+      "summary": "获取ChangingStatus的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        16,
+        18
+      ],
+      "summary": "检查函数，验证或判断Charging的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:IsPowerGood",
+      "type": "function",
+      "name": "IsPowerGood",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        20,
+        22
+      ],
+      "summary": "检查函数，验证或判断PowerGood的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:IsChargingDone",
+      "type": "function",
+      "name": "IsChargingDone",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        24,
+        26
+      ],
+      "summary": "检查函数，验证或判断ChargingDone的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:GetBatteryVoltage",
+      "type": "function",
+      "name": "GetBatteryVoltage",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        28,
+        35
+      ],
+      "summary": "获取BatteryVoltage的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:GetChargeTargetVoltage",
+      "type": "function",
+      "name": "GetChargeTargetVoltage",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        37,
+        44
+      ],
+      "summary": "获取ChargeTargetVoltage的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        46,
+        61
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/sy6970.cc:PowerOff",
+      "type": "function",
+      "name": "PowerOff",
+      "filePath": "main/boards/common/sy6970.cc",
+      "lineRange": [
+        63,
+        65
+      ],
+      "summary": "函数PowerOff，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/sy6970.h",
+      "type": "file",
+      "name": "sy6970.h",
+      "filePath": "main/boards/common/sy6970.h",
+      "summary": "SY6970电源管理芯片驱动头文件，声明充电控制与电源管理接口。",
+      "tags": [
+        "board-support",
+        "power-management",
+        "pmic",
+        "header"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/common/gzip_util.h",
+      "target": "function:main/boards/common/gzip_util.h:IsGzipData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.h",
+      "target": "function:main/boards/common/gzip_util.h:IsGzipData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/gzip_util.h:IsGzipData",
+      "target": "function:main/boards/common/gzip_util.h:IsGzipData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "file:main/boards/common/nt26_board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:Nt26Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:Nt26Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:~Nt26Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:~Nt26Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetBoardType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetBoardType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkReadyTimeout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkReadyTimeout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:ScheduleAsyncStop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:ScheduleAsyncStop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:SetNetworkEventCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:SetNetworkEventCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetBoardJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetBoardJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetRegistrationState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetRegistrationState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:SendAtCommand",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:SendAtCommand",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetDeviceStatusJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/nt26_board.cc",
+      "target": "function:main/boards/common/nt26_board.cc:GetDeviceStatusJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:OnNetworkReadyTimeout",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:SetNetworkEventCallback",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:ScheduleAsyncStop",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:ScheduleAsyncStop",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:ScheduleAsyncStop",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:StartNetwork",
+      "target": "function:main/boards/common/nt26_board.cc:OnNetworkEvent",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/nt26_board.cc:GetBoardJson",
+      "target": "function:main/boards/common/nt26_board.cc:GetRegistrationState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "file:main/boards/common/sleep_timer.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:SleepTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:SleepTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:~SleepTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:~SleepTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:SetEnabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:SetEnabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:OnEnterLightSleepMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:OnEnterLightSleepMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:OnExitLightSleepMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:OnExitLightSleepMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:OnEnterDeepSleepMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:OnEnterDeepSleepMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:CheckTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:CheckTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:WakeUp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.cc",
+      "target": "function:main/boards/common/sleep_timer.cc:WakeUp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sleep_timer.cc:SleepTimer",
+      "target": "function:main/boards/common/sleep_timer.cc:CheckTimer",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sleep_timer.cc:SetEnabled",
+      "target": "function:main/boards/common/sleep_timer.cc:WakeUp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sleep_timer.cc:CheckTimer",
+      "target": "function:main/boards/common/sleep_timer.cc:WakeUp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.h",
+      "target": "class:main/boards/common/sleep_timer.h:SleepTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sleep_timer.h",
+      "target": "class:main/boards/common/sleep_timer.h:SleepTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "file:main/boards/common/sy6970.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:Sy6970",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:Sy6970",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetChangingStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetChangingStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:IsPowerGood",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:IsPowerGood",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:IsChargingDone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:IsChargingDone",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetBatteryVoltage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetBatteryVoltage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetChargeTargetVoltage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetChargeTargetVoltage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:PowerOff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/sy6970.cc",
+      "target": "function:main/boards/common/sy6970.cc:PowerOff",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sy6970.cc:IsCharging",
+      "target": "function:main/boards/common/sy6970.cc:GetChangingStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sy6970.cc:IsChargingDone",
+      "target": "function:main/boards/common/sy6970.cc:GetChangingStatus",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sy6970.cc:GetBatteryLevel",
+      "target": "function:main/boards/common/sy6970.cc:GetBatteryVoltage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/sy6970.cc:GetBatteryLevel",
+      "target": "function:main/boards/common/sy6970.cc:GetChargeTargetVoltage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

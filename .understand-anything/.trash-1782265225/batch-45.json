@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/waveshare-c6-lcd-1.69/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/config.h",
+      "summary": "waveshare-c6-lcd-1.69 开发板的硬件引脚定义与编译配置头文件。",
+      "tags": [
+        "configuration",
+        "pin-definition",
+        "hardware-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "type": "file",
+      "name": "esp32-c6-lcd-1.69.cc",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "summary": "waveshare-c6-lcd-1.69 开发板的主驱动文件，负责硬件初始化、按键处理、显示屏配置和音频控制。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomLcdDisplay",
+      "type": "class",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "lineRange": [
+        23,
+        40
+      ],
+      "summary": "类 CustomLcdDisplay，位于 waveshare-c6-lcd-1.69 开发板驱动中。",
+      "tags": [
+        "class",
+        "embedded"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomButton",
+      "type": "class",
+      "name": "CustomButton",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "lineRange": [
+        42,
+        58
+      ],
+      "summary": "类 CustomButton，位于 waveshare-c6-lcd-1.69 开发板驱动中。",
+      "tags": [
+        "class",
+        "embedded"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "lineRange": [
+        60,
+        252
+      ],
+      "summary": "开发板主类（CustomBoard），封装硬件初始化、外设控制和系统事件处理。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/waveshare-c6-lcd-1.69/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/power_manager.h",
+      "summary": "waveshare-c6-lcd-1.69 开发板的电源管理模块，处理电池电量检测、充放电状态监控。",
+      "tags": [
+        "power-management",
+        "battery",
+        "hardware-driver"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/waveshare-c6-lcd-1.69/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/power_manager.h",
+      "lineRange": [
+        13,
+        174
+      ],
+      "summary": "电源管理类，负责电池状态监控、ADC采样和充放电事件回调。",
+      "tags": [
+        "power-management",
+        "battery",
+        "driver"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "file:main/boards/waveshare-c6-lcd-1.69/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/esp32-c6-lcd-1.69.cc",
+      "target": "file:main/boards/waveshare-c6-lcd-1.69/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/power_manager.h",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-lcd-1.69/power_manager.h",
+      "target": "class:main/boards/waveshare-c6-lcd-1.69/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

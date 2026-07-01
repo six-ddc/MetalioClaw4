@@ -1,0 +1,340 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/lcd_display.h",
+      "type": "file",
+      "name": "lcd_display.h",
+      "filePath": "main/display/lcd_display.h",
+      "summary": "定义 LCD 显示器的抽象基类与通用接口，声明显示初始化、绘制、亮度控制等核心方法。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/lvgl_display/gif/gifdec_mve.h",
+      "type": "file",
+      "name": "gifdec_mve.h",
+      "filePath": "main/display/lvgl_display/gif/gifdec_mve.h",
+      "summary": "定义 GIF 解码器接口，用于在嵌入式设备上解码和播放 GIF 动画。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "image-decoder",
+        "gif",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/display/lvgl_display/gif/LICENSE.txt",
+      "type": "document",
+      "name": "LICENSE.txt",
+      "filePath": "main/display/lvgl_display/gif/LICENSE.txt",
+      "summary": "实现 LICENSE.txt 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "legal",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/display/lvgl_display/gif/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/display/lvgl_display/gif/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "type": "file",
+      "name": "jpeg_to_image.c",
+      "filePath": "main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "summary": "实现 JPEG 图像到 LCD 显示的转换与渲染逻辑。",
+      "tags": [
+        "display",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/lvgl_display/jpg/jpeg_to_image.c:decode_with_new_jpeg",
+      "type": "function",
+      "name": "decode_with_new_jpeg",
+      "filePath": "main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "lineRange": [
+        23,
+        100
+      ],
+      "summary": "实现 decode_with_new_jpeg 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/jpg/jpeg_to_image.c:jpeg_to_image",
+      "type": "function",
+      "name": "jpeg_to_image",
+      "filePath": "main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "lineRange": [
+        245,
+        264
+      ],
+      "summary": "实现 jpeg_to_image 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/jpg/jpeg_to_image.h",
+      "type": "file",
+      "name": "jpeg_to_image.h",
+      "filePath": "main/display/lvgl_display/jpg/jpeg_to_image.h",
+      "summary": "定义 jpeg_to_image 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/oled_display.cc",
+      "type": "file",
+      "name": "oled_display.cc",
+      "filePath": "main/display/oled_display.cc",
+      "summary": "实现 oled_display 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "oled",
+        "driver-implementation",
+        "led",
+        "hardware-driver"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/oled_display.cc:OledDisplay",
+      "type": "function",
+      "name": "OledDisplay",
+      "filePath": "main/display/oled_display.cc",
+      "lineRange": [
+        20,
+        84
+      ],
+      "summary": "实现 OledDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/oled_display.cc:~OledDisplay",
+      "type": "function",
+      "name": "~OledDisplay",
+      "filePath": "main/display/oled_display.cc",
+      "lineRange": [
+        86,
+        124
+      ],
+      "summary": "实现 ~OledDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/oled_display.cc:SetChatMessage",
+      "type": "function",
+      "name": "SetChatMessage",
+      "filePath": "main/display/oled_display.cc",
+      "lineRange": [
+        134,
+        154
+      ],
+      "summary": "实现 SetChatMessage 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/oled_display.cc:SetupUI_128x64",
+      "type": "function",
+      "name": "SetupUI_128x64",
+      "filePath": "main/display/oled_display.cc",
+      "lineRange": [
+        156,
+        286
+      ],
+      "summary": "实现 SetupUI_128x64 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/oled_display.cc:SetupUI_128x32",
+      "type": "function",
+      "name": "SetupUI_128x32",
+      "filePath": "main/display/oled_display.cc",
+      "lineRange": [
+        288,
+        373
+      ],
+      "summary": "实现 SetupUI_128x32 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/oled_display.cc:SetEmotion",
+      "type": "function",
+      "name": "SetEmotion",
+      "filePath": "main/display/oled_display.cc",
+      "lineRange": [
+        375,
+        386
+      ],
+      "summary": "实现 SetEmotion 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "target": "file:main/display/lvgl_display/jpg/jpeg_to_image.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "target": "function:main/display/lvgl_display/jpg/jpeg_to_image.c:decode_with_new_jpeg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "target": "function:main/display/lvgl_display/jpg/jpeg_to_image.c:jpeg_to_image",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/jpg/jpeg_to_image.c",
+      "target": "function:main/display/lvgl_display/jpg/jpeg_to_image.c:jpeg_to_image",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "file:main/display/oled_display.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:OledDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:OledDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:~OledDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:~OledDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetChatMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetChatMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetupUI_128x64",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetupUI_128x64",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetupUI_128x32",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetupUI_128x32",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetEmotion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/oled_display.cc",
+      "target": "function:main/display/oled_display.cc:SetEmotion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

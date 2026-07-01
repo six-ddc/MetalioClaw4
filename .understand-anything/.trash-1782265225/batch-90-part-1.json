@@ -1,0 +1,642 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/esp-hi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp-hi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp-hi"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/esp-hi/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp-hi/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-p4-function-ev-board/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp-p4-function-ev-board/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/esp-p4-function-ev-board/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp-p4-function-ev-board/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp-p4-function-ev-b"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "type": "file",
+      "name": "esp-p4-function-ev-board.cc",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeLCD",
+      "type": "function",
+      "name": "InitializeLCD",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        63,
+        77
+      ],
+      "summary": "实现 InitializeLCD 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        79,
+        88
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeSdCard",
+      "type": "function",
+      "name": "InitializeSdCard",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        95,
+        104
+      ],
+      "summary": "实现 InitializeSdCard 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        106,
+        161
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeFonts",
+      "type": "function",
+      "name": "InitializeFonts",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        163,
+        179
+      ],
+      "summary": "实现 InitializeFonts 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:ESP32P4FunctionEvBoard",
+      "type": "function",
+      "name": "ESP32P4FunctionEvBoard",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        183,
+        194
+      ],
+      "summary": "实现 ESP32P4FunctionEvBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:~ESP32P4FunctionEvBoard",
+      "type": "function",
+      "name": "~ESP32P4FunctionEvBoard",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        196,
+        207
+      ],
+      "summary": "实现 ~ESP32P4FunctionEvBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:ESP32P4FunctionEvBoard",
+      "type": "class",
+      "name": "ESP32P4FunctionEvBoard",
+      "filePath": "main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "lineRange": [
+        42,
+        230
+      ],
+      "summary": "定义 ESP32P4FunctionEvBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/esp-p4-function-ev-board/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp-p4-function-ev-board/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/esp-s3-lcd-ev-board-2/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp-s3-lcd-ev-board-2/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp-s3-lcd-ev-board-"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/esp-s3-lcd-ev-board-2/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp-s3-lcd-ev-board-2/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/esp-s3-lcd-ev-board/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp-s3-lcd-ev-board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/esp-s3-lcd-ev-board/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/esp-s3-lcd-ev-board/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-sparkbot/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp-sparkbot/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/esp-sparkbot/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/esp-sparkbot/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "esp-sparkbot"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "type": "file",
+      "name": "esp_sparkbot_board.cc",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        32,
+        41
+      ],
+      "summary": "实现 EnableOutput 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        52,
+        67
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        69,
+        78
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeDisplay",
+      "type": "function",
+      "name": "InitializeDisplay",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        90,
+        121
+      ],
+      "summary": "实现 InitializeDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        123,
+        172
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeEchoUart",
+      "type": "function",
+      "name": "InitializeEchoUart",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        178,
+        194
+      ],
+      "summary": "实现 InitializeEchoUart 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        202,
+        267
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EspSparkBot",
+      "type": "function",
+      "name": "EspSparkBot",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        270,
+        279
+      ],
+      "summary": "实现 EspSparkBot 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp-sparkbot/esp_sparkbot_board.cc:SparkBotEs8311AudioCodec",
+      "type": "class",
+      "name": "SparkBotEs8311AudioCodec",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        22,
+        42
+      ],
+      "summary": "定义 SparkBotEs8311AudioCodec 类及其方法。",
+      "tags": [
+        "audio-codec",
+        "audio"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EspSparkBot",
+      "type": "class",
+      "name": "EspSparkBot",
+      "filePath": "main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "lineRange": [
+        44,
+        300
+      ],
+      "summary": "定义 EspSparkBot 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "file:main/boards/esp-p4-function-ev-board/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeSdCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:InitializeFonts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:ESP32P4FunctionEvBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:ESP32P4FunctionEvBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:~ESP32P4FunctionEvBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "function:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:~ESP32P4FunctionEvBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "class:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:ESP32P4FunctionEvBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc",
+      "target": "class:main/boards/esp-p4-function-ev-board/esp-p4-function-ev-board.cc:ESP32P4FunctionEvBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "file:main/boards/esp-sparkbot/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeEchoUart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EspSparkBot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "function:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EspSparkBot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "class:main/boards/esp-sparkbot/esp_sparkbot_board.cc:SparkBotEs8311AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "class:main/boards/esp-sparkbot/esp_sparkbot_board.cc:SparkBotEs8311AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "class:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EspSparkBot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-sparkbot/esp_sparkbot_board.cc",
+      "target": "class:main/boards/esp-sparkbot/esp_sparkbot_board.cc:EspSparkBot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

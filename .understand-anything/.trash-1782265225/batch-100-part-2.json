@@ -1,0 +1,993 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/screen/pin_test_screen/pin_test_screen.h",
+      "type": "file",
+      "name": "pin_test_screen.h",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.h",
+      "summary": "定义 pin_test_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/screen_util.cc",
+      "type": "file",
+      "name": "screen_util.cc",
+      "filePath": "main/display/screen/screen_util.cc",
+      "summary": "实现 screen_util 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "function",
+      "name": "event_originates_in_drag_owner",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        32,
+        45
+      ],
+      "summary": "实现 event_originates_in_drag_owner 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "type": "function",
+      "name": "swipe_back_event_cb",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        47,
+        116
+      ],
+      "summary": "实现 swipe_back_event_cb 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "function",
+      "name": "enable_gesture_bubble",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        126,
+        136
+      ],
+      "summary": "实现 enable_gesture_bubble 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "function",
+      "name": "screen_make_input_passive",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        149,
+        160
+      ],
+      "summary": "实现 screen_make_input_passive 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "function",
+      "name": "screen_swipe_back_ignore",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        171,
+        183
+      ],
+      "summary": "实现 screen_swipe_back_ignore 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_attach_swipe_back",
+      "type": "function",
+      "name": "screen_attach_swipe_back",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        185,
+        202
+      ],
+      "summary": "实现 screen_attach_swipe_back 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/screen_util.cc:screen_attach_lifecycle",
+      "type": "function",
+      "name": "screen_attach_lifecycle",
+      "filePath": "main/display/screen/screen_util.cc",
+      "lineRange": [
+        232,
+        241
+      ],
+      "summary": "实现 screen_attach_lifecycle 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/screen_util.h",
+      "type": "file",
+      "name": "screen_util.h",
+      "filePath": "main/display/screen/screen_util.h",
+      "summary": "定义 screen_util 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "type": "file",
+      "name": "sd_card_screen.cc",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "summary": "实现 sd_card_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:FormatSize",
+      "type": "function",
+      "name": "FormatSize",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        49,
+        66
+      ],
+      "summary": "实现 FormatSize 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:OnDeleteFile",
+      "type": "function",
+      "name": "OnDeleteFile",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        88,
+        102
+      ],
+      "summary": "实现 OnDeleteFile 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildFileRow",
+      "type": "function",
+      "name": "BuildFileRow",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        118,
+        202
+      ],
+      "summary": "实现 BuildFileRow 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:RebuildFileList",
+      "type": "function",
+      "name": "RebuildFileList",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        204,
+        246
+      ],
+      "summary": "实现 RebuildFileList 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildHeader",
+      "type": "function",
+      "name": "BuildHeader",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        249,
+        279
+      ],
+      "summary": "实现 BuildHeader 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildStatusSection",
+      "type": "function",
+      "name": "BuildStatusSection",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        282,
+        322
+      ],
+      "summary": "实现 BuildStatusSection 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildFileListSection",
+      "type": "function",
+      "name": "BuildFileListSection",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        325,
+        344
+      ],
+      "summary": "实现 BuildFileListSection 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:UpdateStatusUI",
+      "type": "function",
+      "name": "UpdateStatusUI",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "lineRange": [
+        346,
+        399
+      ],
+      "summary": "实现 UpdateStatusUI 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/sd_card_screen/sd_card_screen.h",
+      "type": "file",
+      "name": "sd_card_screen.h",
+      "filePath": "main/display/screen/sd_card_screen/sd_card_screen.h",
+      "summary": "定义 sd_card_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "type": "file",
+      "name": "theme_screen.cc",
+      "filePath": "main/display/screen/theme_screen/theme_screen.cc",
+      "summary": "实现 theme_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/theme_screen/theme_screen.cc:OnCardClicked",
+      "type": "function",
+      "name": "OnCardClicked",
+      "filePath": "main/display/screen/theme_screen/theme_screen.cc",
+      "lineRange": [
+        72,
+        84
+      ],
+      "summary": "实现 OnCardClicked 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/theme_screen/theme_screen.cc:BuildHeader",
+      "type": "function",
+      "name": "BuildHeader",
+      "filePath": "main/display/screen/theme_screen/theme_screen.cc",
+      "lineRange": [
+        154,
+        181
+      ],
+      "summary": "实现 BuildHeader 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/theme_screen/theme_screen.cc:BuildContent",
+      "type": "function",
+      "name": "BuildContent",
+      "filePath": "main/display/screen/theme_screen/theme_screen.cc",
+      "lineRange": [
+        189,
+        226
+      ],
+      "summary": "实现 BuildContent 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/theme_screen/theme_screen.cc:OpenConfirmDialog",
+      "type": "function",
+      "name": "OpenConfirmDialog",
+      "filePath": "main/display/screen/theme_screen/theme_screen.cc",
+      "lineRange": [
+        257,
+        345
+      ],
+      "summary": "实现 OpenConfirmDialog 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/theme_screen/theme_screen.h",
+      "type": "file",
+      "name": "theme_screen.h",
+      "filePath": "main/display/screen/theme_screen/theme_screen.h",
+      "summary": "定义 theme_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "type": "file",
+      "name": "vibrate_screen.cc",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "summary": "实现 vibrate_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:ledc_init_once",
+      "type": "function",
+      "name": "ledc_init_once",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        91,
+        123
+      ],
+      "summary": "实现 ledc_init_once 函数功能。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:apply_duty_pct",
+      "type": "function",
+      "name": "apply_duty_pct",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        125,
+        134
+      ],
+      "summary": "实现 apply_duty_pct 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:apply_state",
+      "type": "function",
+      "name": "apply_state",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        158,
+        171
+      ],
+      "summary": "实现 apply_state 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_pattern_tick",
+      "type": "function",
+      "name": "on_pattern_tick",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        173,
+        188
+      ],
+      "summary": "实现 on_pattern_tick 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:refresh_preset_buttons",
+      "type": "function",
+      "name": "refresh_preset_buttons",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        222,
+        234
+      ],
+      "summary": "实现 refresh_preset_buttons 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_slider_value_changed",
+      "type": "function",
+      "name": "on_slider_value_changed",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        239,
+        260
+      ],
+      "summary": "实现 on_slider_value_changed 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_preset_clicked",
+      "type": "function",
+      "name": "on_preset_clicked",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        262,
+        280
+      ],
+      "summary": "实现 on_preset_clicked 函数功能。",
+      "tags": [
+        "event-handler",
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        285,
+        296
+      ],
+      "summary": "实现 OnSwipeBack 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_screen_unloaded",
+      "type": "function",
+      "name": "on_screen_unloaded",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        302,
+        315
+      ],
+      "summary": "实现 on_screen_unloaded 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "lineRange": [
+        467,
+        477
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/vibrate_screen/vibrate_screen.h",
+      "type": "file",
+      "name": "vibrate_screen.h",
+      "filePath": "main/display/screen/vibrate_screen/vibrate_screen.h",
+      "summary": "定义 vibrate_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "file:main/display/screen/screen_util.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:event_originates_in_drag_owner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:swipe_back_event_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:enable_gesture_bubble",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_make_input_passive",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_swipe_back_ignore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_swipe_back",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_swipe_back",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_lifecycle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/screen_util.cc",
+      "target": "function:main/display/screen/screen_util.cc:screen_attach_lifecycle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "file:main/display/screen/sd_card_screen/sd_card_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:FormatSize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:FormatSize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:OnDeleteFile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:OnDeleteFile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildFileRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildFileRow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:RebuildFileList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:RebuildFileList",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildStatusSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildStatusSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildFileListSection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:BuildFileListSection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:UpdateStatusUI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/sd_card_screen/sd_card_screen.cc",
+      "target": "function:main/display/screen/sd_card_screen/sd_card_screen.cc:UpdateStatusUI",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "file:main/display/screen/theme_screen/theme_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:OnCardClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:OnCardClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:BuildHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:BuildHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:BuildContent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:BuildContent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:OpenConfirmDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/theme_screen/theme_screen.cc",
+      "target": "function:main/display/screen/theme_screen/theme_screen.cc:OpenConfirmDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "file:main/display/screen/vibrate_screen/vibrate_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:ledc_init_once",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:ledc_init_once",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:apply_duty_pct",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:apply_duty_pct",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:apply_state",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:apply_state",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_pattern_tick",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_pattern_tick",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:refresh_preset_buttons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:refresh_preset_buttons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_slider_value_changed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_slider_value_changed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_preset_clicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_preset_clicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_screen_unloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:on_screen_unloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/vibrate_screen/vibrate_screen.cc",
+      "target": "function:main/display/screen/vibrate_screen/vibrate_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

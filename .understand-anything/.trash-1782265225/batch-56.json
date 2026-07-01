@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "document:main/boards/sensecap-watcher/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/sensecap-watcher/README.md",
+      "summary": "sensecap-watcher 开发板的中文使用说明文档。",
+      "tags": [
+        "documentation",
+        "board-guide"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/sensecap-watcher/README_en.md",
+      "type": "document",
+      "name": "README_en.md",
+      "filePath": "main/boards/sensecap-watcher/README_en.md",
+      "summary": "sensecap-watcher 开发板的英文使用说明文档。",
+      "tags": [
+        "documentation",
+        "board-guide",
+        "english"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/sensecap-watcher/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/sensecap-watcher/config.json",
+      "summary": "sensecap-watcher 开发板的设备配置文件，定义显示参数、音频编解码器、按钮映射和网络设置。",
+      "tags": [
+        "configuration",
+        "board-config",
+        "device-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/sensecap-watcher/config_en.json",
+      "type": "config",
+      "name": "config_en.json",
+      "filePath": "main/boards/sensecap-watcher/config_en.json",
+      "summary": "sensecap-watcher 开发板的英文版设备配置文件。",
+      "tags": [
+        "configuration",
+        "board-config",
+        "device-config",
+        "english"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

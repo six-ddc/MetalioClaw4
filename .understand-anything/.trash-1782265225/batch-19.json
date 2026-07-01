@@ -1,0 +1,1030 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/m5stack-tab5/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/m5stack-tab5/config.h",
+      "summary": "m5stack-tab5 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板",
+        "触摸"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/m5stack-tab5/esp_lcd_st7123.h",
+      "type": "file",
+      "name": "esp_lcd_st7123.h",
+      "filePath": "main/boards/m5stack-tab5/esp_lcd_st7123.h",
+      "summary": "st7123 LCD面板的驱动配置头文件及寄存器定义，包含初始化命令序列和时序参数。",
+      "tags": [
+        "LCD驱动",
+        "显示面板",
+        "寄存器定义"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "type": "file",
+      "name": "m5stack_tab5.cc",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "summary": "m5stack-tab5 开发板的主板实现，包含Pi4ioe1类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "type": "function",
+      "name": "Pi4ioe1",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        54,
+        64
+      ],
+      "summary": "Pi4ioe1 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@66",
+      "type": "function",
+      "name": "ReadOutSet",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        66,
+        66
+      ],
+      "summary": "ReadOutSet 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@67",
+      "type": "function",
+      "name": "WriteOutSet",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        67,
+        67
+      ],
+      "summary": "WriteOutSet 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "type": "function",
+      "name": "Pi4ioe2",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        72,
+        82
+      ],
+      "summary": "Pi4ioe2 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@84",
+      "type": "function",
+      "name": "ReadOutSet",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        84,
+        84
+      ],
+      "summary": "ReadOutSet 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@85",
+      "type": "function",
+      "name": "WriteOutSet",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        85,
+        85
+      ],
+      "summary": "WriteOutSet 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        98,
+        112
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        123,
+        142
+      ],
+      "summary": "I2cDetect 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeGt911TouchPad",
+      "type": "function",
+      "name": "InitializeGt911TouchPad",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        160,
+        186
+      ],
+      "summary": "初始化触摸面板控制器，配置I2C接口和触摸检测参数。",
+      "tags": [
+        "触摸",
+        "I2C"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeIli9881cDisplay",
+      "type": "function",
+      "name": "InitializeIli9881cDisplay",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        188,
+        262
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeSt7123Display",
+      "type": "function",
+      "name": "InitializeSt7123Display",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        264,
+        378
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeSt7123TouchPad",
+      "type": "function",
+      "name": "InitializeSt7123TouchPad",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        380,
+        411
+      ],
+      "summary": "初始化触摸面板控制器，配置I2C接口和触摸检测参数。",
+      "tags": [
+        "触摸",
+        "I2C"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeDisplay",
+      "type": "function",
+      "name": "InitializeDisplay",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        413,
+        427
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        429,
+        467
+      ],
+      "summary": "InitializeCamera 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "type": "function",
+      "name": "M5StackTab5Board",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        470,
+        482
+      ],
+      "summary": "M5StackTab5Board 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeQcEn",
+      "type": "function",
+      "name": "SetChargeQcEn",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        514,
+        524
+      ],
+      "summary": "SetChargeQcEn 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeEn",
+      "type": "function",
+      "name": "SetChargeEn",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        526,
+        536
+      ],
+      "summary": "SetChargeEn 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetUsb5vEn",
+      "type": "function",
+      "name": "SetUsb5vEn",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        538,
+        548
+      ],
+      "summary": "SetUsb5vEn 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetExt5vEn",
+      "type": "function",
+      "name": "SetExt5vEn",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        550,
+        560
+      ],
+      "summary": "SetExt5vEn 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "type": "class",
+      "name": "Pi4ioe1",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        52,
+        68
+      ],
+      "summary": "Pi4ioe1 类，包含3个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "type": "class",
+      "name": "Pi4ioe2",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        70,
+        86
+      ],
+      "summary": "Pi4ioe2 类，包含3个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "type": "class",
+      "name": "M5StackTab5Board",
+      "filePath": "main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "lineRange": [
+        88,
+        561
+      ],
+      "summary": "M5StackTab5Board 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "type": "file",
+      "name": "tab5_audio_codec.cc",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "summary": "m5stack-tab5 开发板的音频编解码器实现，包含I2S配置、采样率设置、音量控制及音频输入输出通道管理。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Tab5AudioCodec",
+      "type": "function",
+      "name": "Tab5AudioCodec",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        9,
+        78
+      ],
+      "summary": "Tab5AudioCodec 函数的完整实现，包含70行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:~Tab5AudioCodec",
+      "type": "function",
+      "name": "~Tab5AudioCodec",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        80,
+        92
+      ],
+      "summary": "~Tab5AudioCodec 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:CreateDuplexChannels",
+      "type": "function",
+      "name": "CreateDuplexChannels",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        94,
+        180
+      ],
+      "summary": "CreateDuplexChannels 函数的完整实现，包含87行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:SetOutputVolume",
+      "type": "function",
+      "name": "SetOutputVolume",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        182,
+        185
+      ],
+      "summary": "设置音频播放音量，调整编解码器增益参数。",
+      "tags": [
+        "音量",
+        "音频控制",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        187,
+        208
+      ],
+      "summary": "EnableInput 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        210,
+        229
+      ],
+      "summary": "EnableOutput 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        231,
+        236
+      ],
+      "summary": "Read 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "lineRange": [
+        238,
+        243
+      ],
+      "summary": "Write 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/m5stack-tab5/tab5_audio_codec.h",
+      "type": "file",
+      "name": "tab5_audio_codec.h",
+      "filePath": "main/boards/m5stack-tab5/tab5_audio_codec.h",
+      "summary": "m5stack-tab5 开发板的音频编解码器配置头文件，定义音频参数结构体和编解码器类接口。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@66",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@67",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@84",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@85",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeGt911TouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeIli9881cDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeSt7123Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeSt7123TouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeQcEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetUsb5vEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetExt5vEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@84",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@85",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@84",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@85",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeGt911TouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeIli9881cDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeSt7123Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeSt7123TouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeQcEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetUsb5vEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetExt5vEn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetExt5vEn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeQcEn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:WriteOutSet@67",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetChargeEn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:ReadOutSet@66",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:M5StackTab5Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:Pi4ioe1",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "function:main/boards/m5stack-tab5/m5stack_tab5.cc:SetUsb5vEn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "file:main/boards/m5stack-tab5/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "file:main/boards/m5stack-tab5/esp_lcd_st7123.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/m5stack_tab5.cc",
+      "target": "file:main/boards/m5stack-tab5/tab5_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Tab5AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:~Tab5AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:CreateDuplexChannels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:SetOutputVolume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Tab5AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:~Tab5AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:CreateDuplexChannels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:SetOutputVolume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "function:main/boards/m5stack-tab5/tab5_audio_codec.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/m5stack-tab5/tab5_audio_codec.cc",
+      "target": "file:main/boards/m5stack-tab5/tab5_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

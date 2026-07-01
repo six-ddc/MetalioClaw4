@@ -1,0 +1,1608 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/common/Weather.hpp",
+      "type": "file",
+      "name": "Weather.hpp",
+      "filePath": "main/boards/common/Weather.hpp",
+      "summary": "天气服务类，封装天气API调用、JSON解析和NVS缓存，提供天气预报和今日天气摘要功能，共18个方法。",
+      "tags": [
+        "board-support",
+        "weather",
+        "api-client",
+        "header",
+        "public-interface"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "function",
+      "name": "JsonGetString",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        48,
+        54
+      ],
+      "summary": "获取JsonString的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "function",
+      "name": "JsonGetIntString",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        56,
+        65
+      ],
+      "summary": "获取JsonIntString的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:LogBodyOnParseFail",
+      "type": "function",
+      "name": "LogBodyOnParseFail",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        67,
+        72
+      ],
+      "summary": "解析函数，从数据中提取LogBodyOnFail信息。",
+      "tags": [
+        "parser",
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:PrepareJsonBody",
+      "type": "function",
+      "name": "PrepareJsonBody",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        74,
+        85
+      ],
+      "summary": "函数PrepareJsonBody，处理raw、json逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "type": "function",
+      "name": "ParseApiResponse",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        87,
+        129
+      ],
+      "summary": "解析函数，从数据中提取ApiResponse信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:SerializeCompactNvsJson",
+      "type": "function",
+      "name": "SerializeCompactNvsJson",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        131,
+        153
+      ],
+      "summary": "序列化函数，将数据结构转换为JSON等格式。",
+      "tags": [
+        "serialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "type": "function",
+      "name": "ParseCompactNvsJson",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        155,
+        190
+      ],
+      "summary": "解析函数，从数据中提取CompactNvsJson信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:CreateBoardHttp",
+      "type": "function",
+      "name": "CreateBoardHttp",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        192,
+        197
+      ],
+      "summary": "创建函数，构造并返回BoardHttp对象。",
+      "tags": [
+        "factory"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:Init",
+      "type": "function",
+      "name": "Init",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        213,
+        222
+      ],
+      "summary": "初始化函数，配置api_url, api_key参数启动服务。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:IsInitialized",
+      "type": "function",
+      "name": "IsInitialized",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        224,
+        224
+      ],
+      "summary": "检查函数，验证或判断Initialized的状态。",
+      "tags": [
+        "initialization",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:GetForecast",
+      "type": "function",
+      "name": "GetForecast",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        226,
+        246
+      ],
+      "summary": "获取Forecast的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:GetTodaySummary",
+      "type": "function",
+      "name": "GetTodaySummary",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        250,
+        259
+      ],
+      "summary": "获取TodaySummary的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:WeatherService",
+      "type": "function",
+      "name": "WeatherService",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        262,
+        262
+      ],
+      "summary": "函数WeatherService，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:LoadFromNvs",
+      "type": "function",
+      "name": "LoadFromNvs",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        287,
+        298
+      ],
+      "summary": "加载函数，从存储中读取FromNvs数据。",
+      "tags": [
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:SaveToNvs",
+      "type": "function",
+      "name": "SaveToNvs",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        300,
+        312
+      ],
+      "summary": "保存函数，将ToNvs数据持久化存储。",
+      "tags": [
+        "persistence"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/Weather.hpp:FetchFromNetwork",
+      "type": "function",
+      "name": "FetchFromNetwork",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        314,
+        370
+      ],
+      "summary": "函数FetchFromNetwork，处理out逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/Weather.hpp:WeatherDaily",
+      "type": "class",
+      "name": "WeatherDaily",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        19,
+        33
+      ],
+      "summary": "WeatherDaily类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/common/Weather.hpp:WeatherForecast",
+      "type": "class",
+      "name": "WeatherForecast",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        36,
+        42
+      ],
+      "summary": "WeatherForecast类，包含0个方法，处理相关逻辑。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/common/Weather.hpp:WeatherService",
+      "type": "class",
+      "name": "WeatherService",
+      "filePath": "main/boards/common/Weather.hpp",
+      "lineRange": [
+        206,
+        377
+      ],
+      "summary": "WeatherService服务类，提供天气功能服务，包含10个方法。",
+      "tags": [
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/axp2101.cc",
+      "type": "file",
+      "name": "axp2101.cc",
+      "filePath": "main/boards/common/axp2101.cc",
+      "summary": "AXP2101电源管理芯片驱动，提供电压调节、电源通道控制等底层PMIC操作接口。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "power-management",
+        "pmic"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:Axp2101",
+      "type": "function",
+      "name": "Axp2101",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        9,
+        10
+      ],
+      "summary": "函数Axp2101，处理i2c_bus、addr逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:GetBatteryCurrentDirection",
+      "type": "function",
+      "name": "GetBatteryCurrentDirection",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        12,
+        14
+      ],
+      "summary": "获取BatteryCurrentDirection的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        16,
+        18
+      ],
+      "summary": "检查函数，验证或判断Charging的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:IsDischarging",
+      "type": "function",
+      "name": "IsDischarging",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        20,
+        22
+      ],
+      "summary": "检查函数，验证或判断Discharging的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:IsChargingDone",
+      "type": "function",
+      "name": "IsChargingDone",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        24,
+        27
+      ],
+      "summary": "检查函数，验证或判断ChargingDone的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        29,
+        31
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:GetTemperature",
+      "type": "function",
+      "name": "GetTemperature",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        33,
+        35
+      ],
+      "summary": "获取Temperature的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/axp2101.cc:PowerOff",
+      "type": "function",
+      "name": "PowerOff",
+      "filePath": "main/boards/common/axp2101.cc",
+      "lineRange": [
+        37,
+        41
+      ],
+      "summary": "函数PowerOff，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/axp2101.h",
+      "type": "file",
+      "name": "axp2101.h",
+      "filePath": "main/boards/common/axp2101.h",
+      "summary": "AXP2101电源管理芯片驱动，提供电压调节、电源通道控制等底层PMIC操作接口。",
+      "tags": [
+        "board-support",
+        "power-management",
+        "pmic",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/board.cc",
+      "type": "file",
+      "name": "board.cc",
+      "filePath": "main/boards/common/board.cc",
+      "summary": "板卡抽象基类实现，定义通用板卡接口（音频、显示、LED控制等），作为所有具体板卡的父类，共5个方法。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "board-abstraction",
+        "base-class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/board.cc:Board",
+      "type": "function",
+      "name": "Board",
+      "filePath": "main/boards/common/board.cc",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "函数Board，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/board.cc:GenerateUuid",
+      "type": "function",
+      "name": "GenerateUuid",
+      "filePath": "main/boards/common/board.cc",
+      "lineRange": [
+        25,
+        46
+      ],
+      "summary": "函数GenerateUuid，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/board.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/common/board.cc",
+      "lineRange": [
+        48,
+        50
+      ],
+      "summary": "获取BatteryLevel的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/board.cc:GetTemperature",
+      "type": "function",
+      "name": "GetTemperature",
+      "filePath": "main/boards/common/board.cc",
+      "lineRange": [
+        52,
+        54
+      ],
+      "summary": "获取Temperature的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/board.cc:GetSystemInfoJson",
+      "type": "function",
+      "name": "GetSystemInfoJson",
+      "filePath": "main/boards/common/board.cc",
+      "lineRange": [
+        70,
+        178
+      ],
+      "summary": "获取SystemInfoJson的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/common/board.h",
+      "type": "file",
+      "name": "board.h",
+      "filePath": "main/boards/common/board.h",
+      "summary": "板卡抽象基类头文件，声明所有板卡需实现的通用接口（AudioCodec、Display、Led、Backlight等），定义标准板卡生命周期。",
+      "tags": [
+        "board-support",
+        "board-abstraction",
+        "base-class",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/esp32_camera.cc",
+      "type": "file",
+      "name": "esp32_camera.cc",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "summary": "ESP32摄像头驱动实现，封装ESP-IDF摄像头API，提供初始化、帧捕获、图像处理等功能，包含7个函数。",
+      "tags": [
+        "board-support",
+        "camera",
+        "esp32-camera",
+        "implementation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:Esp32Camera",
+      "type": "function",
+      "name": "Esp32Camera",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        97,
+        361
+      ],
+      "summary": "函数Esp32Camera，处理config逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:~Esp32Camera",
+      "type": "function",
+      "name": "~Esp32Camera",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        363,
+        379
+      ],
+      "summary": "函数~Esp32Camera，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:SetExplainUrl",
+      "type": "function",
+      "name": "SetExplainUrl",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        381,
+        384
+      ],
+      "summary": "设置ExplainUrl的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:Capture",
+      "type": "function",
+      "name": "Capture",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        386,
+        839
+      ],
+      "summary": "函数Capture，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:SetHMirror",
+      "type": "function",
+      "name": "SetHMirror",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        841,
+        856
+      ],
+      "summary": "设置HMirror的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:SetVFlip",
+      "type": "function",
+      "name": "SetVFlip",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        858,
+        873
+      ],
+      "summary": "设置VFlip的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/esp32_camera.cc:Explain",
+      "type": "function",
+      "name": "Explain",
+      "filePath": "main/boards/common/esp32_camera.cc",
+      "lineRange": [
+        898,
+        1039
+      ],
+      "summary": "函数Explain，处理question逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/common/esp32_camera.h",
+      "type": "file",
+      "name": "esp32_camera.h",
+      "filePath": "main/boards/common/esp32_camera.h",
+      "summary": "ESP32摄像头驱动头文件，定义摄像头配置结构体与操作接口声明。",
+      "tags": [
+        "board-support",
+        "camera",
+        "esp32-camera",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/gzip_util.cc",
+      "type": "file",
+      "name": "gzip_util.cc",
+      "filePath": "main/boards/common/gzip_util.cc",
+      "summary": "Gzip压缩工具实现，提供HTTP响应体解压缩功能，共3个函数。",
+      "tags": [
+        "board-support",
+        "board-driver",
+        "hardware-init",
+        "compression",
+        "gzip"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/gzip_util.cc:IsGzipData",
+      "type": "function",
+      "name": "IsGzipData",
+      "filePath": "main/boards/common/gzip_util.cc",
+      "lineRange": [
+        14,
+        20
+      ],
+      "summary": "检查函数，验证或判断GzipData的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/gzip_util.cc:GzipDecompress",
+      "type": "function",
+      "name": "GzipDecompress",
+      "filePath": "main/boards/common/gzip_util.cc",
+      "lineRange": [
+        22,
+        66
+      ],
+      "summary": "函数GzipDecompress，处理compressed、out逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gzip_util.cc:MaybeGunzip",
+      "type": "function",
+      "name": "MaybeGunzip",
+      "filePath": "main/boards/common/gzip_util.cc",
+      "lineRange": [
+        68,
+        74
+      ],
+      "summary": "函数MaybeGunzip，处理body、out逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "file:main/boards/common/gzip_util.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:LogBodyOnParseFail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:LogBodyOnParseFail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:PrepareJsonBody",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:PrepareJsonBody",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:SerializeCompactNvsJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:SerializeCompactNvsJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:CreateBoardHttp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:CreateBoardHttp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:Init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:Init",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:IsInitialized",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:IsInitialized",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:GetForecast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:GetForecast",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:GetTodaySummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:GetTodaySummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:WeatherService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:WeatherService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:LoadFromNvs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:SaveToNvs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "function:main/boards/common/Weather.hpp:FetchFromNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "class:main/boards/common/Weather.hpp:WeatherDaily",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "class:main/boards/common/Weather.hpp:WeatherDaily",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "class:main/boards/common/Weather.hpp:WeatherForecast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "class:main/boards/common/Weather.hpp:WeatherForecast",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "class:main/boards/common/Weather.hpp:WeatherService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/Weather.hpp",
+      "target": "class:main/boards/common/Weather.hpp:WeatherService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseApiResponse",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetIntString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:ParseCompactNvsJson",
+      "target": "function:main/boards/common/Weather.hpp:JsonGetString",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:GetForecast",
+      "target": "function:main/boards/common/Weather.hpp:LoadFromNvs",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:GetForecast",
+      "target": "function:main/boards/common/Weather.hpp:FetchFromNetwork",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/Weather.hpp:GetForecast",
+      "target": "function:main/boards/common/Weather.hpp:SaveToNvs",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "file:main/boards/common/axp2101.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:Axp2101",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:Axp2101",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:GetBatteryCurrentDirection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:GetBatteryCurrentDirection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:IsDischarging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:IsChargingDone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:IsChargingDone",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:GetTemperature",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:GetTemperature",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:PowerOff",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/axp2101.cc",
+      "target": "function:main/boards/common/axp2101.cc:PowerOff",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/axp2101.cc:IsCharging",
+      "target": "function:main/boards/common/axp2101.cc:GetBatteryCurrentDirection",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/axp2101.cc:IsDischarging",
+      "target": "function:main/boards/common/axp2101.cc:GetBatteryCurrentDirection",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GenerateUuid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GenerateUuid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GetTemperature",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GetTemperature",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GetSystemInfoJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/board.cc",
+      "target": "function:main/boards/common/board.cc:GetSystemInfoJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/board.cc:Board",
+      "target": "function:main/boards/common/board.cc:GenerateUuid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "file:main/boards/common/board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "file:main/boards/common/esp32_camera.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:Esp32Camera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:Esp32Camera",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:~Esp32Camera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:~Esp32Camera",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:SetExplainUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:SetExplainUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:Capture",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:Capture",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:SetHMirror",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:SetHMirror",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:SetVFlip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:SetVFlip",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:Explain",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/esp32_camera.cc",
+      "target": "function:main/boards/common/esp32_camera.cc:Explain",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "file:main/boards/common/gzip_util.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "function:main/boards/common/gzip_util.cc:IsGzipData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "function:main/boards/common/gzip_util.cc:IsGzipData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "function:main/boards/common/gzip_util.cc:GzipDecompress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "function:main/boards/common/gzip_util.cc:GzipDecompress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "function:main/boards/common/gzip_util.cc:MaybeGunzip",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gzip_util.cc",
+      "target": "function:main/boards/common/gzip_util.cc:MaybeGunzip",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/gzip_util.cc:MaybeGunzip",
+      "target": "function:main/boards/common/gzip_util.cc:IsGzipData",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/boards/common/gzip_util.cc:MaybeGunzip",
+      "target": "function:main/boards/common/gzip_util.cc:GzipDecompress",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

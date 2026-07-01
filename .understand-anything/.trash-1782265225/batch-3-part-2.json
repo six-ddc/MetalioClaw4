@@ -1,0 +1,1476 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/mcp_server.cc",
+      "type": "file",
+      "name": "mcp_server.cc",
+      "filePath": "main/mcp_server.cc",
+      "summary": "MCP协议服务端实现，通过UDP/串口接收并处理MCP RPC请求，支持属性读写和设备控制命令，共14个函数。",
+      "tags": [
+        "mcp-protocol",
+        "rpc",
+        "server",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/mcp_server.cc:McpServer",
+      "type": "function",
+      "name": "McpServer",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        23,
+        24
+      ],
+      "summary": "函数McpServer，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:~McpServer",
+      "type": "function",
+      "name": "~McpServer",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        26,
+        31
+      ],
+      "summary": "函数~McpServer，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:AddCommonTools",
+      "type": "function",
+      "name": "AddCommonTools",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        33,
+        126
+      ],
+      "summary": "函数AddCommonTools，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "type": "function",
+      "name": "AddUserOnlyTools",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        128,
+        303
+      ],
+      "summary": "事件处理函数，响应AddUserlyTools事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/mcp_server.cc:AddTool",
+      "type": "function",
+      "name": "AddTool",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        305,
+        314
+      ],
+      "summary": "函数AddTool，处理tool逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:AddTool",
+      "type": "function",
+      "name": "AddTool",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        316,
+        318
+      ],
+      "summary": "函数AddTool，处理name、description、properties逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "function",
+      "name": "AddUserOnlyTool",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        320,
+        324
+      ],
+      "summary": "事件处理函数，响应AddUserlyTool事件。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:ParseMessage",
+      "type": "function",
+      "name": "ParseMessage",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        326,
+        334
+      ],
+      "summary": "解析函数，从数据中提取Message信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:ParseCapabilities",
+      "type": "function",
+      "name": "ParseCapabilities",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        336,
+        353
+      ],
+      "summary": "解析函数，从数据中提取Capabilities信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:ParseMessage",
+      "type": "function",
+      "name": "ParseMessage",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        355,
+        438
+      ],
+      "summary": "解析函数，从数据中提取Message信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/mcp_server.cc:ReplyResult",
+      "type": "function",
+      "name": "ReplyResult",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        440,
+        446
+      ],
+      "summary": "函数ReplyResult，处理id、result逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:ReplyError",
+      "type": "function",
+      "name": "ReplyError",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        448,
+        455
+      ],
+      "summary": "函数ReplyError，处理id、message逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/mcp_server.cc:GetToolsList",
+      "type": "function",
+      "name": "GetToolsList",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        457,
+        511
+      ],
+      "summary": "获取ToolsList的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/mcp_server.cc:DoToolCall",
+      "type": "function",
+      "name": "DoToolCall",
+      "filePath": "main/mcp_server.cc",
+      "lineRange": [
+        513,
+        565
+      ],
+      "summary": "函数DoToolCall，处理id、tool_name、tool_arguments逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/mcp_server.h",
+      "type": "file",
+      "name": "mcp_server.h",
+      "filePath": "main/mcp_server.h",
+      "summary": "MCP协议服务端头文件，声明MCP RPC处理器接口与数据结构。",
+      "tags": [
+        "mcp-protocol",
+        "rpc",
+        "server",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/ota.cc",
+      "type": "file",
+      "name": "ota.cc",
+      "filePath": "main/ota.cc",
+      "summary": "OTA固件升级实现，支持HTTP OTA远程升级、固件版本检查和升级状态管理，共13个函数。",
+      "tags": [
+        "ota-update",
+        "firmware-update",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/ota.cc:Ota",
+      "type": "function",
+      "name": "Ota",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        25,
+        38
+      ],
+      "summary": "函数Ota，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:~Ota",
+      "type": "function",
+      "name": "~Ota",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        40,
+        41
+      ],
+      "summary": "函数~Ota，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:GetCheckVersionUrl",
+      "type": "function",
+      "name": "GetCheckVersionUrl",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        43,
+        50
+      ],
+      "summary": "获取CheckVersionUrl的查询函数。",
+      "tags": [
+        "getter",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:SetupHttp",
+      "type": "function",
+      "name": "SetupHttp",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        52,
+        69
+      ],
+      "summary": "设置upHttp的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:CheckVersion",
+      "type": "function",
+      "name": "CheckVersion",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        74,
+        242
+      ],
+      "summary": "检查函数，验证或判断Version的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/ota.cc:MarkCurrentVersionValid",
+      "type": "function",
+      "name": "MarkCurrentVersionValid",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        244,
+        262
+      ],
+      "summary": "函数MarkCurrentVersionValid，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:Upgrade",
+      "type": "function",
+      "name": "Upgrade",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        264,
+        368
+      ],
+      "summary": "函数Upgrade，处理firmware_url逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/ota.cc:StartUpgrade",
+      "type": "function",
+      "name": "StartUpgrade",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        370,
+        373
+      ],
+      "summary": "函数StartUpgrade，处理callback逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:StartUpgradeFromUrl",
+      "type": "function",
+      "name": "StartUpgradeFromUrl",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        375,
+        378
+      ],
+      "summary": "函数StartUpgradeFromUrl，处理url、callback逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:ParseVersion",
+      "type": "function",
+      "name": "ParseVersion",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        380,
+        390
+      ],
+      "summary": "解析函数，从数据中提取Version信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:IsNewVersionAvailable",
+      "type": "function",
+      "name": "IsNewVersionAvailable",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        392,
+        405
+      ],
+      "summary": "创建函数，构造并返回IsVersionAvailable对象。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/ota.cc:GetActivationPayload",
+      "type": "function",
+      "name": "GetActivationPayload",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        407,
+        442
+      ],
+      "summary": "获取ActivationPayload的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/ota.cc:Activate",
+      "type": "function",
+      "name": "Activate",
+      "filePath": "main/ota.cc",
+      "lineRange": [
+        444,
+        478
+      ],
+      "summary": "函数Activate，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/ota.h",
+      "type": "file",
+      "name": "ota.h",
+      "filePath": "main/ota.h",
+      "summary": "OTA固件升级头文件，声明OTA升级接口。",
+      "tags": [
+        "ota-update",
+        "firmware-update",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/settings.cc",
+      "type": "file",
+      "name": "settings.cc",
+      "filePath": "main/settings.cc",
+      "summary": "设备设置管理实现，基于NVS持久化存储WiFi、MQTT、音量等系统配置，共10个函数。",
+      "tags": [
+        "configuration",
+        "nvs-storage",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:Settings",
+      "type": "function",
+      "name": "Settings",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        8,
+        10
+      ],
+      "summary": "设置tings的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:~Settings",
+      "type": "function",
+      "name": "~Settings",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        12,
+        19
+      ],
+      "summary": "设置~tings的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:GetString",
+      "type": "function",
+      "name": "GetString",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        21,
+        38
+      ],
+      "summary": "获取String的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:SetString",
+      "type": "function",
+      "name": "SetString",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        40,
+        47
+      ],
+      "summary": "设置String的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:GetInt",
+      "type": "function",
+      "name": "GetInt",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        49,
+        59
+      ],
+      "summary": "获取Int的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:SetInt",
+      "type": "function",
+      "name": "SetInt",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        61,
+        68
+      ],
+      "summary": "设置Int的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:GetBool",
+      "type": "function",
+      "name": "GetBool",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        70,
+        80
+      ],
+      "summary": "获取Bool的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:SetBool",
+      "type": "function",
+      "name": "SetBool",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        82,
+        89
+      ],
+      "summary": "设置Bool的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:EraseKey",
+      "type": "function",
+      "name": "EraseKey",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        91,
+        100
+      ],
+      "summary": "函数EraseKey，处理key逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/settings.cc:EraseAll",
+      "type": "function",
+      "name": "EraseAll",
+      "filePath": "main/settings.cc",
+      "lineRange": [
+        102,
+        108
+      ],
+      "summary": "函数EraseAll，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "file:main/application.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "file:main/mcp_server.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "file:main/settings.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:McpServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:McpServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:~McpServer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:~McpServer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddCommonTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddCommonTools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ParseMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ParseMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ParseCapabilities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ParseCapabilities",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ParseMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ParseMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ReplyResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ReplyResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:GetToolsList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:GetToolsList",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:DoToolCall",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/mcp_server.cc",
+      "target": "function:main/mcp_server.cc:DoToolCall",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddCommonTools",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddCommonTools",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddCommonTools",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddCommonTools",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddCommonTools",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTools",
+      "target": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddTool",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:AddUserOnlyTool",
+      "target": "function:main/mcp_server.cc:AddTool",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ParseMessage",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ParseCapabilities",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ReplyResult",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:GetToolsList",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:DoToolCall",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:ParseMessage",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:GetToolsList",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:GetToolsList",
+      "target": "function:main/mcp_server.cc:ReplyResult",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:DoToolCall",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:DoToolCall",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:DoToolCall",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:DoToolCall",
+      "target": "function:main/mcp_server.cc:ReplyResult",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/mcp_server.cc:DoToolCall",
+      "target": "function:main/mcp_server.cc:ReplyError",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "file:main/ota.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "file:main/settings.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "file:main/system_info.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:Ota",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:Ota",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:~Ota",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:~Ota",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:GetCheckVersionUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:GetCheckVersionUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:SetupHttp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:SetupHttp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:CheckVersion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:CheckVersion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:MarkCurrentVersionValid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:MarkCurrentVersionValid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:Upgrade",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:Upgrade",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:StartUpgrade",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:StartUpgrade",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:StartUpgradeFromUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:StartUpgradeFromUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:ParseVersion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:ParseVersion",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:IsNewVersionAvailable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:IsNewVersionAvailable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:GetActivationPayload",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:GetActivationPayload",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:Activate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/ota.cc",
+      "target": "function:main/ota.cc:Activate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:CheckVersion",
+      "target": "function:main/ota.cc:GetCheckVersionUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:CheckVersion",
+      "target": "function:main/ota.cc:SetupHttp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:CheckVersion",
+      "target": "function:main/ota.cc:IsNewVersionAvailable",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:StartUpgrade",
+      "target": "function:main/ota.cc:Upgrade",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:StartUpgradeFromUrl",
+      "target": "function:main/ota.cc:Upgrade",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:IsNewVersionAvailable",
+      "target": "function:main/ota.cc:ParseVersion",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:IsNewVersionAvailable",
+      "target": "function:main/ota.cc:ParseVersion",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:Activate",
+      "target": "function:main/ota.cc:GetCheckVersionUrl",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:Activate",
+      "target": "function:main/ota.cc:SetupHttp",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/ota.cc:Activate",
+      "target": "function:main/ota.cc:GetActivationPayload",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "file:main/settings.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:Settings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:Settings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:~Settings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:~Settings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:GetString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:GetString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:SetString",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:SetString",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:GetInt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:GetInt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:SetInt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:SetInt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:GetBool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:GetBool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:SetBool",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:SetBool",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:EraseKey",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:EraseKey",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:EraseAll",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/settings.cc",
+      "target": "function:main/settings.cc:EraseAll",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

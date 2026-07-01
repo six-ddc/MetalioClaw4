@@ -1,0 +1,1161 @@
+{
+  "nodes": [
+    {
+      "id": "document:scripts/acoustic_check/readme.md",
+      "type": "document",
+      "name": "readme.md",
+      "filePath": "scripts/acoustic_check/readme.md",
+      "summary": "脚本目录的说明文档。",
+      "tags": [
+        "documentation",
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:scripts/acoustic_check/requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "scripts/acoustic_check/requirements.txt",
+      "summary": "辅助脚本：requirements.txt。",
+      "tags": [
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/audio_debug_server.py",
+      "type": "file",
+      "name": "audio_debug_server.py",
+      "filePath": "scripts/audio_debug_server.py",
+      "summary": "辅助脚本：audio_debug_server.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/audio_debug_server.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/audio_debug_server.py",
+      "lineRange": [
+        11,
+        43
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/build_default_assets.py",
+      "type": "file",
+      "name": "build_default_assets.py",
+      "filePath": "scripts/build_default_assets.py",
+      "summary": "辅助脚本：build_default_assets.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:struct_pack_string",
+      "type": "function",
+      "name": "struct_pack_string",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        27,
+        47
+      ],
+      "summary": "实现 struct_pack_string 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:pack_models",
+      "type": "function",
+      "name": "pack_models",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        58,
+        123
+      ],
+      "summary": "实现 pack_models 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:process_sr_models",
+      "type": "function",
+      "name": "process_sr_models",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        157,
+        202
+      ],
+      "summary": "实现 process_sr_models 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:process_text_font",
+      "type": "function",
+      "name": "process_text_font",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        205,
+        215
+      ],
+      "summary": "实现 process_text_font 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:process_emoji_collection",
+      "type": "function",
+      "name": "process_emoji_collection",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        218,
+        242
+      ],
+      "summary": "实现 process_emoji_collection 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:process_extra_files",
+      "type": "function",
+      "name": "process_extra_files",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        245,
+        272
+      ],
+      "summary": "实现 process_extra_files 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:generate_index_json",
+      "type": "function",
+      "name": "generate_index_json",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        275,
+        301
+      ],
+      "summary": "实现 generate_index_json 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:generate_config_json",
+      "type": "function",
+      "name": "generate_config_json",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        304,
+        330
+      ],
+      "summary": "实现 generate_config_json 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:pack_assets_simple",
+      "type": "function",
+      "name": "pack_assets_simple",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        347,
+        428
+      ],
+      "summary": "实现 pack_assets_simple 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:read_wakenet_from_sdkconfig",
+      "type": "function",
+      "name": "read_wakenet_from_sdkconfig",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        435,
+        458
+      ],
+      "summary": "实现 read_wakenet_from_sdkconfig 函数功能。",
+      "tags": [
+        "io",
+        "detection",
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:read_multinet_from_sdkconfig",
+      "type": "function",
+      "name": "read_multinet_from_sdkconfig",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        461,
+        507
+      ],
+      "summary": "实现 read_multinet_from_sdkconfig 函数功能。",
+      "tags": [
+        "io",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:read_wake_word_type_from_sdkconfig",
+      "type": "function",
+      "name": "read_wake_word_type_from_sdkconfig",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        510,
+        547
+      ],
+      "summary": "实现 read_wake_word_type_from_sdkconfig 函数功能。",
+      "tags": [
+        "io",
+        "detection",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:read_custom_wake_word_from_sdkconfig",
+      "type": "function",
+      "name": "read_custom_wake_word_from_sdkconfig",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        550,
+        600
+      ],
+      "summary": "实现 read_custom_wake_word_from_sdkconfig 函数功能。",
+      "tags": [
+        "io",
+        "detection",
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:get_language_from_multinet_models",
+      "type": "function",
+      "name": "get_language_from_multinet_models",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        603,
+        624
+      ],
+      "summary": "实现 get_language_from_multinet_models 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:get_wakenet_model_paths",
+      "type": "function",
+      "name": "get_wakenet_model_paths",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        627,
+        643
+      ],
+      "summary": "实现 get_wakenet_model_paths 函数功能。",
+      "tags": [
+        "getter",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:get_multinet_model_paths",
+      "type": "function",
+      "name": "get_multinet_model_paths",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        646,
+        662
+      ],
+      "summary": "实现 get_multinet_model_paths 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:get_text_font_path",
+      "type": "function",
+      "name": "get_text_font_path",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        665,
+        682
+      ],
+      "summary": "实现 get_text_font_path 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:get_emoji_collection_path",
+      "type": "function",
+      "name": "get_emoji_collection_path",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        685,
+        698
+      ],
+      "summary": "实现 get_emoji_collection_path 函数功能。",
+      "tags": [
+        "event-handler",
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:build_assets_integrated",
+      "type": "function",
+      "name": "build_assets_integrated",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        701,
+        759
+      ],
+      "summary": "实现 build_assets_integrated 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/build_default_assets.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/build_default_assets.py",
+      "lineRange": [
+        762,
+        878
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/download_github_runs.py",
+      "type": "file",
+      "name": "download_github_runs.py",
+      "filePath": "scripts/download_github_runs.py",
+      "summary": "辅助脚本：download_github_runs.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:scripts/download_github_runs.py:parse_github_run_url",
+      "type": "function",
+      "name": "parse_github_run_url",
+      "filePath": "scripts/download_github_runs.py",
+      "lineRange": [
+        21,
+        39
+      ],
+      "summary": "实现 parse_github_run_url 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/download_github_runs.py:get_artifacts",
+      "type": "function",
+      "name": "get_artifacts",
+      "filePath": "scripts/download_github_runs.py",
+      "lineRange": [
+        42,
+        90
+      ],
+      "summary": "实现 get_artifacts 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/download_github_runs.py:download_artifact",
+      "type": "function",
+      "name": "download_artifact",
+      "filePath": "scripts/download_github_runs.py",
+      "lineRange": [
+        93,
+        118
+      ],
+      "summary": "实现 download_artifact 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/download_github_runs.py:rename_artifact",
+      "type": "function",
+      "name": "rename_artifact",
+      "filePath": "scripts/download_github_runs.py",
+      "lineRange": [
+        121,
+        157
+      ],
+      "summary": "实现 rename_artifact 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/download_github_runs.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/download_github_runs.py",
+      "lineRange": [
+        160,
+        259
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/gen_lang.py",
+      "type": "file",
+      "name": "gen_lang.py",
+      "filePath": "scripts/gen_lang.py",
+      "summary": "辅助脚本：gen_lang.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/gen_lang.py:load_base_language",
+      "type": "function",
+      "name": "load_base_language",
+      "filePath": "scripts/gen_lang.py",
+      "lineRange": [
+        32,
+        45
+      ],
+      "summary": "实现 load_base_language 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/gen_lang.py:generate_header",
+      "type": "function",
+      "name": "generate_header",
+      "filePath": "scripts/gen_lang.py",
+      "lineRange": [
+        53,
+        174
+      ],
+      "summary": "实现 generate_header 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/gen_weather_city_list.py",
+      "type": "file",
+      "name": "gen_weather_city_list.py",
+      "filePath": "scripts/gen_weather_city_list.py",
+      "summary": "辅助脚本：gen_weather_city_list.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/gen_weather_city_list.py:parse_csv",
+      "type": "function",
+      "name": "parse_csv",
+      "filePath": "scripts/gen_weather_city_list.py",
+      "lineRange": [
+        45,
+        76
+      ],
+      "summary": "实现 parse_csv 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/gen_weather_city_list.py:write_header",
+      "type": "function",
+      "name": "write_header",
+      "filePath": "scripts/gen_weather_city_list.py",
+      "lineRange": [
+        89,
+        131
+      ],
+      "summary": "实现 write_header 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/gen_weather_city_list.py:write_source",
+      "type": "function",
+      "name": "write_source",
+      "filePath": "scripts/gen_weather_city_list.py",
+      "lineRange": [
+        134,
+        214
+      ],
+      "summary": "实现 write_source 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/gen_weather_city_list.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/gen_weather_city_list.py",
+      "lineRange": [
+        217,
+        236
+      ],
+      "summary": "实现 main 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/Image_Converter/lvgl_tools_gui.py",
+      "type": "file",
+      "name": "lvgl_tools_gui.py",
+      "filePath": "scripts/Image_Converter/lvgl_tools_gui.py",
+      "summary": "辅助脚本：lvgl_tools_gui.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:scripts/Image_Converter/lvgl_tools_gui.py:ImageConverterApp",
+      "type": "class",
+      "name": "ImageConverterApp",
+      "filePath": "scripts/Image_Converter/lvgl_tools_gui.py",
+      "lineRange": [
+        30,
+        248
+      ],
+      "summary": "定义 ImageConverterApp 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:scripts/Image_Converter/requirements.txt",
+      "type": "document",
+      "name": "requirements.txt",
+      "filePath": "scripts/Image_Converter/requirements.txt",
+      "summary": "辅助脚本：requirements.txt。",
+      "tags": [
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/mp3_to_ogg.sh",
+      "type": "file",
+      "name": "mp3_to_ogg.sh",
+      "filePath": "scripts/mp3_to_ogg.sh",
+      "summary": "辅助脚本：mp3_to_ogg.sh。",
+      "tags": [
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:scripts/ogg_converter/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "scripts/ogg_converter/README.md",
+      "summary": "脚本目录的说明文档。",
+      "tags": [
+        "documentation",
+        "script",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/ogg_converter/xiaozhi_ogg_converter.py",
+      "type": "file",
+      "name": "xiaozhi_ogg_converter.py",
+      "filePath": "scripts/ogg_converter/xiaozhi_ogg_converter.py",
+      "summary": "辅助脚本：xiaozhi_ogg_converter.py。",
+      "tags": [
+        "script",
+        "python",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/ogg_converter/xiaozhi_ogg_converter.py:AudioConverterApp",
+      "type": "class",
+      "name": "AudioConverterApp",
+      "filePath": "scripts/ogg_converter/xiaozhi_ogg_converter.py",
+      "lineRange": [
+        8,
+        225
+      ],
+      "summary": "定义 AudioConverterApp 类及其方法。",
+      "tags": [
+        "audio"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/audio_debug_server.py",
+      "target": "function:scripts/audio_debug_server.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/audio_debug_server.py",
+      "target": "function:scripts/audio_debug_server.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:struct_pack_string",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:struct_pack_string",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:pack_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:pack_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_sr_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_sr_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_text_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_text_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_emoji_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_emoji_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_extra_files",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:process_extra_files",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:generate_index_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:generate_index_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:generate_config_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:generate_config_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:pack_assets_simple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:pack_assets_simple",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_wakenet_from_sdkconfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_wakenet_from_sdkconfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_multinet_from_sdkconfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_multinet_from_sdkconfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_wake_word_type_from_sdkconfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_wake_word_type_from_sdkconfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_custom_wake_word_from_sdkconfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:read_custom_wake_word_from_sdkconfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_language_from_multinet_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_language_from_multinet_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_wakenet_model_paths",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_wakenet_model_paths",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_multinet_model_paths",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_multinet_model_paths",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_text_font_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_text_font_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_emoji_collection_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:get_emoji_collection_path",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:build_assets_integrated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:build_assets_integrated",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/build_default_assets.py",
+      "target": "function:scripts/build_default_assets.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:parse_github_run_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:parse_github_run_url",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:get_artifacts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:get_artifacts",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:download_artifact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:download_artifact",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:rename_artifact",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:rename_artifact",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/download_github_runs.py",
+      "target": "function:scripts/download_github_runs.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gen_lang.py",
+      "target": "function:scripts/gen_lang.py:load_base_language",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/gen_lang.py",
+      "target": "function:scripts/gen_lang.py:load_base_language",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gen_lang.py",
+      "target": "function:scripts/gen_lang.py:generate_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/gen_lang.py",
+      "target": "function:scripts/gen_lang.py:generate_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:parse_csv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:parse_csv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:write_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:write_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:write_source",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:write_source",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/gen_weather_city_list.py",
+      "target": "function:scripts/gen_weather_city_list.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/Image_Converter/lvgl_tools_gui.py",
+      "target": "file:scripts/Image_Converter/LVGLImage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/Image_Converter/lvgl_tools_gui.py",
+      "target": "class:scripts/Image_Converter/lvgl_tools_gui.py:ImageConverterApp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/Image_Converter/lvgl_tools_gui.py",
+      "target": "class:scripts/Image_Converter/lvgl_tools_gui.py:ImageConverterApp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/ogg_converter/xiaozhi_ogg_converter.py",
+      "target": "class:scripts/ogg_converter/xiaozhi_ogg_converter.py:AudioConverterApp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/ogg_converter/xiaozhi_ogg_converter.py",
+      "target": "class:scripts/ogg_converter/xiaozhi_ogg_converter.py:AudioConverterApp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "type": "file",
+      "name": "box_audio_codec_lite.cc",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "summary": "esp-box-lite 开发板的音频编解码器实现，包含I2S配置、采样率设置、音量控制及音频输入输出通道管理。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:BoxAudioCodecLite",
+      "type": "function",
+      "name": "BoxAudioCodecLite",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        10,
+        78
+      ],
+      "summary": "BoxAudioCodecLite 函数的完整实现，包含69行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:~BoxAudioCodecLite",
+      "type": "function",
+      "name": "~BoxAudioCodecLite",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        80,
+        92
+      ],
+      "summary": "~BoxAudioCodecLite 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:CreateDuplexChannels",
+      "type": "function",
+      "name": "CreateDuplexChannels",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        94,
+        169
+      ],
+      "summary": "CreateDuplexChannels 函数的完整实现，包含76行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:SetOutputVolume",
+      "type": "function",
+      "name": "SetOutputVolume",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        171,
+        174
+      ],
+      "summary": "设置音频播放音量，调整编解码器增益参数。",
+      "tags": [
+        "音量",
+        "音频控制",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        176,
+        198
+      ],
+      "summary": "EnableInput 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        200,
+        219
+      ],
+      "summary": "EnableOutput 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        221,
+        249
+      ],
+      "summary": "Read 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "lineRange": [
+        251,
+        272
+      ],
+      "summary": "Write 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-box-lite/box_audio_codec_lite.h",
+      "type": "file",
+      "name": "box_audio_codec_lite.h",
+      "filePath": "main/boards/esp-box-lite/box_audio_codec_lite.h",
+      "summary": "esp-box-lite 开发板的音频编解码器配置头文件，定义音频参数结构体和编解码器类接口。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频配置"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-box-lite/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/esp-box-lite/config.h",
+      "summary": "esp-box-lite 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "type": "file",
+      "name": "esp_box_lite_board.cc",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "summary": "esp-box-lite 开发板的主板实现，包含EspBoxBoardLite类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        58,
+        73
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        75,
+        84
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:ChangeVol",
+      "type": "function",
+      "name": "ChangeVol",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        86,
+        97
+      ],
+      "summary": "ChangeVol 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        107,
+        151
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeIli9341Display",
+      "type": "function",
+      "name": "InitializeIli9341Display",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        153,
+        192
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "type": "function",
+      "name": "EspBoxBoardLite",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        195,
+        201
+      ],
+      "summary": "EspBoxBoardLite 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:~EspBoxBoardLite",
+      "type": "function",
+      "name": "~EspBoxBoardLite",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        203,
+        210
+      ],
+      "summary": "~EspBoxBoardLite 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "type": "class",
+      "name": "EspBoxBoardLite",
+      "filePath": "main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "lineRange": [
+        48,
+        235
+      ],
+      "summary": "EspBoxBoardLite 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:BoxAudioCodecLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:~BoxAudioCodecLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:CreateDuplexChannels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:SetOutputVolume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:~BoxAudioCodecLite",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:CreateDuplexChannels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:SetOutputVolume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:BoxAudioCodecLite",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "function:main/boards/esp-box-lite/box_audio_codec_lite.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/box_audio_codec_lite.cc",
+      "target": "file:main/boards/esp-box-lite/box_audio_codec_lite.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:ChangeVol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeIli9341Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:~EspBoxBoardLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:ChangeVol",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:InitializeIli9341Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:~EspBoxBoardLite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:EspBoxBoardLite",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "function:main/boards/esp-box-lite/esp_box_lite_board.cc:~EspBoxBoardLite",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "file:main/boards/esp-box-lite/box_audio_codec_lite.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/esp-box-lite/esp_box_lite_board.cc",
+      "target": "file:main/boards/esp-box-lite/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

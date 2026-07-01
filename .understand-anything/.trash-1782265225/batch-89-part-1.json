@@ -1,0 +1,1751 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/common/SimpleUart.hpp",
+      "type": "file",
+      "name": "SimpleUart.hpp",
+      "filePath": "main/boards/common/SimpleUart.hpp",
+      "summary": "定义 SimpleUartpp 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/system_reset.cc",
+      "type": "file",
+      "name": "system_reset.cc",
+      "filePath": "main/boards/common/system_reset.cc",
+      "summary": "实现 system_reset 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/system_reset.cc:SystemReset",
+      "type": "function",
+      "name": "SystemReset",
+      "filePath": "main/boards/common/system_reset.cc",
+      "lineRange": [
+        14,
+        23
+      ],
+      "summary": "实现 SystemReset 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/system_reset.cc:CheckButtons",
+      "type": "function",
+      "name": "CheckButtons",
+      "filePath": "main/boards/common/system_reset.cc",
+      "lineRange": [
+        26,
+        37
+      ],
+      "summary": "实现 CheckButtons 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/system_reset.cc:ResetNvsFlash",
+      "type": "function",
+      "name": "ResetNvsFlash",
+      "filePath": "main/boards/common/system_reset.cc",
+      "lineRange": [
+        39,
+        49
+      ],
+      "summary": "实现 ResetNvsFlash 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/system_reset.cc:ResetToFactory",
+      "type": "function",
+      "name": "ResetToFactory",
+      "filePath": "main/boards/common/system_reset.cc",
+      "lineRange": [
+        51,
+        64
+      ],
+      "summary": "实现 ResetToFactory 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/system_reset.h",
+      "type": "file",
+      "name": "system_reset.h",
+      "filePath": "main/boards/common/system_reset.h",
+      "summary": "定义 system_reset 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/uart_eth_modem.cc",
+      "type": "file",
+      "name": "uart_eth_modem.cc",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "summary": "实现 uart_eth_modem 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:UartEthModem",
+      "type": "function",
+      "name": "UartEthModem",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        23,
+        79
+      ],
+      "summary": "实现 UartEthModem 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        91,
+        223
+      ],
+      "summary": "实现 Start 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:Stop",
+      "type": "function",
+      "name": "Stop",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        225,
+        269
+      ],
+      "summary": "实现 Stop 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:SendAt",
+      "type": "function",
+      "name": "SendAt",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        271,
+        336
+      ],
+      "summary": "实现 SendAt 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:GetImei",
+      "type": "function",
+      "name": "GetImei",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        346,
+        358
+      ],
+      "summary": "实现 GetImei 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:GetImsi",
+      "type": "function",
+      "name": "GetImsi",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        360,
+        372
+      ],
+      "summary": "实现 GetImsi 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:GetIccid",
+      "type": "function",
+      "name": "GetIccid",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        374,
+        386
+      ],
+      "summary": "实现 GetIccid 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:GetCarrierName",
+      "type": "function",
+      "name": "GetCarrierName",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        388,
+        399
+      ],
+      "summary": "实现 GetCarrierName 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:GetModuleRevision",
+      "type": "function",
+      "name": "GetModuleRevision",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        401,
+        421
+      ],
+      "summary": "实现 GetModuleRevision 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:GetSignalStrength",
+      "type": "function",
+      "name": "GetSignalStrength",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        423,
+        442
+      ],
+      "summary": "实现 GetSignalStrength 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:InitUart",
+      "type": "function",
+      "name": "InitUart",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        469,
+        490
+      ],
+      "summary": "实现 InitUart 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:InitGpio",
+      "type": "function",
+      "name": "InitGpio",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        492,
+        526
+      ],
+      "summary": "实现 InitGpio 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:InitIotEth",
+      "type": "function",
+      "name": "InitIotEth",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        528,
+        611
+      ],
+      "summary": "实现 InitIotEth 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:DeinitIotEth",
+      "type": "function",
+      "name": "DeinitIotEth",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        633,
+        659
+      ],
+      "summary": "实现 DeinitIotEth 函数功能。",
+      "tags": [
+        "initialization",
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:TxTaskRun",
+      "type": "function",
+      "name": "TxTaskRun",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        664,
+        769
+      ],
+      "summary": "实现 TxTaskRun 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:MainTaskRun",
+      "type": "function",
+      "name": "MainTaskRun",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        772,
+        799
+      ],
+      "summary": "实现 MainTaskRun 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:UartEthModem::UhciRxCallbackStatic",
+      "type": "function",
+      "name": "UartEthModem::UhciRxCallbackStatic",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        802,
+        815
+      ],
+      "summary": "实现 UartEthModem::UhciRxCallbackStatic 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:StartDmaReceive",
+      "type": "function",
+      "name": "StartDmaReceive",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        818,
+        832
+      ],
+      "summary": "实现 StartDmaReceive 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:CalculateNextTimeout",
+      "type": "function",
+      "name": "CalculateNextTimeout",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        835,
+        867
+      ],
+      "summary": "实现 CalculateNextTimeout 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleEvent",
+      "type": "function",
+      "name": "HandleEvent",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        870,
+        907
+      ],
+      "summary": "实现 HandleEvent 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleRxData",
+      "type": "function",
+      "name": "HandleRxData",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        910,
+        1044
+      ],
+      "summary": "实现 HandleRxData 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleSrdyLow",
+      "type": "function",
+      "name": "HandleSrdyLow",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1047,
+        1063
+      ],
+      "summary": "实现 HandleSrdyLow 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleSrdyHigh",
+      "type": "function",
+      "name": "HandleSrdyHigh",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1066,
+        1076
+      ],
+      "summary": "实现 HandleSrdyHigh 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleIdleTimeout",
+      "type": "function",
+      "name": "HandleIdleTimeout",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1079,
+        1113
+      ],
+      "summary": "实现 HandleIdleTimeout 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:EnterPendingActiveState",
+      "type": "function",
+      "name": "EnterPendingActiveState",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1116,
+        1145
+      ],
+      "summary": "实现 EnterPendingActiveState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:EnterActiveState",
+      "type": "function",
+      "name": "EnterActiveState",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1148,
+        1176
+      ],
+      "summary": "实现 EnterActiveState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:EnterPendingIdleState",
+      "type": "function",
+      "name": "EnterPendingIdleState",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1179,
+        1191
+      ],
+      "summary": "实现 EnterPendingIdleState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:EnterIdleState",
+      "type": "function",
+      "name": "EnterIdleState",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1194,
+        1211
+      ],
+      "summary": "实现 EnterIdleState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:InitTaskRun",
+      "type": "function",
+      "name": "InitTaskRun",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1213,
+        1253
+      ],
+      "summary": "实现 InitTaskRun 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:EnqueueTxFrame",
+      "type": "function",
+      "name": "EnqueueTxFrame",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1256,
+        1291
+      ],
+      "summary": "实现 EnqueueTxFrame 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:SendFrame",
+      "type": "function",
+      "name": "SendFrame",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1295,
+        1355
+      ],
+      "summary": "实现 SendFrame 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:ProcessReceivedFrame",
+      "type": "function",
+      "name": "ProcessReceivedFrame",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1358,
+        1405
+      ],
+      "summary": "实现 ProcessReceivedFrame 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleEthFrame",
+      "type": "function",
+      "name": "HandleEthFrame",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1407,
+        1428
+      ],
+      "summary": "实现 HandleEthFrame 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:HandleAtResponse",
+      "type": "function",
+      "name": "HandleAtResponse",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1430,
+        1442
+      ],
+      "summary": "实现 HandleAtResponse 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:SendAtWithRetry",
+      "type": "function",
+      "name": "SendAtWithRetry",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1444,
+        1460
+      ],
+      "summary": "实现 SendAtWithRetry 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:ParseAtResponse",
+      "type": "function",
+      "name": "ParseAtResponse",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1462,
+        1513
+      ],
+      "summary": "实现 ParseAtResponse 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:AtDetect",
+      "type": "function",
+      "name": "AtDetect",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1515,
+        1535
+      ],
+      "summary": "实现 AtDetect 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:ConfigurePdp",
+      "type": "function",
+      "name": "ConfigurePdp",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1537,
+        1581
+      ],
+      "summary": "实现 ConfigurePdp 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:RunFlightModeInitSequence",
+      "type": "function",
+      "name": "RunFlightModeInitSequence",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1583,
+        1620
+      ],
+      "summary": "实现 RunFlightModeInitSequence 函数功能。",
+      "tags": [
+        "initialization",
+        "cleanup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:RunNormalModeInitSequence",
+      "type": "function",
+      "name": "RunNormalModeInitSequence",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1622,
+        1768
+      ],
+      "summary": "实现 RunNormalModeInitSequence 函数功能。",
+      "tags": [
+        "initialization",
+        "cleanup"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:CheckSimCard",
+      "type": "function",
+      "name": "CheckSimCard",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1771,
+        1791
+      ],
+      "summary": "实现 CheckSimCard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:WaitForRegistration",
+      "type": "function",
+      "name": "WaitForRegistration",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1793,
+        1821
+      ],
+      "summary": "实现 WaitForRegistration 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:ConfigureSrdyInterrupt",
+      "type": "function",
+      "name": "ConfigureSrdyInterrupt",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1853,
+        1862
+      ],
+      "summary": "实现 ConfigureSrdyInterrupt 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:UartEthModem::SrdyIsrHandler",
+      "type": "function",
+      "name": "UartEthModem::SrdyIsrHandler",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1866,
+        1890
+      ],
+      "summary": "实现 UartEthModem::SrdyIsrHandler 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:SetNetworkEvent",
+      "type": "function",
+      "name": "SetNetworkEvent",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1892,
+        1906
+      ],
+      "summary": "实现 SetNetworkEvent 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:IpEventHandler",
+      "type": "function",
+      "name": "IpEventHandler",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1908,
+        1919
+      ],
+      "summary": "实现 IpEventHandler 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/uart_eth_modem.cc:CleanupResources",
+      "type": "function",
+      "name": "CleanupResources",
+      "filePath": "main/boards/common/uart_eth_modem.cc",
+      "lineRange": [
+        1921,
+        1963
+      ],
+      "summary": "实现 CleanupResources 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/uart_eth_modem.h",
+      "type": "file",
+      "name": "uart_eth_modem.h",
+      "filePath": "main/boards/common/uart_eth_modem.h",
+      "summary": "定义 uart_eth_modem 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/boards/common/uart_eth_modem.h:UartEthModem",
+      "type": "class",
+      "name": "UartEthModem",
+      "filePath": "main/boards/common/uart_eth_modem.h",
+      "lineRange": [
+        43,
+        469
+      ],
+      "summary": "定义 UartEthModem 类及其方法。",
+      "tags": [
+        "serial-communication"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/df-k10/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/df-k10/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "df-k10"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/df-k10/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/df-k10/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/df-s3-ai-cam/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/df-s3-ai-cam/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/df-s3-ai-cam/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/df-s3-ai-cam/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "df-s3-ai-cam"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "type": "file",
+      "name": "df_s3_ai_cam.cc",
+      "filePath": "main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "summary": "实现 df_s3_ai_cam 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "lineRange": [
+        32,
+        75
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc:DfrobotEsp32S3AiCam",
+      "type": "class",
+      "name": "DfrobotEsp32S3AiCam",
+      "filePath": "main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "lineRange": [
+        17,
+        101
+      ],
+      "summary": "定义 DfrobotEsp32S3AiCam 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/df-s3-ai-cam/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/df-s3-ai-cam/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/doit-s3-aibox/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/doit-s3-aibox/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/doit-s3-aibox/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/doit-s3-aibox/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "file:main/boards/common/system_reset.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:SystemReset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:SystemReset",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:CheckButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:CheckButtons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:ResetNvsFlash",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:ResetNvsFlash",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:ResetToFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/system_reset.cc",
+      "target": "function:main/boards/common/system_reset.cc:ResetToFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "file:main/boards/common/uart_eth_modem.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:UartEthModem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:UartEthModem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:Start",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:Start",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:Stop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:Stop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SendAt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SendAt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetImei",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetImei",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetImsi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetImsi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetIccid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetIccid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetCarrierName",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetCarrierName",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetModuleRevision",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetModuleRevision",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetSignalStrength",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:GetSignalStrength",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitUart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitUart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitGpio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitGpio",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitIotEth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitIotEth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:DeinitIotEth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:DeinitIotEth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:TxTaskRun",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:TxTaskRun",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:MainTaskRun",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:MainTaskRun",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:UartEthModem::UhciRxCallbackStatic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:UartEthModem::UhciRxCallbackStatic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:StartDmaReceive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:StartDmaReceive",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:CalculateNextTimeout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:CalculateNextTimeout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleRxData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleRxData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleSrdyLow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleSrdyLow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleSrdyHigh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleSrdyHigh",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleIdleTimeout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleIdleTimeout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterPendingActiveState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterPendingActiveState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterActiveState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterActiveState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterPendingIdleState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterPendingIdleState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterIdleState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnterIdleState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitTaskRun",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:InitTaskRun",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnqueueTxFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:EnqueueTxFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SendFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SendFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ProcessReceivedFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ProcessReceivedFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleEthFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleEthFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleAtResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:HandleAtResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SendAtWithRetry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SendAtWithRetry",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ParseAtResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ParseAtResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:AtDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:AtDetect",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ConfigurePdp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ConfigurePdp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:RunFlightModeInitSequence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:RunFlightModeInitSequence",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:RunNormalModeInitSequence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:RunNormalModeInitSequence",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:CheckSimCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:CheckSimCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:WaitForRegistration",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:WaitForRegistration",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ConfigureSrdyInterrupt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:ConfigureSrdyInterrupt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:UartEthModem::SrdyIsrHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:UartEthModem::SrdyIsrHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SetNetworkEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:SetNetworkEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:IpEventHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:IpEventHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:CleanupResources",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.cc",
+      "target": "function:main/boards/common/uart_eth_modem.cc:CleanupResources",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.h",
+      "target": "class:main/boards/common/uart_eth_modem.h:UartEthModem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/uart_eth_modem.h",
+      "target": "class:main/boards/common/uart_eth_modem.h:UartEthModem",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "target": "file:main/boards/df-s3-ai-cam/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "target": "function:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "target": "class:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc:DfrobotEsp32S3AiCam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc",
+      "target": "class:main/boards/df-s3-ai-cam/df_s3_ai_cam.cc:DfrobotEsp32S3AiCam",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

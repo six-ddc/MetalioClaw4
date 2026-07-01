@@ -1,0 +1,96 @@
+{
+  "nodes": [
+    {
+      "id": "config:partitions/v1/16m.csv",
+      "type": "config",
+      "name": "16m.csv",
+      "filePath": "partitions/v1/16m.csv",
+      "summary": "ESP-IDF分区表定义文件（16m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v1/16m_custom_wakeword.csv",
+      "type": "config",
+      "name": "16m_custom_wakeword.csv",
+      "filePath": "partitions/v1/16m_custom_wakeword.csv",
+      "summary": "ESP-IDF分区表定义文件（16m_custom_wakeword.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v1/16m_echoear.csv",
+      "type": "config",
+      "name": "16m_echoear.csv",
+      "filePath": "partitions/v1/16m_echoear.csv",
+      "summary": "ESP-IDF分区表定义文件（16m_echoear.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v1/32m.csv",
+      "type": "config",
+      "name": "32m.csv",
+      "filePath": "partitions/v1/32m.csv",
+      "summary": "ESP-IDF分区表定义文件（32m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v1/4m.csv",
+      "type": "config",
+      "name": "4m.csv",
+      "filePath": "partitions/v1/4m.csv",
+      "summary": "ESP-IDF分区表定义文件（4m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v1/4m_esp-hi.csv",
+      "type": "config",
+      "name": "4m_esp-hi.csv",
+      "filePath": "partitions/v1/4m_esp-hi.csv",
+      "summary": "ESP-IDF分区表定义文件（4m_esp-hi.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:partitions/v1/8m.csv",
+      "type": "config",
+      "name": "8m.csv",
+      "filePath": "partitions/v1/8m.csv",
+      "summary": "ESP-IDF分区表定义文件（8m.csv），定义Flash存储的分区布局和大小分配。",
+      "tags": [
+        "partition-table",
+        "flash-layout",
+        "esp-idf"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

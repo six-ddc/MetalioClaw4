@@ -1,0 +1,907 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "type": "file",
+      "name": "esp_lcd_panel_gc9301.c",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "summary": "实现 esp_lcd_panel_gc9301.c 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:esp_lcd_new_panel_gc9309na",
+      "type": "function",
+      "name": "esp_lcd_new_panel_gc9309na",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        100,
+        154
+      ],
+      "summary": "实现 esp_lcd_new_panel_gc9309na 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_del",
+      "type": "function",
+      "name": "panel_gc9309na_del",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        156,
+        166
+      ],
+      "summary": "实现 panel_gc9309na_del 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_reset",
+      "type": "function",
+      "name": "panel_gc9309na_reset",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        168,
+        188
+      ],
+      "summary": "实现 panel_gc9309na_reset 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_init",
+      "type": "function",
+      "name": "panel_gc9309na_init",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        189,
+        277
+      ],
+      "summary": "实现 panel_gc9309na_init 函数功能。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_draw_bitmap",
+      "type": "function",
+      "name": "panel_gc9309na_draw_bitmap",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        280,
+        310
+      ],
+      "summary": "实现 panel_gc9309na_draw_bitmap 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_invert_color",
+      "type": "function",
+      "name": "panel_gc9309na_invert_color",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        312,
+        325
+      ],
+      "summary": "实现 panel_gc9309na_invert_color 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_mirror",
+      "type": "function",
+      "name": "panel_gc9309na_mirror",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        327,
+        345
+      ],
+      "summary": "实现 panel_gc9309na_mirror 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_swap_xy",
+      "type": "function",
+      "name": "panel_gc9309na_swap_xy",
+      "filePath": "main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "lineRange": [
+        347,
+        360
+      ],
+      "summary": "实现 panel_gc9309na_swap_xy 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/jiuchuan-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/jiuchuan-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-box-2/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/kevin-box-2/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/kevin-box-2/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/kevin-box-2/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "kevin-box-2"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "type": "file",
+      "name": "kevin_box_board.cc",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        23,
+        46
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:Enable4GModule",
+      "type": "function",
+      "name": "Enable4GModule",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        70,
+        81
+      ],
+      "summary": "实现 Enable4GModule 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeDisplayI2c",
+      "type": "function",
+      "name": "InitializeDisplayI2c",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        83,
+        97
+      ],
+      "summary": "实现 InitializeDisplayI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        99,
+        144
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        146,
+        161
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        163,
+        223
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:KevinBoxBoard",
+      "type": "function",
+      "name": "KevinBoxBoard",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        226,
+        239
+      ],
+      "summary": "实现 KevinBoxBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-box-2/kevin_box_board.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        257,
+        268
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/kevin-box-2/kevin_box_board.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        21,
+        47
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/kevin-box-2/kevin_box_board.cc:KevinBoxBoard",
+      "type": "class",
+      "name": "KevinBoxBoard",
+      "filePath": "main/boards/kevin-box-2/kevin_box_board.cc",
+      "lineRange": [
+        49,
+        269
+      ],
+      "summary": "定义 KevinBoxBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/kevin-c3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/kevin-c3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "kevin-c3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-sp-v3-dev/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/kevin-sp-v3-dev/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "type": "file",
+      "name": "kevin-sp-v3_board.cc",
+      "filePath": "main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "lineRange": [
+        28,
+        37
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "lineRange": [
+        39,
+        52
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "lineRange": [
+        54,
+        84
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "lineRange": [
+        86,
+        128
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:KEVIN_SP_V3Board",
+      "type": "class",
+      "name": "KEVIN_SP_V3Board",
+      "filePath": "main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "lineRange": [
+        21,
+        163
+      ],
+      "summary": "定义 KEVIN_SP_V3Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-sp-v4-dev/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/kevin-sp-v4-dev/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/kevin-sp-v4-dev/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/kevin-sp-v4-dev/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "kevin-sp-v4-dev"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "type": "file",
+      "name": "kevin-sp-v4_board.cc",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "lineRange": [
+        26,
+        41
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "lineRange": [
+        43,
+        52
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "lineRange": [
+        54,
+        67
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "lineRange": [
+        69,
+        99
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "lineRange": [
+        101,
+        143
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:KEVIN_SP_V4Board",
+      "type": "class",
+      "name": "KEVIN_SP_V4Board",
+      "filePath": "main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "lineRange": [
+        18,
+        180
+      ],
+      "summary": "定义 KEVIN_SP_V4Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/kevin-yuying-313lcd/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/kevin-yuying-313lcd/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "kevin-yuying-313lcd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/labplus-ledong-v2/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/labplus-ledong-v2/README.md",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "documentation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:esp_lcd_new_panel_gc9309na",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:esp_lcd_new_panel_gc9309na",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_del",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_reset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_draw_bitmap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_invert_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_mirror",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c",
+      "target": "function:main/boards/jiuchuan-s3/esp_lcd_panel_gc9301.c:panel_gc9309na_swap_xy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "file:main/boards/kevin-box-2/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:Enable4GModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeDisplayI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:KevinBoxBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "function:main/boards/kevin-box-2/kevin_box_board.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "class:main/boards/kevin-box-2/kevin_box_board.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "class:main/boards/kevin-box-2/kevin_box_board.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "class:main/boards/kevin-box-2/kevin_box_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-box-2/kevin_box_board.cc",
+      "target": "class:main/boards/kevin-box-2/kevin_box_board.cc:KevinBoxBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "file:main/boards/kevin-sp-v3-dev/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "function:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "class:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:KEVIN_SP_V3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc",
+      "target": "class:main/boards/kevin-sp-v3-dev/kevin-sp-v3_board.cc:KEVIN_SP_V3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "file:main/boards/kevin-sp-v4-dev/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "function:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "class:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:KEVIN_SP_V4Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc",
+      "target": "class:main/boards/kevin-sp-v4-dev/kevin-sp-v4_board.cc:KEVIN_SP_V4Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

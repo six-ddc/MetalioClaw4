@@ -1,0 +1,1552 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/lvgl_display/lvgl_image.cc",
+      "type": "file",
+      "name": "lvgl_image.cc",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "summary": "LVGL图像管理实现，支持PNG解码、图像缓存和LVGL图像对象创建，共7个函数。",
+      "tags": [
+        "display",
+        "lvgl",
+        "image-rendering",
+        "lvgl-gui",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:LvglRawImage",
+      "type": "function",
+      "name": "LvglRawImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        12,
+        20
+      ],
+      "summary": "函数LvglRawImage，处理data、size逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:IsGif",
+      "type": "function",
+      "name": "IsGif",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        22,
+        25
+      ],
+      "summary": "检查函数，验证或判断Gif的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:LvglCBinImage",
+      "type": "function",
+      "name": "LvglCBinImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        27,
+        29
+      ],
+      "summary": "函数LvglCBinImage，处理data逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:~LvglCBinImage",
+      "type": "function",
+      "name": "~LvglCBinImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        31,
+        35
+      ],
+      "summary": "函数~LvglCBinImage，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:LvglAllocatedImage",
+      "type": "function",
+      "name": "LvglAllocatedImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        37,
+        46
+      ],
+      "summary": "函数LvglAllocatedImage，处理data、size逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:LvglAllocatedImage",
+      "type": "function",
+      "name": "LvglAllocatedImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        48,
+        57
+      ],
+      "summary": "函数LvglAllocatedImage，处理data、size、width逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.cc:~LvglAllocatedImage",
+      "type": "function",
+      "name": "~LvglAllocatedImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.cc",
+      "lineRange": [
+        59,
+        64
+      ],
+      "summary": "函数~LvglAllocatedImage，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_image.h",
+      "type": "file",
+      "name": "lvgl_image.h",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "summary": "LVGL图像管理头文件，声明图像操作接口。",
+      "tags": [
+        "display",
+        "lvgl",
+        "image-rendering",
+        "lvgl-gui",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.h:IsGif",
+      "type": "function",
+      "name": "IsGif",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "检查函数，验证或判断Gif的状态。",
+      "tags": [
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.h:~LvglImage",
+      "type": "function",
+      "name": "~LvglImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        11,
+        11
+      ],
+      "summary": "函数~LvglImage，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_image.h:LvglSourceImage",
+      "type": "function",
+      "name": "LvglSourceImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        37,
+        37
+      ],
+      "summary": "函数LvglSourceImage，处理image_dsc逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_image.h:LvglImage",
+      "type": "class",
+      "name": "LvglImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        7,
+        12
+      ],
+      "summary": "LvglImage图像类，管理图像加载和显示，包含2个方法。",
+      "tags": [
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_image.h:LvglRawImage",
+      "type": "class",
+      "name": "LvglRawImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        15,
+        23
+      ],
+      "summary": "LvglRawImage图像类，管理图像加载和显示，包含1个方法。",
+      "tags": [
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_image.h:LvglCBinImage",
+      "type": "class",
+      "name": "LvglCBinImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        25,
+        33
+      ],
+      "summary": "LvglCBinImage图像类，管理图像加载和显示，包含0个方法。",
+      "tags": [
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_image.h:LvglSourceImage",
+      "type": "class",
+      "name": "LvglSourceImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        35,
+        42
+      ],
+      "summary": "LvglSourceImage图像类，管理图像加载和显示，包含1个方法。",
+      "tags": [
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_image.h:LvglAllocatedImage",
+      "type": "class",
+      "name": "LvglAllocatedImage",
+      "filePath": "main/display/lvgl_display/lvgl_image.h",
+      "lineRange": [
+        44,
+        53
+      ],
+      "summary": "LvglAllocatedImage图像类，管理图像加载和显示，包含0个方法。",
+      "tags": [
+        "image"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "type": "file",
+      "name": "lvgl_theme.cc",
+      "filePath": "main/display/lvgl_display/lvgl_theme.cc",
+      "summary": "LVGL主题样式实现，定义GUI色彩方案、控件样式和字体配置，共4个函数。",
+      "tags": [
+        "display",
+        "lvgl",
+        "theme-management",
+        "lvgl-gui",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.cc:LvglTheme",
+      "type": "function",
+      "name": "LvglTheme",
+      "filePath": "main/display/lvgl_display/lvgl_theme.cc",
+      "lineRange": [
+        3,
+        4
+      ],
+      "summary": "函数LvglTheme，处理name逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.cc:ParseColor",
+      "type": "function",
+      "name": "ParseColor",
+      "filePath": "main/display/lvgl_display/lvgl_theme.cc",
+      "lineRange": [
+        6,
+        15
+      ],
+      "summary": "解析函数，从数据中提取Color信息。",
+      "tags": [
+        "parser"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.cc:LvglThemeManager",
+      "type": "function",
+      "name": "LvglThemeManager",
+      "filePath": "main/display/lvgl_display/lvgl_theme.cc",
+      "lineRange": [
+        17,
+        18
+      ],
+      "summary": "函数LvglThemeManager，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.cc:RegisterTheme",
+      "type": "function",
+      "name": "RegisterTheme",
+      "filePath": "main/display/lvgl_display/lvgl_theme.cc",
+      "lineRange": [
+        28,
+        30
+      ],
+      "summary": "注册函数，登记Theme回调或服务。",
+      "tags": [
+        "registration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_theme.h",
+      "type": "file",
+      "name": "lvgl_theme.h",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "summary": "LVGL主题样式头文件，声明主题样式的初始化与应用接口。",
+      "tags": [
+        "display",
+        "lvgl",
+        "theme-management",
+        "lvgl-gui",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:background_color",
+      "type": "function",
+      "name": "background_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        21,
+        21
+      ],
+      "summary": "函数background_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:text_color",
+      "type": "function",
+      "name": "text_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        22,
+        22
+      ],
+      "summary": "函数text_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:chat_background_color",
+      "type": "function",
+      "name": "chat_background_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        23,
+        23
+      ],
+      "summary": "函数chat_background_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:user_bubble_color",
+      "type": "function",
+      "name": "user_bubble_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        24,
+        24
+      ],
+      "summary": "函数user_bubble_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:assistant_bubble_color",
+      "type": "function",
+      "name": "assistant_bubble_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        25,
+        25
+      ],
+      "summary": "函数assistant_bubble_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:system_bubble_color",
+      "type": "function",
+      "name": "system_bubble_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        26,
+        26
+      ],
+      "summary": "函数system_bubble_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:system_text_color",
+      "type": "function",
+      "name": "system_text_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        27,
+        27
+      ],
+      "summary": "函数system_text_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:border_color",
+      "type": "function",
+      "name": "border_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        28,
+        28
+      ],
+      "summary": "函数border_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:low_battery_color",
+      "type": "function",
+      "name": "low_battery_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        29,
+        29
+      ],
+      "summary": "函数low_battery_color，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:background_image",
+      "type": "function",
+      "name": "background_image",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        30,
+        30
+      ],
+      "summary": "函数background_image，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:emoji_collection",
+      "type": "function",
+      "name": "emoji_collection",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        31,
+        31
+      ],
+      "summary": "函数emoji_collection，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:text_font",
+      "type": "function",
+      "name": "text_font",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        32,
+        32
+      ],
+      "summary": "函数text_font，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:icon_font",
+      "type": "function",
+      "name": "icon_font",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        33,
+        33
+      ],
+      "summary": "函数icon_font，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:large_icon_font",
+      "type": "function",
+      "name": "large_icon_font",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        34,
+        34
+      ],
+      "summary": "函数large_icon_font，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:spacing",
+      "type": "function",
+      "name": "spacing",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        35,
+        35
+      ],
+      "summary": "函数spacing，处理scale逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_background_color",
+      "type": "function",
+      "name": "set_background_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        37,
+        37
+      ],
+      "summary": "函数set_background_color，处理background逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_text_color",
+      "type": "function",
+      "name": "set_text_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        38,
+        38
+      ],
+      "summary": "函数set_text_color，处理text逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_chat_background_color",
+      "type": "function",
+      "name": "set_chat_background_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        39,
+        39
+      ],
+      "summary": "函数set_chat_background_color，处理chat_background逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_user_bubble_color",
+      "type": "function",
+      "name": "set_user_bubble_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        40,
+        40
+      ],
+      "summary": "函数set_user_bubble_color，处理user_bubble逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_assistant_bubble_color",
+      "type": "function",
+      "name": "set_assistant_bubble_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        41,
+        41
+      ],
+      "summary": "函数set_assistant_bubble_color，处理assistant_bubble逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_system_bubble_color",
+      "type": "function",
+      "name": "set_system_bubble_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        42,
+        42
+      ],
+      "summary": "函数set_system_bubble_color，处理system_bubble逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_system_text_color",
+      "type": "function",
+      "name": "set_system_text_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        43,
+        43
+      ],
+      "summary": "函数set_system_text_color，处理system_text逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_border_color",
+      "type": "function",
+      "name": "set_border_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        44,
+        44
+      ],
+      "summary": "函数set_border_color，处理border逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_low_battery_color",
+      "type": "function",
+      "name": "set_low_battery_color",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        45,
+        45
+      ],
+      "summary": "函数set_low_battery_color，处理low_battery逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_background_image",
+      "type": "function",
+      "name": "set_background_image",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        46,
+        46
+      ],
+      "summary": "函数set_background_image，处理background_image逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_emoji_collection",
+      "type": "function",
+      "name": "set_emoji_collection",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        47,
+        47
+      ],
+      "summary": "函数set_emoji_collection，处理emoji_collection逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_text_font",
+      "type": "function",
+      "name": "set_text_font",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        48,
+        48
+      ],
+      "summary": "函数set_text_font，处理text_font逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_icon_font",
+      "type": "function",
+      "name": "set_icon_font",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        49,
+        49
+      ],
+      "summary": "函数set_icon_font，处理icon_font逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_theme.h:set_large_icon_font",
+      "type": "function",
+      "name": "set_large_icon_font",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        50,
+        50
+      ],
+      "summary": "函数set_large_icon_font，处理large_icon_font逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_theme.h:LvglTheme",
+      "type": "class",
+      "name": "LvglTheme",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        14,
+        76
+      ],
+      "summary": "LvglTheme主题类，定义GUI视觉风格，包含30个方法。",
+      "tags": [
+        "theme"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_theme.h:LvglThemeManager",
+      "type": "class",
+      "name": "LvglThemeManager",
+      "filePath": "main/display/lvgl_display/lvgl_theme.h",
+      "lineRange": [
+        79,
+        94
+      ],
+      "summary": "LvglThemeManager管理器类，管理主题资源的生命周期，包含2个方法。",
+      "tags": [
+        "resource-manager",
+        "theme"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "file:main/display/lvgl_display/lvgl_image.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglRawImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglRawImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:IsGif",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:IsGif",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglCBinImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglCBinImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:~LvglCBinImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:~LvglCBinImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglAllocatedImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglAllocatedImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglAllocatedImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:LvglAllocatedImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:~LvglAllocatedImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.cc",
+      "target": "function:main/display/lvgl_display/lvgl_image.cc:~LvglAllocatedImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "function:main/display/lvgl_display/lvgl_image.h:IsGif",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "function:main/display/lvgl_display/lvgl_image.h:IsGif",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "function:main/display/lvgl_display/lvgl_image.h:~LvglImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "function:main/display/lvgl_display/lvgl_image.h:~LvglImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "function:main/display/lvgl_display/lvgl_image.h:LvglSourceImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "function:main/display/lvgl_display/lvgl_image.h:LvglSourceImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglRawImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglRawImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglCBinImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglCBinImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglSourceImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglSourceImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglAllocatedImage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_image.h",
+      "target": "class:main/display/lvgl_display/lvgl_image.h:LvglAllocatedImage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "file:main/display/lvgl_display/lvgl_theme.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:LvglTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:LvglTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:ParseColor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:ParseColor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:LvglThemeManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:LvglThemeManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:RegisterTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.cc",
+      "target": "function:main/display/lvgl_display/lvgl_theme.cc:RegisterTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "file:main/display/lvgl_display/emoji_collection.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "file:main/display/lvgl_display/lvgl_font.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "file:main/display/lvgl_display/lvgl_image.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:background_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:background_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:text_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:text_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:chat_background_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:chat_background_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:user_bubble_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:user_bubble_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:assistant_bubble_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:assistant_bubble_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:system_bubble_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:system_bubble_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:system_text_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:system_text_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:border_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:border_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:low_battery_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:low_battery_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:background_image",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:background_image",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:emoji_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:emoji_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:text_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:text_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:icon_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:icon_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:large_icon_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:large_icon_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:spacing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:spacing",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_background_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_background_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_text_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_text_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_chat_background_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_chat_background_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_user_bubble_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_user_bubble_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_assistant_bubble_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_assistant_bubble_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_system_bubble_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_system_bubble_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_system_text_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_system_text_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_border_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_border_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_low_battery_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_low_battery_color",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_background_image",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_background_image",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_emoji_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_emoji_collection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_text_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_text_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_icon_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_icon_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_large_icon_font",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "function:main/display/lvgl_display/lvgl_theme.h:set_large_icon_font",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "class:main/display/lvgl_display/lvgl_theme.h:LvglTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "class:main/display/lvgl_display/lvgl_theme.h:LvglTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "class:main/display/lvgl_display/lvgl_theme.h:LvglThemeManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_theme.h",
+      "target": "class:main/display/lvgl_display/lvgl_theme.h:LvglThemeManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "nodes": [
+    {
+      "id": "file:scripts/p3_tools/batch_convert_gui.py",
+      "type": "file",
+      "name": "batch_convert_gui.py",
+      "filePath": "scripts/p3_tools/batch_convert_gui.py",
+      "summary": "音频批量转换的图形界面工具，支持P3格式与标准音频的相互批量转换。",
+      "tags": [
+        "gui",
+        "batch-conversion",
+        "audio-tool"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:scripts/p3_tools/batch_convert_gui.py:AudioConverterApp",
+      "type": "class",
+      "name": "AudioConverterApp",
+      "filePath": "scripts/p3_tools/batch_convert_gui.py",
+      "lineRange": [
+        9,
+        216
+      ],
+      "summary": "类 AudioConverterApp，位于 p3_tools 开发板驱动中。",
+      "tags": [
+        "class",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/p3_tools/convert_audio_to_p3.py",
+      "type": "file",
+      "name": "convert_audio_to_p3.py",
+      "filePath": "scripts/p3_tools/convert_audio_to_p3.py",
+      "summary": "将标准音频文件转换为P3自定义音频格式的工具脚本。",
+      "tags": [
+        "audio-conversion",
+        "p3-format",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/p3_tools/convert_audio_to_p3.py:encode_audio_to_opus",
+      "type": "function",
+      "name": "encode_audio_to_opus",
+      "filePath": "scripts/p3_tools/convert_audio_to_p3.py",
+      "lineRange": [
+        11,
+        49
+      ],
+      "summary": "函数 encode_audio_to_opus，处理 p3_tools 开发板的特定功能。",
+      "tags": [
+        "function",
+        "embedded"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/p3_tools/convert_p3_to_audio.py",
+      "type": "file",
+      "name": "convert_p3_to_audio.py",
+      "filePath": "scripts/p3_tools/convert_p3_to_audio.py",
+      "summary": "将P3自定义音频格式转换回标准音频文件的工具脚本。",
+      "tags": [
+        "audio-conversion",
+        "p3-format",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/p3_tools/convert_p3_to_audio.py:decode_p3_to_audio",
+      "type": "function",
+      "name": "decode_p3_to_audio",
+      "filePath": "scripts/p3_tools/convert_p3_to_audio.py",
+      "lineRange": [
+        9,
+        43
+      ],
+      "summary": "函数 decode_p3_to_audio，处理 p3_tools 开发板的特定功能。",
+      "tags": [
+        "function",
+        "embedded"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scripts/p3_tools/batch_convert_gui.py",
+      "target": "class:scripts/p3_tools/batch_convert_gui.py:AudioConverterApp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/p3_tools/batch_convert_gui.py",
+      "target": "class:scripts/p3_tools/batch_convert_gui.py:AudioConverterApp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/p3_tools/batch_convert_gui.py",
+      "target": "file:scripts/p3_tools/convert_audio_to_p3.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/p3_tools/batch_convert_gui.py",
+      "target": "file:scripts/p3_tools/convert_p3_to_audio.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:scripts/p3_tools/convert_audio_to_p3.py",
+      "target": "function:scripts/p3_tools/convert_audio_to_p3.py:encode_audio_to_opus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/p3_tools/convert_audio_to_p3.py",
+      "target": "function:scripts/p3_tools/convert_audio_to_p3.py:encode_audio_to_opus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/p3_tools/convert_p3_to_audio.py",
+      "target": "function:scripts/p3_tools/convert_p3_to_audio.py:decode_p3_to_audio",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:scripts/p3_tools/convert_p3_to_audio.py",
+      "target": "function:scripts/p3_tools/convert_p3_to_audio.py:decode_p3_to_audio",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

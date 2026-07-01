@@ -1,0 +1,562 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/waveshare-p4-wifi6-touch-lcd-4b/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-p4-wifi6-t"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "type": "file",
+      "name": "esp32-p4-wifi6-touch-lcd-4b.cc",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "summary": "实现 esp32-p4-wifi6-touch-lcd-4b 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "lineRange": [
+        28,
+        43
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:bsp_enable_dsi_phy_power",
+      "type": "function",
+      "name": "bsp_enable_dsi_phy_power",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "lineRange": [
+        45,
+        58
+      ],
+      "summary": "实现 bsp_enable_dsi_phy_power 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:InitializeLCD",
+      "type": "function",
+      "name": "InitializeLCD",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "lineRange": [
+        60,
+        120
+      ],
+      "summary": "实现 InitializeLCD 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "lineRange": [
+        121,
+        151
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:WaveshareEsp32p44b",
+      "type": "class",
+      "name": "WaveshareEsp32p44b",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "lineRange": [
+        22,
+        197
+      ],
+      "summary": "定义 WaveshareEsp32p44b 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-p4-wifi6-touch-lcd-4b/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-4b/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/waveshare-p4-wifi6-touch-lcd-7b/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-p4-wifi6-t"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "type": "file",
+      "name": "esp32-p4-wifi6-touch-lcd-7b.cc",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "summary": "实现 esp32-p4-wifi6-touch-lcd-7b 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "lineRange": [
+        28,
+        43
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:bsp_enable_dsi_phy_power",
+      "type": "function",
+      "name": "bsp_enable_dsi_phy_power",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "lineRange": [
+        45,
+        58
+      ],
+      "summary": "实现 bsp_enable_dsi_phy_power 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:InitializeLCD",
+      "type": "function",
+      "name": "InitializeLCD",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "lineRange": [
+        60,
+        124
+      ],
+      "summary": "实现 InitializeLCD 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "lineRange": [
+        125,
+        155
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:WaveshareEsp32p47b",
+      "type": "class",
+      "name": "WaveshareEsp32p47b",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "lineRange": [
+        22,
+        201
+      ],
+      "summary": "定义 WaveshareEsp32p47b 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-p4-wifi6-touch-lcd-7b/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-7b/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:main/boards/waveshare-p4-wifi6-touch-lcd-xc/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-p4-wifi6-t"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "type": "file",
+      "name": "esp32-p4-wifi6-touch-lcd-xc.cc",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "summary": "实现 esp32-p4-wifi6-touch-lcd-xc 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "lineRange": [
+        28,
+        43
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:bsp_enable_dsi_phy_power",
+      "type": "function",
+      "name": "bsp_enable_dsi_phy_power",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "lineRange": [
+        45,
+        58
+      ],
+      "summary": "实现 bsp_enable_dsi_phy_power 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:InitializeLCD",
+      "type": "function",
+      "name": "InitializeLCD",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "lineRange": [
+        60,
+        122
+      ],
+      "summary": "实现 InitializeLCD 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:InitializeTouch",
+      "type": "function",
+      "name": "InitializeTouch",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "lineRange": [
+        123,
+        153
+      ],
+      "summary": "实现 InitializeTouch 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:WaveshareEsp32p4xc",
+      "type": "class",
+      "name": "WaveshareEsp32p4xc",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "lineRange": [
+        22,
+        198
+      ],
+      "summary": "定义 WaveshareEsp32p4xc 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-p4-wifi6-touch-lcd-xc/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-p4-wifi6-touch-lcd-xc/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/waveshare-s3-audio-board/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-s3-audio-board/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "audio",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:bsp_enable_dsi_phy_power",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "class:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:WaveshareEsp32p44b",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc",
+      "target": "class:main/boards/waveshare-p4-wifi6-touch-lcd-4b/esp32-p4-wifi6-touch-lcd-4b.cc:WaveshareEsp32p44b",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:bsp_enable_dsi_phy_power",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "class:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:WaveshareEsp32p47b",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc",
+      "target": "class:main/boards/waveshare-p4-wifi6-touch-lcd-7b/esp32-p4-wifi6-touch-lcd-7b.cc:WaveshareEsp32p47b",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:bsp_enable_dsi_phy_power",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:InitializeLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "function:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:InitializeTouch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "class:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:WaveshareEsp32p4xc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc",
+      "target": "class:main/boards/waveshare-p4-wifi6-touch-lcd-xc/esp32-p4-wifi6-touch-lcd-xc.cc:WaveshareEsp32p4xc",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "nodes": [
+    {
+      "id": "document:main/boards/echoear/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/echoear/README.md",
+      "summary": "echoear 开发板的中文使用说明文档。",
+      "tags": [
+        "documentation",
+        "board-guide"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/echoear/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/echoear/config.json",
+      "summary": "echoear 开发板的设备配置文件，定义显示参数、音频编解码器、按钮映射和网络设置。",
+      "tags": [
+        "configuration",
+        "board-config",
+        "device-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/echoear/emote.json",
+      "type": "config",
+      "name": "emote.json",
+      "filePath": "main/boards/echoear/emote.json",
+      "summary": "echoear 开发板的LED表情动画配置文件。",
+      "tags": [
+        "animation",
+        "emote-config",
+        "ui-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/echoear/layout.json",
+      "type": "config",
+      "name": "layout.json",
+      "filePath": "main/boards/echoear/layout.json",
+      "summary": "echoear 开发板的显示布局配置文件，定义UI元素的位置和样式。",
+      "tags": [
+        "display-layout",
+        "ui-config"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

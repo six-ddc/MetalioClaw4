@@ -1,0 +1,649 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/assets/locales/sk-SK/wificonfig.ogg",
+      "type": "file",
+      "name": "wificonfig.ogg (sk-SK)",
+      "filePath": "main/assets/locales/sk-SK/wificonfig.ogg",
+      "summary": "Wi-Fi 配网语音提示（OGG 音频），指导用户完成 Wi-Fi 网络配置。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "wifi-config",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/0.ogg",
+      "type": "file",
+      "name": "0.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/0.ogg",
+      "summary": "编号 0 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/1.ogg",
+      "type": "file",
+      "name": "1.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/1.ogg",
+      "summary": "编号 1 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/2.ogg",
+      "type": "file",
+      "name": "2.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/2.ogg",
+      "summary": "编号 2 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/3.ogg",
+      "type": "file",
+      "name": "3.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/3.ogg",
+      "summary": "编号 3 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/4.ogg",
+      "type": "file",
+      "name": "4.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/4.ogg",
+      "summary": "编号 4 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/5.ogg",
+      "type": "file",
+      "name": "5.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/5.ogg",
+      "summary": "编号 5 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/6.ogg",
+      "type": "file",
+      "name": "6.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/6.ogg",
+      "summary": "编号 6 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/7.ogg",
+      "type": "file",
+      "name": "7.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/7.ogg",
+      "summary": "编号 7 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/8.ogg",
+      "type": "file",
+      "name": "8.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/8.ogg",
+      "summary": "编号 8 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/9.ogg",
+      "type": "file",
+      "name": "9.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/9.ogg",
+      "summary": "编号 9 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/activation.ogg",
+      "type": "file",
+      "name": "activation.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/activation.ogg",
+      "summary": "设备激活语音提示（OGG 音频），指导用户完成设备激活流程。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "activation",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/err_pin.ogg",
+      "type": "file",
+      "name": "err_pin.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/err_pin.ogg",
+      "summary": "SIM 卡 PIN 错误语音提示（OGG 音频），提示用户插入或检查 SIM 卡。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "sim-card",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/err_reg.ogg",
+      "type": "file",
+      "name": "err_reg.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/err_reg.ogg",
+      "summary": "网络注册失败语音提示（OGG 音频），提示用户检查网络和 SIM 卡状态。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "network",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/assets/locales/sl-SI/language.json",
+      "type": "config",
+      "name": "language.json (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/language.json",
+      "summary": "斯洛文尼亚语（sl-SI）本地化字符串配置文件，包含设备 UI 界面的所有文本翻译，涵盖警告、信息、错误、网络状态、OTA 升级等 40+ 个字符串键。",
+      "tags": [
+        "localization",
+        "language-pack",
+        "json",
+        "configuration",
+        "i18n"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/upgrade.ogg",
+      "type": "file",
+      "name": "upgrade.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/upgrade.ogg",
+      "summary": "系统升级语音提示（OGG 音频），用于 OTA 升级过程的语音引导。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "ota-upgrade",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/welcome.ogg",
+      "type": "file",
+      "name": "welcome.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/welcome.ogg",
+      "summary": "欢迎语音提示（OGG 音频），设备启动时的欢迎语音播报。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "welcome",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sl-SI/wificonfig.ogg",
+      "type": "file",
+      "name": "wificonfig.ogg (sl-SI)",
+      "filePath": "main/assets/locales/sl-SI/wificonfig.ogg",
+      "summary": "Wi-Fi 配网语音提示（OGG 音频），指导用户完成 Wi-Fi 网络配置。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "wifi-config",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/assets/locales/sr-RS/language.json",
+      "type": "config",
+      "name": "language.json (sr-RS)",
+      "filePath": "main/assets/locales/sr-RS/language.json",
+      "summary": "塞尔维亚语（sr-RS）本地化字符串配置文件，包含设备 UI 界面的所有文本翻译，涵盖警告、信息、错误、网络状态、OTA 升级等 40+ 个字符串键。",
+      "tags": [
+        "localization",
+        "language-pack",
+        "json",
+        "configuration",
+        "i18n"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sv-SE/0.ogg",
+      "type": "file",
+      "name": "0.ogg (sv-SE)",
+      "filePath": "main/assets/locales/sv-SE/0.ogg",
+      "summary": "编号 0 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sv-SE/1.ogg",
+      "type": "file",
+      "name": "1.ogg (sv-SE)",
+      "filePath": "main/assets/locales/sv-SE/1.ogg",
+      "summary": "编号 1 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sv-SE/2.ogg",
+      "type": "file",
+      "name": "2.ogg (sv-SE)",
+      "filePath": "main/assets/locales/sv-SE/2.ogg",
+      "summary": "编号 2 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sv-SE/3.ogg",
+      "type": "file",
+      "name": "3.ogg (sv-SE)",
+      "filePath": "main/assets/locales/sv-SE/3.ogg",
+      "summary": "编号 3 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sv-SE/4.ogg",
+      "type": "file",
+      "name": "4.ogg (sv-SE)",
+      "filePath": "main/assets/locales/sv-SE/4.ogg",
+      "summary": "编号 4 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/sv-SE/5.ogg",
+      "type": "file",
+      "name": "5.ogg (sv-SE)",
+      "filePath": "main/assets/locales/sv-SE/5.ogg",
+      "summary": "编号 5 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/0.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/2.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/3.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/4.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "file:main/assets/locales/sl-SI/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/0.ogg",
+      "target": "file:main/assets/locales/sl-SI/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/1.ogg",
+      "target": "file:main/assets/locales/sl-SI/2.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/2.ogg",
+      "target": "file:main/assets/locales/sl-SI/3.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/3.ogg",
+      "target": "file:main/assets/locales/sl-SI/4.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/4.ogg",
+      "target": "file:main/assets/locales/sl-SI/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/5.ogg",
+      "target": "file:main/assets/locales/sl-SI/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/6.ogg",
+      "target": "file:main/assets/locales/sl-SI/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/7.ogg",
+      "target": "file:main/assets/locales/sl-SI/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/8.ogg",
+      "target": "file:main/assets/locales/sl-SI/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/9.ogg",
+      "target": "file:main/assets/locales/sl-SI/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/activation.ogg",
+      "target": "file:main/assets/locales/sl-SI/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/err_pin.ogg",
+      "target": "file:main/assets/locales/sl-SI/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/err_reg.ogg",
+      "target": "file:main/assets/locales/sl-SI/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/upgrade.ogg",
+      "target": "file:main/assets/locales/sl-SI/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sl-SI/welcome.ogg",
+      "target": "file:main/assets/locales/sl-SI/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sv-SE/0.ogg",
+      "target": "file:main/assets/locales/sv-SE/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sv-SE/1.ogg",
+      "target": "file:main/assets/locales/sv-SE/2.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sv-SE/2.ogg",
+      "target": "file:main/assets/locales/sv-SE/3.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sv-SE/3.ogg",
+      "target": "file:main/assets/locales/sv-SE/4.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/sv-SE/4.ogg",
+      "target": "file:main/assets/locales/sv-SE/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/sl-SI/language.json",
+      "target": "config:main/assets/locales/sr-RS/language.json",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

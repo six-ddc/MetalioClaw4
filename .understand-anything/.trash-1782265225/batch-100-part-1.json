@@ -1,0 +1,3082 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/screen/magnet_screen/magnet_screen.h",
+      "type": "file",
+      "name": "magnet_screen.h",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.h",
+      "summary": "定义 magnet_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/music_screen/music_screen.cc",
+      "type": "file",
+      "name": "music_screen.cc",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "summary": "实现 music_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:sync_album_eaf",
+      "type": "function",
+      "name": "sync_album_eaf",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        96,
+        105
+      ],
+      "summary": "实现 sync_album_eaf 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:start_opa_anim",
+      "type": "function",
+      "name": "start_opa_anim",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        134,
+        146
+      ],
+      "summary": "实现 start_opa_anim 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:push_lyric_line",
+      "type": "function",
+      "name": "push_lyric_line",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        154,
+        173
+      ],
+      "summary": "实现 push_lyric_line 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:async_set_play_icon",
+      "type": "function",
+      "name": "async_set_play_icon",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        191,
+        201
+      ],
+      "summary": "实现 async_set_play_icon 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:extract_quoted_value",
+      "type": "function",
+      "name": "extract_quoted_value",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        236,
+        257
+      ],
+      "summary": "实现 extract_quoted_value 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:handle_json_line",
+      "type": "function",
+      "name": "handle_json_line",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        259,
+        278
+      ],
+      "summary": "实现 handle_json_line 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:handle_play_state_line",
+      "type": "function",
+      "name": "handle_play_state_line",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        284,
+        294
+      ],
+      "summary": "实现 handle_play_state_line 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:handle_line",
+      "type": "function",
+      "name": "handle_line",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        296,
+        305
+      ],
+      "summary": "实现 handle_line 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:on_uart_data",
+      "type": "function",
+      "name": "on_uart_data",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        307,
+        330
+      ],
+      "summary": "实现 on_uart_data 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:switch_to_mode3_task",
+      "type": "function",
+      "name": "switch_to_mode3_task",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        335,
+        348
+      ],
+      "summary": "实现 switch_to_mode3_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:switch_to_mode1_task",
+      "type": "function",
+      "name": "switch_to_mode1_task",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        352,
+        365
+      ],
+      "summary": "实现 switch_to_mode1_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:OnPlayClicked",
+      "type": "function",
+      "name": "OnPlayClicked",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        383,
+        398
+      ],
+      "summary": "实现 OnPlayClicked 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:BuildBackButton",
+      "type": "function",
+      "name": "BuildBackButton",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        445,
+        470
+      ],
+      "summary": "实现 BuildBackButton 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:BuildUsageHint",
+      "type": "function",
+      "name": "BuildUsageHint",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        472,
+        489
+      ],
+      "summary": "实现 BuildUsageHint 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:BuildSongTitle",
+      "type": "function",
+      "name": "BuildSongTitle",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        491,
+        503
+      ],
+      "summary": "实现 BuildSongTitle 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:BuildAlbum",
+      "type": "function",
+      "name": "BuildAlbum",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        505,
+        535
+      ],
+      "summary": "实现 BuildAlbum 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:BuildLyric",
+      "type": "function",
+      "name": "BuildLyric",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        537,
+        554
+      ],
+      "summary": "实现 BuildLyric 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:BuildControls",
+      "type": "function",
+      "name": "BuildControls",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        556,
+        586
+      ],
+      "summary": "实现 BuildControls 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/music_screen/music_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/music_screen/music_screen.cc",
+      "lineRange": [
+        619,
+        637
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/music_screen/music_screen.h",
+      "type": "file",
+      "name": "music_screen.h",
+      "filePath": "main/display/screen/music_screen/music_screen.h",
+      "summary": "定义 music_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/network_screen/network_screen.cc",
+      "type": "file",
+      "name": "network_screen.cc",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "summary": "实现 network_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:async_set_scan_btn_enabled",
+      "type": "function",
+      "name": "async_set_scan_btn_enabled",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        327,
+        337
+      ],
+      "summary": "实现 async_set_scan_btn_enabled 函数功能。",
+      "tags": [
+        "setter",
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:async_set_nearby_spinner",
+      "type": "function",
+      "name": "async_set_nearby_spinner",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        348,
+        357
+      ],
+      "summary": "实现 async_set_nearby_spinner 函数功能。",
+      "tags": [
+        "setter",
+        "hardware-io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:wifi_evt_handler",
+      "type": "function",
+      "name": "wifi_evt_handler",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        428,
+        445
+      ],
+      "summary": "实现 wifi_evt_handler 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:wifi_init_for_screen",
+      "type": "function",
+      "name": "wifi_init_for_screen",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        449,
+        507
+      ],
+      "summary": "实现 wifi_init_for_screen 函数功能。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:wifi_teardown_for_screen",
+      "type": "function",
+      "name": "wifi_teardown_for_screen",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        509,
+        537
+      ],
+      "summary": "实现 wifi_teardown_for_screen 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:scan_task",
+      "type": "function",
+      "name": "scan_task",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        542,
+        646
+      ],
+      "summary": "实现 scan_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:schedule_scan",
+      "type": "function",
+      "name": "schedule_scan",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        648,
+        660
+      ],
+      "summary": "实现 schedule_scan 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:connect_task",
+      "type": "function",
+      "name": "connect_task",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        670,
+        752
+      ],
+      "summary": "实现 connect_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:schedule_connect",
+      "type": "function",
+      "name": "schedule_connect",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        754,
+        777
+      ],
+      "summary": "实现 schedule_connect 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:rebuild_nearby_list_now",
+      "type": "function",
+      "name": "rebuild_nearby_list_now",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        798,
+        865
+      ],
+      "summary": "实现 rebuild_nearby_list_now 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:rebuild_saved_list_now",
+      "type": "function",
+      "name": "rebuild_saved_list_now",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        898,
+        983
+      ],
+      "summary": "实现 rebuild_saved_list_now 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:on_kb_event",
+      "type": "function",
+      "name": "on_kb_event",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        992,
+        1004
+      ],
+      "summary": "实现 on_kb_event 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:open_password_popup",
+      "type": "function",
+      "name": "open_password_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1021,
+        1138
+      ],
+      "summary": "实现 open_password_popup 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:close_password_popup",
+      "type": "function",
+      "name": "close_password_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1140,
+        1150
+      ],
+      "summary": "实现 close_password_popup 函数功能。",
+      "tags": [
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:close_status_popup",
+      "type": "function",
+      "name": "close_status_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1161,
+        1173
+      ],
+      "summary": "实现 close_status_popup 函数功能。",
+      "tags": [
+        "cleanup"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:open_connecting_popup",
+      "type": "function",
+      "name": "open_connecting_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1175,
+        1221
+      ],
+      "summary": "实现 open_connecting_popup 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:restart_timer_cb",
+      "type": "function",
+      "name": "restart_timer_cb",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1230,
+        1251
+      ],
+      "summary": "实现 restart_timer_cb 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:show_failure_in_status_popup",
+      "type": "function",
+      "name": "show_failure_in_status_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1264,
+        1319
+      ],
+      "summary": "实现 show_failure_in_status_popup 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:open_success_popup",
+      "type": "function",
+      "name": "open_success_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1321,
+        1373
+      ],
+      "summary": "实现 open_success_popup 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:on_swipe_back",
+      "type": "function",
+      "name": "on_swipe_back",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1382,
+        1400
+      ],
+      "summary": "实现 on_swipe_back 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:on_screen_unloaded",
+      "type": "function",
+      "name": "on_screen_unloaded",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1405,
+        1451
+      ],
+      "summary": "实现 on_screen_unloaded 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:switch_network_task",
+      "type": "function",
+      "name": "switch_network_task",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1456,
+        1465
+      ],
+      "summary": "实现 switch_network_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:open_switch_reboot_popup",
+      "type": "function",
+      "name": "open_switch_reboot_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1467,
+        1520
+      ],
+      "summary": "实现 open_switch_reboot_popup 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:schedule_network_switch",
+      "type": "function",
+      "name": "schedule_network_switch",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1526,
+        1549
+      ],
+      "summary": "实现 schedule_network_switch 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:refresh_network_switch_ui",
+      "type": "function",
+      "name": "refresh_network_switch_ui",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1561,
+        1583
+      ],
+      "summary": "实现 refresh_network_switch_ui 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:refresh_sim_slot_ui",
+      "type": "function",
+      "name": "refresh_sim_slot_ui",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1597,
+        1618
+      ],
+      "summary": "实现 refresh_sim_slot_ui 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:parse_sim_slot_from_ecsimcfg",
+      "type": "function",
+      "name": "parse_sim_slot_from_ecsimcfg",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1640,
+        1661
+      ],
+      "summary": "实现 parse_sim_slot_from_ecsimcfg 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:async_sim_slot_queried",
+      "type": "function",
+      "name": "async_sim_slot_queried",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1668,
+        1678
+      ],
+      "summary": "实现 async_sim_slot_queried 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:sim_slot_query_task",
+      "type": "function",
+      "name": "sim_slot_query_task",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1680,
+        1703
+      ],
+      "summary": "实现 sim_slot_query_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:async_sim_switch_done",
+      "type": "function",
+      "name": "async_sim_switch_done",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1721,
+        1745
+      ],
+      "summary": "实现 async_sim_switch_done 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:sim_switch_task",
+      "type": "function",
+      "name": "sim_switch_task",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1751,
+        1824
+      ],
+      "summary": "实现 sim_switch_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:open_sim_switching_popup",
+      "type": "function",
+      "name": "open_sim_switching_popup",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1827,
+        1875
+      ],
+      "summary": "实现 open_sim_switching_popup 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:schedule_sim_switch",
+      "type": "function",
+      "name": "schedule_sim_switch",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1877,
+        1903
+      ],
+      "summary": "实现 schedule_sim_switch 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:build_header",
+      "type": "function",
+      "name": "build_header",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1916,
+        1951
+      ],
+      "summary": "实现 build_header 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:build_tabview",
+      "type": "function",
+      "name": "build_tabview",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        1953,
+        2324
+      ],
+      "summary": "实现 build_tabview 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/network_screen/network_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        2359,
+        2388
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/network_screen/network_screen.cc:UiState",
+      "type": "class",
+      "name": "UiState",
+      "filePath": "main/display/screen/network_screen/network_screen.cc",
+      "lineRange": [
+        78,
+        114
+      ],
+      "summary": "定义 UiState 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/network_screen/network_screen.h",
+      "type": "file",
+      "name": "network_screen.h",
+      "filePath": "main/display/screen/network_screen/network_screen.h",
+      "summary": "定义 network_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "type": "file",
+      "name": "openclaw_screen.cc",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "summary": "实现 openclaw_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:get_server_base_url",
+      "type": "function",
+      "name": "get_server_base_url",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        198,
+        215
+      ],
+      "summary": "实现 get_server_base_url 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trim_string",
+      "type": "function",
+      "name": "trim_string",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        238,
+        250
+      ],
+      "summary": "实现 trim_string 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:is_valid_server_address",
+      "type": "function",
+      "name": "is_valid_server_address",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        258,
+        286
+      ],
+      "summary": "实现 is_valid_server_address 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:fill_wav_header",
+      "type": "function",
+      "name": "fill_wav_header",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        296,
+        323
+      ],
+      "summary": "实现 fill_wav_header 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:keep_left_channel_only",
+      "type": "function",
+      "name": "keep_left_channel_only",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        326,
+        335
+      ],
+      "summary": "实现 keep_left_channel_only 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:parse_upload_response",
+      "type": "function",
+      "name": "parse_upload_response",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        345,
+        390
+      ],
+      "summary": "实现 parse_upload_response 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:add_bubble",
+      "type": "function",
+      "name": "add_bubble",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        425,
+        476
+      ],
+      "summary": "实现 add_bubble 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:post_upload_bubbles_from_worker",
+      "type": "function",
+      "name": "post_upload_bubbles_from_worker",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        503,
+        512
+      ],
+      "summary": "实现 post_upload_bubbles_from_worker 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:http_get_json",
+      "type": "function",
+      "name": "http_get_json",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        534,
+        566
+      ],
+      "summary": "实现 http_get_json 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:parse_conversation_json",
+      "type": "function",
+      "name": "parse_conversation_json",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        568,
+        610
+      ],
+      "summary": "实现 parse_conversation_json 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:fetch_history_task",
+      "type": "function",
+      "name": "fetch_history_task",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        620,
+        673
+      ],
+      "summary": "实现 fetch_history_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trigger_fetch_history",
+      "type": "function",
+      "name": "trigger_fetch_history",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        675,
+        708
+      ],
+      "summary": "实现 trigger_fetch_history 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:http_post_clear_all",
+      "type": "function",
+      "name": "http_post_clear_all",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        722,
+        776
+      ],
+      "summary": "实现 http_post_clear_all 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:clear_all_task",
+      "type": "function",
+      "name": "clear_all_task",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        778,
+        810
+      ],
+      "summary": "实现 clear_all_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trigger_clear_all",
+      "type": "function",
+      "name": "trigger_clear_all",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        812,
+        836
+      ],
+      "summary": "实现 trigger_clear_all 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:update_button_ui_locked",
+      "type": "function",
+      "name": "update_button_ui_locked",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        846,
+        873
+      ],
+      "summary": "实现 update_button_ui_locked 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:tick_timer_cb",
+      "type": "function",
+      "name": "tick_timer_cb",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        877,
+        888
+      ],
+      "summary": "实现 tick_timer_cb 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:upload_wav",
+      "type": "function",
+      "name": "upload_wav",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        894,
+        929
+      ],
+      "summary": "实现 upload_wav 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:record_and_upload_task",
+      "type": "function",
+      "name": "record_and_upload_task",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        943,
+        1072
+      ],
+      "summary": "实现 record_and_upload_task 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_record_pressed",
+      "type": "function",
+      "name": "on_record_pressed",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1077,
+        1123
+      ],
+      "summary": "实现 on_record_pressed 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:open_clear_confirm_dialog",
+      "type": "function",
+      "name": "open_clear_confirm_dialog",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1171,
+        1255
+      ],
+      "summary": "实现 open_clear_confirm_dialog 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_header_btn",
+      "type": "function",
+      "name": "style_header_btn",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1263,
+        1273
+      ],
+      "summary": "实现 style_header_btn 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_ip_textarea",
+      "type": "function",
+      "name": "style_ip_textarea",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1275,
+        1289
+      ],
+      "summary": "实现 style_ip_textarea 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_dark_keyboard",
+      "type": "function",
+      "name": "style_dark_keyboard",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1291,
+        1303
+      ],
+      "summary": "实现 style_dark_keyboard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_ip_ta_focused",
+      "type": "function",
+      "name": "on_ip_ta_focused",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1312,
+        1321
+      ],
+      "summary": "实现 on_ip_ta_focused 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_ip_save_clicked",
+      "type": "function",
+      "name": "on_ip_save_clicked",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1330,
+        1358
+      ],
+      "summary": "实现 on_ip_save_clicked 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:open_ip_dialog",
+      "type": "function",
+      "name": "open_ip_dialog",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1373,
+        1499
+      ],
+      "summary": "实现 open_ip_dialog 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_swipe_back",
+      "type": "function",
+      "name": "on_swipe_back",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1501,
+        1518
+      ],
+      "summary": "实现 on_swipe_back 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_screen_unloaded",
+      "type": "function",
+      "name": "on_screen_unloaded",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1520,
+        1540
+      ],
+      "summary": "实现 on_screen_unloaded 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_header",
+      "type": "function",
+      "name": "build_header",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1545,
+        1625
+      ],
+      "summary": "实现 build_header 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_message_list",
+      "type": "function",
+      "name": "build_message_list",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1627,
+        1656
+      ],
+      "summary": "实现 build_message_list 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_footer",
+      "type": "function",
+      "name": "build_footer",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1658,
+        1707
+      ],
+      "summary": "实现 build_footer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "lineRange": [
+        1758,
+        1770
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/openclaw_screen/openclaw_screen.h",
+      "type": "file",
+      "name": "openclaw_screen.h",
+      "filePath": "main/display/screen/openclaw_screen/openclaw_screen.h",
+      "summary": "定义 openclaw_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "type": "file",
+      "name": "pin_test_screen.cc",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "summary": "实现 pin_test_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:ApplyPinDir",
+      "type": "function",
+      "name": "ApplyPinDir",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        114,
+        132
+      ],
+      "summary": "实现 ApplyPinDir 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshDirButtons",
+      "type": "function",
+      "name": "RefreshDirButtons",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        150,
+        164
+      ],
+      "summary": "实现 RefreshDirButtons 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshCtrl",
+      "type": "function",
+      "name": "RefreshCtrl",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        166,
+        206
+      ],
+      "summary": "实现 RefreshCtrl 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshInputDisplay",
+      "type": "function",
+      "name": "RefreshInputDisplay",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        208,
+        220
+      ],
+      "summary": "实现 RefreshInputDisplay 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnCycleTimer",
+      "type": "function",
+      "name": "OnCycleTimer",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        234,
+        256
+      ],
+      "summary": "实现 OnCycleTimer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:StopCycle",
+      "type": "function",
+      "name": "StopCycle",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        258,
+        272
+      ],
+      "summary": "实现 StopCycle 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:StartCycle",
+      "type": "function",
+      "name": "StartCycle",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        274,
+        298
+      ],
+      "summary": "实现 StartCycle 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnDirButtonClicked",
+      "type": "function",
+      "name": "OnDirButtonClicked",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        303,
+        327
+      ],
+      "summary": "实现 OnDirButtonClicked 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnOutSwitchChanged",
+      "type": "function",
+      "name": "OnOutSwitchChanged",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        329,
+        347
+      ],
+      "summary": "实现 OnOutSwitchChanged 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        489,
+        500
+      ],
+      "summary": "实现 OnSwipeBack 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnScreenUnloaded",
+      "type": "function",
+      "name": "OnScreenUnloaded",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        504,
+        521
+      ],
+      "summary": "实现 OnScreenUnloaded 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "lineRange": [
+        653,
+        670
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/Kconfig.projbuild",
+      "type": "file",
+      "name": "Kconfig.projbuild",
+      "filePath": "main/Kconfig.projbuild",
+      "summary": "ESP-IDF 项目级 Kconfig 配置，定义项目的编译选项和功能开关。",
+      "tags": [
+        "build-system",
+        "configuration",
+        "utility"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "file:main/display/screen/music_screen/music_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:sync_album_eaf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:sync_album_eaf",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:start_opa_anim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:start_opa_anim",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:push_lyric_line",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:push_lyric_line",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:async_set_play_icon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:async_set_play_icon",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:extract_quoted_value",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:extract_quoted_value",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:handle_json_line",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:handle_json_line",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:handle_play_state_line",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:handle_play_state_line",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:handle_line",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:handle_line",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:on_uart_data",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:on_uart_data",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:switch_to_mode3_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:switch_to_mode3_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:switch_to_mode1_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:switch_to_mode1_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:OnPlayClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:OnPlayClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildBackButton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildBackButton",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildUsageHint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildUsageHint",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildSongTitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildSongTitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildAlbum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildAlbum",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildLyric",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildLyric",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildControls",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:BuildControls",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/music_screen/music_screen.cc",
+      "target": "function:main/display/screen/music_screen/music_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "file:main/display/screen/network_screen/network_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_set_scan_btn_enabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_set_scan_btn_enabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_set_nearby_spinner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_set_nearby_spinner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:wifi_evt_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:wifi_evt_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:wifi_init_for_screen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:wifi_init_for_screen",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:wifi_teardown_for_screen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:wifi_teardown_for_screen",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:scan_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:scan_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_scan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_scan",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:connect_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:connect_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_connect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_connect",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:rebuild_nearby_list_now",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:rebuild_nearby_list_now",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:rebuild_saved_list_now",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:rebuild_saved_list_now",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:on_kb_event",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:on_kb_event",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_password_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_password_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:close_password_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:close_password_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:close_status_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:close_status_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_connecting_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_connecting_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:restart_timer_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:restart_timer_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:show_failure_in_status_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:show_failure_in_status_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_success_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_success_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:on_swipe_back",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:on_swipe_back",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:on_screen_unloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:on_screen_unloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:switch_network_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:switch_network_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_switch_reboot_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_switch_reboot_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_network_switch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_network_switch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:refresh_network_switch_ui",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:refresh_network_switch_ui",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:refresh_sim_slot_ui",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:refresh_sim_slot_ui",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:parse_sim_slot_from_ecsimcfg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:parse_sim_slot_from_ecsimcfg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_sim_slot_queried",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_sim_slot_queried",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:sim_slot_query_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:sim_slot_query_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_sim_switch_done",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:async_sim_switch_done",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:sim_switch_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:sim_switch_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_sim_switching_popup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:open_sim_switching_popup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_sim_switch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:schedule_sim_switch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:build_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:build_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:build_tabview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:build_tabview",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "function:main/display/screen/network_screen/network_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "class:main/display/screen/network_screen/network_screen.cc:UiState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/network_screen/network_screen.cc",
+      "target": "class:main/display/screen/network_screen/network_screen.cc:UiState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "file:main/display/screen/openclaw_screen/openclaw_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:get_server_base_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:get_server_base_url",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trim_string",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trim_string",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:is_valid_server_address",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:is_valid_server_address",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:fill_wav_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:fill_wav_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:keep_left_channel_only",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:keep_left_channel_only",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:parse_upload_response",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:parse_upload_response",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:add_bubble",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:add_bubble",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:post_upload_bubbles_from_worker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:post_upload_bubbles_from_worker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:http_get_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:http_get_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:parse_conversation_json",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:parse_conversation_json",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:fetch_history_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:fetch_history_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trigger_fetch_history",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trigger_fetch_history",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:http_post_clear_all",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:http_post_clear_all",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:clear_all_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:clear_all_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trigger_clear_all",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:trigger_clear_all",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:update_button_ui_locked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:update_button_ui_locked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:tick_timer_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:tick_timer_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:upload_wav",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:upload_wav",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:record_and_upload_task",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:record_and_upload_task",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_record_pressed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_record_pressed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:open_clear_confirm_dialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:open_clear_confirm_dialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_header_btn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_header_btn",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_ip_textarea",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_ip_textarea",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_dark_keyboard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:style_dark_keyboard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_ip_ta_focused",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_ip_ta_focused",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_ip_save_clicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_ip_save_clicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:open_ip_dialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:open_ip_dialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_swipe_back",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_swipe_back",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_screen_unloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:on_screen_unloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_header",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_header",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_message_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_message_list",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_footer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:build_footer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/openclaw_screen/openclaw_screen.cc",
+      "target": "function:main/display/screen/openclaw_screen/openclaw_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "file:main/display/screen/pin_test_screen/pin_test_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:ApplyPinDir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:ApplyPinDir",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshDirButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshDirButtons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshCtrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshCtrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshInputDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:RefreshInputDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnCycleTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnCycleTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:StopCycle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:StopCycle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:StartCycle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:StartCycle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnDirButtonClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnDirButtonClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnOutSwitchChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnOutSwitchChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnScreenUnloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:OnScreenUnloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/pin_test_screen/pin_test_screen.cc",
+      "target": "function:main/display/screen/pin_test_screen/pin_test_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

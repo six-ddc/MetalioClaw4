@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "config:CMakeLists.txt",
+      "type": "config",
+      "name": "CMakeLists.txt",
+      "filePath": "CMakeLists.txt",
+      "summary": "顶层CMake项目配置文件，定义ESP-IDF项目的构建结构和源文件目录。",
+      "tags": [
+        "build-system",
+        "cmake",
+        "project-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.en.md",
+      "type": "document",
+      "name": "README.en.md",
+      "filePath": "README.en.md",
+      "summary": "项目英文自述文件，为国际开发者提供项目介绍和入门指南。",
+      "tags": [
+        "documentation",
+        "project-overview",
+        "english"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "项目中文概览文档，介绍小智AI语音交互项目、快速开始指南和硬件支持列表。",
+      "tags": [
+        "documentation",
+        "project-overview",
+        "entry-point",
+        "chinese"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README_ja.md",
+      "type": "document",
+      "name": "README_ja.md",
+      "filePath": "README_ja.md",
+      "summary": "项目日文自述文件，面向日语开发者的项目介绍和入门文档。",
+      "tags": [
+        "documentation",
+        "project-overview",
+        "japanese"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README_zh.md",
+      "type": "document",
+      "name": "README_zh.md",
+      "filePath": "README_zh.md",
+      "summary": "项目中文自述文件，介绍项目特性、支持的开发板和快速入门步骤。",
+      "tags": [
+        "documentation",
+        "project-overview",
+        "entry-point",
+        "chinese"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,913 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/screen/gps_screen/gps_screen.h",
+      "type": "file",
+      "name": "gps_screen.h",
+      "filePath": "main/display/screen/gps_screen/gps_screen.h",
+      "summary": "定义 gps_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/level_screen/level_screen.cc",
+      "type": "file",
+      "name": "level_screen.cc",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "summary": "实现 level_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:Probe",
+      "type": "function",
+      "name": "Probe",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        93,
+        106
+      ],
+      "summary": "实现 Probe 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:ReadAccelMg",
+      "type": "function",
+      "name": "ReadAccelMg",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        116,
+        127
+      ],
+      "summary": "实现 ReadAccelMg 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:EnsureSensorInited",
+      "type": "function",
+      "name": "EnsureSensorInited",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        175,
+        200
+      ],
+      "summary": "实现 EnsureSensorInited 函数功能。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:ReadCorrectedAccel",
+      "type": "function",
+      "name": "ReadCorrectedAccel",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        262,
+        282
+      ],
+      "summary": "实现 ReadCorrectedAccel 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:UpdateUiFromAccel",
+      "type": "function",
+      "name": "UpdateUiFromAccel",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        287,
+        363
+      ],
+      "summary": "实现 UpdateUiFromAccel 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:OnSampleTick",
+      "type": "function",
+      "name": "OnSampleTick",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        374,
+        414
+      ],
+      "summary": "实现 OnSampleTick 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:DismissCalibrationDialog",
+      "type": "function",
+      "name": "DismissCalibrationDialog",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        434,
+        451
+      ],
+      "summary": "实现 DismissCalibrationDialog 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:OnDialogOkClicked",
+      "type": "function",
+      "name": "OnDialogOkClicked",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        453,
+        476
+      ],
+      "summary": "实现 OnDialogOkClicked 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:ShowCalibrationDialog",
+      "type": "function",
+      "name": "ShowCalibrationDialog",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        483,
+        566
+      ],
+      "summary": "实现 ShowCalibrationDialog 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        586,
+        597
+      ],
+      "summary": "实现 OnSwipeBack 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:OnScreenUnloaded",
+      "type": "function",
+      "name": "OnScreenUnloaded",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        601,
+        613
+      ],
+      "summary": "实现 OnScreenUnloaded 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:BuildHeader",
+      "type": "function",
+      "name": "BuildHeader",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        618,
+        666
+      ],
+      "summary": "实现 BuildHeader 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:BuildLevelGraphic",
+      "type": "function",
+      "name": "BuildLevelGraphic",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        668,
+        748
+      ],
+      "summary": "实现 BuildLevelGraphic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:BuildFooter",
+      "type": "function",
+      "name": "BuildFooter",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        750,
+        817
+      ],
+      "summary": "实现 BuildFooter 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/level_screen/level_screen.cc:LifecycleCallback",
+      "type": "function",
+      "name": "LifecycleCallback",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        853,
+        863
+      ],
+      "summary": "实现 LifecycleCallback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/level_screen/level_screen.cc:Sc7a20h",
+      "type": "class",
+      "name": "Sc7a20h",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        89,
+        133
+      ],
+      "summary": "定义 Sc7a20h 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/level_screen/level_screen.cc:UiState",
+      "type": "class",
+      "name": "UiState",
+      "filePath": "main/display/screen/level_screen/level_screen.cc",
+      "lineRange": [
+        205,
+        234
+      ],
+      "summary": "定义 UiState 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/screen/level_screen/level_screen.h",
+      "type": "file",
+      "name": "level_screen.h",
+      "filePath": "main/display/screen/level_screen/level_screen.h",
+      "summary": "定义 level_screen 显示相关的接口或数据结构声明。",
+      "tags": [
+        "display",
+        "driver-interface",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "type": "file",
+      "name": "magnet_screen.cc",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "summary": "实现 magnet_screen 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:Probe",
+      "type": "function",
+      "name": "Probe",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        71,
+        80
+      ],
+      "summary": "实现 Probe 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:Configure",
+      "type": "function",
+      "name": "Configure",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        83,
+        98
+      ],
+      "summary": "实现 Configure 函数功能。",
+      "tags": [
+        "configuration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:ReadMagRaw",
+      "type": "function",
+      "name": "ReadMagRaw",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        102,
+        114
+      ],
+      "summary": "实现 ReadMagRaw 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:EnsureSensorInited",
+      "type": "function",
+      "name": "EnsureSensorInited",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        187,
+        204
+      ],
+      "summary": "实现 EnsureSensorInited 函数功能。",
+      "tags": [
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:UpdateAxisRow",
+      "type": "function",
+      "name": "UpdateAxisRow",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        220,
+        238
+      ],
+      "summary": "实现 UpdateAxisRow 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:UpdateUi",
+      "type": "function",
+      "name": "UpdateUi",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        240,
+        282
+      ],
+      "summary": "实现 UpdateUi 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:OnSampleTick",
+      "type": "function",
+      "name": "OnSampleTick",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        287,
+        306
+      ],
+      "summary": "实现 OnSampleTick 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:OnSwipeBack",
+      "type": "function",
+      "name": "OnSwipeBack",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        311,
+        322
+      ],
+      "summary": "实现 OnSwipeBack 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildHeader",
+      "type": "function",
+      "name": "BuildHeader",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        338,
+        385
+      ],
+      "summary": "实现 BuildHeader 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildAxisCard",
+      "type": "function",
+      "name": "BuildAxisCard",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        387,
+        444
+      ],
+      "summary": "实现 BuildAxisCard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildSummary",
+      "type": "function",
+      "name": "BuildSummary",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        446,
+        466
+      ],
+      "summary": "实现 BuildSummary 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/screen/magnet_screen/magnet_screen.cc:Qmc6309",
+      "type": "class",
+      "name": "Qmc6309",
+      "filePath": "main/display/screen/magnet_screen/magnet_screen.cc",
+      "lineRange": [
+        67,
+        129
+      ],
+      "summary": "定义 Qmc6309 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "file:main/display/screen/level_screen/level_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:Probe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:Probe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:ReadAccelMg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:ReadAccelMg",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:EnsureSensorInited",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:EnsureSensorInited",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:ReadCorrectedAccel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:ReadCorrectedAccel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:UpdateUiFromAccel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:UpdateUiFromAccel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnSampleTick",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnSampleTick",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:DismissCalibrationDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:DismissCalibrationDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnDialogOkClicked",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnDialogOkClicked",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:ShowCalibrationDialog",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:ShowCalibrationDialog",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnScreenUnloaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:OnScreenUnloaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:BuildHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:BuildHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:BuildLevelGraphic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:BuildLevelGraphic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:BuildFooter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:BuildFooter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:LifecycleCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "function:main/display/screen/level_screen/level_screen.cc:LifecycleCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "class:main/display/screen/level_screen/level_screen.cc:Sc7a20h",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "class:main/display/screen/level_screen/level_screen.cc:Sc7a20h",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "class:main/display/screen/level_screen/level_screen.cc:UiState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/level_screen/level_screen.cc",
+      "target": "class:main/display/screen/level_screen/level_screen.cc:UiState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "file:main/display/screen/magnet_screen/magnet_screen.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:Probe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:Probe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:Configure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:Configure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:ReadMagRaw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:ReadMagRaw",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:EnsureSensorInited",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:EnsureSensorInited",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:UpdateAxisRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:UpdateAxisRow",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:UpdateUi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:UpdateUi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:OnSampleTick",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:OnSampleTick",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:OnSwipeBack",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:OnSwipeBack",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildHeader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildHeader",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildAxisCard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildAxisCard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "function:main/display/screen/magnet_screen/magnet_screen.cc:BuildSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "class:main/display/screen/magnet_screen/magnet_screen.cc:Qmc6309",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/screen/magnet_screen/magnet_screen.cc",
+      "target": "class:main/display/screen/magnet_screen/magnet_screen.cc:Qmc6309",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

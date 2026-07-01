@@ -1,0 +1,565 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/common/gps_service.h",
+      "type": "file",
+      "name": "gps_service.h",
+      "filePath": "main/boards/common/gps_service.h",
+      "summary": "定义 gps_service 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/gps_service.h:GpsService",
+      "type": "class",
+      "name": "GpsService",
+      "filePath": "main/boards/common/gps_service.h",
+      "lineRange": [
+        30,
+        117
+      ],
+      "summary": "定义 GpsService 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/i2c_device.cc",
+      "type": "file",
+      "name": "i2c_device.cc",
+      "filePath": "main/boards/common/i2c_device.cc",
+      "summary": "实现 i2c_device 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/i2c_device.cc:I2cDevice",
+      "type": "function",
+      "name": "I2cDevice",
+      "filePath": "main/boards/common/i2c_device.cc",
+      "lineRange": [
+        8,
+        20
+      ],
+      "summary": "实现 I2cDevice 函数功能。",
+      "tags": [
+        "hardware-io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/i2c_device.h",
+      "type": "file",
+      "name": "i2c_device.h",
+      "filePath": "main/boards/common/i2c_device.h",
+      "summary": "定义 i2c_device 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/knob.cc",
+      "type": "file",
+      "name": "knob.cc",
+      "filePath": "main/boards/common/knob.cc",
+      "summary": "实现 knob 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/knob.cc:Knob",
+      "type": "function",
+      "name": "Knob",
+      "filePath": "main/boards/common/knob.cc",
+      "lineRange": [
+        5,
+        32
+      ],
+      "summary": "实现 Knob 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/knob.h",
+      "type": "file",
+      "name": "knob.h",
+      "filePath": "main/boards/common/knob.h",
+      "summary": "定义 knob 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/lamp_controller.h",
+      "type": "file",
+      "name": "lamp_controller.h",
+      "filePath": "main/boards/common/lamp_controller.h",
+      "summary": "定义 lamp_controller 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/ml307_board.cc",
+      "type": "file",
+      "name": "ml307_board.cc",
+      "filePath": "main/boards/common/ml307_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/ml307_board.cc:StartNetwork",
+      "type": "function",
+      "name": "StartNetwork",
+      "filePath": "main/boards/common/ml307_board.cc",
+      "lineRange": [
+        21,
+        69
+      ],
+      "summary": "实现 StartNetwork 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/ml307_board.cc:GetBoardJson",
+      "type": "function",
+      "name": "GetBoardJson",
+      "filePath": "main/boards/common/ml307_board.cc",
+      "lineRange": [
+        96,
+        107
+      ],
+      "summary": "实现 GetBoardJson 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/ml307_board.cc:GetDeviceStatusJson",
+      "type": "function",
+      "name": "GetDeviceStatusJson",
+      "filePath": "main/boards/common/ml307_board.cc",
+      "lineRange": [
+        113,
+        197
+      ],
+      "summary": "实现 GetDeviceStatusJson 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/ml307_board.h",
+      "type": "file",
+      "name": "ml307_board.h",
+      "filePath": "main/boards/common/ml307_board.h",
+      "summary": "定义 Board 抽象基类，声明所有开发板必须实现的硬件接口（音频、显示、电源、按键等）。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/power_save_timer.cc",
+      "type": "file",
+      "name": "power_save_timer.cc",
+      "filePath": "main/boards/common/power_save_timer.cc",
+      "summary": "实现 power_save_timer 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/power_save_timer.cc:PowerSaveTimer",
+      "type": "function",
+      "name": "PowerSaveTimer",
+      "filePath": "main/boards/common/power_save_timer.cc",
+      "lineRange": [
+        10,
+        23
+      ],
+      "summary": "实现 PowerSaveTimer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/power_save_timer.cc:SetEnabled",
+      "type": "function",
+      "name": "SetEnabled",
+      "filePath": "main/boards/common/power_save_timer.cc",
+      "lineRange": [
+        30,
+        48
+      ],
+      "summary": "实现 SetEnabled 函数功能。",
+      "tags": [
+        "setter",
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/power_save_timer.cc:PowerSaveCheck",
+      "type": "function",
+      "name": "PowerSaveCheck",
+      "filePath": "main/boards/common/power_save_timer.cc",
+      "lineRange": [
+        62,
+        104
+      ],
+      "summary": "实现 PowerSaveCheck 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/power_save_timer.cc:WakeUp",
+      "type": "function",
+      "name": "WakeUp",
+      "filePath": "main/boards/common/power_save_timer.cc",
+      "lineRange": [
+        106,
+        132
+      ],
+      "summary": "实现 WakeUp 函数功能。",
+      "tags": [
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/power_save_timer.h",
+      "type": "file",
+      "name": "power_save_timer.h",
+      "filePath": "main/boards/common/power_save_timer.h",
+      "summary": "定义 power_save_timer 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/power_save_timer.h:PowerSaveTimer",
+      "type": "class",
+      "name": "PowerSaveTimer",
+      "filePath": "main/boards/common/power_save_timer.h",
+      "lineRange": [
+        8,
+        34
+      ],
+      "summary": "定义 PowerSaveTimer 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/press_to_talk_mcp_tool.cc",
+      "type": "file",
+      "name": "press_to_talk_mcp_tool.cc",
+      "filePath": "main/boards/common/press_to_talk_mcp_tool.cc",
+      "summary": "实现 press_to_talk_mcp_tool 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/press_to_talk_mcp_tool.cc:Initialize",
+      "type": "function",
+      "name": "Initialize",
+      "filePath": "main/boards/common/press_to_talk_mcp_tool.cc",
+      "lineRange": [
+        10,
+        29
+      ],
+      "summary": "实现 Initialize 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/press_to_talk_mcp_tool.cc:HandleSetPressToTalk",
+      "type": "function",
+      "name": "HandleSetPressToTalk",
+      "filePath": "main/boards/common/press_to_talk_mcp_tool.cc",
+      "lineRange": [
+        35,
+        49
+      ],
+      "summary": "实现 HandleSetPressToTalk 函数功能。",
+      "tags": [
+        "event-handler",
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/press_to_talk_mcp_tool.h",
+      "type": "file",
+      "name": "press_to_talk_mcp_tool.h",
+      "filePath": "main/boards/common/press_to_talk_mcp_tool.h",
+      "summary": "定义 press_to_talk_mcp_tool 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/common/gps_service.h",
+      "target": "class:main/boards/common/gps_service.h:GpsService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.h",
+      "target": "class:main/boards/common/gps_service.h:GpsService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/i2c_device.cc",
+      "target": "file:main/boards/common/i2c_device.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/i2c_device.cc",
+      "target": "function:main/boards/common/i2c_device.cc:I2cDevice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/i2c_device.cc",
+      "target": "function:main/boards/common/i2c_device.cc:I2cDevice",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/knob.cc",
+      "target": "file:main/boards/common/knob.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/knob.cc",
+      "target": "function:main/boards/common/knob.cc:Knob",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/knob.cc",
+      "target": "function:main/boards/common/knob.cc:Knob",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "file:main/boards/common/ml307_board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "function:main/boards/common/ml307_board.cc:StartNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "function:main/boards/common/ml307_board.cc:StartNetwork",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "function:main/boards/common/ml307_board.cc:GetBoardJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "function:main/boards/common/ml307_board.cc:GetBoardJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "function:main/boards/common/ml307_board.cc:GetDeviceStatusJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/ml307_board.cc",
+      "target": "function:main/boards/common/ml307_board.cc:GetDeviceStatusJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "file:main/boards/common/power_save_timer.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:PowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:PowerSaveTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:SetEnabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:SetEnabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:PowerSaveCheck",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:PowerSaveCheck",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:WakeUp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.cc",
+      "target": "function:main/boards/common/power_save_timer.cc:WakeUp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.h",
+      "target": "class:main/boards/common/power_save_timer.h:PowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/power_save_timer.h",
+      "target": "class:main/boards/common/power_save_timer.h:PowerSaveTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/press_to_talk_mcp_tool.cc",
+      "target": "file:main/boards/common/press_to_talk_mcp_tool.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/press_to_talk_mcp_tool.cc",
+      "target": "function:main/boards/common/press_to_talk_mcp_tool.cc:Initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/press_to_talk_mcp_tool.cc",
+      "target": "function:main/boards/common/press_to_talk_mcp_tool.cc:Initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/press_to_talk_mcp_tool.cc",
+      "target": "function:main/boards/common/press_to_talk_mcp_tool.cc:HandleSetPressToTalk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/press_to_talk_mcp_tool.cc",
+      "target": "function:main/boards/common/press_to_talk_mcp_tool.cc:HandleSetPressToTalk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

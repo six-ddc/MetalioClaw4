@@ -1,0 +1,825 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/config.h",
+      "summary": "lilygo-t-display-s3-pro-mvsrlora 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板",
+        "触摸"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "type": "file",
+      "name": "lilygo-t-display-s3-pro-mvsrlora.cc",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "summary": "lilygo-t-display-s3-pro-mvsrlora 开发板的主板实现，包含Cst2xxse类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "type": "function",
+      "name": "Cst2xxse",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        27,
+        31
+      ],
+      "summary": "Cst2xxse 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:~Cst2xxse",
+      "type": "function",
+      "name": "~Cst2xxse",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        33,
+        35
+      ],
+      "summary": "~Cst2xxse 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:UpdateTouchPoint",
+      "type": "function",
+      "name": "UpdateTouchPoint",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        37,
+        43
+      ],
+      "summary": "UpdateTouchPoint 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "type": "function",
+      "name": "Sy6970",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        57,
+        68
+      ],
+      "summary": "Sy6970 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        80,
+        91
+      ],
+      "summary": "初始化省电定时器，配置休眠/唤醒周期、GPIO保持和休眠事件回调。",
+      "tags": [
+        "省电定时器",
+        "休眠",
+        "初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitI2c",
+      "type": "function",
+      "name": "InitI2c",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        93,
+        108
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        110,
+        129
+      ],
+      "summary": "I2cDetect 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:touchpad_daemon",
+      "type": "function",
+      "name": "touchpad_daemon",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        131,
+        152
+      ],
+      "summary": "touchpad_daemon 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitSpi",
+      "type": "function",
+      "name": "InitSpi",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        165,
+        174
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitSt7796Display",
+      "type": "function",
+      "name": "InitSt7796Display",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        176,
+        222
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        224,
+        233
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "type": "function",
+      "name": "LilygoTDisplays3ProMVSRLoraBoard",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        236,
+        246
+      ],
+      "summary": "LilygoTDisplays3ProMVSRLoraBoard 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        266,
+        271
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "type": "class",
+      "name": "Cst2xxse",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        19,
+        52
+      ],
+      "summary": "Cst2xxse 类，包含3个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "type": "class",
+      "name": "Sy6970",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        54,
+        69
+      ],
+      "summary": "Sy6970 类，包含1个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "type": "class",
+      "name": "LilygoTDisplays3ProMVSRLoraBoard",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "lineRange": [
+        71,
+        281
+      ],
+      "summary": "LilygoTDisplays3ProMVSRLoraBoard 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "type": "file",
+      "name": "tdisplays3promvsrlora_audio_codec.cc",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "summary": "lilygo-t-display-s3-pro-mvsrlora 开发板的音频编解码器实现，包含I2S配置、采样率设置、音量控制及音频输入输出通道管理。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频驱动"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Tdisplays3promvsrloraAudioCodec",
+      "type": "function",
+      "name": "Tdisplays3promvsrloraAudioCodec",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        12,
+        49
+      ],
+      "summary": "Tdisplays3promvsrloraAudioCodec 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:~Tdisplays3promvsrloraAudioCodec",
+      "type": "function",
+      "name": "~Tdisplays3promvsrloraAudioCodec",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        51,
+        58
+      ],
+      "summary": "~Tdisplays3promvsrloraAudioCodec 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:CreateVoiceHardware",
+      "type": "function",
+      "name": "CreateVoiceHardware",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        60,
+        111
+      ],
+      "summary": "CreateVoiceHardware 函数的完整实现，包含52行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:SetOutputVolume",
+      "type": "function",
+      "name": "SetOutputVolume",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        113,
+        116
+      ],
+      "summary": "设置音频播放音量，调整编解码器增益参数。",
+      "tags": [
+        "音量",
+        "音频控制",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        118,
+        121
+      ],
+      "summary": "EnableInput 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        123,
+        126
+      ],
+      "summary": "EnableOutput 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        128,
+        137
+      ],
+      "summary": "Read 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "lineRange": [
+        139,
+        150
+      ],
+      "summary": "Write 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.h",
+      "type": "file",
+      "name": "tdisplays3promvsrlora_audio_codec.h",
+      "filePath": "main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.h",
+      "summary": "lilygo-t-display-s3-pro-mvsrlora 开发板的音频编解码器配置头文件，定义音频参数结构体和编解码器类接口。",
+      "tags": [
+        "音频编解码",
+        "I2S",
+        "音频配置"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:~Cst2xxse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:UpdateTouchPoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:touchpad_daemon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitSt7796Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:~Cst2xxse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:UpdateTouchPoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:touchpad_daemon",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitSt7796Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Cst2xxse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:Sy6970",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:UpdateTouchPoint",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:~Cst2xxse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:LilygoTDisplays3ProMVSRLoraBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/lilygo-t-display-s3-pro-mvsrlora.cc",
+      "target": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Tdisplays3promvsrloraAudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:~Tdisplays3promvsrloraAudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:CreateVoiceHardware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:SetOutputVolume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:CreateVoiceHardware",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:SetOutputVolume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Tdisplays3promvsrloraAudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "function:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc:~Tdisplays3promvsrloraAudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.cc",
+      "target": "file:main/boards/lilygo-t-display-s3-pro-mvsrlora/tdisplays3promvsrlora_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/echoear/EchoEar.cc",
+      "type": "file",
+      "name": "EchoEar.cc",
+      "filePath": "main/boards/echoear/EchoEar.cc",
+      "summary": "echoear 开发板的主驱动文件，负责硬件初始化、按键处理、显示屏配置和音频控制。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/boards/echoear/EchoEar.cc:Charge",
+      "type": "class",
+      "name": "Charge",
+      "filePath": "main/boards/echoear/EchoEar.cc",
+      "lineRange": [
+        225,
+        259
+      ],
+      "summary": "电池充电管理芯片驱动类，监控充电状态和电池温度。",
+      "tags": [
+        "power-management",
+        "battery",
+        "charger-driver"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/echoear/EchoEar.cc:Cst816s",
+      "type": "class",
+      "name": "Cst816s",
+      "filePath": "main/boards/echoear/EchoEar.cc",
+      "lineRange": [
+        261,
+        381
+      ],
+      "summary": "CST816S触摸屏控制器驱动类，处理I2C通信、触摸事件检测和手势识别。",
+      "tags": [
+        "touch-controller",
+        "i2c",
+        "driver"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/echoear/EchoEar.cc:EspS3Cat",
+      "type": "class",
+      "name": "EspS3Cat",
+      "filePath": "main/boards/echoear/EchoEar.cc",
+      "lineRange": [
+        383,
+        631
+      ],
+      "summary": "开发板主类（EspS3Cat），封装硬件初始化、外设控制和系统事件处理。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/echoear/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/echoear/config.h",
+      "summary": "echoear 开发板的硬件引脚定义与编译配置头文件。",
+      "tags": [
+        "configuration",
+        "pin-definition",
+        "hardware-config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/echoear/touch.h",
+      "type": "file",
+      "name": "touch.h",
+      "filePath": "main/boards/echoear/touch.h",
+      "summary": "echoear 开发板的触摸屏控制器驱动，处理 CST816S 触摸芯片的 I2C 通信和事件检测。",
+      "tags": [
+        "touch-controller",
+        "i2c",
+        "input-handler"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "class:main/boards/echoear/EchoEar.cc:Charge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "class:main/boards/echoear/EchoEar.cc:Charge",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "class:main/boards/echoear/EchoEar.cc:Cst816s",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "class:main/boards/echoear/EchoEar.cc:Cst816s",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "class:main/boards/echoear/EchoEar.cc:EspS3Cat",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "class:main/boards/echoear/EchoEar.cc:EspS3Cat",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "file:main/boards/echoear/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/echoear/EchoEar.cc",
+      "target": "file:main/boards/echoear/touch.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

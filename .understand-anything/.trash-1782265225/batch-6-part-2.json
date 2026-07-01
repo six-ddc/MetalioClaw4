@@ -1,0 +1,792 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "type": "file",
+      "name": "lvgl_gif.cc",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "summary": "LVGL GIF动画组件实现，将gifdec解码器集成到LVGL框架中，支持GIF动画播放与控制，共15个函数。",
+      "tags": [
+        "display",
+        "lvgl",
+        "gif-animation",
+        "lvgl-gui",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:LvglGif",
+      "type": "function",
+      "name": "LvglGif",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        7,
+        38
+      ],
+      "summary": "函数LvglGif，处理img_dsc逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:~LvglGif",
+      "type": "function",
+      "name": "~LvglGif",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        41,
+        43
+      ],
+      "summary": "函数~LvglGif，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        54,
+        78
+      ],
+      "summary": "启动函数，开始运行服务或任务。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Pause",
+      "type": "function",
+      "name": "Pause",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        80,
+        86
+      ],
+      "summary": "函数Pause，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Resume",
+      "type": "function",
+      "name": "Resume",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        88,
+        99
+      ],
+      "summary": "函数Resume，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Stop",
+      "type": "function",
+      "name": "Stop",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        101,
+        112
+      ],
+      "summary": "停止函数，终止操作。",
+      "tags": [
+        "media-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:IsPlaying",
+      "type": "function",
+      "name": "IsPlaying",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        114,
+        116
+      ],
+      "summary": "检查函数，验证或判断Playing的状态。",
+      "tags": [
+        "validation",
+        "media-control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:IsLoaded",
+      "type": "function",
+      "name": "IsLoaded",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        118,
+        120
+      ],
+      "summary": "加载函数，从存储中读取Ised数据。",
+      "tags": [
+        "persistence",
+        "validation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:GetLoopCount",
+      "type": "function",
+      "name": "GetLoopCount",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        122,
+        127
+      ],
+      "summary": "获取LoopCount的查询函数。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:SetLoopCount",
+      "type": "function",
+      "name": "SetLoopCount",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        129,
+        135
+      ],
+      "summary": "设置LoopCount的配置函数。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:width",
+      "type": "function",
+      "name": "width",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        137,
+        142
+      ],
+      "summary": "函数width，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:height",
+      "type": "function",
+      "name": "height",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        144,
+        149
+      ],
+      "summary": "函数height，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:SetFrameCallback",
+      "type": "function",
+      "name": "SetFrameCallback",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        151,
+        153
+      ],
+      "summary": "设置FrameCallback的配置函数。",
+      "tags": [
+        "setter",
+        "callback"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:NextFrame",
+      "type": "function",
+      "name": "NextFrame",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        155,
+        188
+      ],
+      "summary": "函数NextFrame，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Cleanup",
+      "type": "function",
+      "name": "Cleanup",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.cc",
+      "lineRange": [
+        190,
+        208
+      ],
+      "summary": "函数Cleanup，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/gif/lvgl_gif.h",
+      "type": "file",
+      "name": "lvgl_gif.h",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.h",
+      "summary": "LVGL GIF动画组件头文件，声明GIF动画对象与播放接口。",
+      "tags": [
+        "display",
+        "lvgl",
+        "gif-animation",
+        "lvgl-gui",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/gif/lvgl_gif.h:LvglGif",
+      "type": "class",
+      "name": "LvglGif",
+      "filePath": "main/display/lvgl_display/gif/lvgl_gif.h",
+      "lineRange": [
+        13,
+        101
+      ],
+      "summary": "LvglGif GIF动画类，管理GIF解码和播放，包含13个方法。",
+      "tags": [
+        "animation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_font.cc",
+      "type": "file",
+      "name": "lvgl_font.cc",
+      "filePath": "main/display/lvgl_display/lvgl_font.cc",
+      "summary": "LVGL字体管理实现，提供自定义字体加载、Unicode字模渲染和字体缓存管理，共2个函数。",
+      "tags": [
+        "display",
+        "lvgl",
+        "font-rendering",
+        "lvgl-gui",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_font.cc:LvglCBinFont",
+      "type": "function",
+      "name": "LvglCBinFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.cc",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "函数LvglCBinFont，处理data逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_font.cc:~LvglCBinFont",
+      "type": "function",
+      "name": "~LvglCBinFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.cc",
+      "lineRange": [
+        9,
+        13
+      ],
+      "summary": "函数~LvglCBinFont，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/display/lvgl_display/lvgl_font.h",
+      "type": "file",
+      "name": "lvgl_font.h",
+      "filePath": "main/display/lvgl_display/lvgl_font.h",
+      "summary": "LVGL字体管理头文件，声明字体加载与渲染接口。",
+      "tags": [
+        "display",
+        "lvgl",
+        "font-rendering",
+        "lvgl-gui",
+        "header"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_font.h:~LvglFont",
+      "type": "function",
+      "name": "~LvglFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.h",
+      "lineRange": [
+        9,
+        9
+      ],
+      "summary": "函数~LvglFont，处理相关逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/display/lvgl_display/lvgl_font.h:LvglBuiltInFont",
+      "type": "function",
+      "name": "LvglBuiltInFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.h",
+      "lineRange": [
+        15,
+        15
+      ],
+      "summary": "函数LvglBuiltInFont，处理font逻辑。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_font.h:LvglFont",
+      "type": "class",
+      "name": "LvglFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.h",
+      "lineRange": [
+        6,
+        10
+      ],
+      "summary": "LvglFont字体类，负责字体加载和渲染，包含1个方法。",
+      "tags": [
+        "font"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_font.h:LvglBuiltInFont",
+      "type": "class",
+      "name": "LvglBuiltInFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.h",
+      "lineRange": [
+        13,
+        20
+      ],
+      "summary": "LvglBuiltInFont字体类，负责字体加载和渲染，包含1个方法。",
+      "tags": [
+        "font"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/display/lvgl_display/lvgl_font.h:LvglCBinFont",
+      "type": "class",
+      "name": "LvglCBinFont",
+      "filePath": "main/display/lvgl_display/lvgl_font.h",
+      "lineRange": [
+        23,
+        31
+      ],
+      "summary": "LvglCBinFont字体类，负责字体加载和渲染，包含0个方法。",
+      "tags": [
+        "font"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "file:main/display/lvgl_display/gif/lvgl_gif.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:LvglGif",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:LvglGif",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:~LvglGif",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:~LvglGif",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Start",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Start",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Pause",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Pause",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Resume",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Resume",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Stop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Stop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:IsPlaying",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:IsPlaying",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:IsLoaded",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:IsLoaded",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:GetLoopCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:GetLoopCount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:SetLoopCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:SetLoopCount",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:width",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:width",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:height",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:height",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:SetFrameCallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:SetFrameCallback",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:NextFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:NextFrame",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Cleanup",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.cc",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Cleanup",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/lvgl_display/gif/lvgl_gif.cc:~LvglGif",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Cleanup",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Start",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:NextFrame",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Start",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:NextFrame",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:main/display/lvgl_display/gif/lvgl_gif.cc:Stop",
+      "target": "function:main/display/lvgl_display/gif/lvgl_gif.cc:NextFrame",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.h",
+      "target": "file:main/display/lvgl_display/gif/gifdec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.h",
+      "target": "file:main/display/lvgl_display/lvgl_image.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.h",
+      "target": "class:main/display/lvgl_display/gif/lvgl_gif.h:LvglGif",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/gif/lvgl_gif.h",
+      "target": "class:main/display/lvgl_display/gif/lvgl_gif.h:LvglGif",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.cc",
+      "target": "file:main/display/lvgl_display/lvgl_font.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.cc",
+      "target": "function:main/display/lvgl_display/lvgl_font.cc:LvglCBinFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.cc",
+      "target": "function:main/display/lvgl_display/lvgl_font.cc:LvglCBinFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.cc",
+      "target": "function:main/display/lvgl_display/lvgl_font.cc:~LvglCBinFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.cc",
+      "target": "function:main/display/lvgl_display/lvgl_font.cc:~LvglCBinFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "function:main/display/lvgl_display/lvgl_font.h:~LvglFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "function:main/display/lvgl_display/lvgl_font.h:~LvglFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "function:main/display/lvgl_display/lvgl_font.h:LvglBuiltInFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "function:main/display/lvgl_display/lvgl_font.h:LvglBuiltInFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "class:main/display/lvgl_display/lvgl_font.h:LvglFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "class:main/display/lvgl_display/lvgl_font.h:LvglFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "class:main/display/lvgl_display/lvgl_font.h:LvglBuiltInFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "class:main/display/lvgl_display/lvgl_font.h:LvglBuiltInFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "class:main/display/lvgl_display/lvgl_font.h:LvglCBinFont",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/display/lvgl_display/lvgl_font.h",
+      "target": "class:main/display/lvgl_display/lvgl_font.h:LvglCBinFont",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

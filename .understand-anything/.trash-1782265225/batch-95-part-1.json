@@ -1,0 +1,904 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/taiji-pi-s3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/taiji-pi-s3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/taiji-pi-s3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/taiji-pi-s3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "taiji-pi-s3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/taiji-pi-s3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/taiji-pi-s3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "type": "file",
+      "name": "taiji_pi_s3.cc",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "summary": "实现 taiji_pi_s3 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        466,
+        481
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:touchpad_timer_callback",
+      "type": "function",
+      "name": "touchpad_timer_callback",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        483,
+        513
+      ],
+      "summary": "实现 touchpad_timer_callback 函数功能。",
+      "tags": [
+        "callback"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:InitializeCst816sTouchPad",
+      "type": "function",
+      "name": "InitializeCst816sTouchPad",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        515,
+        530
+      ],
+      "summary": "实现 InitializeCst816sTouchPad 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:BspLcdBlSet",
+      "type": "function",
+      "name": "BspLcdBlSet",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        532,
+        545
+      ],
+      "summary": "实现 BspLcdBlSet 函数功能。",
+      "tags": [
+        "setter",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        547,
+        557
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:Initializest77916Display",
+      "type": "function",
+      "name": "Initializest77916Display",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        559,
+        594
+      ],
+      "summary": "实现 Initializest77916Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/taiji-pi-s3/taiji_pi_s3.cc:Cst816s",
+      "type": "class",
+      "name": "Cst816s",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        426,
+        457
+      ],
+      "summary": "定义 Cst816s 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/taiji-pi-s3/taiji_pi_s3.cc:TaijiPiS3Board",
+      "type": "class",
+      "name": "TaijiPiS3Board",
+      "filePath": "main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "lineRange": [
+        459,
+        662
+      ],
+      "summary": "定义 TaijiPiS3Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/tudouzi/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/tudouzi/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/tudouzi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/tudouzi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "tudouzi"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "type": "file",
+      "name": "kevin_box_board.cc",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:Pmic",
+      "type": "function",
+      "name": "Pmic",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        22,
+        45
+      ],
+      "summary": "实现 Pmic 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        61,
+        70
+      ],
+      "summary": "实现 InitializePowerSaveTimer 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:Enable4GModule",
+      "type": "function",
+      "name": "Enable4GModule",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        72,
+        83
+      ],
+      "summary": "实现 Enable4GModule 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeDisplayI2c",
+      "type": "function",
+      "name": "InitializeDisplayI2c",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        85,
+        99
+      ],
+      "summary": "实现 InitializeDisplayI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        101,
+        146
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        148,
+        163
+      ],
+      "summary": "实现 InitializeCodecI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "audio-codec",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        165,
+        207
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:KevinBoxBoard",
+      "type": "function",
+      "name": "KevinBoxBoard",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        210,
+        223
+      ],
+      "summary": "实现 KevinBoxBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/tudouzi/kevin_box_board.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        241,
+        252
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/tudouzi/kevin_box_board.cc:Pmic",
+      "type": "class",
+      "name": "Pmic",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        20,
+        46
+      ],
+      "summary": "定义 Pmic 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/tudouzi/kevin_box_board.cc:KevinBoxBoard",
+      "type": "class",
+      "name": "KevinBoxBoard",
+      "filePath": "main/boards/tudouzi/kevin_box_board.cc",
+      "lineRange": [
+        48,
+        253
+      ],
+      "summary": "定义 KevinBoxBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:main/boards/waveshare-c6-lcd-1.69/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "waveshare-c6-lcd-1.6"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/waveshare-c6-lcd-1.69/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-c6-lcd-1.69/README.md",
+      "summary": "实现 README.md 显示驱动的具体功能。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-c6-touch-amoled-1.32/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/config.h",
+      "summary": "定义 LED 指示灯组件的抽象接口声明。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/waveshare-c6-touch-amoled-1.32/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/config.json",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "board-config",
+        "configuration",
+        "waveshare-c6-touch-a"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "type": "file",
+      "name": "esp32-c6-touch-amoled-1.32.cc",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:my_draw_event_cb",
+      "type": "function",
+      "name": "my_draw_event_cb",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        38,
+        51
+      ],
+      "summary": "实现 my_draw_event_cb 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        83,
+        94
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        105,
+        119
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        121,
+        130
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        132,
+        163
+      ],
+      "summary": "实现 InitializeLcdDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeTools",
+      "type": "function",
+      "name": "InitializeTools",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        165,
+        178
+      ],
+      "summary": "实现 InitializeTools 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CheckPowerKeyState",
+      "type": "function",
+      "name": "CheckPowerKeyState",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        180,
+        192
+      ],
+      "summary": "实现 CheckPowerKeyState 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CustomLcdDisplay",
+      "type": "class",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        33,
+        70
+      ],
+      "summary": "定义 CustomLcdDisplay 类及其方法。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "lineRange": [
+        72,
+        212
+      ],
+      "summary": "定义 CustomBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:main/boards/waveshare-c6-touch-amoled-1.32/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/waveshare-c6-touch-amoled-1.32/README.md",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "documentation"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "file:main/boards/taiji-pi-s3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:touchpad_timer_callback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:InitializeCst816sTouchPad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:BspLcdBlSet",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "function:main/boards/taiji-pi-s3/taiji_pi_s3.cc:Initializest77916Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "class:main/boards/taiji-pi-s3/taiji_pi_s3.cc:Cst816s",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "class:main/boards/taiji-pi-s3/taiji_pi_s3.cc:Cst816s",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "class:main/boards/taiji-pi-s3/taiji_pi_s3.cc:TaijiPiS3Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/taiji-pi-s3/taiji_pi_s3.cc",
+      "target": "class:main/boards/taiji-pi-s3/taiji_pi_s3.cc:TaijiPiS3Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "file:main/boards/tudouzi/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:Enable4GModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeDisplayI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:KevinBoxBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "function:main/boards/tudouzi/kevin_box_board.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "class:main/boards/tudouzi/kevin_box_board.cc:Pmic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "class:main/boards/tudouzi/kevin_box_board.cc:Pmic",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "class:main/boards/tudouzi/kevin_box_board.cc:KevinBoxBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/tudouzi/kevin_box_board.cc",
+      "target": "class:main/boards/tudouzi/kevin_box_board.cc:KevinBoxBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "file:main/boards/waveshare-c6-touch-amoled-1.32/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:my_draw_event_cb",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:my_draw_event_cb",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:InitializeTools",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "function:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CheckPowerKeyState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "class:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "class:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "class:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc",
+      "target": "class:main/boards/waveshare-c6-touch-amoled-1.32/esp32-c6-touch-amoled-1.32.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

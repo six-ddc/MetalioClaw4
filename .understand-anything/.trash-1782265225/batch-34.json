@@ -1,0 +1,716 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "type": "file",
+      "name": "aipi-lite.cc",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "summary": "aipi-lite 开发板的主板实现，包含AIPILite类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:InitializePowerManager",
+      "type": "function",
+      "name": "InitializePowerManager",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        37,
+        46
+      ],
+      "summary": "初始化电源管理模块，配置电池检测ADC和充放电状态监测。",
+      "tags": [
+        "电源管理",
+        "电池检测",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:InitializePowerSaveTimer",
+      "type": "function",
+      "name": "InitializePowerSaveTimer",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        48,
+        66
+      ],
+      "summary": "初始化省电定时器，配置休眠/唤醒周期、GPIO保持和休眠事件回调。",
+      "tags": [
+        "省电定时器",
+        "休眠",
+        "初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        68,
+        84
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        86,
+        97
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        99,
+        133
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        135,
+        173
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "type": "function",
+      "name": "AIPILite",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        186,
+        199
+      ],
+      "summary": "AIPILite 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        226,
+        237
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/aipi-lite.cc:SetPowerSaveMode",
+      "type": "function",
+      "name": "SetPowerSaveMode",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        239,
+        244
+      ],
+      "summary": "设置设备的省电模式（休眠/唤醒），管理外设供电状态。",
+      "tags": [
+        "省电模式",
+        "电源管理",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "type": "class",
+      "name": "AIPILite",
+      "filePath": "main/boards/aipi-lite/aipi-lite.cc",
+      "lineRange": [
+        27,
+        245
+      ],
+      "summary": "AIPILite 类，包含11个方法，封装相关功能逻辑。",
+      "tags": [
+        "类",
+        "封装"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/aipi-lite/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/aipi-lite/config.h",
+      "summary": "aipi-lite 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、电源管理、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/aipi-lite/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "summary": "aipi-lite 开发板的电源管理配置头文件，定义电源管理类及电池检测、休眠等接口。",
+      "tags": [
+        "电源管理",
+        "电池检测",
+        "低功耗"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:CheckBatteryStatus",
+      "type": "function",
+      "name": "CheckBatteryStatus",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        27,
+        51
+      ],
+      "summary": "CheckBatteryStatus 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:ReadBatteryAdcData",
+      "type": "function",
+      "name": "ReadBatteryAdcData",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        53,
+        112
+      ],
+      "summary": "ReadBatteryAdcData 函数的完整实现，包含60行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "type": "function",
+      "name": "PowerManager",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        115,
+        153
+      ],
+      "summary": "PowerManager 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:~PowerManager",
+      "type": "function",
+      "name": "~PowerManager",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        155,
+        163
+      ],
+      "summary": "~PowerManager 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        165,
+        171
+      ],
+      "summary": "IsCharging 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:IsDischarging",
+      "type": "function",
+      "name": "IsDischarging",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        173,
+        176
+      ],
+      "summary": "IsDischarging 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        178,
+        178
+      ],
+      "summary": "获取电池电量百分比及充放电状态。",
+      "tags": [
+        "电池检测",
+        "电量",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "function",
+      "name": "OnLowBatteryStatusChanged",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        180,
+        182
+      ],
+      "summary": "OnLowBatteryStatusChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/aipi-lite/power_manager.h:OnChargingStatusChanged",
+      "type": "function",
+      "name": "OnChargingStatusChanged",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        184,
+        186
+      ],
+      "summary": "OnChargingStatusChanged 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/aipi-lite/power_manager.h",
+      "lineRange": [
+        9,
+        187
+      ],
+      "summary": "PowerManager 电源管理类，封装电池电压检测、充放电状态监测和低功耗管理。",
+      "tags": [
+        "电源管理",
+        "电池管理"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializePowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializePowerSaveTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:SetPowerSaveMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:SetPowerSaveMode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "function:main/boards/aipi-lite/aipi-lite.cc:AIPILite",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "file:main/boards/aipi-lite/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/aipi-lite/aipi-lite.cc",
+      "target": "file:main/boards/aipi-lite/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:~PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:OnChargingStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:CheckBatteryStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:ReadBatteryAdcData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:~PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:IsDischarging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "target": "function:main/boards/aipi-lite/power_manager.h:OnChargingStatusChanged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:~PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:OnChargingStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:IsDischarging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/aipi-lite/power_manager.h",
+      "target": "function:main/boards/aipi-lite/power_manager.h:OnLowBatteryStatusChanged",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

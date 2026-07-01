@@ -1,0 +1,625 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/assets/locales/uk-UA/5.ogg",
+      "type": "file",
+      "name": "5.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/5.ogg",
+      "summary": "编号 5 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/6.ogg",
+      "type": "file",
+      "name": "6.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/6.ogg",
+      "summary": "编号 6 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/7.ogg",
+      "type": "file",
+      "name": "7.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/7.ogg",
+      "summary": "编号 7 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/8.ogg",
+      "type": "file",
+      "name": "8.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/8.ogg",
+      "summary": "编号 8 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/9.ogg",
+      "type": "file",
+      "name": "9.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/9.ogg",
+      "summary": "编号 9 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/activation.ogg",
+      "type": "file",
+      "name": "activation.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/activation.ogg",
+      "summary": "设备激活语音提示（OGG 音频），指导用户完成设备激活流程。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "activation",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/err_pin.ogg",
+      "type": "file",
+      "name": "err_pin.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/err_pin.ogg",
+      "summary": "SIM 卡 PIN 错误语音提示（OGG 音频），提示用户插入或检查 SIM 卡。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "sim-card",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/err_reg.ogg",
+      "type": "file",
+      "name": "err_reg.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/err_reg.ogg",
+      "summary": "网络注册失败语音提示（OGG 音频），提示用户检查网络和 SIM 卡状态。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "network",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/assets/locales/uk-UA/language.json",
+      "type": "config",
+      "name": "language.json (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/language.json",
+      "summary": "乌克兰语（uk-UA）本地化字符串配置文件，包含设备 UI 界面的所有文本翻译，涵盖警告、信息、错误、网络状态、OTA 升级等 40+ 个字符串键。",
+      "tags": [
+        "localization",
+        "language-pack",
+        "json",
+        "configuration",
+        "i18n"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/upgrade.ogg",
+      "type": "file",
+      "name": "upgrade.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/upgrade.ogg",
+      "summary": "系统升级语音提示（OGG 音频），用于 OTA 升级过程的语音引导。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "ota-upgrade",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/welcome.ogg",
+      "type": "file",
+      "name": "welcome.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/welcome.ogg",
+      "summary": "欢迎语音提示（OGG 音频），设备启动时的欢迎语音播报。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "welcome",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/uk-UA/wificonfig.ogg",
+      "type": "file",
+      "name": "wificonfig.ogg (uk-UA)",
+      "filePath": "main/assets/locales/uk-UA/wificonfig.ogg",
+      "summary": "Wi-Fi 配网语音提示（OGG 音频），指导用户完成 Wi-Fi 网络配置。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "wifi-config",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/0.ogg",
+      "type": "file",
+      "name": "0.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/0.ogg",
+      "summary": "编号 0 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/1.ogg",
+      "type": "file",
+      "name": "1.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/1.ogg",
+      "summary": "编号 1 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/2.ogg",
+      "type": "file",
+      "name": "2.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/2.ogg",
+      "summary": "编号 2 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/3.ogg",
+      "type": "file",
+      "name": "3.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/3.ogg",
+      "summary": "编号 3 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/4.ogg",
+      "type": "file",
+      "name": "4.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/4.ogg",
+      "summary": "编号 4 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/5.ogg",
+      "type": "file",
+      "name": "5.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/5.ogg",
+      "summary": "编号 5 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/6.ogg",
+      "type": "file",
+      "name": "6.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/6.ogg",
+      "summary": "编号 6 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/7.ogg",
+      "type": "file",
+      "name": "7.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/7.ogg",
+      "summary": "编号 7 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/8.ogg",
+      "type": "file",
+      "name": "8.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/8.ogg",
+      "summary": "编号 8 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/9.ogg",
+      "type": "file",
+      "name": "9.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/9.ogg",
+      "summary": "编号 9 语音提示（OGG 音频），用于本地化语音播报序列。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/activation.ogg",
+      "type": "file",
+      "name": "activation.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/activation.ogg",
+      "summary": "设备激活语音提示（OGG 音频），指导用户完成设备激活流程。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "activation",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/err_pin.ogg",
+      "type": "file",
+      "name": "err_pin.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/err_pin.ogg",
+      "summary": "SIM 卡 PIN 错误语音提示（OGG 音频），提示用户插入或检查 SIM 卡。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "sim-card",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/assets/locales/vi-VN/err_reg.ogg",
+      "type": "file",
+      "name": "err_reg.ogg (vi-VN)",
+      "filePath": "main/assets/locales/vi-VN/err_reg.ogg",
+      "summary": "网络注册失败语音提示（OGG 音频），提示用户检查网络和 SIM 卡状态。",
+      "tags": [
+        "audio",
+        "voice-prompt",
+        "ogg",
+        "error",
+        "network",
+        "localization",
+        "asset"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "config:main/assets/locales/uk-UA/language.json",
+      "target": "file:main/assets/locales/uk-UA/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/5.ogg",
+      "target": "file:main/assets/locales/uk-UA/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/6.ogg",
+      "target": "file:main/assets/locales/uk-UA/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/7.ogg",
+      "target": "file:main/assets/locales/uk-UA/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/8.ogg",
+      "target": "file:main/assets/locales/uk-UA/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/9.ogg",
+      "target": "file:main/assets/locales/uk-UA/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/activation.ogg",
+      "target": "file:main/assets/locales/uk-UA/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/err_pin.ogg",
+      "target": "file:main/assets/locales/uk-UA/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/err_reg.ogg",
+      "target": "file:main/assets/locales/uk-UA/upgrade.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/upgrade.ogg",
+      "target": "file:main/assets/locales/uk-UA/welcome.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/uk-UA/welcome.ogg",
+      "target": "file:main/assets/locales/uk-UA/wificonfig.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/0.ogg",
+      "target": "file:main/assets/locales/vi-VN/1.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/1.ogg",
+      "target": "file:main/assets/locales/vi-VN/2.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/2.ogg",
+      "target": "file:main/assets/locales/vi-VN/3.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/3.ogg",
+      "target": "file:main/assets/locales/vi-VN/4.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/4.ogg",
+      "target": "file:main/assets/locales/vi-VN/5.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/5.ogg",
+      "target": "file:main/assets/locales/vi-VN/6.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/6.ogg",
+      "target": "file:main/assets/locales/vi-VN/7.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/7.ogg",
+      "target": "file:main/assets/locales/vi-VN/8.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/8.ogg",
+      "target": "file:main/assets/locales/vi-VN/9.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/9.ogg",
+      "target": "file:main/assets/locales/vi-VN/activation.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/activation.ogg",
+      "target": "file:main/assets/locales/vi-VN/err_pin.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    },
+    {
+      "source": "file:main/assets/locales/vi-VN/err_pin.ogg",
+      "target": "file:main/assets/locales/vi-VN/err_reg.ogg",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.5
+    }
+  ]
+}

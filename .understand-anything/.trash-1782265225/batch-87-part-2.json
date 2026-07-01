@@ -1,0 +1,816 @@
+{
+  "nodes": [
+    {
+      "id": "config:main/boards/bread-compact-ml307/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/bread-compact-ml307/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "bread-compact-ml307"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "type": "file",
+      "name": "compact_wifi_board_lcd.cc",
+      "filePath": "main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "summary": "实现 compact_wifi_board_lcd 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "lineRange": [
+        69,
+        78
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "lineRange": [
+        80,
+        124
+      ],
+      "summary": "实现 InitializeLcdDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "function",
+      "name": "CompactWifiBoardLCD",
+      "filePath": "main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "lineRange": [
+        142,
+        152
+      ],
+      "summary": "实现 CompactWifiBoardLCD 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "class",
+      "name": "CompactWifiBoardLCD",
+      "filePath": "main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "lineRange": [
+        63,
+        181
+      ],
+      "summary": "定义 CompactWifiBoardLCD 类及其方法。",
+      "tags": [
+        "display",
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-wifi-lcd/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/bread-compact-wifi-lcd/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "type": "file",
+      "name": "compact_wifi_board_s3cam.cc",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "lineRange": [
+        71,
+        80
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "lineRange": [
+        82,
+        126
+      ],
+      "summary": "实现 InitializeLcdDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "lineRange": [
+        128,
+        171
+      ],
+      "summary": "实现 InitializeCamera 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:CompactWifiBoardS3Cam",
+      "type": "function",
+      "name": "CompactWifiBoardS3Cam",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "lineRange": [
+        184,
+        194
+      ],
+      "summary": "实现 CompactWifiBoardS3Cam 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:CompactWifiBoardS3Cam",
+      "type": "class",
+      "name": "CompactWifiBoardS3Cam",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "lineRange": [
+        64,
+        227
+      ],
+      "summary": "定义 CompactWifiBoardS3Cam 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-wifi-s3cam/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:main/boards/bread-compact-wifi-s3cam/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/bread-compact-wifi-s3cam/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "type": "file",
+      "name": "compact_wifi_board.cc",
+      "filePath": "main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:InitializeDisplayI2c",
+      "type": "function",
+      "name": "InitializeDisplayI2c",
+      "filePath": "main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "lineRange": [
+        36,
+        50
+      ],
+      "summary": "实现 InitializeDisplayI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "lineRange": [
+        52,
+        102
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "lineRange": [
+        104,
+        148
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:CompactWifiBoard",
+      "type": "function",
+      "name": "CompactWifiBoard",
+      "filePath": "main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "lineRange": [
+        156,
+        165
+      ],
+      "summary": "实现 CompactWifiBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/bread-compact-wifi/compact_wifi_board.cc:CompactWifiBoard",
+      "type": "class",
+      "name": "CompactWifiBoard",
+      "filePath": "main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "lineRange": [
+        25,
+        186
+      ],
+      "summary": "定义 CompactWifiBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-wifi/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/bread-compact-wifi/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/bread-compact-wifi/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/bread-compact-wifi/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "bread-compact-wifi"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/adc_battery_monitor.cc",
+      "type": "file",
+      "name": "adc_battery_monitor.cc",
+      "filePath": "main/boards/common/adc_battery_monitor.cc",
+      "summary": "实现 adc_battery_monitor 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/adc_battery_monitor.cc:AdcBatteryMonitor",
+      "type": "function",
+      "name": "AdcBatteryMonitor",
+      "filePath": "main/boards/common/adc_battery_monitor.cc",
+      "lineRange": [
+        3,
+        55
+      ],
+      "summary": "实现 AdcBatteryMonitor 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/adc_battery_monitor.cc:~AdcBatteryMonitor",
+      "type": "function",
+      "name": "~AdcBatteryMonitor",
+      "filePath": "main/boards/common/adc_battery_monitor.cc",
+      "lineRange": [
+        57,
+        66
+      ],
+      "summary": "实现 ~AdcBatteryMonitor 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/adc_battery_monitor.cc:IsCharging",
+      "type": "function",
+      "name": "IsCharging",
+      "filePath": "main/boards/common/adc_battery_monitor.cc",
+      "lineRange": [
+        68,
+        84
+      ],
+      "summary": "实现 IsCharging 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/adc_battery_monitor.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/common/adc_battery_monitor.cc",
+      "lineRange": [
+        90,
+        102
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/adc_battery_monitor.h",
+      "type": "file",
+      "name": "adc_battery_monitor.h",
+      "filePath": "main/boards/common/adc_battery_monitor.h",
+      "summary": "定义 adc_battery_monitor 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/backlight.cc",
+      "type": "file",
+      "name": "backlight.cc",
+      "filePath": "main/boards/common/backlight.cc",
+      "summary": "实现 backlight 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/backlight.cc:Backlight",
+      "type": "function",
+      "name": "Backlight",
+      "filePath": "main/boards/common/backlight.cc",
+      "lineRange": [
+        10,
+        23
+      ],
+      "summary": "实现 Backlight 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/backlight.cc:RestoreBrightness",
+      "type": "function",
+      "name": "RestoreBrightness",
+      "filePath": "main/boards/common/backlight.cc",
+      "lineRange": [
+        32,
+        44
+      ],
+      "summary": "实现 RestoreBrightness 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/backlight.cc:SetBrightness",
+      "type": "function",
+      "name": "SetBrightness",
+      "filePath": "main/boards/common/backlight.cc",
+      "lineRange": [
+        46,
+        68
+      ],
+      "summary": "实现 SetBrightness 函数功能。",
+      "tags": [
+        "setter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/backlight.cc:OnTransitionTimer",
+      "type": "function",
+      "name": "OnTransitionTimer",
+      "filePath": "main/boards/common/backlight.cc",
+      "lineRange": [
+        70,
+        82
+      ],
+      "summary": "实现 OnTransitionTimer 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/backlight.cc:PwmBacklight",
+      "type": "function",
+      "name": "PwmBacklight",
+      "filePath": "main/boards/common/backlight.cc",
+      "lineRange": [
+        84,
+        109
+      ],
+      "summary": "实现 PwmBacklight 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "file:main/boards/bread-compact-wifi-lcd/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "class:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc",
+      "target": "class:main/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "file:main/boards/bread-compact-wifi-s3cam/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:CompactWifiBoardS3Cam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "function:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:CompactWifiBoardS3Cam",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "class:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:CompactWifiBoardS3Cam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc",
+      "target": "class:main/boards/bread-compact-wifi-s3cam/compact_wifi_board_s3cam.cc:CompactWifiBoardS3Cam",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "file:main/boards/bread-compact-wifi/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:InitializeDisplayI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:CompactWifiBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "function:main/boards/bread-compact-wifi/compact_wifi_board.cc:CompactWifiBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "class:main/boards/bread-compact-wifi/compact_wifi_board.cc:CompactWifiBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-wifi/compact_wifi_board.cc",
+      "target": "class:main/boards/bread-compact-wifi/compact_wifi_board.cc:CompactWifiBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "file:main/boards/common/adc_battery_monitor.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:AdcBatteryMonitor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:AdcBatteryMonitor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:~AdcBatteryMonitor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:~AdcBatteryMonitor",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:IsCharging",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:IsCharging",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/adc_battery_monitor.cc",
+      "target": "function:main/boards/common/adc_battery_monitor.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "file:main/boards/common/backlight.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:Backlight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:Backlight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:RestoreBrightness",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:RestoreBrightness",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:SetBrightness",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:SetBrightness",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:OnTransitionTimer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:OnTransitionTimer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:PwmBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/backlight.cc",
+      "target": "function:main/boards/common/backlight.cc:PwmBacklight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

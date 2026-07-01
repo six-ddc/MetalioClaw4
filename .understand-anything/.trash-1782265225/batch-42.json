@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/sp-esp32-s3-1.28-box/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/config.h",
+      "summary": "sp-esp32-s3-1.28-box 开发板的硬件引脚定义与编译配置头文件。",
+      "tags": [
+        "configuration",
+        "pin-definition",
+        "hardware-config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/sp-esp32-s3-1.28-box/power_manager.h",
+      "type": "file",
+      "name": "power_manager.h",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/power_manager.h",
+      "summary": "sp-esp32-s3-1.28-box 开发板的电源管理模块，处理电池电量检测、充放电状态监控。",
+      "tags": [
+        "power-management",
+        "battery",
+        "hardware-driver"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/sp-esp32-s3-1.28-box/power_manager.h:PowerManager",
+      "type": "class",
+      "name": "PowerManager",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/power_manager.h",
+      "lineRange": [
+        11,
+        189
+      ],
+      "summary": "电源管理类，负责电池状态监控、ADC采样和充放电事件回调。",
+      "tags": [
+        "power-management",
+        "battery",
+        "driver"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "type": "file",
+      "name": "sp-esp32-s3-1.28-box.cc",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "summary": "sp-esp32-s3-1.28-box 开发板的主驱动文件，负责硬件初始化、按键处理、显示屏配置和音频控制。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:Cst816d",
+      "type": "class",
+      "name": "Cst816d",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "lineRange": [
+        37,
+        104
+      ],
+      "summary": "类 Cst816d，位于 sp-esp32-s3-1.28-box 开发板驱动中。",
+      "tags": [
+        "class",
+        "embedded"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:CustomLcdDisplay",
+      "type": "class",
+      "name": "CustomLcdDisplay",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "lineRange": [
+        107,
+        125
+      ],
+      "summary": "类 CustomLcdDisplay，位于 sp-esp32-s3-1.28-box 开发板驱动中。",
+      "tags": [
+        "class",
+        "embedded"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:Spotpear_ESP32_S3_1_28_BOX",
+      "type": "class",
+      "name": "Spotpear_ESP32_S3_1_28_BOX",
+      "filePath": "main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "lineRange": [
+        128,
+        480
+      ],
+      "summary": "开发板主类（Spotpear_ESP32_S3_1_28_BOX），封装硬件初始化、外设控制和系统事件处理。",
+      "tags": [
+        "board-driver",
+        "hardware-init",
+        "embedded"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/power_manager.h",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/power_manager.h:PowerManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/power_manager.h",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/power_manager.h:PowerManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:Cst816d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:Cst816d",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:CustomLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:CustomLcdDisplay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:Spotpear_ESP32_S3_1_28_BOX",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "class:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc:Spotpear_ESP32_S3_1_28_BOX",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "file:main/boards/sp-esp32-s3-1.28-box/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/sp-esp32-s3-1.28-box/sp-esp32-s3-1.28-box.cc",
+      "target": "file:main/boards/sp-esp32-s3-1.28-box/power_manager.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

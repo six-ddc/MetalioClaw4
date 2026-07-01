@@ -1,0 +1,847 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "type": "file",
+      "name": "atoms3r_echo_base.cc",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "summary": "实现 atoms3r_echo_base 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Lp5562",
+      "type": "function",
+      "name": "Lp5562",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        42,
+        51
+      ],
+      "summary": "实现 Lp5562 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        115,
+        135
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:I2cDetect",
+      "type": "function",
+      "name": "I2cDetect",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        137,
+        164
+      ],
+      "summary": "实现 I2cDetect 函数功能。",
+      "tags": [
+        "hardware-io",
+        "detection"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:CheckEchoBaseConnection",
+      "type": "function",
+      "name": "CheckEchoBaseConnection",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        166,
+        197
+      ],
+      "summary": "实现 CheckEchoBaseConnection 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        210,
+        220
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:InitializeGc9107Display",
+      "type": "function",
+      "name": "InitializeGc9107Display",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        222,
+        256
+      ],
+      "summary": "实现 InitializeGc9107Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:AtomS3rEchoBaseBoard",
+      "type": "function",
+      "name": "AtomS3rEchoBaseBoard",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        269,
+        279
+      ],
+      "summary": "实现 AtomS3rEchoBaseBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Pi4ioe",
+      "type": "class",
+      "name": "Pi4ioe",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        26,
+        38
+      ],
+      "summary": "定义 Pi4ioe 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Lp5562",
+      "type": "class",
+      "name": "Lp5562",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        40,
+        58
+      ],
+      "summary": "定义 Lp5562 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:CustomBacklight",
+      "type": "class",
+      "name": "CustomBacklight",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        60,
+        74
+      ],
+      "summary": "定义 CustomBacklight 类及其方法。",
+      "tags": [
+        "backlight"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:AtomS3rEchoBaseBoard",
+      "type": "class",
+      "name": "AtomS3rEchoBaseBoard",
+      "filePath": "main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "lineRange": [
+        105,
+        306
+      ],
+      "summary": "定义 AtomS3rEchoBaseBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/atoms3r-echo-base/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/atoms3r-echo-base/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/atoms3r-echo-base/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/atoms3r-echo-base/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "atoms3r-echo-base"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/atoms3r-echo-base/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/atoms3r-echo-base/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-esp32-lcd/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/bread-compact-esp32-lcd/config.h",
+      "summary": "定义 config 显示相关的接口或数据结构声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:main/boards/bread-compact-esp32-lcd/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/bread-compact-esp32-lcd/config.json",
+      "summary": "实现 config.json 显示驱动的具体功能。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "bread-compact-esp32-"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "type": "file",
+      "name": "esp32_bread_board_lcd.cc",
+      "filePath": "main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "summary": "实现 esp32_bread_board_lcd 显示驱动的具体功能。",
+      "tags": [
+        "display",
+        "lcd",
+        "driver-implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "lineRange": [
+        69,
+        78
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:InitializeLcdDisplay",
+      "type": "function",
+      "name": "InitializeLcdDisplay",
+      "filePath": "main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "lineRange": [
+        80,
+        124
+      ],
+      "summary": "实现 InitializeLcdDisplay 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "lineRange": [
+        126,
+        174
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "function",
+      "name": "CompactWifiBoardLCD",
+      "filePath": "main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "lineRange": [
+        177,
+        187
+      ],
+      "summary": "实现 CompactWifiBoardLCD 函数功能。",
+      "tags": [
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "class",
+      "name": "CompactWifiBoardLCD",
+      "filePath": "main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "lineRange": [
+        61,
+        211
+      ],
+      "summary": "定义 CompactWifiBoardLCD 类及其方法。",
+      "tags": [
+        "display",
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-esp32/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/bread-compact-esp32/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/bread-compact-esp32/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/bread-compact-esp32/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "bread-compact-esp32"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "type": "file",
+      "name": "esp32_bread_board.cc",
+      "filePath": "main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32/esp32_bread_board.cc:InitializeDisplayI2c",
+      "type": "function",
+      "name": "InitializeDisplayI2c",
+      "filePath": "main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "lineRange": [
+        31,
+        45
+      ],
+      "summary": "实现 InitializeDisplayI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32/esp32_bread_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "lineRange": [
+        47,
+        92
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-esp32/esp32_bread_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "lineRange": [
+        94,
+        140
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/bread-compact-esp32/esp32_bread_board.cc:CompactWifiBoard",
+      "type": "class",
+      "name": "CompactWifiBoard",
+      "filePath": "main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "lineRange": [
+        20,
+        172
+      ],
+      "summary": "定义 CompactWifiBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/bread-compact-esp32/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/bread-compact-esp32/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "type": "file",
+      "name": "compact_ml307_board.cc",
+      "filePath": "main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:InitializeDisplayI2c",
+      "type": "function",
+      "name": "InitializeDisplayI2c",
+      "filePath": "main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "lineRange": [
+        32,
+        46
+      ],
+      "summary": "实现 InitializeDisplayI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization",
+        "display"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:InitializeSsd1306Display",
+      "type": "function",
+      "name": "InitializeSsd1306Display",
+      "filePath": "main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "lineRange": [
+        48,
+        93
+      ],
+      "summary": "实现 InitializeSsd1306Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "lineRange": [
+        95,
+        150
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:CompactMl307Board",
+      "type": "function",
+      "name": "CompactMl307Board",
+      "filePath": "main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "lineRange": [
+        158,
+        168
+      ],
+      "summary": "实现 CompactMl307Board 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/bread-compact-ml307/compact_ml307_board.cc:CompactMl307Board",
+      "type": "class",
+      "name": "CompactMl307Board",
+      "filePath": "main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "lineRange": [
+        21,
+        189
+      ],
+      "summary": "定义 CompactMl307Board 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/bread-compact-ml307/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/bread-compact-ml307/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "file:main/boards/atoms3r-echo-base/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Lp5562",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Lp5562",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:I2cDetect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:CheckEchoBaseConnection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:InitializeGc9107Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:AtomS3rEchoBaseBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "function:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:AtomS3rEchoBaseBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Pi4ioe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Pi4ioe",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Lp5562",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:Lp5562",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:CustomBacklight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:CustomBacklight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:AtomS3rEchoBaseBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc",
+      "target": "class:main/boards/atoms3r-echo-base/atoms3r_echo_base.cc:AtomS3rEchoBaseBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "file:main/boards/bread-compact-esp32-lcd/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:InitializeLcdDisplay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "function:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "class:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc",
+      "target": "class:main/boards/bread-compact-esp32-lcd/esp32_bread_board_lcd.cc:CompactWifiBoardLCD",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "target": "file:main/boards/bread-compact-esp32/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "target": "function:main/boards/bread-compact-esp32/esp32_bread_board.cc:InitializeDisplayI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "target": "function:main/boards/bread-compact-esp32/esp32_bread_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "target": "function:main/boards/bread-compact-esp32/esp32_bread_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "target": "class:main/boards/bread-compact-esp32/esp32_bread_board.cc:CompactWifiBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-esp32/esp32_bread_board.cc",
+      "target": "class:main/boards/bread-compact-esp32/esp32_bread_board.cc:CompactWifiBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "file:main/boards/bread-compact-ml307/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:InitializeDisplayI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:InitializeSsd1306Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:CompactMl307Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "function:main/boards/bread-compact-ml307/compact_ml307_board.cc:CompactMl307Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "class:main/boards/bread-compact-ml307/compact_ml307_board.cc:CompactMl307Board",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/bread-compact-ml307/compact_ml307_board.cc",
+      "target": "class:main/boards/bread-compact-ml307/compact_ml307_board.cc:CompactMl307Board",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

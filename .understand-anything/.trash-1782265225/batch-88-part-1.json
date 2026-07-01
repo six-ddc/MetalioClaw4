@@ -1,0 +1,1095 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/common/backlight.h",
+      "type": "file",
+      "name": "backlight.h",
+      "filePath": "main/boards/common/backlight.h",
+      "summary": "定义 backlight 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/common/backlight.h:Backlight",
+      "type": "class",
+      "name": "Backlight",
+      "filePath": "main/boards/common/backlight.h",
+      "lineRange": [
+        10,
+        27
+      ],
+      "summary": "定义 Backlight 类及其方法。",
+      "tags": [
+        "backlight"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/bq27220_gauge.cc",
+      "type": "file",
+      "name": "bq27220_gauge.cc",
+      "filePath": "main/boards/common/bq27220_gauge.cc",
+      "summary": "实现 bq27220_gauge 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/bq27220_gauge.cc:Begin",
+      "type": "function",
+      "name": "Begin",
+      "filePath": "main/boards/common/bq27220_gauge.cc",
+      "lineRange": [
+        23,
+        69
+      ],
+      "summary": "实现 Begin 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/bq27220_gauge.cc:GetBatteryLevel",
+      "type": "function",
+      "name": "GetBatteryLevel",
+      "filePath": "main/boards/common/bq27220_gauge.cc",
+      "lineRange": [
+        84,
+        130
+      ],
+      "summary": "实现 GetBatteryLevel 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/bq27220_gauge.cc:ReadU16",
+      "type": "function",
+      "name": "ReadU16",
+      "filePath": "main/boards/common/bq27220_gauge.cc",
+      "lineRange": [
+        139,
+        156
+      ],
+      "summary": "实现 ReadU16 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/bq27220_gauge.cc:FilterPush",
+      "type": "function",
+      "name": "FilterPush",
+      "filePath": "main/boards/common/bq27220_gauge.cc",
+      "lineRange": [
+        158,
+        175
+      ],
+      "summary": "实现 FilterPush 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/bq27220_gauge.h",
+      "type": "file",
+      "name": "bq27220_gauge.h",
+      "filePath": "main/boards/common/bq27220_gauge.h",
+      "summary": "定义 bq27220_gauge 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/bt_audio_codec.cc",
+      "type": "file",
+      "name": "bt_audio_codec.cc",
+      "filePath": "main/boards/common/bt_audio_codec.cc",
+      "summary": "实现 bt_audio_codec 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/bt_audio_codec.cc:~BTAudioCodec",
+      "type": "function",
+      "name": "~BTAudioCodec",
+      "filePath": "main/boards/common/bt_audio_codec.cc",
+      "lineRange": [
+        9,
+        19
+      ],
+      "summary": "实现 ~BTAudioCodec 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/bt_audio_codec.cc:BTAudioCodecDuplex",
+      "type": "function",
+      "name": "BTAudioCodecDuplex",
+      "filePath": "main/boards/common/bt_audio_codec.cc",
+      "lineRange": [
+        22,
+        64
+      ],
+      "summary": "实现 BTAudioCodecDuplex 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/bt_audio_codec.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/boards/common/bt_audio_codec.cc",
+      "lineRange": [
+        66,
+        103
+      ],
+      "summary": "实现 Write 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/bt_audio_codec.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/boards/common/bt_audio_codec.cc",
+      "lineRange": [
+        105,
+        124
+      ],
+      "summary": "实现 Read 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/bt_audio_codec.h",
+      "type": "file",
+      "name": "bt_audio_codec.h",
+      "filePath": "main/boards/common/bt_audio_codec.h",
+      "summary": "定义 bt_audio_codec 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/button.cc",
+      "type": "file",
+      "name": "button.cc",
+      "filePath": "main/boards/common/button.cc",
+      "summary": "实现 button 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:Button",
+      "type": "function",
+      "name": "Button",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        21,
+        36
+      ],
+      "summary": "实现 Button 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:OnPressDown",
+      "type": "function",
+      "name": "OnPressDown",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        44,
+        55
+      ],
+      "summary": "实现 OnPressDown 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:OnPressUp",
+      "type": "function",
+      "name": "OnPressUp",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        57,
+        68
+      ],
+      "summary": "实现 OnPressUp 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:OnLongPress",
+      "type": "function",
+      "name": "OnLongPress",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        70,
+        81
+      ],
+      "summary": "实现 OnLongPress 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:OnClick",
+      "type": "function",
+      "name": "OnClick",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        83,
+        94
+      ],
+      "summary": "实现 OnClick 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:OnDoubleClick",
+      "type": "function",
+      "name": "OnDoubleClick",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        96,
+        107
+      ],
+      "summary": "实现 OnDoubleClick 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/button.cc:OnMultipleClick",
+      "type": "function",
+      "name": "OnMultipleClick",
+      "filePath": "main/boards/common/button.cc",
+      "lineRange": [
+        109,
+        125
+      ],
+      "summary": "实现 OnMultipleClick 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/button.h",
+      "type": "file",
+      "name": "button.h",
+      "filePath": "main/boards/common/button.h",
+      "summary": "定义 button 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/camera.h",
+      "type": "file",
+      "name": "camera.h",
+      "filePath": "main/boards/common/camera.h",
+      "summary": "定义 camera 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/dual_network_board.cc",
+      "type": "file",
+      "name": "dual_network_board.cc",
+      "filePath": "main/boards/common/dual_network_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/dual_network_board.cc:DualNetworkBoard",
+      "type": "function",
+      "name": "DualNetworkBoard",
+      "filePath": "main/boards/common/dual_network_board.cc",
+      "lineRange": [
+        10,
+        21
+      ],
+      "summary": "实现 DualNetworkBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/dual_network_board.cc:DualNetworkBoard__2",
+      "type": "function",
+      "name": "DualNetworkBoard",
+      "filePath": "main/boards/common/dual_network_board.cc",
+      "lineRange": [
+        23,
+        39
+      ],
+      "summary": "实现 DualNetworkBoard 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/dual_network_board.cc:InitializeCurrentBoard",
+      "type": "function",
+      "name": "InitializeCurrentBoard",
+      "filePath": "main/boards/common/dual_network_board.cc",
+      "lineRange": [
+        53,
+        64
+      ],
+      "summary": "实现 InitializeCurrentBoard 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/dual_network_board.cc:SwitchNetworkType",
+      "type": "function",
+      "name": "SwitchNetworkType",
+      "filePath": "main/boards/common/dual_network_board.cc",
+      "lineRange": [
+        66,
+        78
+      ],
+      "summary": "实现 SwitchNetworkType 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/dual_network_board.cc:StartNetwork",
+      "type": "function",
+      "name": "StartNetwork",
+      "filePath": "main/boards/common/dual_network_board.cc",
+      "lineRange": [
+        85,
+        94
+      ],
+      "summary": "实现 StartNetwork 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/dual_network_board.h",
+      "type": "file",
+      "name": "dual_network_board.h",
+      "filePath": "main/boards/common/dual_network_board.h",
+      "summary": "定义 Board 抽象基类，声明所有开发板必须实现的硬件接口（音频、显示、电源、按键等）。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/common/gps_service.cc",
+      "type": "file",
+      "name": "gps_service.cc",
+      "filePath": "main/boards/common/gps_service.cc",
+      "summary": "实现 gps_service 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:Start",
+      "type": "function",
+      "name": "Start",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        52,
+        127
+      ],
+      "summary": "实现 Start 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:GetSnapshot",
+      "type": "function",
+      "name": "GetSnapshot",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        129,
+        139
+      ],
+      "summary": "实现 GetSnapshot 函数功能。",
+      "tags": [
+        "getter"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:RxTaskLoop",
+      "type": "function",
+      "name": "RxTaskLoop",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        149,
+        184
+      ],
+      "summary": "实现 RxTaskLoop 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:HandleSentence",
+      "type": "function",
+      "name": "HandleSentence",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        190,
+        253
+      ],
+      "summary": "实现 HandleSentence 函数功能。",
+      "tags": [
+        "event-handler"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:ParseGGA",
+      "type": "function",
+      "name": "ParseGGA",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        284,
+        330
+      ],
+      "summary": "实现 ParseGGA 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:ParseRMC",
+      "type": "function",
+      "name": "ParseRMC",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        332,
+        381
+      ],
+      "summary": "实现 ParseRMC 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:ParseGSV",
+      "type": "function",
+      "name": "ParseGSV",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        383,
+        415
+      ],
+      "summary": "实现 ParseGSV 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:ChecksumOk",
+      "type": "function",
+      "name": "ChecksumOk",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        421,
+        458
+      ],
+      "summary": "实现 ChecksumOk 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:ParseCoord",
+      "type": "function",
+      "name": "ParseCoord",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        460,
+        487
+      ],
+      "summary": "实现 ParseCoord 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/common/gps_service.cc:TalkerIndex",
+      "type": "function",
+      "name": "TalkerIndex",
+      "filePath": "main/boards/common/gps_service.cc",
+      "lineRange": [
+        489,
+        499
+      ],
+      "summary": "实现 TalkerIndex 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/common/IOExpander.hpp",
+      "type": "file",
+      "name": "IOExpander.hpp",
+      "filePath": "main/boards/common/IOExpander.hpp",
+      "summary": "定义 IOExpanderpp 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/common/SdCardManager.hpp",
+      "type": "file",
+      "name": "SdCardManager.hpp",
+      "filePath": "main/boards/common/SdCardManager.hpp",
+      "summary": "定义 SdCardManagerpp 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "utility"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/common/backlight.h",
+      "target": "class:main/boards/common/backlight.h:Backlight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/backlight.h",
+      "target": "class:main/boards/common/backlight.h:Backlight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "file:main/boards/common/bq27220_gauge.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:Begin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:Begin",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:GetBatteryLevel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:GetBatteryLevel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:ReadU16",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:ReadU16",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:FilterPush",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bq27220_gauge.cc",
+      "target": "function:main/boards/common/bq27220_gauge.cc:FilterPush",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "file:main/boards/common/bt_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:~BTAudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:~BTAudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:BTAudioCodecDuplex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:BTAudioCodecDuplex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/bt_audio_codec.cc",
+      "target": "function:main/boards/common/bt_audio_codec.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "file:main/boards/common/button.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:Button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:Button",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnPressDown",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnPressDown",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnPressUp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnPressUp",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnLongPress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnLongPress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnClick",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnClick",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnDoubleClick",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnDoubleClick",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnMultipleClick",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/button.cc",
+      "target": "function:main/boards/common/button.cc:OnMultipleClick",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "file:main/boards/common/dual_network_board.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:DualNetworkBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:DualNetworkBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:DualNetworkBoard__2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:DualNetworkBoard__2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:InitializeCurrentBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:InitializeCurrentBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:SwitchNetworkType",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:SwitchNetworkType",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:StartNetwork",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/dual_network_board.cc",
+      "target": "function:main/boards/common/dual_network_board.cc:StartNetwork",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "file:main/boards/common/gps_service.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:Start",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:Start",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:GetSnapshot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:GetSnapshot",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:RxTaskLoop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:RxTaskLoop",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:HandleSentence",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:HandleSentence",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseGGA",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseGGA",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseRMC",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseRMC",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseGSV",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseGSV",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ChecksumOk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ChecksumOk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseCoord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:ParseCoord",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:TalkerIndex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/common/gps_service.cc",
+      "target": "function:main/boards/common/gps_service.cc:TalkerIndex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

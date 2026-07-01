@@ -1,0 +1,895 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/audio/codecs/es8374_audio_codec.h",
+      "type": "file",
+      "name": "es8374_audio_codec.h",
+      "filePath": "main/audio/codecs/es8374_audio_codec.h",
+      "summary": "定义 ES8374 音频编解码器类的接口声明，继承自 AudioCodec 基类。",
+      "tags": [
+        "audio-codec",
+        "es8374",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "type": "file",
+      "name": "es8388_audio_codec.cc",
+      "filePath": "main/audio/codecs/es8388_audio_codec.cc",
+      "summary": "实现 ES8388 音频编解码器的具体驱动逻辑，包括 I2C 配置、双工通道创建、音量控制和输入输出使能。",
+      "tags": [
+        "audio-codec",
+        "es8388",
+        "implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/es8388_audio_codec.cc:Es8388AudioCodec",
+      "type": "function",
+      "name": "Es8388AudioCodec",
+      "filePath": "main/audio/codecs/es8388_audio_codec.cc",
+      "lineRange": [
+        7,
+        71
+      ],
+      "summary": "实现 Es8388AudioCodec 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/es8388_audio_codec.cc:~Es8388AudioCodec",
+      "type": "function",
+      "name": "~Es8388AudioCodec",
+      "filePath": "main/audio/codecs/es8388_audio_codec.cc",
+      "lineRange": [
+        73,
+        83
+      ],
+      "summary": "实现 ~Es8388AudioCodec 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/codecs/es8388_audio_codec.cc:CreateDuplexChannels",
+      "type": "function",
+      "name": "CreateDuplexChannels",
+      "filePath": "main/audio/codecs/es8388_audio_codec.cc",
+      "lineRange": [
+        85,
+        135
+      ],
+      "summary": "实现 CreateDuplexChannels 函数功能。",
+      "tags": [
+        "factory"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/es8388_audio_codec.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/audio/codecs/es8388_audio_codec.cc",
+      "lineRange": [
+        142,
+        169
+      ],
+      "summary": "实现 EnableInput 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/codecs/es8388_audio_codec.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/audio/codecs/es8388_audio_codec.cc",
+      "lineRange": [
+        171,
+        207
+      ],
+      "summary": "实现 EnableOutput 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/audio/codecs/es8388_audio_codec.h",
+      "type": "file",
+      "name": "es8388_audio_codec.h",
+      "filePath": "main/audio/codecs/es8388_audio_codec.h",
+      "summary": "定义 ES8388 音频编解码器类的接口声明，继承自 AudioCodec 基类。",
+      "tags": [
+        "audio-codec",
+        "es8388",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "type": "file",
+      "name": "es8389_audio_codec.cc",
+      "filePath": "main/audio/codecs/es8389_audio_codec.cc",
+      "summary": "实现 ES8389 音频编解码器的具体驱动逻辑，包括 I2C 配置、双工通道创建、音量控制和输入输出使能。",
+      "tags": [
+        "audio-codec",
+        "es8389",
+        "implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/es8389_audio_codec.cc:Es8389AudioCodec",
+      "type": "function",
+      "name": "Es8389AudioCodec",
+      "filePath": "main/audio/codecs/es8389_audio_codec.cc",
+      "lineRange": [
+        7,
+        70
+      ],
+      "summary": "实现 Es8389AudioCodec 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/es8389_audio_codec.cc:~Es8389AudioCodec",
+      "type": "function",
+      "name": "~Es8389AudioCodec",
+      "filePath": "main/audio/codecs/es8389_audio_codec.cc",
+      "lineRange": [
+        72,
+        82
+      ],
+      "summary": "实现 ~Es8389AudioCodec 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/codecs/es8389_audio_codec.cc:CreateDuplexChannels",
+      "type": "function",
+      "name": "CreateDuplexChannels",
+      "filePath": "main/audio/codecs/es8389_audio_codec.cc",
+      "lineRange": [
+        84,
+        136
+      ],
+      "summary": "实现 CreateDuplexChannels 函数功能。",
+      "tags": [
+        "factory"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/es8389_audio_codec.cc:EnableInput",
+      "type": "function",
+      "name": "EnableInput",
+      "filePath": "main/audio/codecs/es8389_audio_codec.cc",
+      "lineRange": [
+        143,
+        162
+      ],
+      "summary": "实现 EnableInput 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/codecs/es8389_audio_codec.cc:EnableOutput",
+      "type": "function",
+      "name": "EnableOutput",
+      "filePath": "main/audio/codecs/es8389_audio_codec.cc",
+      "lineRange": [
+        164,
+        190
+      ],
+      "summary": "实现 EnableOutput 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/codecs/es8389_audio_codec.h",
+      "type": "file",
+      "name": "es8389_audio_codec.h",
+      "filePath": "main/audio/codecs/es8389_audio_codec.h",
+      "summary": "定义 ES8389 音频编解码器类的接口声明，继承自 AudioCodec 基类。",
+      "tags": [
+        "audio-codec",
+        "es8389",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/codecs/no_audio_codec.cc",
+      "type": "file",
+      "name": "no_audio_codec.cc",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "summary": "实现 NO 音频编解码器的具体驱动逻辑，包括 I2C 配置、双工通道创建、音量控制和输入输出使能。",
+      "tags": [
+        "audio-codec",
+        "null-object",
+        "implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecDuplex",
+      "type": "function",
+      "name": "NoAudioCodecDuplex",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        18,
+        75
+      ],
+      "summary": "实现 NoAudioCodecDuplex 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplex",
+      "type": "function",
+      "name": "NoAudioCodecSimplex",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        78,
+        145
+      ],
+      "summary": "实现 NoAudioCodecSimplex 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplex__2",
+      "type": "function",
+      "name": "NoAudioCodecSimplex",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        147,
+        215
+      ],
+      "summary": "实现 NoAudioCodecSimplex 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:Write",
+      "type": "function",
+      "name": "Write",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        217,
+        238
+      ],
+      "summary": "实现 Write 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:Read",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        240,
+        255
+      ],
+      "summary": "实现 Read 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplexPdm",
+      "type": "function",
+      "name": "NoAudioCodecSimplexPdm",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        263,
+        339
+      ],
+      "summary": "实现 NoAudioCodecSimplexPdm 函数功能。",
+      "tags": [
+        "audio-codec"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/codecs/no_audio_codec.cc:Read__2",
+      "type": "function",
+      "name": "Read",
+      "filePath": "main/audio/codecs/no_audio_codec.cc",
+      "lineRange": [
+        341,
+        359
+      ],
+      "summary": "实现 Read 函数功能。",
+      "tags": [
+        "io"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/codecs/no_audio_codec.h",
+      "type": "file",
+      "name": "no_audio_codec.h",
+      "filePath": "main/audio/codecs/no_audio_codec.h",
+      "summary": "定义 NO 音频编解码器类的接口声明，继承自 AudioCodec 基类。",
+      "tags": [
+        "audio-codec",
+        "null-object",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/processors/afe_audio_processor.cc",
+      "type": "file",
+      "name": "afe_audio_processor.cc",
+      "filePath": "main/audio/processors/afe_audio_processor.cc",
+      "summary": "实现 AFE 音频处理器的具体逻辑，对接 ESP-SR 声学前端进行音频降噪和增强处理。",
+      "tags": [
+        "audio-processor",
+        "esp-afe",
+        "implementation",
+        "source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/audio/processors/afe_audio_processor.cc:Initialize",
+      "type": "function",
+      "name": "Initialize",
+      "filePath": "main/audio/processors/afe_audio_processor.cc",
+      "lineRange": [
+        13,
+        75
+      ],
+      "summary": "实现 Initialize 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/processors/afe_audio_processor.cc:AudioProcessorTask",
+      "type": "function",
+      "name": "AudioProcessorTask",
+      "filePath": "main/audio/processors/afe_audio_processor.cc",
+      "lineRange": [
+        121,
+        173
+      ],
+      "summary": "实现 AudioProcessorTask 函数功能。",
+      "tags": [
+        "processing"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/processors/afe_audio_processor.cc:EnableDeviceAec",
+      "type": "function",
+      "name": "EnableDeviceAec",
+      "filePath": "main/audio/processors/afe_audio_processor.cc",
+      "lineRange": [
+        175,
+        187
+      ],
+      "summary": "实现 EnableDeviceAec 函数功能。",
+      "tags": [
+        "control"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/processors/afe_audio_processor.h",
+      "type": "file",
+      "name": "afe_audio_processor.h",
+      "filePath": "main/audio/processors/afe_audio_processor.h",
+      "summary": "定义 AFE (Audio Front-End) 音频处理器的接口，封装 ESP-SR 声学前端算法。",
+      "tags": [
+        "audio-processor",
+        "esp-afe",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/processors/audio_debugger.cc",
+      "type": "file",
+      "name": "audio_debugger.cc",
+      "filePath": "main/audio/processors/audio_debugger.cc",
+      "summary": "实现音频调试器，支持音频数据的录制、保存和调试输出。",
+      "tags": [
+        "audio-processor",
+        "implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/processors/audio_debugger.cc:AudioDebugger",
+      "type": "function",
+      "name": "AudioDebugger",
+      "filePath": "main/audio/processors/audio_debugger.cc",
+      "lineRange": [
+        16,
+        43
+      ],
+      "summary": "实现 AudioDebugger 函数功能。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/audio/processors/audio_debugger.cc:Feed",
+      "type": "function",
+      "name": "Feed",
+      "filePath": "main/audio/processors/audio_debugger.cc",
+      "lineRange": [
+        54,
+        66
+      ],
+      "summary": "实现 Feed 函数功能。",
+      "tags": [
+        "data-feed"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/processors/audio_debugger.h",
+      "type": "file",
+      "name": "audio_debugger.h",
+      "filePath": "main/audio/processors/audio_debugger.h",
+      "summary": "定义音频调试器接口，提供音频数据调试与监控功能。",
+      "tags": [
+        "audio-processor",
+        "interface",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/audio/processors/no_audio_processor.cc",
+      "type": "file",
+      "name": "no_audio_processor.cc",
+      "filePath": "main/audio/processors/no_audio_processor.cc",
+      "summary": "实现空音频处理器，在不使用音频处理时提供空操作的占位实现。",
+      "tags": [
+        "audio-processor",
+        "null-object",
+        "implementation",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/audio/processors/no_audio_processor.cc:Feed",
+      "type": "function",
+      "name": "Feed",
+      "filePath": "main/audio/processors/no_audio_processor.cc",
+      "lineRange": [
+        11,
+        26
+      ],
+      "summary": "实现 Feed 函数功能。",
+      "tags": [
+        "data-feed"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/audio/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/audio/README.md",
+      "summary": "audio 开发板的说明文档，包含硬件配置、引脚图和编译说明。",
+      "tags": [
+        "documentation",
+        "audio",
+        "utility"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "file:main/audio/codecs/es8388_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:Es8388AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:Es8388AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:~Es8388AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:~Es8388AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:CreateDuplexChannels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:CreateDuplexChannels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8388_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8388_audio_codec.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "file:main/audio/codecs/es8389_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:Es8389AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:Es8389AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:~Es8389AudioCodec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:~Es8389AudioCodec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:CreateDuplexChannels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:CreateDuplexChannels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:EnableInput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:EnableInput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:EnableOutput",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/es8389_audio_codec.cc",
+      "target": "function:main/audio/codecs/es8389_audio_codec.cc:EnableOutput",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "file:main/audio/codecs/no_audio_codec.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecDuplex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecDuplex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplex__2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplex__2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:Write",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:Write",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:Read",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:Read",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplexPdm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:NoAudioCodecSimplexPdm",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:Read__2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/codecs/no_audio_codec.cc",
+      "target": "function:main/audio/codecs/no_audio_codec.cc:Read__2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "file:main/audio/processors/afe_audio_processor.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "function:main/audio/processors/afe_audio_processor.cc:Initialize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "function:main/audio/processors/afe_audio_processor.cc:Initialize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "function:main/audio/processors/afe_audio_processor.cc:AudioProcessorTask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "function:main/audio/processors/afe_audio_processor.cc:AudioProcessorTask",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "function:main/audio/processors/afe_audio_processor.cc:EnableDeviceAec",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/processors/afe_audio_processor.cc",
+      "target": "function:main/audio/processors/afe_audio_processor.cc:EnableDeviceAec",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/processors/audio_debugger.cc",
+      "target": "file:main/audio/processors/audio_debugger.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/processors/audio_debugger.cc",
+      "target": "function:main/audio/processors/audio_debugger.cc:AudioDebugger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/processors/audio_debugger.cc",
+      "target": "function:main/audio/processors/audio_debugger.cc:AudioDebugger",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/processors/audio_debugger.cc",
+      "target": "function:main/audio/processors/audio_debugger.cc:Feed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/processors/audio_debugger.cc",
+      "target": "function:main/audio/processors/audio_debugger.cc:Feed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/audio/processors/no_audio_processor.cc",
+      "target": "file:main/audio/processors/no_audio_processor.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/audio/processors/no_audio_processor.cc",
+      "target": "function:main/audio/processors/no_audio_processor.cc:Feed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/audio/processors/no_audio_processor.cc",
+      "target": "function:main/audio/processors/no_audio_processor.cc:Feed",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

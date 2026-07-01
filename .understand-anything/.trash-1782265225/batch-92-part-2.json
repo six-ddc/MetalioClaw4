@@ -1,0 +1,527 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/labplus-ledong-v2/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/labplus-ledong-v2/config.h",
+      "summary": "定义 LED 指示灯组件的抽象接口声明。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "header"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/labplus-ledong-v2/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/labplus-ledong-v2/config.json",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "board-config",
+        "configuration",
+        "labplus-ledong-v2"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "type": "file",
+      "name": "labplus_ledong_v2.cc",
+      "filePath": "main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "summary": "实现 LED 指示灯组件的控制逻辑。",
+      "tags": [
+        "led",
+        "hardware-driver",
+        "source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "lineRange": [
+        27,
+        42
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "lineRange": [
+        45,
+        54
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "lineRange": [
+        56,
+        69
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeJd9853Display",
+      "type": "function",
+      "name": "InitializeJd9853Display",
+      "filePath": "main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "lineRange": [
+        71,
+        120
+      ],
+      "summary": "实现 InitializeJd9853Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:labplus_ledong_v2",
+      "type": "class",
+      "name": "labplus_ledong_v2",
+      "filePath": "main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "lineRange": [
+        21,
+        161
+      ],
+      "summary": "定义 labplus_ledong_v2 类及其方法。",
+      "tags": [
+        "led"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/labplus-mpython-v3/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/labplus-mpython-v3/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/labplus-mpython-v3/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/labplus-mpython-v3/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "labplus-mpython-v3"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "type": "file",
+      "name": "mpython_pro.cc",
+      "filePath": "main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "summary": "实现 mpython_pro 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "lineRange": [
+        24,
+        39
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "lineRange": [
+        42,
+        51
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "lineRange": [
+        53,
+        66
+      ],
+      "summary": "实现 InitializeButtons 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "lineRange": [
+        68,
+        100
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/labplus-mpython-v3/mpython_pro.cc:mpython_v3",
+      "type": "class",
+      "name": "mpython_v3",
+      "filePath": "main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "lineRange": [
+        18,
+        141
+      ],
+      "summary": "定义 mpython_v3 类及其方法。",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/labplus-mpython-v3/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/labplus-mpython-v3/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lichuang-c3-dev/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/lichuang-c3-dev/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:main/boards/lichuang-c3-dev/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": "main/boards/lichuang-c3-dev/config.json",
+      "summary": "实现 config.json 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "board-config",
+        "configuration",
+        "lichuang-c3-dev"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "type": "file",
+      "name": "lichuang_c3_dev_board.cc",
+      "filePath": "main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "summary": "实现 Board 基类的通用功能逻辑。",
+      "tags": [
+        "source",
+        "utility"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "lineRange": [
+        23,
+        38
+      ],
+      "summary": "实现 InitializeI2c 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "lineRange": [
+        40,
+        49
+      ],
+      "summary": "实现 InitializeSpi 函数功能。",
+      "tags": [
+        "initialization",
+        "hardware-io",
+        "initialization"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "lineRange": [
+        61,
+        92
+      ],
+      "summary": "实现 InitializeSt7789Display 函数功能。",
+      "tags": [
+        "initialization",
+        "initialization",
+        "display"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:LichuangC3DevBoard",
+      "type": "class",
+      "name": "LichuangC3DevBoard",
+      "filePath": "main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "lineRange": [
+        17,
+        127
+      ],
+      "summary": "定义 LichuangC3DevBoard 类及其方法。",
+      "tags": [
+        "board"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:main/boards/lichuang-c3-dev/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "main/boards/lichuang-c3-dev/README.md",
+      "summary": "实现 README.md 开发板的硬件初始化和控制逻辑。",
+      "tags": [
+        "documentation",
+        "utility"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/lichuang-dev/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/lichuang-dev/config.h",
+      "summary": "定义 config 开发板特定硬件接口或组件声明。",
+      "tags": [
+        "header",
+        "utility"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "file:main/boards/labplus-ledong-v2/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "function:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:InitializeJd9853Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "class:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:labplus_ledong_v2",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc",
+      "target": "class:main/boards/labplus-ledong-v2/labplus_ledong_v2.cc:labplus_ledong_v2",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "file:main/boards/labplus-mpython-v3/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "function:main/boards/labplus-mpython-v3/mpython_pro.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "class:main/boards/labplus-mpython-v3/mpython_pro.cc:mpython_v3",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/labplus-mpython-v3/mpython_pro.cc",
+      "target": "class:main/boards/labplus-mpython-v3/mpython_pro.cc:mpython_v3",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "target": "file:main/boards/lichuang-c3-dev/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "target": "function:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "target": "function:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "target": "function:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "target": "class:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:LichuangC3DevBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc",
+      "target": "class:main/boards/lichuang-c3-dev/lichuang_c3_dev_board.cc:LichuangC3DevBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

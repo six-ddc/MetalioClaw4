@@ -1,0 +1,529 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/waveshare-s3-audio-board/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/waveshare-s3-audio-board/config.h",
+      "summary": "waveshare-s3-audio-board 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "type": "file",
+      "name": "esp32-s3-audio_board.cc",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "summary": "waveshare-s3-audio-board 开发板的主板实现，包含CustomBoard类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeI2c",
+      "type": "function",
+      "name": "InitializeI2c",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        37,
+        46
+      ],
+      "summary": "初始化I2C总线，配置主机模式、时钟速率和引脚。",
+      "tags": [
+        "I2C",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeTca9555",
+      "type": "function",
+      "name": "InitializeTca9555",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        48,
+        70
+      ],
+      "summary": "InitializeTca9555 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeSpi",
+      "type": "function",
+      "name": "InitializeSpi",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        72,
+        81
+      ],
+      "summary": "初始化SPI总线，配置主机模式、时钟频率和数据位宽参数。",
+      "tags": [
+        "SPI",
+        "总线初始化",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeSt7789Display",
+      "type": "function",
+      "name": "InitializeSt7789Display",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        83,
+        113
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeJd9853Display",
+      "type": "function",
+      "name": "InitializeJd9853Display",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        115,
+        146
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeCamera",
+      "type": "function",
+      "name": "InitializeCamera",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        158,
+        197
+      ],
+      "summary": "InitializeCamera 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "type": "function",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        199,
+        212
+      ],
+      "summary": "CustomBoard 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "type": "class",
+      "name": "CustomBoard",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "lineRange": [
+        29,
+        237
+      ],
+      "summary": "CustomBoard 开发板主板类，继承自开发板基类，封装全部硬件外设的初始化、控制和状态管理逻辑。",
+      "tags": [
+        "主板类",
+        "硬件抽象",
+        "外设管理"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "type": "file",
+      "name": "esp_lcd_jd9853.c",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "summary": "基于ESP-IDF LCD驱动的jd9853面板底层驱动实现，提供初始化、颜色格式设置、显示控制等SPI/RGB接口操作。",
+      "tags": [
+        "LCD驱动",
+        "显示面板",
+        "SPI"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:esp_lcd_new_panel_jd9853",
+      "type": "function",
+      "name": "esp_lcd_new_panel_jd9853",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        49,
+        149
+      ],
+      "summary": "esp_lcd_new_panel_jd9853 函数的完整实现，包含101行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_del",
+      "type": "function",
+      "name": "panel_jd9853_del",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        151,
+        162
+      ],
+      "summary": "panel_jd9853_del 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_reset",
+      "type": "function",
+      "name": "panel_jd9853_reset",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        164,
+        184
+      ],
+      "summary": "panel_jd9853_reset 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_init",
+      "type": "function",
+      "name": "panel_jd9853_init",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        276,
+        338
+      ],
+      "summary": "panel_jd9853_init 函数的完整实现，包含63行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_draw_bitmap",
+      "type": "function",
+      "name": "panel_jd9853_draw_bitmap",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        340,
+        373
+      ],
+      "summary": "panel_jd9853_draw_bitmap 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_invert_color",
+      "type": "function",
+      "name": "panel_jd9853_invert_color",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        375,
+        390
+      ],
+      "summary": "panel_jd9853_invert_color 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_mirror",
+      "type": "function",
+      "name": "panel_jd9853_mirror",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        392,
+        414
+      ],
+      "summary": "panel_jd9853_mirror 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_swap_xy",
+      "type": "function",
+      "name": "panel_jd9853_swap_xy",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        416,
+        430
+      ],
+      "summary": "panel_jd9853_swap_xy 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_disp_on_off",
+      "type": "function",
+      "name": "panel_jd9853_disp_on_off",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "lineRange": [
+        440,
+        460
+      ],
+      "summary": "panel_jd9853_disp_on_off 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.h",
+      "type": "file",
+      "name": "esp_lcd_jd9853.h",
+      "filePath": "main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.h",
+      "summary": "jd9853 LCD面板的驱动配置头文件及寄存器定义，包含初始化命令序列和时序参数。",
+      "tags": [
+        "LCD驱动",
+        "显示面板",
+        "寄存器定义"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeTca9555",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeJd9853Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeTca9555",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeSpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeSt7789Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeJd9853Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:InitializeCamera",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc:CustomBoard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "file:main/boards/waveshare-s3-audio-board/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp32-s3-audio_board.cc",
+      "target": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:esp_lcd_new_panel_jd9853",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_del",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_reset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_draw_bitmap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_invert_color",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_mirror",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_swap_xy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:panel_jd9853_disp_on_off",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "function:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c:esp_lcd_new_panel_jd9853",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.c",
+      "target": "file:main/boards/waveshare-s3-audio-board/esp_lcd_jd9853.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

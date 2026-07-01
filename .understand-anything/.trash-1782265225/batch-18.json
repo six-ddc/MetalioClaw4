@@ -1,0 +1,415 @@
+{
+  "nodes": [
+    {
+      "id": "file:main/boards/kevin-yuying-313lcd/config.h",
+      "type": "file",
+      "name": "config.h",
+      "filePath": "main/boards/kevin-yuying-313lcd/config.h",
+      "summary": "kevin-yuying-313lcd 开发板的硬件配置头文件，定义GPIO引脚映射、显示、音频、触摸、LED、按键、存储等外设接口参数。",
+      "tags": [
+        "配置",
+        "硬件定义",
+        "引脚映射",
+        "开发板"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "type": "file",
+      "name": "esp_lcd_gc9503.c",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "summary": "基于ESP-IDF LCD驱动的gc9503面板底层驱动实现，提供初始化、颜色格式设置、显示控制等SPI/RGB接口操作。",
+      "tags": [
+        "LCD驱动",
+        "显示面板",
+        "SPI"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "type": "function",
+      "name": "esp_lcd_new_panel_gc9503",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        58,
+        179
+      ],
+      "summary": "esp_lcd_new_panel_gc9503 函数的完整实现，包含122行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_send_init_cmds",
+      "type": "function",
+      "name": "panel_gc9503_send_init_cmds",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        293,
+        357
+      ],
+      "summary": "panel_gc9503_send_init_cmds 函数的完整实现，包含65行代码的核心功能逻辑。",
+      "tags": [
+        "复杂函数",
+        "实现"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_init",
+      "type": "function",
+      "name": "panel_gc9503_init",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        359,
+        371
+      ],
+      "summary": "panel_gc9503_init 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_del",
+      "type": "function",
+      "name": "panel_gc9503_del",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        373,
+        386
+      ],
+      "summary": "panel_gc9503_del 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_reset",
+      "type": "function",
+      "name": "panel_gc9503_reset",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        388,
+        410
+      ],
+      "summary": "panel_gc9503_reset 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_mirror",
+      "type": "function",
+      "name": "panel_gc9503_mirror",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        412,
+        450
+      ],
+      "summary": "panel_gc9503_mirror 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_disp_on_off",
+      "type": "function",
+      "name": "panel_gc9503_disp_on_off",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "lineRange": [
+        452,
+        478
+      ],
+      "summary": "panel_gc9503_disp_on_off 功能函数的实现。",
+      "tags": [
+        "功能函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.h",
+      "type": "file",
+      "name": "esp_lcd_gc9503.h",
+      "filePath": "main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.h",
+      "summary": "gc9503 LCD面板的驱动配置头文件及寄存器定义，包含初始化命令序列和时序参数。",
+      "tags": [
+        "LCD驱动",
+        "显示面板",
+        "寄存器定义"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "type": "file",
+      "name": "kevin_yuying_313lcd.cc",
+      "filePath": "main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "summary": "kevin-yuying-313lcd 开发板的主板实现，包含Yuying_313lcd类，负责初始化显示、音频、按键、电源管理等全部硬件外设。",
+      "tags": [
+        "主板实现",
+        "硬件初始化",
+        "外设驱动"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeRGB_GC9503V_Display",
+      "type": "function",
+      "name": "InitializeRGB_GC9503V_Display",
+      "filePath": "main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "lineRange": [
+        26,
+        104
+      ],
+      "summary": "初始化LCD显示屏，配置SPI/RGB接口、背光和复位时序参数。",
+      "tags": [
+        "显示初始化",
+        "LCD",
+        "硬件配置"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeCodecI2c",
+      "type": "function",
+      "name": "InitializeCodecI2c",
+      "filePath": "main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "lineRange": [
+        106,
+        121
+      ],
+      "summary": "初始化音频编解码器芯片，通过I2C配置寄存器参数。",
+      "tags": [
+        "音频编解码",
+        "I2C"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeButtons",
+      "type": "function",
+      "name": "InitializeButtons",
+      "filePath": "main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "lineRange": [
+        123,
+        136
+      ],
+      "summary": "初始化硬件按键，配置GPIO中断、消抖和按键事件回调。",
+      "tags": [
+        "按键",
+        "GPIO",
+        "输入设备",
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "type": "function",
+      "name": "Yuying_313lcd",
+      "filePath": "main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "lineRange": [
+        139,
+        144
+      ],
+      "summary": "Yuying_313lcd 辅助函数或回调处理。",
+      "tags": [
+        "辅助函数"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "type": "class",
+      "name": "Yuying_313lcd",
+      "filePath": "main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "lineRange": [
+        20,
+        161
+      ],
+      "summary": "Yuying_313lcd LCD显示类，封装LVGL显示驱动初始化、缓冲区管理和帧刷新操作。",
+      "tags": [
+        "LCD显示",
+        "LVGL"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:main/boards/kevin-yuying-313lcd/pin_config.h",
+      "type": "file",
+      "name": "pin_config.h",
+      "filePath": "main/boards/kevin-yuying-313lcd/pin_config.h",
+      "summary": "kevin-yuying-313lcd 开发板的引脚配置头文件，定义所有外设的GPIO引脚映射。",
+      "tags": [
+        "引脚映射",
+        "硬件定义",
+        "GPIO"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_send_init_cmds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_del",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_reset",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_mirror",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:panel_gc9503_disp_on_off",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "function:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c:esp_lcd_new_panel_gc9503",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.c",
+      "target": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeRGB_GC9503V_Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "class:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "class:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeRGB_GC9503V_Display",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeCodecI2c",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:InitializeButtons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "class:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 0.9
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "function:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc:Yuying_313lcd",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "file:main/boards/kevin-yuying-313lcd/config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "file:main/boards/kevin-yuying-313lcd/esp_lcd_gc9503.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:main/boards/kevin-yuying-313lcd/kevin_yuying_313lcd.cc",
+      "target": "file:main/boards/kevin-yuying-313lcd/pin_config.h",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}
