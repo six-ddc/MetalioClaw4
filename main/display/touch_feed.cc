@@ -19,6 +19,8 @@ struct TouchSnapshot {
     bool pressed = false;
     int16_t x = 0;
     int16_t y = 0;
+    uint8_t count = 0;       // 按下的手指数（0/1/2）
+    int16_t x1 = 0, y1 = 0;  // 第二指坐标（count>=2 时有效）
 };
 
 TouchSnapshot s_snap;
@@ -64,16 +66,21 @@ void UpdateSnapshotFromChip() {
         return;
     }
 
-    esp_lcd_touch_point_data_t points[1] = {};
+    esp_lcd_touch_point_data_t points[2] = {};
     uint8_t cnt = 0;
-    if (esp_lcd_touch_get_data(s_handle, points, &cnt, 1) != ESP_OK) {
+    if (esp_lcd_touch_get_data(s_handle, points, &cnt, 2) != ESP_OK) {
         return;
     }
 
+    next.count = cnt;
     if (cnt > 0) {
         next.pressed = true;
         next.x = static_cast<int16_t>(points[0].x);
         next.y = static_cast<int16_t>(points[0].y);
+        if (cnt >= 2) {
+            next.x1 = static_cast<int16_t>(points[1].x);
+            next.y1 = static_cast<int16_t>(points[1].y);
+        }
     } else {
         next.pressed = false;
     }
@@ -168,6 +175,19 @@ void touch_feed_attach_indev(lv_indev_t* indev) {
         return;
     }
     lv_indev_set_read_cb(indev, IndevReadCb);
+}
+
+uint8_t touch_feed_finger_count(int16_t* x0, int16_t* y0, int16_t* x1, int16_t* y1) {
+    TouchSnapshot snap;
+    if (s_mutex != nullptr && xSemaphoreTake(s_mutex, pdMS_TO_TICKS(10)) == pdTRUE) {
+        snap = s_snap;
+        xSemaphoreGive(s_mutex);
+    }
+    if (x0) *x0 = snap.x;
+    if (y0) *y0 = snap.y;
+    if (x1) *x1 = snap.x1;
+    if (y1) *y1 = snap.y1;
+    return snap.count;
 }
 
 void touch_feed_stop() {

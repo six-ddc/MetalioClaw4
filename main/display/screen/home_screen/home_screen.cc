@@ -47,6 +47,7 @@
 #include "sd_card_screen/sd_card_screen.h"
 #include "theme_screen/theme_screen.h"
 #include "info_screen/info_screen.h"
+#include "stock_screen/stock_screen.h"
 #include "theme_manager.h"
 
 LV_FONT_DECLARE(font_puhui_20_4);
@@ -142,6 +143,8 @@ void weather_lifecycle_cb(screen_lifecycle_event_t event) {
         ESP_LOGI(TAG_HOME, "unload: weather_screen");
     }
 }
+
+void stock_lifecycle_cb(screen_lifecycle_event_t event) { StockScreen::LifecycleCallback(event); }
 
 // GPS 屏幕的 GPS_POWER 开关已经搬到 GpsScreen::LifecycleCallback；这里
 // 只保留日志 + 转发，与 camera / vibrate / bluetooth 等屏幕的写法对齐。
@@ -399,6 +402,16 @@ void LaunchRadio(screen_lifecycle_cb_t lifecycle_cb) {
 void LaunchWeather(screen_lifecycle_cb_t lifecycle_cb) {
     lv_obj_t* old_scr = lv_screen_active();
     lv_obj_t* app = WeatherScreen::Create();
+    screen_attach_lifecycle(app, lifecycle_cb);
+    lv_screen_load(app);
+    if (old_scr != nullptr && old_scr != app) {
+        lv_obj_delete_async(old_scr);
+    }
+}
+
+void LaunchStock(screen_lifecycle_cb_t lifecycle_cb) {
+    lv_obj_t* old_scr = lv_screen_active();
+    lv_obj_t* app = StockScreen::Create();
     screen_attach_lifecycle(app, lifecycle_cb);
     lv_screen_load(app);
     if (old_scr != nullptr && old_scr != app) {
@@ -753,6 +766,7 @@ constexpr AppEntry kApps[] = {
     {"2048",           "2048",     LaunchGame2048,      game_2048_lifecycle_cb},
     {"info",           "系统信息", LaunchInfo,          info_lifecycle_cb},
     {"theme",          "主题",     LaunchTheme,         theme_lifecycle_cb},
+    {"stock",          "股票",     LaunchStock,         stock_lifecycle_cb},
     {"test",           "测试",     LaunchTest,          test_lifecycle_cb},
     {"settings",       "设置",     LaunchSettings,      settings_lifecycle_cb},
     {"radio",       "电台",     LaunchRadio,      radio_lifecycle_cb},
