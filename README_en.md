@@ -375,7 +375,7 @@ Metalio Claw4 connects P4 and C5 over **SDIO Slot 1**, **4-bit** bus at **40 MHz
 
 ## 8. Schematic Notes
 
-Schematics, PCB, and BOM will be published with the hardware open-source repo; not included here yet. For pins and connections, see [§7 Peripherals & Pins](#7-peripherals--pins) and board `config.h`.
+
 
 ---
 
