@@ -103,6 +103,11 @@ esp_err_t SendText(httpd_req_t* req, const char* status, const char* text) {
     return httpd_resp_sendstr(req, text);
 }
 
+bool Suffix4(const char* e, char a, char b, char c, char d) {
+    return e[0] == '.' && (e[1] | 0x20) == a && (e[2] | 0x20) == b && (e[3] | 0x20) == c &&
+           (e[4] | 0x20) == d;
+}
+
 // 书籍后缀 .txt / .epub（不区分大小写）。
 bool HasBookSuffix(const char* name, size_t n) {
     if (n >= 4) {
@@ -110,17 +115,24 @@ bool HasBookSuffix(const char* name, size_t n) {
         if (e[0] == '.' && (e[1] | 0x20) == 't' && (e[2] | 0x20) == 'x' && (e[3] | 0x20) == 't')
             return true;
     }
-    if (n >= 5) {
-        const char* e = name + n - 5;
-        if (e[0] == '.' && (e[1] | 0x20) == 'e' && (e[2] | 0x20) == 'p' && (e[3] | 0x20) == 'u' &&
-            (e[4] | 0x20) == 'b')
-            return true;
-    }
+    if (n >= 5 && Suffix4(name + n - 5, 'e', 'p', 'u', 'b')) return true;
     return false;
 }
 
-// 校验并规整书名：非空、≤kNameMax、以 .txt/.epub 结尾、无路径穿越/控制字符。
-// 合法返回原名，否则空。
+// 字体后缀 .ttf / .otf（不区分大小写）。
+bool HasFontSuffix(const char* name, size_t n) {
+    if (n < 4) return false;
+    const char* e = name + n - 4;
+    return (e[0] == '.' && (e[1] | 0x20) == 't' && (e[2] | 0x20) == 't' && (e[3] | 0x20) == 'f') ||
+           (e[0] == '.' && (e[1] | 0x20) == 'o' && (e[2] | 0x20) == 't' && (e[3] | 0x20) == 'f');
+}
+
+// 上传/删除对象：书籍(.txt/.epub) 或字体(.ttf/.otf) 同放 /sdcard/books。
+bool HasUploadSuffix(const char* name, size_t n) {
+    return HasBookSuffix(name, n) || HasFontSuffix(name, n);
+}
+
+// 校验并规整文件名：非空、≤kNameMax、书籍/字体后缀、无路径穿越/控制字符。合法返回原名，否则空。
 std::string SanitizeBookName(const std::string& raw) {
     if (raw.empty() || raw.size() > kNameMax) return "";
     if (raw.find('/') != std::string::npos || raw.find('\\') != std::string::npos) return "";
@@ -128,7 +140,7 @@ std::string SanitizeBookName(const std::string& raw) {
     for (char c : raw) {
         if (static_cast<unsigned char>(c) < 0x20) return "";
     }
-    if (!HasBookSuffix(raw.c_str(), raw.size())) return "";
+    if (!HasUploadSuffix(raw.c_str(), raw.size())) return "";
     return raw;
 }
 
@@ -158,7 +170,7 @@ esp_err_t ListGet(httpd_req_t* req) {
             struct dirent* ent;
             while ((ent = readdir(dir)) != nullptr) {
                 if (ent->d_name[0] == '.') continue;
-                if (!HasBookSuffix(ent->d_name, strlen(ent->d_name))) continue;
+                if (!HasUploadSuffix(ent->d_name, strlen(ent->d_name))) continue;
                 names.emplace_back(ent->d_name);
             }
             closedir(dir);
@@ -173,13 +185,16 @@ esp_err_t ListGet(httpd_req_t* req) {
                 if (S_ISDIR(st.st_mode)) continue;
                 size = static_cast<uint32_t>(st.st_size);
             }
+            const char* type = HasFontSuffix(nm.c_str(), nm.size()) ? "font" : "book";
             if (!first) json += ",";
             first = false;
             json += "{\"name\":\"";
             JsonEscapeInto(json, nm);
             json += "\",\"size\":";
             json += std::to_string(size);
-            json += "}";
+            json += ",\"type\":\"";
+            json += type;
+            json += "\"}";
         }
     }
     json += "]";

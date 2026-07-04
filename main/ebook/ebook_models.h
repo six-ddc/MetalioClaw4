@@ -61,7 +61,10 @@ struct ChapterIndex {
 // 排版参数。字号/行距/边距设置的展开形态，paginator 的唯一输入维度。
 struct PageMetrics {
     const lv_font_t* font = nullptr;
-    int16_t line_height = 0;  // 字体行高（font_puhui_16/20/30 = 20/25/38）
+    bool ft_font = false;     // true = font/heading_font 为 FreeType 用户字体（生命周期非永生，
+                              // 由 ebook_font 的 fence/graveyard 管理；测宽线程安全靠 lv_freetype
+                              // 内部 face_lock）。false = 内置点阵 const 字体（永生、只读安全）。
+    int16_t line_height = 0;  // 行高：内置取字号档硬编码；FT 取 lv_font_get_line_height()
     int16_t line_space = 0;   // 行间距（叠加在 line_height 上）
     int16_t para_space = 0;   // 段落间额外间距
     int16_t content_w = 0;    // 正文区宽 = 720 - 2*margin_h
@@ -118,6 +121,14 @@ struct HeadingSpan {
     uint32_t len = 0;
 };
 
+// 强调段旁表条目（EPUB <b>/<strong>/<i>/<em>；off/len 相对 utf8_buf，按 off 升序、互不重叠）。
+// reader_view 据此把该字节区间用主题强调色（accent）渲染。bitmap 模式 FreeType 无法真加粗/
+// 斜体，故 v1 以「换色」呈现强调；不参与分页测宽（换色不改字宽）。
+struct EmphasisSpan {
+    uint32_t off = 0;
+    uint32_t len = 0;
+};
+
 // 一页 = lines 数组里的一个连续区间。byte_start 是该页第一行对应的
 // **原文件**字节偏移 —— 阅读进度锚点。
 struct PageSpan {
@@ -144,6 +155,7 @@ struct PaginatedChapter {
     std::vector<PageSpan> pages;
     std::vector<ImageRef> images;      // 章内插图旁表（按 off 升序；仅 EPUB）
     std::vector<HeadingSpan> headings;  // 标题段旁表（按 off 升序；仅 EPUB）
+    std::vector<EmphasisSpan> emphasis;  // 强调段旁表（按 off 升序、不重叠；仅 EPUB）
 
     void FreeBuf();
     // 找到包含指定原文件字节偏移的页下标（重分页后定位）；越界返回最近页。
@@ -154,10 +166,13 @@ struct PaginatedChapter {
 
 // 阅读设置（NVS namespace "ebook"）。各字段是档位下标，展开见 ebook_ui_theme.h。
 struct ReaderSettings {
-    uint8_t font_idx = 1;        // 0/1/2 -> 16/20/30 号
+    uint8_t font_idx = 1;        // 字号档 0/1/2/3 -> 20/30/40/50 号（"特大"50 仅 FT 字体可用）
     uint8_t theme_idx = 1;       // 0 白 / 1 米黄 / 2 夜间
     uint8_t line_space_idx = 1;  // 行距档
     uint8_t margin_idx = 1;      // 边距档
+    // 用户 FreeType 字体文件名（/sdcard/books/ 下的 *.ttf/*.otf；空串 = 内置点阵字体）。
+    // 文件缺失/SD 未挂载/创建失败时本次会话回退内置，设置保留。
+    char font_face[64] = {0};
 };
 
 #endif  // EBOOK_MODELS_H

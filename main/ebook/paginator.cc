@@ -84,6 +84,56 @@ size_t PrevCharStart(const char* buf, size_t off, size_t lo) {
     return p;
 }
 
+// FT 用户字体测宽缓存（仅 m.ft_font 时启用）：lv_freetype 度量 miss 要持 face_lock 走
+// FT_Load_Glyph（文件流 face = SD 随机读），比内置点阵查表贵几个量级，且与 draw 线程的字形
+// 光栅化争同一把锁；中文正文重复率极高，每章一张开放寻址表把 O(章字数) 次 FT 调用压到
+// O(去重字形数)。内置字体不走缓存：查表本身就快，且其 kerning 使宽度依赖下一字符，按 cp
+// 缓存会改变断行。FT 字体 kerning=NONE（适配器默认），宽度只由 cp 决定；缺字 fallback 到
+// 内置的罕见字忽略 kerning 误差（罕见字几乎无 kerning 对，且分页只需近似不越界）。
+class WidthCache {
+public:
+    explicit WidthCache(bool enable) {
+        if (enable) {
+            e_ = static_cast<Entry*>(
+                heap_caps_calloc(kSlots, sizeof(Entry), MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT));
+        }
+    }
+    ~WidthCache() {
+        if (e_ != nullptr) heap_caps_free(e_);
+    }
+    WidthCache(const WidthCache&) = delete;
+    WidthCache& operator=(const WidthCache&) = delete;
+
+    uint16_t Get(const lv_font_t* font, uint32_t cp, uint32_t ncp) {
+        if (e_ == nullptr || cp == 0) return lv_font_get_glyph_width(font, cp, ncp);
+        size_t h = (cp * 2654435761u) & (kSlots - 1);
+        size_t empty = SIZE_MAX;
+        for (int p = 0; p < kMaxProbe; p++) {
+            Entry& s = e_[(h + p) & (kSlots - 1)];
+            if (s.cp == cp) return s.w;
+            if (s.cp == 0) {
+                empty = (h + p) & (kSlots - 1);
+                break;
+            }
+        }
+        uint16_t w = lv_font_get_glyph_width(font, cp, ncp);
+        if (empty != SIZE_MAX) {  // 探测窗口满则放弃写入（近满时退化为直测，不淘汰）
+            e_[empty].cp = cp;
+            e_[empty].w = w;
+        }
+        return w;
+    }
+
+private:
+    struct Entry {
+        uint32_t cp;  // 0 = 空槽（cp==0 不缓存）
+        uint16_t w;
+    };
+    static constexpr size_t kSlots = 4096;  // 2^n；单章去重字形数常 <3k，32KB PSRAM
+    static constexpr int kMaxProbe = 8;
+    Entry* e_ = nullptr;
+};
+
 // 行高按行型展开：文本行 / 标题行 / 图片行（fit = 占位判断高，adv = 实际推进高）。
 void LineHeights(const PaginatedChapter& ch, const PageMetrics& m, const LineSpan& ls, int* fit,
                  int* adv) {
@@ -164,6 +214,9 @@ void Paginate(PaginatedChapter& ch, const PageMetrics& m) {
 
     int indent_w = m.indent_w;  // 段首缩进宽（BuildMetrics 统一测算，与 reader_view 渲染同源）
 
+    // 正文字体测宽缓存（标题字体行占比极小，不值得再开一张表，走直测）。
+    WidthCache wcache(m.ft_font);
+
     size_t heading_cur = 0;  // ch.headings 升序游标
 
     size_t i = 0;
@@ -224,7 +277,8 @@ void Paginate(PaginatedChapter& ch, const PageMetrics& m) {
                 uint32_t cp = Decode(buf, j, pend, &adv);
                 uint8_t adv2;
                 uint32_t ncp = (j + adv < pend) ? Decode(buf, j + adv, pend, &adv2) : 0;
-                uint16_t gw = lv_font_get_glyph_width(font, cp, ncp);
+                uint16_t gw = (font == m.font) ? wcache.Get(font, cp, ncp)
+                                               : lv_font_get_glyph_width(font, cp, ncp);
 
                 bool can_break_before = (IsCjk(cp) || prev_space) && !ForbidLineStart(cp);
                 if (j > cur && can_break_before) cand = j;
@@ -300,6 +354,7 @@ void PaginatedChapter::FreeBuf() {
     }
     images.clear();
     headings.clear();
+    emphasis.clear();
 }
 
 const ImageRef* PaginatedChapter::FindImage(uint32_t off) const {

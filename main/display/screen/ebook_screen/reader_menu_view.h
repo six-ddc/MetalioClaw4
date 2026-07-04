@@ -21,7 +21,8 @@ struct Callbacks {
     void (*on_next_chapter)() = nullptr;
     void (*on_select_chapter)(int idx) = nullptr;  // 目录点选
     void (*on_set_theme)(int idx) = nullptr;
-    void (*on_set_font)(int idx) = nullptr;
+    void (*on_set_font)(int idx) = nullptr;          // 字号档 0/1/2/3
+    void (*on_set_font_face)(const char* filename) = nullptr;  // 用户字体文件名（""=内置）
     void (*on_set_line_space)(int idx) = nullptr;
     void (*on_set_margin)(int idx) = nullptr;
 };

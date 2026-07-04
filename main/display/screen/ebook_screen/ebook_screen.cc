@@ -6,6 +6,7 @@
 #include "book_config_server.h"
 #include "book_store.h"
 #include "bookshelf_view.h"
+#include "ebook_font.h"
 #include "ebook_ui_theme.h"
 #include "ebook_worker.h"
 #include "home_screen/home_screen.h"
@@ -243,6 +244,22 @@ void ReloadCurrentPreservingOffset() {
                                      off, kTagCur);
 }
 
+// 按当前 s_settings（字号档 + font_face）配置 FreeType 字体、重建排版参数并重排当前章。
+// 用户字体文件缺失（被删/换卡）时静默回退内置。切字体/字号时旧 FT 字体经 fence 延迟释放 ——
+// fence 必须在重排 LOAD 命令“之后”入队，保证 worker 排空到 fence 时旧字体已无测宽命令、
+// 且新分页结果已 remount 换掉引用旧字体的 label（见 ebook_font.h 生命周期铁律）。
+void ApplyFontSettings() {
+    const ebook_ui::FontTier& bt = ebook_ui::FontTierAt(s_settings.font_idx);
+    const ebook_ui::FontTier& ht =
+        ebook_ui::FontTierAt(static_cast<uint8_t>(s_settings.font_idx + 1));
+    bool want_ft = s_settings.font_face[0] != '\0' && ebook_font::Exists(s_settings.font_face);
+    uint32_t fence = ebook_font::Configure(want_ft ? s_settings.font_face : "", bt.px, ht.px,
+                                           bt.builtin_font, ht.builtin_font);
+    s_metrics = ebook_ui::BuildMetrics(s_settings);
+    ReloadCurrentPreservingOffset();       // 先入队重排（新字体）
+    if (fence != 0) ebook_worker::EnqueueFence(fence);  // 再入队 fence（旧字体延迟释放）
+}
+
 // ---- 菜单回调（LVGL 线程）--------------------------------------------------
 void MenuBackToShelf() {
     reader_menu_view::Hide();
@@ -277,8 +294,12 @@ void MenuSetTheme(int idx) {
 void MenuSetFont(int idx) {
     s_settings.font_idx = static_cast<uint8_t>(idx);
     book_store::SaveSettings(s_settings);
-    s_metrics = ebook_ui::BuildMetrics(s_settings);
-    ReloadCurrentPreservingOffset();
+    ApplyFontSettings();  // 字号档变化：FT 需按新 px 重建字体
+}
+void MenuSetFontFace(const char* filename) {
+    strlcpy(s_settings.font_face, filename ? filename : "", sizeof(s_settings.font_face));
+    book_store::SaveSettings(s_settings);
+    ApplyFontSettings();
 }
 void MenuSetLineSpace(int idx) {
     s_settings.line_space_idx = static_cast<uint8_t>(idx);
@@ -561,13 +582,15 @@ void OnSwipeBack() {
 // ---- 生命周期 ---------------------------------------------------------------
 void OnScreenLoaded(lv_event_t* /*e*/) {
     s_settings = book_store::LoadSettings();
-    s_metrics = ebook_ui::BuildMetrics(s_settings);
 
     ebook_worker::Callbacks cb;
     cb.on_book_ready = OnBookReady;
     cb.on_chapter_ready = OnChapterReady;
     cb.on_cover_ready = OnCoverReady;
+    cb.on_fence = ebook_font::OnWorkerFence;
     ebook_worker::Begin(cb);
+
+    ApplyFontSettings();  // 按设置激活用户 FT 字体（未设/缺失则内置）；此时 s_reading=false，无重排/fence
 
     if (s_save_timer == nullptr) s_save_timer = lv_timer_create(OnSaveTick, 5000, nullptr);
 
@@ -640,6 +663,7 @@ lv_obj_t* EbookScreen::Create() {
     mcb.on_select_chapter = MenuSelectChapter;
     mcb.on_set_theme = MenuSetTheme;
     mcb.on_set_font = MenuSetFont;
+    mcb.on_set_font_face = MenuSetFontFace;
     mcb.on_set_line_space = MenuSetLineSpace;
     mcb.on_set_margin = MenuSetMargin;
     reader_menu_view::Build(scr, mcb);

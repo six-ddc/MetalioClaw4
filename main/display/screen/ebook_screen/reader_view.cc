@@ -134,20 +134,69 @@ void MountPage(lv_obj_t* slot, const SlotContent& sc) {
         // 段首缩进：字库里 U+3000 是零宽空字形，缩进不能靠字符实现，改用真实 x 偏移。
         // 偏移量 = paginator 为该行预留的 indent_w，两侧同源 → 首行右边界正好落在 content_w。
         int16_t indent = (ls.flags & kLineFlagIndent) ? s_metrics.indent_w : 0;
-        size_t n = ls.len;
-        if (n > kLineBufMax - 1) n = kLineBufMax - 1;
-        std::memcpy(tmp, pc.utf8_buf + ls.off, n);
-        tmp[n] = '\0';
+        bool center = (ls.flags & kLineFlagCenter) != 0;
 
-        lv_obj_t* lbl = lv_label_create(slot);
-        lv_obj_set_style_text_font(lbl, font, LV_PART_MAIN);
-        lv_obj_set_style_text_color(lbl, Hex(th.text), LV_PART_MAIN);
-        lv_label_set_text(lbl, tmp);
-        if (ls.flags & kLineFlagCenter) {
-            lv_obj_set_width(lbl, s_metrics.content_w);
-            lv_obj_set_style_text_align(lbl, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN);
+        // 建一个文本片段 label：[off,off+len) 一段，颜色 color，行首 x = xpos。
+        // need_w=true 才测并返回渲染宽度（仅强调拆段衔接 x 时需要；FT 下整行度量不便宜，
+        // 单 label 行 / 末段不白测）。
+        auto emit_seg = [&](uint32_t off, uint32_t len, lv_color_t color, int16_t xpos,
+                            bool need_w) -> int16_t {
+            size_t n = len;
+            if (n > kLineBufMax - 1) n = kLineBufMax - 1;
+            std::memcpy(tmp, pc.utf8_buf + off, n);
+            tmp[n] = '\0';
+            lv_obj_t* lbl = lv_label_create(slot);
+            lv_obj_set_style_text_font(lbl, font, LV_PART_MAIN);
+            lv_obj_set_style_text_color(lbl, color, LV_PART_MAIN);
+            lv_label_set_text(lbl, tmp);
+            if (center) {
+                lv_obj_set_width(lbl, s_metrics.content_w);
+                lv_obj_set_style_text_align(lbl, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN);
+            }
+            lv_obj_set_pos(lbl, xpos, y);
+            return need_w ? static_cast<int16_t>(lv_text_get_width(tmp, n, font, 0)) : 0;
+        };
+
+        int16_t x0 = margin_h + indent;
+        // 居中行（标题）或无强调：整行一个 label（强调换色在标题上不拆，保持居中简单）。
+        if (center || pc.emphasis.empty()) {
+            emit_seg(ls.off, ls.len, Hex(th.text), x0, false);
+        } else {
+            // 正文行：按强调旁表把行拆成「常规/强调」片段，强调段用 accent 色。emphasis 按 off
+            // 升序、不重叠 → 二分定位首个与本行相交的区间，再顺序推进。
+            uint32_t lo = ls.off, hi = ls.off + ls.len;
+            int loi = 0, hii = static_cast<int>(pc.emphasis.size()) - 1;
+            size_t si = pc.emphasis.size();
+            while (loi <= hii) {  // 首个 end>lo 的区间
+                int mid = (loi + hii) / 2;
+                if (pc.emphasis[mid].off + pc.emphasis[mid].len > lo) {
+                    si = mid;
+                    hii = mid - 1;
+                } else {
+                    loi = mid + 1;
+                }
+            }
+            uint32_t cur = lo;
+            int16_t x = x0;
+            while (cur < hi) {
+                uint32_t seg_end;
+                lv_color_t col;
+                if (si < pc.emphasis.size() && pc.emphasis[si].off <= cur) {
+                    uint32_t se = pc.emphasis[si].off + pc.emphasis[si].len;  // 强调段内
+                    seg_end = se < hi ? se : hi;
+                    col = Hex(th.accent);
+                } else if (si < pc.emphasis.size() && pc.emphasis[si].off < hi) {
+                    seg_end = pc.emphasis[si].off;  // 强调段前的常规段
+                    col = Hex(th.text);
+                } else {
+                    seg_end = hi;  // 本行剩余无强调
+                    col = Hex(th.text);
+                }
+                if (seg_end > cur) x += emit_seg(cur, seg_end - cur, col, x, seg_end < hi);
+                cur = seg_end;
+                if (si < pc.emphasis.size() && cur >= pc.emphasis[si].off + pc.emphasis[si].len) si++;
+            }
         }
-        lv_obj_set_pos(lbl, margin_h + indent, y);
         y += lh + s_metrics.line_space;
     }
     // 新建的子对象默认可点击会拦截手势；整格设为输入穿透，事件落到 s_root。

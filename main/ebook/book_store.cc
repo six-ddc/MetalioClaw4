@@ -178,6 +178,8 @@ ReaderSettings LoadSettings() {
     r.theme_idx = static_cast<uint8_t>(s.GetInt("th", 1));
     r.line_space_idx = static_cast<uint8_t>(s.GetInt("ls", 1));
     r.margin_idx = static_cast<uint8_t>(s.GetInt("mg", 1));
+    std::string face = s.GetString("ff", "");
+    strlcpy(r.font_face, face.c_str(), sizeof(r.font_face));
     return r;
 }
 
@@ -187,6 +189,7 @@ void SaveSettings(const ReaderSettings& r) {
     s.SetInt("th", r.theme_idx);
     s.SetInt("ls", r.line_space_idx);
     s.SetInt("mg", r.margin_idx);
+    s.SetString("ff", r.font_face);
 }
 
 std::string LoadLastBook() {

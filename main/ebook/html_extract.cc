@@ -199,6 +199,12 @@ bool IsRawSkipTag(const char* n, size_t len) {
            NameEq(n, len, "template");
 }
 
+// 行内强调标签（换色呈现）：<b>/<strong>/<i>/<em>。
+bool IsEmphasisTag(const char* n, size_t len) {
+    return NameEq(n, len, "b") || NameEq(n, len, "strong") || NameEq(n, len, "i") ||
+           NameEq(n, len, "em");
+}
+
 // 从 attr_begin..attr_end 提取属性值（大小写不敏感、去命名空间前缀；实体解码）。缺失返回空。
 std::string AttrValue(const char* s, size_t ab, size_t ae, const char* name) {
     size_t m = strlen(name);
@@ -345,8 +351,13 @@ void Extract(const char* html, size_t len, Result& out) {
     TextState st;           // 文本折叠状态
     int heading_depth = 0;  // >0：在 h1/h2 内
     int suppress = 0;       // >0：文本不进正文（head 内）
+    int emph_depth = 0;     // >0：在 <b>/<strong>/<i>/<em> 内
+    uint32_t emph_start = 0;  // 当前强调区间在 cur 里的起点（cur 空间）
+    std::vector<std::pair<uint32_t, uint32_t>> cur_emph;  // 本段已闭合的强调区间（cur 空间）
 
     auto flush = [&]() {
+        // 段末仍开着的强调：截到段尾（跨块的 <b> 在此断开，下一段从段首续）。
+        if (emph_depth > 0) cur_emph.emplace_back(emph_start, static_cast<uint32_t>(cur.size()));
         size_t a = 0, b = cur.size();
         while (a < b && cur[a] == ' ') a++;
         while (b > a && cur[b - 1] == ' ') b--;
@@ -361,8 +372,24 @@ void Extract(const char* html, size_t len, Result& out) {
                 blk.text_len = static_cast<uint32_t>(b - a);
                 out.blocks.push_back(std::move(blk));
             }
+            // 强调区间：clip 到 trim 后范围 [a,b)，再去掉边界空格（折叠出的软空格会落进区间
+            // 起点，染色空格虽不可见但不精确），映射到 out.text 偏移。
+            for (const auto& r : cur_emph) {
+                uint32_t s = r.first < a ? static_cast<uint32_t>(a) : r.first;
+                uint32_t e = r.second > b ? static_cast<uint32_t>(b) : r.second;
+                while (s < e && cur[s] == ' ') s++;
+                while (e > s && cur[e - 1] == ' ') e--;
+                if (e <= s) continue;
+                Block blk;
+                blk.type = BlockType::kEmphasis;
+                blk.text_off = off + (s - static_cast<uint32_t>(a));
+                blk.text_len = e - s;
+                out.blocks.push_back(std::move(blk));
+            }
         }
         cur.clear();
+        cur_emph.clear();
+        emph_start = 0;  // 新段：若强调仍开着，从段首续
         st = TextState{};
     };
 
@@ -525,7 +552,18 @@ void Extract(const char* html, size_t len, Result& out) {
                 if (is_h12 && heading_depth > 0) heading_depth--;
             }
         }
-        // 其余（span/a/b/i/em/strong 等行内）：剥离，不分段
+        // 行内强调 <b>/<strong>/<i>/<em>：记录换色区间（cur 空间；文本本身照常剥离）。
+        else if (suppress == 0 && !self_close && IsEmphasisTag(t.name, t.name_len)) {
+            if (!t.closing) {
+                if (emph_depth == 0) emph_start = static_cast<uint32_t>(cur.size());
+                emph_depth++;
+            } else if (emph_depth > 0) {
+                emph_depth--;
+                if (emph_depth == 0)
+                    cur_emph.emplace_back(emph_start, static_cast<uint32_t>(cur.size()));
+            }
+        }
+        // 其余（span/a 等行内）：剥离，不分段
 
         pos = t.next;
         text_start = pos;

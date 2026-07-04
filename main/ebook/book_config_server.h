@@ -1,6 +1,7 @@
 // book_config_server.h
-// 书籍管理 Web 后台（esp_http_server，端口 80）。进「管理」视图时 Start、离开时 Stop。
-// 浏览器可列出 / 上传 / 删除 /sdcard/books 下的 .txt。上传走原始字节流式写盘（见 .cc）。
+// 书籍/字体管理 Web 后台（esp_http_server，端口 80）。进「管理」视图时 Start、离开时 Stop。
+// 浏览器可列出 / 上传 / 删除 /sdcard/books 下的 .txt/.epub 书籍与 .ttf/.otf 字体（列表带 type
+// 字段区分）。上传走原始字节流式写盘（见 .cc）。
 // handler 直接读写 SD，改动置 dirty；回书架时由 LVGL 线程 ConsumeDirty 决定是否重扫。
 // 参照 stock_config_server。
 

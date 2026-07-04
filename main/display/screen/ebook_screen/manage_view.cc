@@ -85,7 +85,7 @@ lv_obj_t* Build(lv_obj_t* parent, const Callbacks& cb, uint8_t theme_idx) {
     s_hint = lv_label_create(s_root);
     lv_label_set_long_mode(s_hint, LV_LABEL_LONG_WRAP);
     lv_obj_set_width(s_hint, ebook_ui::kPanelW - 80);
-    lv_label_set_text(s_hint, "在网页里上传 / 删除 TXT 书籍；操作后在本机点返回即可刷新书架。");
+    lv_label_set_text(s_hint, "在网页里上传 / 删除 书籍(TXT/EPUB) 与字体(TTF/OTF)；操作后在本机点返回即可刷新。");
     lv_obj_set_style_text_font(s_hint, &font_puhui_20_4, LV_PART_MAIN);
     lv_obj_set_style_text_color(s_hint, Hex(th.dim), LV_PART_MAIN);
     lv_obj_set_style_text_align(s_hint, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN);
@@ -110,7 +110,7 @@ void Show(int book_count) {
         std::string url = "http://" + ip;
         lv_label_set_text(s_url, url.c_str());
         lv_obj_set_style_text_color(s_url, Hex(th.accent), LV_PART_MAIN);
-        lv_label_set_text(s_hint, "在网页里上传 / 删除 TXT 书籍；操作后在本机点返回即可刷新书架。");
+        lv_label_set_text(s_hint, "在网页里上传 / 删除 书籍(TXT/EPUB) 与字体(TTF/OTF)；操作后在本机点返回即可刷新。");
     } else {
         lv_label_set_text(s_url, "Web 管理需连接 WiFi");
         lv_obj_set_style_text_color(s_url, Hex(0xFF6B6B), LV_PART_MAIN);

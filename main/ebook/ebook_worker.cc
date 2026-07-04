@@ -12,6 +12,7 @@
 
 #include <esp_heap_caps.h>
 #include <freertos/FreeRTOS.h>
+#include <freertos/idf_additions.h>  // xTaskCreatePinnedToCoreWithCaps（PSRAM 栈）
 #include <freertos/queue.h>
 #include <freertos/task.h>
 
@@ -26,9 +27,11 @@ namespace {
 constexpr char TAG[] = "ebook_worker";
 constexpr UBaseType_t kQueueSize = 4;
 
-enum CmdKind : uint8_t { CMD_OPEN = 0, CMD_LOAD = 1, CMD_COVER = 2 };
+enum CmdKind : uint8_t { CMD_OPEN = 0, CMD_LOAD = 1, CMD_COVER = 2, CMD_FENCE = 3 };
 
-// 值传递命令（xQueueSend memcpy）。PageMetrics 内 font 是 const 静态指针，跨线程只读安全。
+// 值传递命令（xQueueSend memcpy）。PageMetrics.font 指向内置 const 字体（永生只读安全）或
+// 用户 FT 字体（由 ebook_font 的 fence/graveyard 保证：本命令处理期间字体必在世；对 FT 字体
+// 测宽的线程安全由 lv_freetype 内部 face_lock 承担）。
 struct Cmd {
     CmdKind kind;
     uint32_t session;
@@ -40,6 +43,8 @@ struct Cmd {
     TargetMode target_mode;
     uint32_t target_file_off;
     uint8_t tag;
+    // fence
+    uint32_t fence_id;
 };
 
 QueueHandle_t s_q = nullptr;
@@ -203,6 +208,13 @@ void ProcessCover(const Cmd& cmd) {
     if (px != nullptr) heap_caps_free(px);
 }
 
+// FIFO 屏障：到达即回调（不校验 session —— 退休字体无论如何都要释放）。
+void ProcessFence(const Cmd& cmd) {
+    if (esp_lv_adapter_lock(-1) != ESP_OK) return;
+    if (s_cb.on_fence) s_cb.on_fence(cmd.fence_id);
+    esp_lv_adapter_unlock();
+}
+
 void WorkerRun(void*) {
     Cmd cmd;
     for (;;) {
@@ -211,6 +223,7 @@ void WorkerRun(void*) {
             case CMD_OPEN: ProcessOpen(cmd); break;
             case CMD_LOAD: ProcessLoad(cmd); break;
             case CMD_COVER: ProcessCover(cmd); break;
+            case CMD_FENCE: ProcessFence(cmd); break;
             default: break;
         }
     }
@@ -233,7 +246,11 @@ void Begin(const Callbacks& cb) {
         ESP_LOGE(TAG, "queue create failed");
         return;
     }
-    if (xTaskCreatePinnedToCore(WorkerRun, "ebook_wk", 16384, nullptr, 4, &s_task, 0) != pdPASS) {
+    // 栈放 PSRAM 并加大到 48KB：分页对用户 FreeType 字体测宽时，OTF/CFF 的 Adobe charstring
+    // 解释器(cf2_*)要吃 ~18-28KB 栈，原 16KB 内部栈会溢出崩溃。放 PSRAM 不占内部 RAM
+    // （CONFIG_SPIRAM_ALLOW_STACK_EXTERNAL_MEMORY=y）。worker 常驻不删除，无需 WithCaps 清理。
+    if (xTaskCreatePinnedToCoreWithCaps(WorkerRun, "ebook_wk", 49152, nullptr, 4, &s_task, 0,
+                                        MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT) != pdPASS) {
         ESP_LOGE(TAG, "task create failed");
     }
 }
@@ -263,6 +280,13 @@ bool EnqueueCover(const BookReq& book) {
     Cmd cmd = {};
     cmd.kind = CMD_COVER;
     cmd.book = book;
+    return Enqueue(cmd);
+}
+
+bool EnqueueFence(uint32_t fence_id) {
+    Cmd cmd = {};
+    cmd.kind = CMD_FENCE;
+    cmd.fence_id = fence_id;
     return Enqueue(cmd);
 }
 

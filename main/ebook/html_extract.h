@@ -13,6 +13,8 @@
 //   - <img src=…> / SVG <image xlink:href|href=…> → 文本流插入 U+FFFC（EF BF BC）
 //     哨兵、独立成段，并在 blocks 记录 kImage（src 原样，未归一化）。
 //   - h1/h2 → blocks 记录 kHeading（off/len 覆盖该标题段文本）；h3-h6 按普通段落。
+//   - <b>/<strong>/<i>/<em> → blocks 记录 kEmphasis（off/len 覆盖强调文本，按 off 升序、
+//     不重叠；跨块自动断开）。文本本身照常剥离进正文，仅供 reader 换色呈现。
 //   - <title> 文本单独抓出（不进正文文本流）。
 
 #ifndef HTML_EXTRACT_H
@@ -26,8 +28,9 @@
 namespace html_extract {
 
 enum class BlockType : uint8_t {
-    kHeading = 1,  // h1/h2 标题段
-    kImage = 2,    // 插图哨兵
+    kHeading = 1,   // h1/h2 标题段
+    kImage = 2,     // 插图哨兵
+    kEmphasis = 3,  // 行内强调（<b>/<strong>/<i>/<em>）：text_off/len 覆盖强调文本，src 空
 };
 
 struct Block {

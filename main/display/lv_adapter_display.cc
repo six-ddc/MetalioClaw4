@@ -89,6 +89,10 @@ LVAdapterDisplay::LVAdapterDisplay(const esp_lcd_panel_handle_t panel,
 
     esp_lv_adapter_config_t adapter_cfg = ESP_LV_ADAPTER_DEFAULT_CONFIG();
     adapter_cfg.stack_in_psram = true;
+    // LVGL 任务栈默认 8KB 太小：电子书用 FreeType 用户字体时，OTF/CFF 字体的 Adobe charstring
+    // 解释器(cf2_*)在 lvgl 任务上做字形度量/布局要吃 ~18-28KB 栈（简单字形亦然），8KB 直接爆栈
+    // (Stack protection fault)。因 stack_in_psram=true，加大只占 PSRAM，不耗内部 RAM。
+    adapter_cfg.task_stack_size = 65536;
     adapter_cfg.task_priority = 1;
     adapter_cfg.task_core_id = 1;
 

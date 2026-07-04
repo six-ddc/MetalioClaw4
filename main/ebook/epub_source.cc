@@ -755,6 +755,12 @@ bool LoadChapter(const BookInfo& book, const ChapterIndex& idx, int chapter_idx,
             hs.len = b.text_len;
             if (hs.off + hs.len > want) hs.len = want - hs.off;  // 跨块 clamp
             out.headings.push_back(hs);
+        } else if (b.type == html_extract::BlockType::kEmphasis) {
+            EmphasisSpan es;
+            es.off = b.text_off - s0;
+            es.len = b.text_len;
+            if (es.off + es.len > want) es.len = want - es.off;  // 跨块 clamp
+            out.emphasis.push_back(es);
         }
     }
     return true;

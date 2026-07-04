@@ -2,11 +2,14 @@
 
 #include "reader_menu_view.h"
 
+#include "ebook_font.h"
 #include "ebook_ui_theme.h"
 #include "screen_util.h"
 
 #include <cstdint>
 #include <cstdio>
+#include <cstring>
+#include <string>
 #include <vector>
 
 namespace reader_menu_view {
@@ -17,14 +20,14 @@ using ebook_ui::Hex;
 
 constexpr int16_t kPanel = ebook_ui::kPanelW;
 constexpr int16_t kTopH = 84;
-// 底部面板高度 = 上下内边距 + 6 行内容 + 5 个行距（目录入口已移到顶栏，故少一行）：
-//   padV(20)*2 + [进度56 + 百分比20 + 主题56 + 字号56 + 行距56 + 边距56] + gap(14)*5
-//   = 40 + 300 + 70 = 410
+// 底部面板高度 = 上下内边距 + 7 行内容 + 6 个行距（较原布局新增「字体」行）：
+//   padV(20)*2 + [进度56 + 百分比20 + 主题56 + 字体56 + 字号56 + 行距56 + 边距56] + gap(14)*6
+//   = 40 + 356 + 84 = 480
 constexpr int16_t kSheetPadH = 24;
 constexpr int16_t kSheetPadV = 20;
 constexpr int16_t kRowH = 56;
 constexpr int16_t kRowGap = 14;
-constexpr int16_t kSheetH = 410;
+constexpr int16_t kSheetH = 480;
 constexpr int16_t kTocW = kPanel / 3;  // 目录抽屉宽 = 屏宽 1/3（240）；章节字号小，够显示
 constexpr int16_t kTocHeaderH = 76;
 constexpr int16_t kTocItemH = 60;  // 每章行高（固定，虚拟化用）
@@ -45,12 +48,20 @@ lv_obj_t* s_toc_entry_lbl = nullptr;
 lv_obj_t* s_slider = nullptr;
 lv_obj_t* s_pct_lbl = nullptr;
 
-// 三个分段控件的按钮引用（字号/行距/边距）
+// 分段控件（字号 4 段 / 行距 3 段 / 边距 3 段）。
+constexpr int kSegMax = 4;
 struct Seg {
-    lv_obj_t* btn[3] = {nullptr, nullptr, nullptr};
+    lv_obj_t* btn[kSegMax] = {};
+    int count = 0;
 };
 Seg s_seg_font, s_seg_ls, s_seg_margin;
 lv_obj_t* s_swatch[3] = {nullptr, nullptr, nullptr};
+
+// 字体循环选择器（◀ 名称 ▶）。files[i]=""表示内置；与 names[i] 平行。
+lv_obj_t* s_font_name_lbl = nullptr;
+std::vector<std::string> s_face_files;
+std::vector<std::string> s_face_names;
+int s_face_sel = 0;
 
 // 目录抽屉（虚拟化：只保留 kTocPool 个可见项控件，滚动时复用 + 改文字，
 // 对象数与章节数无关，几千章也不卡）。
@@ -71,7 +82,7 @@ lv_style_selector_t Sel(lv_part_t part, lv_state_t state) {
 // ---- 主题着色 --------------------------------------------------------------
 void PaintSeg(Seg& seg, int sel) {
     const ebook_ui::Theme& th = ebook_ui::ThemeAt(s_theme_idx);
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < seg.count; i++) {
         if (seg.btn[i] == nullptr) continue;
         bool on = (i == sel);
         lv_obj_set_style_bg_color(seg.btn[i], on ? Hex(th.accent) : Hex(th.bg), LV_PART_MAIN);
@@ -79,6 +90,23 @@ void PaintSeg(Seg& seg, int sel) {
         lv_obj_t* lbl = lv_obj_get_child(seg.btn[i], 0);
         if (lbl)
             lv_obj_set_style_text_color(lbl, on ? Hex(0xFFFFFF) : Hex(th.text), LV_PART_MAIN);
+    }
+}
+
+// "特大"档仅 FreeType 用户字体可用（内置点阵无 50px）。据当前 FT 激活态启用/置灰该按钮。
+void UpdateFontSizeAvail() {
+    if (s_seg_font.count < 4 || s_seg_font.btn[3] == nullptr) return;
+    bool ft = ebook_font::Active();
+    lv_obj_t* btn = s_seg_font.btn[3];
+    lv_obj_t* lbl = lv_obj_get_child(btn, 0);
+    if (ft) {
+        lv_obj_add_flag(btn, LV_OBJ_FLAG_CLICKABLE);
+        lv_obj_set_style_opa(btn, LV_OPA_COVER, LV_PART_MAIN);
+        if (lbl) lv_obj_set_style_opa(lbl, LV_OPA_COVER, LV_PART_MAIN);
+    } else {
+        lv_obj_remove_flag(btn, LV_OBJ_FLAG_CLICKABLE);
+        lv_obj_set_style_opa(btn, LV_OPA_40, LV_PART_MAIN);
+        if (lbl) lv_obj_set_style_opa(lbl, LV_OPA_40, LV_PART_MAIN);
     }
 }
 
@@ -231,17 +259,18 @@ lv_obj_t* MakeRow(lv_obj_t* parent, const char* label) {
     return row;
 }
 
-// 3 段选择器。tag: 0=font 1=ls 2=margin（用于回调分发）。
-void BuildSeg(lv_obj_t* row, Seg& seg, const char* a, const char* b, const char* c, int tag) {
+// 分段选择器（2~4 段）。tag: 0=font 1=ls 2=margin（用于回调分发）。
+void BuildSeg(lv_obj_t* row, Seg& seg, const char* const* labels, int count, int tag) {
     const ebook_ui::Theme& th = ebook_ui::ThemeAt(s_theme_idx);
-    const char* labels[3] = {a, b, c};
+    if (count > kSegMax) count = kSegMax;
+    seg.count = count;
     lv_obj_t* box = lv_obj_create(row);
     lv_obj_remove_style_all(box);
     lv_obj_set_size(box, 300, 56);
     lv_obj_set_flex_flow(box, LV_FLEX_FLOW_ROW);
     lv_obj_remove_flag(box, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_style_pad_column(box, 8, LV_PART_MAIN);
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < count; i++) {
         lv_obj_t* btn = lv_button_create(box);
         lv_obj_remove_style_all(btn);
         lv_obj_set_flex_grow(btn, 1);
@@ -270,6 +299,40 @@ void BuildSeg(lv_obj_t* row, Seg& seg, const char* a, const char* b, const char*
             LV_EVENT_CLICKED, reinterpret_cast<void*>(packed));
         seg.btn[i] = btn;
     }
+}
+
+// 字体循环选择：dir=+1/-1 在 [内置, 扫描到的字体...] 间循环。
+void CycleFace(int dir) {
+    int n = static_cast<int>(s_face_files.size());
+    if (n <= 1) return;  // 只有"内置"，无可循环项
+    s_face_sel = (s_face_sel + dir % n + n) % n;
+    if (s_font_name_lbl) lv_label_set_text(s_font_name_lbl, s_face_names[s_face_sel].c_str());
+    if (s_cb.on_set_font_face) s_cb.on_set_font_face(s_face_files[s_face_sel].c_str());
+    UpdateFontSizeAvail();  // 切到/切出 FT 字体会改变"特大"可用性
+}
+
+// 扫描字体、重建循环列表，并把选中项对齐到当前 font_face。
+void RebuildFaceList(const char* cur_face) {
+    std::vector<ebook_font::FontFile> fonts;
+    ebook_font::ScanFonts(fonts);
+    s_face_files.clear();
+    s_face_names.clear();
+    s_face_files.push_back("");     // 0 = 内置
+    s_face_names.push_back("内置");
+    for (auto& f : fonts) {
+        s_face_files.push_back(f.filename);
+        s_face_names.push_back(f.display);
+    }
+    s_face_sel = 0;
+    if (cur_face != nullptr && cur_face[0] != '\0') {
+        for (size_t i = 1; i < s_face_files.size(); i++) {
+            if (s_face_files[i] == cur_face) {
+                s_face_sel = static_cast<int>(i);
+                break;
+            }
+        }
+    }
+    if (s_font_name_lbl) lv_label_set_text(s_font_name_lbl, s_face_names[s_face_sel].c_str());
 }
 
 void OnSwatch(lv_event_t* e) {
@@ -461,10 +524,53 @@ lv_obj_t* Build(lv_obj_t* parent, const Callbacks& cb) {
         }
     }
 
-    // ④ 字号 / 行距 / 边距
-    BuildSeg(MakeRow(s_sheet, "字号"), s_seg_font, "小", "中", "大", 0);
-    BuildSeg(MakeRow(s_sheet, "行距"), s_seg_ls, "紧", "适中", "松", 1);
-    BuildSeg(MakeRow(s_sheet, "边距"), s_seg_margin, "窄", "中", "宽", 2);
+    // ④ 字体（用户 FreeType 字体：◀ 名称 ▶ 循环选择；无字体时仅"内置"）
+    {
+        lv_obj_t* frow = MakeRow(s_sheet, "字体");
+        lv_obj_t* box = lv_obj_create(frow);
+        lv_obj_remove_style_all(box);
+        lv_obj_set_size(box, 300, kRowH);
+        lv_obj_set_flex_flow(box, LV_FLEX_FLOW_ROW);
+        lv_obj_set_flex_align(box, LV_FLEX_ALIGN_END, LV_FLEX_ALIGN_CENTER, LV_FLEX_ALIGN_CENTER);
+        lv_obj_set_style_pad_column(box, 8, LV_PART_MAIN);
+        lv_obj_remove_flag(box, LV_OBJ_FLAG_SCROLLABLE);
+        auto make_arrow = [&](const char* txt, int dir) {
+            lv_obj_t* b = lv_button_create(box);
+            lv_obj_remove_style_all(b);
+            lv_obj_set_size(b, 52, 48);
+            lv_obj_set_style_radius(b, 10, LV_PART_MAIN);
+            lv_obj_set_style_bg_color(b, Hex(th.bg), LV_PART_MAIN);
+            lv_obj_set_style_bg_opa(b, LV_OPA_40, LV_PART_MAIN);
+            lv_obj_t* l = lv_label_create(b);
+            lv_label_set_text(l, txt);
+            lv_obj_set_style_text_font(l, &font_puhui_20_4, LV_PART_MAIN);
+            lv_obj_set_style_text_color(l, Hex(th.text), LV_PART_MAIN);
+            lv_obj_center(l);
+            lv_obj_add_event_cb(b, [](lv_event_t* e) {
+                CycleFace(static_cast<int>(reinterpret_cast<intptr_t>(lv_event_get_user_data(e))));
+            }, LV_EVENT_CLICKED, reinterpret_cast<void*>(static_cast<intptr_t>(dir)));
+            return b;
+        };
+        make_arrow("<", -1);
+        s_font_name_lbl = lv_label_create(box);
+        lv_obj_set_flex_grow(s_font_name_lbl, 1);
+        lv_label_set_text(s_font_name_lbl, "内置");
+        lv_label_set_long_mode(s_font_name_lbl, LV_LABEL_LONG_DOT);
+        lv_obj_set_style_text_align(s_font_name_lbl, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN);
+        lv_obj_set_style_text_font(s_font_name_lbl, &font_puhui_20_4, LV_PART_MAIN);
+        lv_obj_set_style_text_color(s_font_name_lbl, Hex(th.text), LV_PART_MAIN);
+        make_arrow(">", +1);
+    }
+
+    // ⑤ 字号（4 段，"特大"仅 FT 可用）/ 行距 / 边距
+    {
+        const char* fs[4] = {"小", "中", "大", "特大"};
+        const char* ls[3] = {"紧", "适中", "松"};
+        const char* mg[3] = {"窄", "中", "宽"};
+        BuildSeg(MakeRow(s_sheet, "字号"), s_seg_font, fs, 4, 0);
+        BuildSeg(MakeRow(s_sheet, "行距"), s_seg_ls, ls, 3, 1);
+        BuildSeg(MakeRow(s_sheet, "边距"), s_seg_margin, mg, 3, 2);
+    }
 
     // 目录抽屉（隐藏，左侧）：滚动容器 + 虚拟画布 + 复用控件池
     s_toc = lv_obj_create(s_root);
@@ -526,6 +632,8 @@ lv_obj_t* Build(lv_obj_t* parent, const Callbacks& cb) {
 void Show(const ReaderSettings& s, const char* book_name, int progress_pct) {
     if (s_root == nullptr) return;
     ApplyMenuTheme(s.theme_idx);
+    RebuildFaceList(s.font_face);   // 每次呼出重扫字体，反映 Web 上传/删除
+    UpdateFontSizeAvail();          // 据 FT 激活态启用/置灰"特大"
     PaintSeg(s_seg_font, s.font_idx);
     PaintSeg(s_seg_ls, s.line_space_idx);
     PaintSeg(s_seg_margin, s.margin_idx);
@@ -562,6 +670,7 @@ void Reset() {
     s_root = s_scrim = s_topbar = s_sheet = s_title = s_slider = s_pct_lbl = nullptr;
     s_toc_entry_btn = s_toc_entry_lbl = nullptr;
     s_toc = s_toc_list = s_toc_content = nullptr;
+    s_font_name_lbl = nullptr;
     for (int k = 0; k < kTocPool; k++) {
         s_toc_item[k] = nullptr;
         s_toc_item_lbl[k] = nullptr;
@@ -569,6 +678,9 @@ void Reset() {
     s_seg_font = s_seg_ls = s_seg_margin = Seg{};
     s_swatch[0] = s_swatch[1] = s_swatch[2] = nullptr;
     s_chapters.clear();
+    s_face_files.clear();
+    s_face_names.clear();
+    s_face_sel = 0;
     s_toc_last_first = -1;
     s_toc_open = false;
     s_open = false;

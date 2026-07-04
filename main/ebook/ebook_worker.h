@@ -3,8 +3,9 @@
 // LVGL 线程只值传递命令入队、不阻塞。结果由 worker 在 esp_lv_adapter_lock 临界区、
 // 校验 session 后回调进 UI（照抄 stock_fetch_worker 范式）。
 //
-// 铁律：worker 里除回调那一小段（已持 LVGL 锁）外，绝不可调 lv_*。分页只读内置
-// const 字体测宽，线程安全，无需持锁。
+// 铁律：worker 里除回调那一小段（已持 LVGL 锁）外，绝不可调 lv_*。例外：分页测宽
+// lv_font_get_glyph_width 是安全的 —— 内置字体是永生 const 数据；用户 FT 字体由 lv_freetype
+// 的内部 face_lock 串行化度量与渲染。故分页无需外层持锁（字体在世由 fence/graveyard 保证）。
 
 #ifndef EBOOK_WORKER_H
 #define EBOOK_WORKER_H
@@ -45,11 +46,16 @@ typedef void (*ChapterReadyCb)(PaginatedChapter* pc, int target_page, bool ok, u
 // heap_caps_free 释放；px==nullptr 表示该书无封面/生成失败（UI 保留生成式封面）。
 // 每个 EnqueueCover 恰好回调一次（session 有效时），UI 借此驱动"逐本串行"生成链。
 typedef void (*CoverReadyCb)(uint32_t hash, uint8_t* px, uint16_t w, uint16_t h);
+// on_fence：FIFO 屏障命令到达（EnqueueFence 入队的 fence_id）。**不校验 session**（即便切书/
+// 卸载也必须执行，否则退休字体泄漏）。宿主借此在"所有引用旧 FT 字体的 LOAD 命令已排空"后安全
+// 释放旧字体（见 ebook_font::OnWorkerFence）。回调在 worker 线程、持 LVGL 锁下调用。
+typedef void (*FenceCb)(uint32_t fence_id);
 
 struct Callbacks {
     BookReadyCb on_book_ready = nullptr;
     ChapterReadyCb on_chapter_ready = nullptr;
     CoverReadyCb on_cover_ready = nullptr;
+    FenceCb on_fence = nullptr;
 };
 
 // 创建 queue + task（幂等，常驻）。每次进 screen 调用以登记回调并 BumpSession。
@@ -64,6 +70,8 @@ bool EnqueueLoadChapter(int chapter_idx, const PageMetrics& m, TargetMode mode,
                         uint32_t target_file_off, uint8_t tag);
 // 生成/读取一本书的封面缩略（EPUB；有 .cov 缓存则直读）。结果回 on_cover_ready。
 bool EnqueueCover(const BookReq& book);
+// FIFO 屏障：待此命令前的所有命令处理完，回 on_fence(fence_id)（用于安全释放旧 FT 字体）。
+bool EnqueueFence(uint32_t fence_id);
 
 }  // namespace ebook_worker
 
