@@ -3,6 +3,7 @@
 #include "book_config_server.h"
 
 #include "book_store.h"
+#include "ebook_font_charset.h"
 #include "ebook_web_page.h"
 
 #include "SdCardManager.hpp"
@@ -159,6 +160,13 @@ esp_err_t RootGet(httpd_req_t* req) {
     return httpd_resp_sendstr(req, ebook_web_page::Html());
 }
 
+// 内置 puhui 字符集（delta-LEB128-base64）。Web 上传页据此在浏览器端裁剪用户字体，
+// 使裁后覆盖与设备内置字体一致。同源请求，离线也能取。
+esp_err_t FontCharsetGet(httpd_req_t* req) {
+    httpd_resp_set_type(req, "text/plain; charset=utf-8");
+    return httpd_resp_sendstr(req, ebook_font_charset::PuhuiB64());
+}
+
 esp_err_t ListGet(httpd_req_t* req) {
     std::string json = "[";
     if (SdCardManager::GetInstance().IsMounted()) {
@@ -304,6 +312,7 @@ bool Start() {
         return false;
     }
     Register("/", HTTP_GET, RootGet);
+    Register("/api/font-charset", HTTP_GET, FontCharsetGet);
     Register("/api/list", HTTP_GET, ListGet);
     Register("/api/upload", HTTP_POST, UploadPost);
     Register("/api/delete", HTTP_POST, DeletePost);

@@ -74,11 +74,26 @@ bool s_reading = false;
 
 // 进度落盘防抖（翻页时标脏，5s 定时器或退出时落盘）。
 bool s_progress_dirty = false;
+// 首次进 app 创建后**常驻不删**（OnScreenUnloaded 不再销毁它）：除进度落盘外，它还负责在退出
+// app 后继续补发滞留的退休字体 fence（见 s_pending_fence），故必须活过 screen 生命周期。
 lv_timer_t* s_save_timer = nullptr;
+
+// 退休字体 fence：EnqueueFence 入队失败（worker 队列瞬时满）时暂存，OnSaveTick 里重试。
+// blob 现在挂 MB 级 PSRAM，丢 fence = 旧 blob 泄漏，代价大，必须补发。取 max（fence 单调递增，
+// OnWorkerFence 释放所有 fence<=id）。跨 screen load/unload 保留；因定时器常驻，即便用户退出
+// app 后不再进入，也能在 worker 队列腾出后补发、回收 blob（把 PSRAM 还给相机等其它 app）。
+uint32_t s_pending_fence = 0;
 
 // 前置声明（早期回调引用后文定义）。
 void ExitReaderToShelf();
 void RenderTriple();
+void ApplyFontSettings();
+
+// 入队退休字体 fence；队列瞬时满导致失败则暂存到 s_pending_fence（取 max）等 OnSaveTick 补发。
+void EnqueueFenceTracked(uint32_t fence) {
+    if (fence == 0) return;
+    if (!ebook_worker::EnqueueFence(fence) && fence > s_pending_fence) s_pending_fence = fence;
+}
 
 // ---- 基础工具 --------------------------------------------------------------
 bool HolderValid(const PaginatedChapter& h, int expected_chapter) {
@@ -167,7 +182,19 @@ void FlushProgress() {
         s_progress_dirty = false;
     }
 }
-void OnSaveTick(lv_timer_t* /*t*/) { FlushProgress(); }
+void OnSaveTick(lv_timer_t* /*t*/) {
+    // 补发上次入队失败的退休字体 fence（成功后清零）。定时器常驻，此项即便在退出 app 后（s_screen
+    // 为空）也要继续跑——否则滞留的 MB 级 blob 无人回收。worker 常驻，EnqueueFence 始终有效。
+    if (s_pending_fence != 0 && ebook_worker::EnqueueFence(s_pending_fence)) s_pending_fence = 0;
+    if (s_screen == nullptr) return;  // 已退出 app：仅补发 fence，跳过依赖活动 screen 的工作
+
+    FlushProgress();
+    // 字体曾因 PSRAM 并存挤占而降级到 SD 直连，现预算已恢复 → 升级为 PSRAM 字体（消除卡顿）。
+    // ⚠️ 仅在**非阅读态**（书架）升级：升级要同步整读字体文件（~1s 冻结 LVGL 线程）+ 重排当前章，
+    // 放在阅读中会突兀打断翻页。升级后渲染与降级态逐字一致（同一份字节，仅改读取来源），故延到
+    // 离开当前书（回书架 / 下次开书）再做对体验无损；代价是阅读中若降级则维持到回书架才自愈。
+    if (!s_reading && ebook_font::ShouldUpgrade()) ApplyFontSettings();
+}
 
 // ---- 预载邻章 --------------------------------------------------------------
 void KickPreload(int dir) {
@@ -256,8 +283,8 @@ void ApplyFontSettings() {
     uint32_t fence = ebook_font::Configure(want_ft ? s_settings.font_face : "", bt.px, ht.px,
                                            bt.builtin_font, ht.builtin_font);
     s_metrics = ebook_ui::BuildMetrics(s_settings);
-    ReloadCurrentPreservingOffset();       // 先入队重排（新字体）
-    if (fence != 0) ebook_worker::EnqueueFence(fence);  // 再入队 fence（旧字体延迟释放）
+    ReloadCurrentPreservingOffset();  // 先入队重排（新字体）
+    EnqueueFenceTracked(fence);       // 再入队 fence（旧字体延迟释放；失败暂存补发）
 }
 
 // ---- 菜单回调（LVGL 线程）--------------------------------------------------
@@ -602,15 +629,17 @@ void OnScreenLoaded(lv_event_t* /*e*/) {
 void OnScreenUnloaded(lv_event_t* /*e*/) {
     FlushProgress();
     ebook_worker::BumpSession();
-    if (s_save_timer != nullptr) {
-        lv_timer_delete(s_save_timer);
-        s_save_timer = nullptr;
-    }
+    // 注意：s_save_timer 不在此删除——它常驻以便退出 app 后继续补发滞留的退休字体 fence
+    // （见 s_pending_fence / OnSaveTick）。OnSaveTick 内以 s_screen==nullptr 跳过 screen 相关工作。
     bookshelf_view::Clear();  // 先删卡片（含封面 lv_image），再释放像素
     bookshelf_view::Reset();
-    reader_view::Reset();
+    reader_view::Reset();  // 删除所有引用 FT 字体的 label，之后退休字体才安全
     reader_menu_view::Reset();
     manage_view::Reset();  // 停止 Web 服务
+    // 退出阅读器：释放用户 FT 字体（连同其 MB 级 PSRAM blob），把内存还给相机等其它 app。
+    // BumpSession 已作废在途 LOAD 命令，但它们仍会在 worker 上完成测宽（引用退休字体）——
+    // fence 入队在这些命令“之后”，保证 worker 排空到 fence 时已无测宽引用，deinit 才安全。
+    EnqueueFenceTracked(ebook_font::Configure("", 0, 0, nullptr, nullptr));
     FreeAllChapters();
     FreeCovers();
     s_reading = false;

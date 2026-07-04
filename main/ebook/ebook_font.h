@@ -2,6 +2,12 @@
 // 用户 FreeType 字体管理：从 /sdcard/books/ 扫描 TTF/OTF，创建/切换 lv_freetype 字体
 // （正文 + 标题两个尺寸实例），并以 fence + graveyard 机制安全释放旧字体。
 //
+// ⚡ 性能：激活时把整份字体文件读进 PSRAM，经 font_mem_vfs（"/fmem" 只读内存 VFS）暴露成
+// 文件路径喂给 adapter。FreeType 的按需字形加载（fseek/fread）由此从"SD 随机读"变 PSRAM
+// memcpy —— 消灭首次开书/翻页/换字号时逐字形打 SD 的卡顿。装不下（超大字体，PSRAM 余量不足）
+// 时降级为 SD 原路径（功能不变、慢），待 graveyard 排空、预算恢复后由宿主重试升级（ShouldUpgrade）。
+// 同一字体文件换字号复用同一 blob 与同一 pathname → lv_freetype 复用已开的 FT_Face，零重开销。
+//
 // 线程模型：Configure/Retire/字体创建都在 LVGL 线程调用（事件回调，已持递归适配器锁）；
 // OnWorkerFence 在 ebook_worker 线程持锁回调。测宽本身线程安全 —— lv_freetype 对每个 FT_Face
 // 有内部 face_lock，串行化度量(worker)与位图渲染(draw 线程)，故 paginator 可像内置字体一样
@@ -52,7 +58,13 @@ bool Active();
 const lv_font_t* BodyFont();     // Active() 为真时非空
 const lv_font_t* HeadingFont();  // Active() 为真时非空
 
-// worker 线程（持锁）回调：释放 graveyard 中 fence 标记 <= fence_id 的旧字体。
+// 当前字体处于"SD 降级"态、且降级仅因换字体瞬间新旧 blob 并存挤占 PSRAM，现 graveyard 已排空
+// （预算恢复）→ 宿主可重跑 ApplyFontSettings 尝试升级为 PSRAM 字体。genuine 超大字体返回 false
+// （不重试，避免抖动）。
+
+bool ShouldUpgrade();
+
+// worker 线程（持锁）回调：释放 graveyard 中 fence 标记 <= fence_id 的旧字体（及其 blob）。
 void OnWorkerFence(uint32_t fence_id);
 
 }  // namespace ebook_font
