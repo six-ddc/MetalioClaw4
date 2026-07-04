@@ -124,6 +124,43 @@ obvious from a single file:
   when `CONFIG_IDF_TARGET_ESP32`, and swaps audio processor / wake-word backends by Kconfig. Keep new
   hardware-specific files behind the matching guard.
 
+## Fonts (what to use in UI code)
+
+Chinese renders from **fonts compiled into the firmware** — no assets packing, no SD, no `assets`
+partition needed. In UI code just declare + reference the symbol:
+
+```cpp
+LV_FONT_DECLARE(font_puhui_20_4);   // body text
+LV_FONT_DECLARE(font_puhui_30_4);   // titles / larger text
+LV_FONT_DECLARE(font_puhui_40_4);   // large reading text (ebook 大 tier; project-local, 2 bpp)
+lv_obj_set_style_text_font(label, &font_puhui_20_4, 0);
+```
+
+- **Defaults to reach for**: body = `font_puhui_20_4`, titles = `font_puhui_30_4`, icons =
+  `font_awesome_20_4`. These are already linked into the binary, so reusing the same symbol across
+  screens costs **no extra flash**. Big numeric readouts (e.g. stock quotes) use the project-local
+  `main/display/font/font_puhui_number_50_4.c` (digits only, 33 KB). The ebook reader's **大** size
+  uses the project-local `main/display/font/font_puhui_40_4.c` (40 px, **2 bpp**; ~2.2 MB flash) —
+  generated with `lv_font_conv` from `puhui-common.ttf`; see the `ebook-font-gen` memory for the recipe.
+- **Source**: `managed_components/78__xiaozhi-fonts/` — declared in `main/idf_component.yml`,
+  auto-downloaded, `GLOB`-compiled, linker GCs the unreferenced ones (so unused sizes cost nothing).
+  These `.c` files are generated; don't hand-edit. ⚠️ **Coverage reality**: the shipped puhui sizes
+  (16 / 20 / 30) each carry only **~6650 common CJK glyphs** — a common-char subset, **not** the full
+  ~20k CJK set (despite the `-r 0x0-0xfffff` in their gen Opts, which just bounds the range). The
+  project-local 40 uses the same ~6650-glyph set, so coverage is **consistent across all reader
+  sizes**; only truly rare / 生僻 chars are absent everywhere (they'd tofu at 20/30 too, not just 40).
+- ⚠️ **Never use the `*_basic_*` fonts for arbitrary Chinese** — they carry only ~200 common glyphs
+  and are missing everyday chars (e.g. 是 / 文). They're an upstream theme default, not for our text.
+- **What this board does NOT use**: the upstream `LcdDisplay` theme font
+  (`BUILTIN_TEXT_FONT=font_puhui_basic_20_4`) and the runtime `assets`-partition font loader
+  (`assets.cc`). This board uses `LVAdapterDisplay` + custom screens under `display/screen/*/`, each
+  `LV_FONT_DECLARE`-ing fonts directly; and `v1/32m.csv` has no `assets` partition, so that loader is
+  inert. Don't wire new UI through either path.
+- **Cost / trimming**: the puhui `.c` sources are large (16 / 20 / 30 ≈ 5 / 7 / 14 MB of source
+  arrays, incl. kerning tables) but only the *referenced* sizes land in flash. After adding the 40,
+  the app partition (12 MB) is ~90 % full (~1.2 MB free) — mind that budget when adding sizes. Levers:
+  drop an unused size, lower `--bpp`, or `--no-kerning` on regenerated fonts.
+
 ## Assets & generated files (built during `idf.py build`)
 
 - **Localized audio + `lang_config.h`**: `scripts/gen_lang.py` generates
