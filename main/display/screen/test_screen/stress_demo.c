@@ -47,10 +47,17 @@ void stress_demo_stop(void)
         s_timer = NULL;
     }
 
+    if (main_page != NULL) {
+        lv_obj_delete(main_page);
+        main_page = NULL;
+    }
+    if (ta != NULL) {
+        lv_obj_delete(ta);
+        ta = NULL;
+    }
+
     g_state = -1;
     mem_free_start = 0;
-    main_page = NULL;
-    ta = NULL;
 }
 
 bool stress_demo_finished(void)
@@ -79,8 +86,8 @@ static void obj_test_task_cb(lv_timer_t* tmr)
                 mem_free_start = mon.free_size;
             }
 
-            ESP_LOGI(TAG, "mem leak since start: %zu, frag: %3d %%",
-                     mem_free_start - mon.free_size, mon.frag_pct);
+            ESP_LOGI(TAG, "mem leak since start: %ld, frag: %3d %%",
+                     (long)mem_free_start - (long)mon.free_size, mon.frag_pct);
             break;
         }
         case 0:

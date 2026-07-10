@@ -19,8 +19,7 @@
 #include "IOExpander.hpp"
 #include "bq27220_gauge.h"
 #include "settings.h"
-#include "backlight_screen/backlight_screen.h"
-#include "bluetooth_screen/bluetooth_screen.h"
+#include "settings_screen/settings_screen.h"
 #include "calculator_screen/calculator_screen.h"
 #include "calendar_screen/calendar_screen.h"
 #include "call_screen/call_screen.h"
@@ -155,15 +154,6 @@ void vibrate_lifecycle_cb(screen_lifecycle_event_t event) {
         ESP_LOGI(TAG_HOME, "unload: vibrate_screen");
     }
     VibrateScreen::LifecycleCallback(event);
-}
-
-void bluetooth_lifecycle_cb(screen_lifecycle_event_t event) {
-    if (event == SCREEN_LIFECYCLE_LOAD) {
-        ESP_LOGI(TAG_HOME, "load: bluetooth_screen");
-    } else {
-        ESP_LOGI(TAG_HOME, "unload: bluetooth_screen");
-    }
-    BluetoothScreen::LifecycleCallback(event);
 }
 
 // 网络配置：进入页面停掉 WifiStation 并自己接管 STA 栈用于扫描 / 连接，
@@ -405,16 +395,6 @@ void LaunchVibrate(screen_lifecycle_cb_t lifecycle_cb) {
     }
 }
 
-void LaunchBluetooth(screen_lifecycle_cb_t lifecycle_cb) {
-    lv_obj_t* old_scr = lv_screen_active();
-    lv_obj_t* app = BluetoothScreen::Create();
-    screen_attach_lifecycle(app, lifecycle_cb);
-    lv_screen_load(app);
-    if (old_scr != nullptr && old_scr != app) {
-        lv_obj_delete_async(old_scr);
-    }
-}
-
 void LaunchWifi(screen_lifecycle_cb_t lifecycle_cb) {
     lv_obj_t* old_scr = lv_screen_active();
     lv_obj_t* app = NetworkScreen::Create();
@@ -510,9 +490,9 @@ void LaunchTheme(screen_lifecycle_cb_t lifecycle_cb) {
     }
 }
 
-void LaunchBacklight(screen_lifecycle_cb_t lifecycle_cb) {
+void LaunchSettings(screen_lifecycle_cb_t lifecycle_cb) {
     lv_obj_t* old_scr = lv_screen_active();
-    lv_obj_t* app = BacklightScreen::Create();
+    lv_obj_t* app = SettingsScreen::Create();
     screen_attach_lifecycle(app, lifecycle_cb);
     lv_screen_load(app);
     if (old_scr != nullptr && old_scr != app) {
@@ -539,13 +519,13 @@ void theme_lifecycle_cb(screen_lifecycle_event_t event) {
     ThemeScreen::LifecycleCallback(event);
 }
 
-void backlight_lifecycle_cb(screen_lifecycle_event_t event) {
+void settings_lifecycle_cb(screen_lifecycle_event_t event) {
     if (event == SCREEN_LIFECYCLE_LOAD) {
-        ESP_LOGI(TAG_HOME, "load: backlight_screen");
+        ESP_LOGI(TAG_HOME, "load: settings_screen");
     } else {
-        ESP_LOGI(TAG_HOME, "unload: backlight_screen");
+        ESP_LOGI(TAG_HOME, "unload: settings_screen");
     }
-    BacklightScreen::LifecycleCallback(event);
+    SettingsScreen::LifecycleCallback(event);
 }
 
 void info_lifecycle_cb(screen_lifecycle_event_t event) {
@@ -575,16 +555,15 @@ constexpr AppEntry kApps[] = {
     {"spirit_level",   "水平仪",   LaunchLevel,         level_lifecycle_cb},
     {"magnet",         "磁场",     LaunchMagnet,        magnet_lifecycle_cb},
     {"vibrate",        "震动",     LaunchVibrate,       vibrate_lifecycle_cb},
-    {"bluetooth",      "蓝牙配置", LaunchBluetooth,     bluetooth_lifecycle_cb},
     {"calculator",     "计算器",   LaunchCalculator,    calculator_lifecycle_cb},
     {"weather",        "天气",     LaunchWeather,       weather_lifecycle_cb},
     {"sd",             "SD卡",     LaunchSdCard,        sd_card_lifecycle_cb},
     {"pin",            "引脚测试", LaunchPinTest,       pin_test_lifecycle_cb},
     {"2048",           "2048",     LaunchGame2048,      game_2048_lifecycle_cb},
-    {"backlight",      "屏幕亮度", LaunchBacklight,     backlight_lifecycle_cb},
     {"info",           "系统信息", LaunchInfo,          info_lifecycle_cb},
     {"theme",          "主题",     LaunchTheme,         theme_lifecycle_cb},
-    {"test",          "测试",     LaunchTest,      test_lifecycle_cb},
+    {"test",           "测试",     LaunchTest,          test_lifecycle_cb},
+    {"settings",       "设置",     LaunchSettings,      settings_lifecycle_cb},
 };
 
 constexpr int kTotalApps = static_cast<int>(sizeof(kApps) / sizeof(kApps[0]));
@@ -660,7 +639,7 @@ struct HomeTouchSession {
 HomeTouchSession s_home_touch;
 
 // ---------------------------------------------------------------------------
-// 主屏无操作计时：停留在 HomeScreen 时，5 分钟无任何触摸/滑动则自动关机；
+// 主屏无操作计时：停留在 HomeScreen 时，无触摸/滑动超过设定时长则自动关机；
 // 任意用户操作重置计时。仅在主屏 LOADED→DELETE 生命周期内运行。
 // ---------------------------------------------------------------------------
 struct HomeIdleTimerState {
@@ -672,9 +651,18 @@ struct HomeIdleTimerState {
 
 HomeIdleTimerState* s_home_idle = nullptr;
 
-constexpr uint32_t kHomeIdleTimeoutMs = 5 * 60 * 1000;
+constexpr int kDefaultIdleShutdownMin = 5;
+constexpr int kMaxIdleShutdownMin = 60;
+constexpr const char* kIdleShutdownNvsKey = "idle_off_min";
 constexpr uint32_t kHomeIdleStatusIntervalMs = 60 * 1000;
 constexpr uint32_t kHomeIdleTimerPeriodMs = 1000;
+
+uint32_t s_home_idle_timeout_ms = kDefaultIdleShutdownMin * 60U * 1000U;
+
+void ReloadHomeIdleTimeoutMs() {
+    s_home_idle_timeout_ms =
+        static_cast<uint32_t>(HomeScreen::GetIdleShutdownMinutes()) * 60U * 1000U;
+}
 
 void BeginSystemShutdown(const char* reason);
 
@@ -706,13 +694,21 @@ void OnHomeIdleTimerTick(lv_timer_t* timer) {
     }
 
     const uint32_t idle_ms = lv_tick_elaps(st->last_activity_tick);
-    if (idle_ms >= kHomeIdleTimeoutMs) {
+    if (s_home_idle_timeout_ms == 0) {
+        return;
+    }
+    if (idle_ms >= s_home_idle_timeout_ms) {
         if (!st->timeout_logged) {
             st->timeout_logged = true;
             ESP_LOGW(TAG_HOME,
                      "idle timer timeout: no user activity for %u s on HomeScreen, shutting down",
                      idle_ms / 1000);
-            BeginSystemShutdown("主屏 5 分钟无操作自动关机");
+            char reason[64];
+            const unsigned int shutdown_min =
+                static_cast<unsigned int>(s_home_idle_timeout_ms / (60U * 1000U));
+            std::snprintf(reason, sizeof(reason),
+                          "主屏 %u 分钟无操作自动关机", shutdown_min);
+            BeginSystemShutdown(reason);
         }
         return;
     }
@@ -722,7 +718,7 @@ void OnHomeIdleTimerTick(lv_timer_t* timer) {
     }
 
     st->last_status_log_tick = lv_tick_get();
-    const uint32_t remaining_s = (kHomeIdleTimeoutMs - idle_ms) / 1000;
+    const uint32_t remaining_s = (s_home_idle_timeout_ms - idle_ms) / 1000;
     ESP_LOGI(TAG_HOME,
              "idle timer: idle=%u s, remaining=%u s until auto shutdown",
              idle_ms / 1000, remaining_s);
@@ -730,14 +726,20 @@ void OnHomeIdleTimerTick(lv_timer_t* timer) {
 
 void StartHomeIdleTimer() {
     StopHomeIdleTimer();
+    ReloadHomeIdleTimeoutMs();
 
     s_home_idle = new HomeIdleTimerState{};
     s_home_idle->last_activity_tick = lv_tick_get();
     s_home_idle->last_status_log_tick = lv_tick_get();
     s_home_idle->timer =
         lv_timer_create(OnHomeIdleTimerTick, kHomeIdleTimerPeriodMs, s_home_idle);
-    ESP_LOGI(TAG_HOME, "idle timer started (auto shutdown in %u s, status log every %u s)",
-             kHomeIdleTimeoutMs / 1000, kHomeIdleStatusIntervalMs / 1000);
+    if (s_home_idle_timeout_ms == 0) {
+        ESP_LOGI(TAG_HOME, "idle timer started (auto shutdown disabled)");
+    } else {
+        ESP_LOGI(TAG_HOME,
+                 "idle timer started (auto shutdown in %u s, status log every %u s)",
+                 s_home_idle_timeout_ms / 1000, kHomeIdleStatusIntervalMs / 1000);
+    }
 }
 
 // App 卡片按压过渡：确认点击/长按后触发缩放。
@@ -2282,4 +2284,29 @@ void HomeScreen::RefreshStatusBar() {
     // 线程，不能直接碰 LVGL；切到 LVGL 线程再刷新，避免与 adapter 争用锁
     // 导致 lv_obj_invalidate 在 Core0 上死循环占满 CPU。
     lv_async_call(OnRefreshStatusBarAsync, nullptr);
+}
+
+int HomeScreen::GetIdleShutdownMinutes() {
+    Settings settings("display", false);
+    int value = settings.GetInt(kIdleShutdownNvsKey, kDefaultIdleShutdownMin);
+    if (value < 0) {
+        value = 0;
+    } else if (value > kMaxIdleShutdownMin) {
+        value = kMaxIdleShutdownMin;
+    }
+    return value;
+}
+
+void HomeScreen::SetIdleShutdownMinutes(int minutes) {
+    if (minutes < 0) {
+        minutes = 0;
+    } else if (minutes > kMaxIdleShutdownMin) {
+        minutes = kMaxIdleShutdownMin;
+    }
+
+    Settings settings("display", true);
+    settings.SetInt(kIdleShutdownNvsKey, minutes);
+    ReloadHomeIdleTimeoutMs();
+    ResetHomeIdleTimer();
+    ESP_LOGI(TAG_HOME, "idle shutdown timeout updated to %d min", minutes);
 }
