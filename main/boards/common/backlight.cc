@@ -48,6 +48,15 @@ void Backlight::SetBrightness(uint8_t brightness, bool permanent) {
     if (brightness > 100) {
         brightness = 100;
     }
+    // 底线保护：亮度永远不允许低于 kBacklightMinPercent —— 0 意味着黑屏，用户会以为
+    // 设备死机/关机（真机踩过：上层回调误写 0 → "一联网就黑屏"）。
+    // 在所有调用路径的汇聚点统一收口，任何上层（MCP 工具 / AI / 设置页 / 恢复逻辑）
+    // 传入过小值都被抬到下限。本板没有任何"设 0 熄屏"的合法用例（熄屏走电源管理，
+    // 不走背光亮度）。
+    if (brightness < kBacklightMinPercent) {
+        ESP_LOGW(TAG, "Brightness %d below floor, clamped to %d", brightness, kBacklightMinPercent);
+        brightness = kBacklightMinPercent;
+    }
 
     if (brightness_ == brightness) {
         return;
