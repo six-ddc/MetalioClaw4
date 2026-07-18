@@ -124,24 +124,9 @@ const char* JStr(const cJSON* it) {
     return "";
 }
 
-// 把 ChartSeries 的 7 个 float 列暴露给 minute_parse 的列指针接口。
-void ChartSeriesAsArrays(ChartSeries& s, float* (&arr)[7]) {
-    arr[0] = s.points;
-    arr[1] = s.opens;
-    arr[2] = s.highs;
-    arr[3] = s.lows;
-    arr[4] = s.volumes;
-    arr[5] = s.amounts;
-    arr[6] = s.turnover_rates;
-}
-
-void Downsample(ChartSeries& s, size_t target_max) {
-    if (s.count <= target_max) return;
-    float* arrays[7];
-    ChartSeriesAsArrays(s, arrays);
-    minute_parse::downsampleParallelArrays(arrays, 7, s.timestamps_s, &s.count,
-                                           ChartSeries::kMaxPoints, target_max);
-}
+// 5 日分时：每交易日独立抽稀到固定点数，避免天与天混采样，也让渲染层能等分 5 列。
+constexpr int kFiveDayMaxDays = 5;
+constexpr int kFiveDayPtsPerDay = 72;  // 5×72=360 ≤ kMaxPoints(400)
 
 // ---- 分时（当日）：cJSON ----------------------------------------------------
 bool FetchMinuteToday(const char* symbol, ChartSeries& out, std::string& out_err) {
@@ -171,6 +156,9 @@ bool FetchMinuteToday(const char* symbol, ChartSeries& out, std::string& out_err
             last_close = static_cast<float>(JNum(cJSON_GetArrayItem(qtSym, 4)));
         }
 
+        // 同 5 日：A 股收盘后 minute 接口也会把 15:05–15:30 用收盘价冻结补齐，切在 15:00。
+        const int cutoff_hhmm = isAShare(m) ? 1500 : 0;
+
         size_t n = 0;
         cJSON* rv = nullptr;
         cJSON_ArrayForEach(rv, rows) {
@@ -179,6 +167,7 @@ bool FetchMinuteToday(const char* symbol, ChartSeries& out, std::string& out_err
             char hhmm[5];
             float price;
             if (!minute_parse::parseMinuteLine(line, hhmm, &price)) continue;
+            if (cutoff_hhmm != 0 && minute_parse::hhmmToInt(hhmm) > cutoff_hhmm) continue;
             out.points[n] = price;
             out.opens[n] = price;
             out.highs[n] = price;
@@ -203,10 +192,43 @@ bool FetchMinuteToday(const char* symbol, ChartSeries& out, std::string& out_err
     return ok;
 }
 
+// 扫一天的 "HHMM p ..." 字符串数组（arr 指向 '[' 之后），把盘中点升序收进 dp/dt，
+// 返回点数。cutoff_hhmm>0 时丢弃该时刻之后的点（A 股盘后 15:05–15:30 冻结平尾）。
+int ScanDayMinutes(const char* arr, const char* date, int cutoff_hhmm, float* dp,
+                   uint32_t* dt, int cap) {
+    int c = 0;
+    const char* q = arr;
+    while (c < cap) {
+        while (*q == ' ' || *q == ',' || *q == '\n' || *q == '\r' || *q == '\t') q++;
+        if (*q == ']' || *q == '\0') break;
+        if (*q != '"') break;
+        const char* line_start = q + 1;
+        const char* line_end = std::strchr(line_start, '"');
+        if (line_end == nullptr) break;
+        char line[48];
+        size_t llen = static_cast<size_t>(line_end - line_start);
+        if (llen >= sizeof(line)) llen = sizeof(line) - 1;
+        std::memcpy(line, line_start, llen);
+        line[llen] = '\0';
+        char hhmm[5];
+        float price;
+        if (minute_parse::parseMinuteLine(line, hhmm, &price) &&
+            (cutoff_hhmm == 0 || minute_parse::hhmmToInt(hhmm) <= cutoff_hhmm)) {
+            dp[c] = price;
+            dt[c] = minute_parse::hhmmToEpoch(date, hhmm);
+            c++;
+        }
+        q = line_end + 1;
+    }
+    return c;
+}
+
 // ---- 5 日分时：字符串扫描（避免 200KB 全量 cJSON 建树）----------------------
 // 结构：data.<sym>.data = [ {date, data:[ "HHMM p ...", ...], prec}, ... ]（今天在前）。
-// 逐个 "date":" 定位每天，扫其 "data":[ 的字符串行，取 "prec":"。
-// 收集顺序今天在前，最后整段 reverse 成"最旧→最新"，再降采样到 200。
+// 五日 ~1200–1955 原始点远超 ChartSeries 容量(400)，故**每交易日独立抽稀到 N 点**：
+// 天与天不混采样、天内保持时间升序、按最旧→最新写出。每天恰好 N 点 → 渲染层均匀
+// 索引铺点即天然等分 5 列（跨天不连线、画竖分隔）。
+// A 股仍按收盘时刻切掉 15:05–15:30 盘后冻结平尾（港股干净收盘、美股时区不确定不裁）。
 bool Fetch5DayMinute(const char* symbol, ChartSeries& out, std::string& out_err) {
     Market m = marketOf(symbol);
     std::string url = tencent_endpoints::fiveDayUrl(symbol, m);
@@ -214,10 +236,15 @@ bool Fetch5DayMinute(const char* symbol, ChartSeries& out, std::string& out_err)
     size_t len = 0;
     if (!FetchBody(url, &len, out_err)) return false;
 
-    size_t n = 0;
-    float last_close = 0;
+    const int cutoff_hhmm = isAShare(m) ? 1500 : 0;
+
+    // 第一遍：定位每天的 data 数组与日期（今天在前），并取最旧那天的 prec 作昨收基准。
+    struct DayRef { const char* arr; char date[9]; };
+    DayRef days[kFiveDayMaxDays];
+    int day_count = 0;
+    float ref_prec = 0;
     const char* cursor = g_buf;
-    while (n < ChartSeries::kMaxPoints) {
+    while (day_count < kFiveDayMaxDays) {
         const char* dpos = std::strstr(cursor, "\"date\":\"");
         if (dpos == nullptr) break;
         dpos += 8;
@@ -225,61 +252,54 @@ bool Fetch5DayMinute(const char* symbol, ChartSeries& out, std::string& out_err)
         int k = 0;
         while (k < 8 && dpos[k] && dpos[k] != '"') { date[k] = dpos[k]; k++; }
         date[k] = '\0';
-
         const char* darr = std::strstr(dpos, "\"data\":[");
         if (darr == nullptr) break;
-        const char* q = darr + 8;
-        while (n < ChartSeries::kMaxPoints) {
-            while (*q == ' ' || *q == ',' || *q == '\n' || *q == '\r' || *q == '\t') q++;
-            if (*q == ']' || *q == '\0') break;
-            if (*q != '"') break;
-            const char* line_start = q + 1;
-            const char* line_end = std::strchr(line_start, '"');
-            if (line_end == nullptr) { q = line_start; break; }
-            char line[48];
-            size_t llen = static_cast<size_t>(line_end - line_start);
-            if (llen >= sizeof(line)) llen = sizeof(line) - 1;
-            std::memcpy(line, line_start, llen);
-            line[llen] = '\0';
-            char hhmm[5];
-            float price;
-            if (minute_parse::parseMinuteLine(line, hhmm, &price)) {
-                out.points[n] = price;
-                out.opens[n] = price;
-                out.highs[n] = price;
-                out.lows[n] = price;
-                out.volumes[n] = 0;
-                out.amounts[n] = 0;
-                out.turnover_rates[n] = 0;
-                out.timestamps_s[n] = minute_parse::hhmmToEpoch(date, hhmm);
-                n++;
-            }
-            q = line_end + 1;
-        }
-        // 本天 prec（在 data 数组之后）。持续更新 → 终值为最旧那天的非空 prec。
-        const char* prec_pos = std::strstr(q, "\"prec\":\"");
+        std::memcpy(days[day_count].date, date, sizeof(date));
+        days[day_count].arr = darr + 8;
+        // prec 紧跟在本天 data 数组之后。持续更新 → 终值为最旧那天的非空 prec。
+        const char* prec_pos = std::strstr(darr, "\"prec\":\"");
         if (prec_pos != nullptr) {
             float pv = std::strtof(prec_pos + 8, nullptr);
-            if (pv > 0) last_close = pv;
+            if (pv > 0) ref_prec = pv;
         }
-        cursor = q;
+        cursor = prec_pos ? prec_pos + 8 : darr + 8;
+        day_count++;
+    }
+    if (day_count == 0) { out_err = "5d empty"; return false; }
+
+    // 第二遍：每天独立抽稀到 N 点，最旧→最新写出（天内升序）。
+    static float dp[ChartSeries::kMaxPoints];   // 单日临时列（全程持 ApiLock，静态安全）
+    static uint32_t dt[ChartSeries::kMaxPoints];
+    const int N = kFiveDayPtsPerDay;
+    size_t n = 0;
+    for (int j = day_count - 1; j >= 0; j--) {  // j=day_count-1 为最旧
+        int cday = ScanDayMinutes(days[j].arr, days[j].date, cutoff_hhmm, dp, dt,
+                                  ChartSeries::kMaxPoints);
+        if (cday == 0) continue;  // 空日不占列
+        for (int idx = 0; idx < N && n < ChartSeries::kMaxPoints; idx++) {
+            int src = (N == 1) ? 0
+                               : static_cast<int>(static_cast<long>(idx) * (cday - 1) / (N - 1));
+            out.points[n] = dp[src];
+            out.opens[n] = dp[src];
+            out.highs[n] = dp[src];
+            out.lows[n] = dp[src];
+            out.volumes[n] = 0;
+            out.amounts[n] = 0;
+            out.turnover_rates[n] = 0;
+            out.timestamps_s[n] = dt[src];
+            n++;
+        }
     }
     if (n == 0) { out_err = "5d empty"; return false; }
 
-    out.count = n;
-    float* arrays[7];
-    ChartSeriesAsArrays(out, arrays);
-    minute_parse::reverseParallelArrays(arrays, 7, out.timestamps_s, n);
-
-    if (!(last_close > 0)) last_close = out.points[0];
+    if (!(ref_prec > 0)) ref_prec = out.points[0];
     out.symbol = symbol;
     out.count = n;
-    out.last_close = last_close;
-    out.has_ref = (last_close > 0);
+    out.last_close = ref_prec;
+    out.has_ref = (ref_prec > 0);
     out.fetched_at = NowMs();
     out.valid = true;
-    Downsample(out, 200);
-    ESP_LOGI(TAG, "5d parsed %u pts, last_close=%.2f", (unsigned)out.count, last_close);
+    ESP_LOGI(TAG, "5d parsed %d days ->%u pts, ref=%.2f", day_count, (unsigned)n, ref_prec);
     return true;
 }
 

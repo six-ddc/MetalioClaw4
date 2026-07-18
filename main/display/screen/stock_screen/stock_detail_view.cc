@@ -63,6 +63,8 @@ lv_obj_t* s_max_pct = nullptr;
 lv_obj_t* s_min_pct = nullptr;
 lv_obj_t* s_x_left = nullptr;
 lv_obj_t* s_x_right = nullptr;
+constexpr int kMaxDayTicks = 5;          // 五日分时：逐交易日列中心日期标签数上限
+lv_obj_t* s_x_ticks[kMaxDayTicks] = {};
 lv_obj_t* s_zoom_pill = nullptr;
 lv_obj_t* s_stat_val[8] = {};  // 开/高/低/昨 · 量/额/换手/振幅
 lv_obj_t* s_tab_btn[CHART_MODE_COUNT] = {};
@@ -139,6 +141,7 @@ void ClearChartUi();
 void ApplyLiveQuoteToTop();
 void UpdateChartStatus();
 void UpdateMinuteAxis();
+void HideDayTicks();
 
 // ---- 构建各区 ----
 void BuildTopBar(lv_obj_t* root) {
@@ -237,6 +240,11 @@ void BuildCanvasArea(lv_obj_t* root) {
     lv_obj_align(s_x_left, LV_ALIGN_TOP_LEFT, kCanvasX + 4, kAxisY + 4);
     s_x_right = MakeLabel(root, &font_puhui_20_4, stock_ui::kColorDim);
     lv_obj_align(s_x_right, LV_ALIGN_TOP_RIGHT, -(kCanvasX + 4), kAxisY + 4);
+    // 五日分时逐列日期标签（居列中心），默认隐藏
+    for (int i = 0; i < kMaxDayTicks; i++) {
+        s_x_ticks[i] = MakeLabel(root, &font_puhui_20_4, stock_ui::kColorDim);
+        lv_obj_add_flag(s_x_ticks[i], LV_OBJ_FLAG_HIDDEN);
+    }
 
     // zoomPill：浮在画布右上角的可点击圆角标签（仅 K 线显示）
     s_zoom_pill = lv_label_create(root);
@@ -369,6 +377,7 @@ void ClearChartUi() {
     stock_chart_renderer::Clear();
     lv_label_set_text(s_x_left, "");
     lv_label_set_text(s_x_right, "");
+    HideDayTicks();
     UpdateChartStatus();
 }
 
@@ -427,26 +436,52 @@ void UpdateChartStatus() {
     lv_obj_move_foreground(s_chart_status);
 }
 
-// 分时/5日 时间轴：左=首点、右=末点（分时 HH:MM，5日 MM-DD）。
+void HideDayTicks() {
+    for (int i = 0; i < kMaxDayTicks; i++)
+        if (s_x_ticks[i]) lv_obj_add_flag(s_x_ticks[i], LV_OBJ_FLAG_HIDDEN);
+}
+
+// 分时/5日 时间轴。当日分时：左=首点、右=末点 HH:MM。
+// 五日：每交易日在其列中心标 MM-DD（左右角标签让位），跨天分隔由 canvas 竖线呈现。
 void UpdateMinuteAxis() {
     if (!s_x_left || !s_x_right) return;
     if (!s_chart_valid || s_chart.count == 0) {
         lv_label_set_text(s_x_left, "");
         lv_label_set_text(s_x_right, "");
+        HideDayTicks();
         return;
     }
+    if (s_mode == CHART_MIN_5D) {
+        lv_label_set_text(s_x_left, "");
+        lv_label_set_text(s_x_right, "");
+        size_t starts[kMaxDayTicks];
+        int d = stock_chart_renderer::FiveDayStarts(s_chart, starts, kMaxDayTicks);
+        for (int i = 0; i < kMaxDayTicks; i++) {
+            if (i >= d) {
+                lv_obj_add_flag(s_x_ticks[i], LV_OBJ_FLAG_HIDDEN);
+                continue;
+            }
+            size_t end = (i + 1 < d) ? starts[i + 1] : s_chart.count;  // 列 [starts[i], end)
+            size_t center = starts[i] + (end - starts[i]) / 2;
+            time_t ts = static_cast<time_t>(s_chart.timestamps_s[starts[i]]);
+            struct tm tmd = *localtime(&ts);
+            char buf[16];
+            std::snprintf(buf, sizeof(buf), "%02d-%02d", tmd.tm_mon + 1, tmd.tm_mday);
+            lv_label_set_text(s_x_ticks[i], buf);
+            int cx = kCanvasX + stock_chart_renderer::XForIndex(center, s_chart);
+            lv_obj_align(s_x_ticks[i], LV_ALIGN_TOP_MID, cx - kPanelW / 2, kAxisY + 4);
+            lv_obj_remove_flag(s_x_ticks[i], LV_OBJ_FLAG_HIDDEN);
+        }
+        return;
+    }
+    HideDayTicks();
     time_t t0 = static_cast<time_t>(s_chart.timestamps_s[0]);
     time_t t1 = static_cast<time_t>(s_chart.timestamps_s[s_chart.count - 1]);
     struct tm a = *localtime(&t0);
     struct tm b = *localtime(&t1);
     char l[16], r[16];
-    if (s_mode == CHART_MIN_5D) {
-        std::snprintf(l, sizeof(l), "%02d-%02d", a.tm_mon + 1, a.tm_mday);
-        std::snprintf(r, sizeof(r), "%02d-%02d", b.tm_mon + 1, b.tm_mday);
-    } else {
-        std::snprintf(l, sizeof(l), "%02d:%02d", a.tm_hour, a.tm_min);
-        std::snprintf(r, sizeof(r), "%02d:%02d", b.tm_hour, b.tm_min);
-    }
+    std::snprintf(l, sizeof(l), "%02d:%02d", a.tm_hour, a.tm_min);
+    std::snprintf(r, sizeof(r), "%02d:%02d", b.tm_hour, b.tm_min);
     lv_label_set_text(s_x_left, l);
     lv_label_set_text(s_x_right, r);
 }
@@ -727,6 +762,7 @@ void ApplyChart(const ChartSeries& chart, bool /*is_range*/) {
     s_chart_valid = chart.valid && chart.count > 0;
     stock_chart_renderer::Render(s_chart);
     if (IsKline()) {
+        HideDayTicks();
         stock_kline_window::OnChartArrived(s_chart.count);
         stock_kline_window::Refresh(&s_chart, s_mode);
     } else {

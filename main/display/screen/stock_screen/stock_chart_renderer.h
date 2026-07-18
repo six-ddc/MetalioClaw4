@@ -27,6 +27,11 @@ void Clear();
 int HoverIndex(int rel_x, const ChartSeries& s);
 int XForIndex(size_t i, const ChartSeries& s);
 
+// 5 日分时：按时间戳日期变化找出各交易日的首点 index，写入 starts[0..返回值-1]
+// （starts[0] 恒为 0）。用于渲染跨天断线/竖分隔与 x 轴逐日日期标注复用。
+// 非 5 日模式返回 0。starts 容量至少 max_days。
+int FiveDayStarts(const ChartSeries& s, size_t* starts, int max_days);
+
 }  // namespace stock_chart_renderer
 
 #endif  // STOCK_CHART_RENDERER_H

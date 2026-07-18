@@ -36,6 +36,13 @@ inline uint32_t hhmmToEpoch(const char* date_yyyymmdd, const char* hhmm) {
     return static_cast<uint32_t>(std::mktime(&t));
 }
 
+// "HHMM"（前 4 字符）→ 整型 HHMM（"1506" → 1506）；nullptr / 长度不足 → -1。
+// 用于按市场收盘时刻裁掉腾讯分时接口补齐的"冻结平尾"。
+inline int hhmmToInt(const char* hhmm) {
+    if (!hhmm || std::strlen(hhmm) < 4) return -1;
+    return (hhmm[0]-'0')*1000 + (hhmm[1]-'0')*100 + (hhmm[2]-'0')*10 + (hhmm[3]-'0');
+}
+
 // 解析单行 "HHMM p [...]"：成功填 outHhmm[5]（NUL）+ *outPrice，返回 true。
 // price <= 0 / line 太短 / nullptr → false。
 inline bool parseMinuteLine(const char* line, char outHhmm[5], float* outPrice) {

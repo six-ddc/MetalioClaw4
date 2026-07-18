@@ -35,6 +35,28 @@ int XOverSlots(int i, int total) {
     return static_cast<int>(static_cast<float>(i) / (total - 1) * (kChartW - 1));
 }
 
+// 时间戳日期桶（秒 epoch → 天）。同一交易日 09:30–16:00 落同一桶，跨隔夜必换桶。
+uint32_t DayBucket(uint32_t ts) { return ts / 86400u; }
+
+// 5 日分时里 i 与 i-1 是否跨了交易日（此处需断线并画竖分隔）。
+bool IsDayBoundary(const ChartSeries& s, size_t i) {
+    return s.mode == CHART_MIN_5D && i > 0 &&
+           DayBucket(s.timestamps_s[i]) != DayBucket(s.timestamps_s[i - 1]);
+}
+
+void DrawDaySeparator(lv_layer_t* layer, int x) {
+    lv_draw_line_dsc_t d;
+    lv_draw_line_dsc_init(&d);
+    d.color = lv_color_hex(stock_ui::kColorDim);
+    d.width = 1;
+    d.opa = LV_OPA_30;
+    d.p1.x = x;
+    d.p1.y = 0;
+    d.p2.x = x;
+    d.p2.y = kChartH - 1;
+    lv_draw_line(layer, &d);
+}
+
 void DrawSeg(lv_layer_t* layer, int x0, int y0, int x1, int y1, lv_color_t c, int w) {
     lv_draw_line_dsc_t d;
     lv_draw_line_dsc_init(&d);
@@ -150,6 +172,11 @@ void Render(const ChartSeries& s) {
         for (size_t i = 1; i < s.count; i++) {
             int x0 = XOverSlots(static_cast<int>(i - 1), total);
             int x1 = XOverSlots(static_cast<int>(i), total);
+            // 5 日：跨交易日不连线，改画淡竖分隔（每天独立成列）。
+            if (IsDayBoundary(s, i)) {
+                DrawDaySeparator(&layer, (x0 + x1) / 2);
+                continue;
+            }
             int y0 = priceToChartY(s.points[i - 1], R.yMin, R.yMax, kChartH);
             int y1 = priceToChartY(s.points[i], R.yMin, R.yMax, kChartH);
             DrawBridged(&layer, x0, y0, x1, y1, s.points[i - 1], s.points[i], s.last_close,
@@ -211,6 +238,16 @@ int XForIndex(size_t i, const ChartSeries& s) {
         return L.startWickX + static_cast<int>(i) * L.slotW;
     }
     return XOverSlots(static_cast<int>(i), TotalSlots(s));
+}
+
+int FiveDayStarts(const ChartSeries& s, size_t* starts, int max_days) {
+    if (s.mode != CHART_MIN_5D || s.count == 0 || starts == nullptr || max_days <= 0) return 0;
+    int d = 0;
+    starts[d++] = 0;
+    for (size_t i = 1; i < s.count && d < max_days; i++) {
+        if (DayBucket(s.timestamps_s[i]) != DayBucket(s.timestamps_s[i - 1])) starts[d++] = i;
+    }
+    return d;
 }
 
 int HoverIndex(int rel_x, const ChartSeries& s) {
