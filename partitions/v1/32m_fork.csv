@@ -1,0 +1,15 @@
+# ESP-IDF Partition Table — fork：单固件大 app 槽布局（股票 + 电子书 + 内置 40px 字体）。
+# 相对上游：不用 32m_dual（ESPclaw 双启动 ota_0 仅 9M 装不下本 fork 固件），
+# app 槽 12.5M×2；前段布局与旧版 32m.csv 完全一致（表偏移 0x8000、model 960K、
+# ota_0 起点 0x200000 不变），已刷设备升级时 NVS/配网数据原位保留。
+# 总计 2048K + 12800K×2 + 4096K + 600K = 32344K ≤ 32768K (32MB)。
+# Name        , Type , SubType , Offset   , Size   , Flags
+nvsfactory    , data , nvs     ,          , 200K   ,
+nvs           , data , nvs     ,          , 840K   ,
+otadata       , data , ota     ,          , 8K     ,
+phy_init      , data , phy     ,          , 4K     ,
+model         , data , spiffs  ,          , 960K   ,
+ota_0         , app  , ota_0   , 0x200000 , 12800K ,
+ota_1         , app  , ota_1   ,          , 12800K ,
+resources     , data , spiffs  ,          , 4M     ,
+factory_test  , data , spiffs  ,          , 600K   ,
